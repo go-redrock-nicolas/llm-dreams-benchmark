@@ -1,0 +1,17 @@
+realize that the walls of the maze are shifting subtly. The deeper you go, the more alive the maze appears, responding to your movements and decisions. The first puzzle you encounter is a series of symbols etched into a stone wall. You notice that when you touch a symbol, the others change color or shape.
+
+After some contemplation, you decipher the pattern: you need to touch the symbols in a sequence that represents the Fibonacci series. When you succeed, a hidden door slides open, revealing a narrow passageway illuminated by a faint, otherworldly glow. 
+
+Moving forward, you encounter the second puzzle. This time, it involves a set of mechanical gears embedded in the ground. There are three levers nearby, each moving different gears. The goal seems to be to align the gears in such a way that they form a path for a ball to travel from one side of the room to the other. After experimenting with the levers and understanding which gears they control, you manage to align them perfectly, and the ball rolls smoothly, triggering another hidden door.
+
+As you step through, the maze shifts again, and you find yourself in a larger chamber adorned with ancient murals that tell a story. It’s a narrative of an ancient civilization that built the maze as a test for the chosen ones. The murals hint at the challenges ahead and provide cryptic clues.
+
+The third puzzle involves a mirror maze within the maze. You have to navigate through a labyrinth of reflective surfaces without losing sight of your own reflection, which seems to lead the way. Every wrong turn results in an echoing whisper that fills the chamber, making it harder to concentrate. By focusing on following your own reflection and ignoring the distracting whispers, you finally emerge on the other side.
+
+Here, you find the final challenge: a riddle posed by an ethereal voice that reverberates through the air. The riddle is:
+
+"I speak without a mouth and hear without ears. I have no body, but I come alive with the wind. What am I?"
+
+You ponder the riddle, knowing that the answer holds the key to your escape. After moments of intense thought, you confidently answer, "An echo."
+
+The maze trembles, and the walls begin to part, revealing a radiant exit filled with blinding light. As you step towards it, you feel a sense of accomplishment and enlightenment. The light engulfs you, and just as you are about to step through, you suddenly wake up, still feeling the exhilaration of the dream and a newfound clarity in your thoughts.
