@@ -16,6 +16,8 @@ creation_time = sorted(creation_time, key=lambda x: (x[1], x[0]))
 llms = []
 all_llms_scores = {}
 
+print("## Individual Results")
+
 for ct in creation_time:
     llm = ct[0].split("__")[0]
 
@@ -53,12 +55,14 @@ for llm in llms:
     dataframe = pd.DataFrame({"Personality Trait": keys, "Score (1.0-10.0)": values})
     stru = dataframe.to_markdown(index=False)
     print("\n")
-    print(llm)
+    print("### " + llm)
     print("\n")
     print(stru)
     print("\n\n\n")
 
 #llms = sorted(llms)
+
+print("## Overall Results\n")
 
 overall_columns = {"LLM": llms}
 
