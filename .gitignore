@@ -164,5 +164,4 @@ answers/*.txt
 evaluation/*.txt
 .idea/
 .idea/*
-api_key.txt
 evaluation*/*.txt
