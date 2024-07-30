@@ -42,3 +42,10 @@ The benchmark includes 15 dreams incipits, each one having a prevalent purpose. 
 13. Cognitive Load
 14. Social Support
 15. Resilience
+
+
+## Results
+
+The following tables collect results evaluated by the same judge LLM:
+
+* [gpt-4o-2024-05-13](results_gpt_4o_2024_05_13.md)
