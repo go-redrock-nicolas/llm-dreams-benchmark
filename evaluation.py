@@ -49,7 +49,7 @@ for i in range(NUMBER_EXECUTIONS):
             max_lenn = max(max_lenn, len(content))
             all_contents.append(content)
 
-        evaluation_path = os.path.join("evaluations", e_m_name + "__" + str(idxnum) + "__" + str(i) + ".txt")
+        evaluation_path = os.path.join("evaluations", m_name + "__" + str(idxnum) + "__" + str(i) + ".txt")
 
         if not os.path.exists(evaluation_path):
             print("(evaluation %d of %d) (answers %d of %d)" % (i + 1, NUMBER_EXECUTIONS, idxnum + 1, len(ex_indexes)))
