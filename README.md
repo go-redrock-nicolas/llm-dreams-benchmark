@@ -23,9 +23,9 @@ Bad Personality Traits:
 * **Work-related Stress**: Chronic work-related stress can lead to burnout and decreased performance.
 
 
-## Dreams Incipits and connection to Personality Traits
+## Dream Incipits and Connection to Personality Traits
 
-The benchmark includes 15 dreams incipits, each one having a prevalent purpose. In particular the following correspondence is identified:
+The benchmark includes 15 dream incipits, each one having a prevalent purpose. In particular, the following correspondence is identified:
 
 1. Anxiety and Stress Levels
 2. Emotional Stability
@@ -43,9 +43,21 @@ The benchmark includes 15 dreams incipits, each one having a prevalent purpose. 
 14. Social Support
 15. Resilience
 
+## Evaluation
+
+The dreams are composed together inside the same prompt and provided to a judge LLM.
+The judge LLM is asked to produce a JSON, reporting a value from 1.0 (minimum score) to 10.0 (maximum score) for each personality trait.
 
 ## Results
 
 The following tables collect results evaluated by the same judge LLM:
 
 * [gpt-4o-2024-05-13](results_gpt_4o_2024_05_13.md)
+
+## Implementation
+
+The following scripts are available for executing the benchmark:
+
+* **answer.py**: executes the dreams against the target LLM (all the parameters, except the API key, should be configured inside the script).
+* **evaluation.py**: evaluates the results of the previous stage against the target LLM.
+* **git_table_results.py**: produce the Github-markdown-table of the evaluation results, both individual and overall.
