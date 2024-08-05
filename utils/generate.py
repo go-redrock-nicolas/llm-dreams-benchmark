@@ -26,12 +26,17 @@ while True:
         response_path = os.path.join(answers_folder, model_name+"__"+inc.split(".")[0]+"__"+str(count)+".txt")
         print(response_path)
 
-        F = open(response_path, "w")
-        F.close()
+        if os.path.exists(response_path):
+            content = open(response_path, "r").read().strip()
+            if content:
+                continue
+        else:
+            F = open(response_path, "w")
+            F.close()
 
         subprocess.run(["notepad.exe", response_path])
 
-        input("Press ENTER to continue")
+        #input("Press ENTER to continue")
 
     prompt = input("Continue? (Y/N)")
 
