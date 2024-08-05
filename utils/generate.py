@@ -9,7 +9,13 @@ incipits = [x for x in os.listdir(incipits_folder) if x.endswith("txt")]
 
 model_name = input("Give me the name of the model that you are testing -> ")
 
-count = 0
+count = input("Start count (0) -> ")
+count = count.strip()
+if count:
+    count = int(count)
+else:
+    count = 0
+
 while True:
     for inc in incipits:
         dream_path = os.path.join(incipits_folder, inc)
