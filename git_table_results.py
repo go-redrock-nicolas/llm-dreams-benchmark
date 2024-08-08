@@ -60,7 +60,7 @@ for llm in llms:
     print(stru)
     print("\n\n\n")
 
-#llms = sorted(llms)
+llms = sorted(llms)
 
 print("## Overall Results\n")
 
