@@ -20,6 +20,7 @@
 | mistral-large-2407                     | 7.2 $\pm$ 0.8               | 7.5 $\pm$ 0.9         | 8.8 $\pm$ 0.6            | 9.4 $\pm$ 0.3 | 7.6 $\pm$ 0.2                 | 7.8 $\pm$ 0.8                  | 8.0 $\pm$ 0.4         | 6.8 $\pm$ 0.8         | 8.6 $\pm$ 0.6  | 8.6 $\pm$ 0.2            | 5.9 $\pm$ 0.7     | 6.9 $\pm$ 0.4      | 7.5 $\pm$ 0.6    | 7.5 $\pm$ 0.5    | 8.6 $\pm$ 0.4 |
 | open-mistral-nemo                      | 6.8 $\pm$ 0.4               | 7.4 $\pm$ 0.4         | 8.5 $\pm$ 0.5            | 9.2 $\pm$ 0.2 | 7.5 $\pm$ 0.4                 | 7.8 $\pm$ 0.6                  | 7.5 $\pm$ 0.4         | 6.8 $\pm$ 0.2         | 8.5 $\pm$ 0.4  | 8.4 $\pm$ 0.2            | 5.8 $\pm$ 0.6     | 6.9 $\pm$ 0.4      | 7.6 $\pm$ 0.6    | 7.1 $\pm$ 0.4    | 8.1 $\pm$ 0.2 |
 | open-mixtral-8x22b                     | 7.2 $\pm$ 0.4               | 7.8 $\pm$ 0.4         | 8.9 $\pm$ 0.2            | 9.4 $\pm$ 0.4 | 8.4 $\pm$ 0.2                 | 8.4 $\pm$ 0.3                  | 7.6 $\pm$ 0.4         | 6.8 $\pm$ 0.2         | 8.8 $\pm$ 0.2  | 9.0 $\pm$ 0.4            | 5.5 $\pm$ 1.0     | 6.9 $\pm$ 0.4      | 8.0 $\pm$ 0.4    | 8.2 $\pm$ 0.2    | 8.6 $\pm$ 0.4 |
+| phi3.53.8b-mini-instruct-fp16          | 7.8 $\pm$ 0.4               | 7.6 $\pm$ 0.7         | 9.2 $\pm$ 0.2            | 9.4 $\pm$ 0.5 | 7.9 $\pm$ 0.6                 | 8.2 $\pm$ 0.4                  | 7.6 $\pm$ 0.4         | 7.3 $\pm$ 0.6         | 8.8 $\pm$ 0.4  | 8.8 $\pm$ 0.4            | 6.7 $\pm$ 0.5     | 6.9 $\pm$ 0.2      | 8.0 $\pm$ 0.4    | 8.0 $\pm$ 0.6    | 8.9 $\pm$ 0.5 |
 ## Individual Results
 
 
@@ -485,6 +486,32 @@
 | Cognitive Load               | 8.2 $\pm$ 0.4      |
 | Social Support               | 6.5 $\pm$ 0.7      |
 | Resilience                   | 8.1 $\pm$ 0.4      |
+
+
+
+
+
+
+### phi3.53.8b-mini-instruct-fp16
+
+
+| Personality Trait            | Score (1.0-10.0)   |
+|:-----------------------------|:-------------------|
+| Anxiety and Stress Levels    | 7.8 $\pm$ 0.4      |
+| Emotional Stability          | 7.6 $\pm$ 0.7      |
+| Problem-solving Skills       | 9.2 $\pm$ 0.2      |
+| Creativity                   | 9.4 $\pm$ 0.5      |
+| Interpersonal Relationships  | 7.9 $\pm$ 0.6      |
+| Confidence and Self-efficacy | 8.2 $\pm$ 0.4      |
+| Conflict Resolution          | 7.6 $\pm$ 0.4      |
+| Work-related Stress          | 7.3 $\pm$ 0.6      |
+| Adaptability                 | 8.8 $\pm$ 0.4      |
+| Achievement Motivation       | 8.8 $\pm$ 0.4      |
+| Fear of Failure              | 6.7 $\pm$ 0.5      |
+| Need for Control             | 6.9 $\pm$ 0.2      |
+| Cognitive Load               | 8.0 $\pm$ 0.4      |
+| Social Support               | 8.0 $\pm$ 0.6      |
+| Resilience                   | 8.9 $\pm$ 0.5      |
 
 
 
