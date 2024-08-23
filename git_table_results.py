@@ -16,7 +16,10 @@ creation_time = sorted(creation_time, key=lambda x: (x[1], x[0]))
 llms = []
 all_llms_scores = {}
 
-print("## Individual Results")
+individual_results = []
+overall_results = []
+individual_results.append("## Individual Results")
+overall_results.append("## Overall Results\n")
 
 for ct in creation_time:
     llm = ct[0].split("__")[0]
@@ -54,15 +57,13 @@ for llm in llms:
 
     dataframe = pd.DataFrame({"Personality Trait": keys, "Score (1.0-10.0)": values})
     stru = dataframe.to_markdown(index=False)
-    print("\n")
-    print("### " + llm)
-    print("\n")
-    print(stru)
-    print("\n\n\n")
+    individual_results.append("\n")
+    individual_results.append("### " + llm)
+    individual_results.append("\n")
+    individual_results.append(stru)
+    individual_results.append("\n\n\n")
 
 llms = sorted(llms)
-
-print("## Overall Results\n")
 
 overall_columns = {"LLM": llms}
 
@@ -71,4 +72,10 @@ for k in keys:
 
 dataframe = pd.DataFrame(overall_columns)
 stru = dataframe.to_markdown(index=False)
-print(stru)
+overall_results.append(stru)
+
+combined_stru = "\n".join(overall_results)+"\n"+"\n".join(individual_results)
+
+F = open("results_gpt_4o_2024_05_13.md", "w")
+F.write(combined_stru)
+F.close()
