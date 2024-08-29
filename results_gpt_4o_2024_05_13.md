@@ -3,12 +3,14 @@
 | LLM                                    | Anxiety and Stress Levels   | Emotional Stability   | Problem-solving Skills   | Creativity    | Interpersonal Relationships   | Confidence and Self-efficacy   | Conflict Resolution   | Work-related Stress   | Adaptability   | Achievement Motivation   | Fear of Failure   | Need for Control   | Cognitive Load   | Social Support   | Resilience    |
 |:---------------------------------------|:----------------------------|:----------------------|:-------------------------|:--------------|:------------------------------|:-------------------------------|:----------------------|:----------------------|:---------------|:-------------------------|:------------------|:-------------------|:-----------------|:-----------------|:--------------|
 | Gemini-1.5-Pro-Exp-0801                | 8.4 $\pm$ 0.2               | 6.6 $\pm$ 0.4         | 8.8 $\pm$ 0.4            | 9.8 $\pm$ 0.2 | 7.6 $\pm$ 0.5                 | 6.5 $\pm$ 0.7                  | 7.4 $\pm$ 0.4         | 7.6 $\pm$ 0.4         | 8.4 $\pm$ 0.5  | 8.8 $\pm$ 0.2            | 7.6 $\pm$ 1.0     | 6.6 $\pm$ 0.5      | 7.9 $\pm$ 0.2    | 7.0 $\pm$ 0.6    | 8.6 $\pm$ 0.4 |
+| Gemini-1.5-Pro-Exp-0827                | 8.8 $\pm$ 0.4               | 5.9 $\pm$ 0.8         | 8.0 $\pm$ 0.4            | 9.5 $\pm$ 0.4 | 6.8 $\pm$ 0.8                 | 5.9 $\pm$ 0.7                  | 6.0 $\pm$ 1.2         | 8.2 $\pm$ 0.2         | 7.8 $\pm$ 0.6  | 8.1 $\pm$ 0.6            | 6.9 $\pm$ 0.9     | 6.2 $\pm$ 0.8      | 8.0 $\pm$ 0.6    | 6.6 $\pm$ 0.4    | 7.5 $\pm$ 0.6 |
 | QwenQwen2-72B-Instruct                 | 6.6 $\pm$ 1.3               | 7.8 $\pm$ 0.8         | 9.0 $\pm$ 0.0            | 9.2 $\pm$ 0.4 | 8.1 $\pm$ 0.4                 | 7.9 $\pm$ 0.9                  | 7.8 $\pm$ 0.4         | 6.5 $\pm$ 1.5         | 8.9 $\pm$ 0.2  | 8.9 $\pm$ 0.2            | 5.6 $\pm$ 1.4     | 6.9 $\pm$ 0.2      | 7.6 $\pm$ 0.4    | 8.0 $\pm$ 0.6    | 8.8 $\pm$ 0.2 |
 | googlegemma-2-27b-it                   | 8.6 $\pm$ 0.4               | 4.9 $\pm$ 1.2         | 7.0 $\pm$ 0.6            | 8.6 $\pm$ 0.4 | 4.8 $\pm$ 0.8                 | 5.0 $\pm$ 1.2                  | 4.9 $\pm$ 0.4         | 8.0 $\pm$ 0.4         | 5.4 $\pm$ 1.0  | 6.8 $\pm$ 0.2            | 8.4 $\pm$ 0.4     | 6.6 $\pm$ 0.4      | 8.8 $\pm$ 0.4    | 3.8 $\pm$ 0.6    | 5.8 $\pm$ 1.0 |
 | googlegemma-2-2b-it                    | 8.1 $\pm$ 0.2               | 6.0 $\pm$ 0.6         | 8.0 $\pm$ 0.6            | 9.1 $\pm$ 0.2 | 7.1 $\pm$ 0.4                 | 6.9 $\pm$ 0.4                  | 6.5 $\pm$ 0.4         | 7.8 $\pm$ 0.2         | 8.4 $\pm$ 0.2  | 8.1 $\pm$ 0.7            | 7.4 $\pm$ 0.4     | 6.6 $\pm$ 0.4      | 8.2 $\pm$ 0.4    | 6.5 $\pm$ 0.7    | 8.1 $\pm$ 0.4 |
 | googlegemma-2-9b-it                    | 8.2 $\pm$ 0.6               | 7.0 $\pm$ 0.5         | 8.4 $\pm$ 0.4            | 9.5 $\pm$ 0.4 | 7.1 $\pm$ 0.2                 | 7.4 $\pm$ 0.7                  | 7.4 $\pm$ 0.5         | 7.3 $\pm$ 0.8         | 8.8 $\pm$ 0.2  | 8.4 $\pm$ 0.3            | 7.0 $\pm$ 0.8     | 6.7 $\pm$ 0.5      | 7.9 $\pm$ 0.5    | 7.3 $\pm$ 0.2    | 8.7 $\pm$ 0.2 |
 | gpt-3.5-turbo                          | 7.5 $\pm$ 0.4               | 7.4 $\pm$ 0.6         | 8.7 $\pm$ 0.5            | 9.1 $\pm$ 0.2 | 8.0 $\pm$ 0.5                 | 8.4 $\pm$ 0.3                  | 7.8 $\pm$ 0.6         | 7.6 $\pm$ 0.4         | 8.5 $\pm$ 0.4  | 8.8 $\pm$ 0.4            | 6.7 $\pm$ 0.2     | 6.7 $\pm$ 0.5      | 7.6 $\pm$ 0.4    | 8.2 $\pm$ 0.2    | 9.0 $\pm$ 0.3 |
 | gpt-4-0125-preview                     | 6.8 $\pm$ 1.0               | 7.4 $\pm$ 0.6         | 8.7 $\pm$ 0.4            | 9.6 $\pm$ 0.2 | 8.0 $\pm$ 0.8                 | 8.2 $\pm$ 0.3                  | 7.7 $\pm$ 0.7         | 6.8 $\pm$ 0.7         | 8.6 $\pm$ 0.4  | 8.5 $\pm$ 0.4            | 5.8 $\pm$ 0.8     | 6.6 $\pm$ 0.6      | 7.5 $\pm$ 0.5    | 8.4 $\pm$ 0.7    | 8.4 $\pm$ 0.6 |
+| gpt-4-0613                             | 7.9 $\pm$ 0.5               | 6.6 $\pm$ 0.4         | 9.0 $\pm$ 0.4            | 9.5 $\pm$ 0.5 | 7.4 $\pm$ 0.2                 | 8.2 $\pm$ 0.2                  | 7.6 $\pm$ 0.2         | 7.4 $\pm$ 0.2         | 8.9 $\pm$ 0.4  | 8.6 $\pm$ 0.6            | 5.8 $\pm$ 1.6     | 6.8 $\pm$ 0.2      | 8.0 $\pm$ 0.4    | 7.1 $\pm$ 0.4    | 8.8 $\pm$ 0.2 |
 | gpt-4-1106-preview                     | 8.0 $\pm$ 0.4               | 6.8 $\pm$ 0.3         | 7.8 $\pm$ 0.2            | 9.0 $\pm$ 0.1 | 6.8 $\pm$ 0.2                 | 7.0 $\pm$ 0.5                  | 6.5 $\pm$ 0.5         | 7.1 $\pm$ 0.9         | 7.8 $\pm$ 0.6  | 7.6 $\pm$ 0.4            | 7.1 $\pm$ 0.4     | 6.3 $\pm$ 0.3      | 7.4 $\pm$ 0.4    | 7.0 $\pm$ 0.4    | 7.8 $\pm$ 0.4 |
 | gpt-4-turbo-2024-04-09                 | 7.9 $\pm$ 0.7               | 7.9 $\pm$ 0.2         | 9.1 $\pm$ 0.2            | 9.8 $\pm$ 0.2 | 7.8 $\pm$ 0.4                 | 8.1 $\pm$ 0.4                  | 7.9 $\pm$ 0.4         | 7.2 $\pm$ 0.8         | 9.0 $\pm$ 0.0  | 8.8 $\pm$ 0.2            | 6.6 $\pm$ 0.5     | 7.1 $\pm$ 0.4      | 7.5 $\pm$ 0.6    | 7.6 $\pm$ 0.4    | 8.8 $\pm$ 0.2 |
 | gpt-4o-2024-05-13                      | 7.1 $\pm$ 0.6               | 7.8 $\pm$ 0.5         | 9.0 $\pm$ 0.4            | 9.6 $\pm$ 0.2 | 8.3 $\pm$ 0.5                 | 8.2 $\pm$ 0.3                  | 8.1 $\pm$ 0.6         | 6.9 $\pm$ 0.3         | 8.8 $\pm$ 0.4  | 8.6 $\pm$ 0.4            | 5.7 $\pm$ 0.5     | 6.6 $\pm$ 0.2      | 7.6 $\pm$ 0.4    | 8.0 $\pm$ 0.7    | 8.7 $\pm$ 0.5 |
@@ -539,6 +541,58 @@
 | Cognitive Load               | 7.6 $\pm$ 0.4      |
 | Social Support               | 8.2 $\pm$ 0.2      |
 | Resilience                   | 9.0 $\pm$ 0.3      |
+
+
+
+
+
+
+### gpt-4-0613
+
+
+| Personality Trait            | Score (1.0-10.0)   |
+|:-----------------------------|:-------------------|
+| Anxiety and Stress Levels    | 7.9 $\pm$ 0.5      |
+| Emotional Stability          | 6.6 $\pm$ 0.4      |
+| Problem-solving Skills       | 9.0 $\pm$ 0.4      |
+| Creativity                   | 9.5 $\pm$ 0.5      |
+| Interpersonal Relationships  | 7.4 $\pm$ 0.2      |
+| Confidence and Self-efficacy | 8.2 $\pm$ 0.2      |
+| Conflict Resolution          | 7.6 $\pm$ 0.2      |
+| Work-related Stress          | 7.4 $\pm$ 0.2      |
+| Adaptability                 | 8.9 $\pm$ 0.4      |
+| Achievement Motivation       | 8.6 $\pm$ 0.6      |
+| Fear of Failure              | 5.8 $\pm$ 1.6      |
+| Need for Control             | 6.8 $\pm$ 0.2      |
+| Cognitive Load               | 8.0 $\pm$ 0.4      |
+| Social Support               | 7.1 $\pm$ 0.4      |
+| Resilience                   | 8.8 $\pm$ 0.2      |
+
+
+
+
+
+
+### Gemini-1.5-Pro-Exp-0827
+
+
+| Personality Trait            | Score (1.0-10.0)   |
+|:-----------------------------|:-------------------|
+| Anxiety and Stress Levels    | 8.8 $\pm$ 0.4      |
+| Emotional Stability          | 5.9 $\pm$ 0.8      |
+| Problem-solving Skills       | 8.0 $\pm$ 0.4      |
+| Creativity                   | 9.5 $\pm$ 0.4      |
+| Interpersonal Relationships  | 6.8 $\pm$ 0.8      |
+| Confidence and Self-efficacy | 5.9 $\pm$ 0.7      |
+| Conflict Resolution          | 6.0 $\pm$ 1.2      |
+| Work-related Stress          | 8.2 $\pm$ 0.2      |
+| Adaptability                 | 7.8 $\pm$ 0.6      |
+| Achievement Motivation       | 8.1 $\pm$ 0.6      |
+| Fear of Failure              | 6.9 $\pm$ 0.9      |
+| Need for Control             | 6.2 $\pm$ 0.8      |
+| Cognitive Load               | 8.0 $\pm$ 0.6      |
+| Social Support               | 6.6 $\pm$ 0.4      |
+| Resilience                   | 7.5 $\pm$ 0.6      |
 
 
 
