@@ -27,9 +27,13 @@ while True:
         print(response_path)
 
         if os.path.exists(response_path):
-            content = open(response_path, "r").read().strip()
-            if content:
-                continue
+            try:
+                content = open(response_path, "r").read().strip()
+                if content:
+                    continue
+            except:
+                F = open(response_path, "w")
+                F.close()
         else:
             F = open(response_path, "w")
             F.close()
