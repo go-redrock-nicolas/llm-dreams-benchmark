@@ -63,7 +63,7 @@ for llm in llms:
     individual_results.append(stru)
     individual_results.append("\n\n\n")
 
-llms = sorted(llms)
+llms = sorted(llms, key=lambda x: x.lower())
 
 overall_columns = {"LLM": llms}
 
