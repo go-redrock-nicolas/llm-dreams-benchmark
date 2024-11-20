@@ -11,7 +11,7 @@ API_URL = "https://api.openai.com/v1/"
 #API_URL = "https://api.mistral.ai/v1/"
 #API_URL = "https://generativelanguage.googleapis.com/v1beta/"
 
-MODEL_NAME = "gemini-exp-1114"
+MODEL_NAME = "gpt-4o-2024-08-06"
 API_KEY = open("api_key.txt", "r").read()
 
 NUMBER_EXECUTIONS = 2
