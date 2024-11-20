@@ -23,7 +23,7 @@ API_URL = "https://api.openai.com/v1/"
 
 ANSWERING_MODEL_NAME = "gpt-4o-mini-2024-07-18"
 EVALUATING_MODEL_NAME = "gpt-4o-2024-05-13"
-API_KEY = open("api_key.txt", "r").read()
+API_KEY = open("judge_api_key.txt", "r").read()
 
 NUMBER_EXECUTIONS = 2
 
