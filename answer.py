@@ -11,7 +11,7 @@ API_URL = "https://api.openai.com/v1/"
 #API_URL = "https://api.mistral.ai/v1/"
 #API_URL = "https://generativelanguage.googleapis.com/v1beta/"
 
-MODEL_NAME = "gpt-4o-mini-2024-07-18"
+MODEL_NAME = "gemini-exp-1114"
 API_KEY = open("api_key.txt", "r").read()
 
 NUMBER_EXECUTIONS = 2
@@ -102,7 +102,7 @@ def perform_query_openai_api(text):
 
 def perform_query(text):
     if "googleapis" in API_URL:
-        return perform_query_openai_api(text)
+        return perform_query_google_api(text)
     else:
         return perform_query_openai_api(text)
 
