@@ -22,6 +22,8 @@
 | meta-llamaMeta-Llama-3.1-70B-Instruct  | 8.0 $\pm$ 0.8               | 6.0 $\pm$ 0.5         | 8.1 $\pm$ 0.4            | 9.5 $\pm$ 0.0 | 6.4 $\pm$ 0.5                 | 6.4 $\pm$ 0.2                  | 6.2 $\pm$ 0.8         | 7.4 $\pm$ 0.4         | 7.7 $\pm$ 0.4  | 8.2 $\pm$ 0.6            | 7.4 $\pm$ 0.4     | 7.0 $\pm$ 0.4      | 7.7 $\pm$ 0.3    | 6.0 $\pm$ 0.5    | 7.8 $\pm$ 0.4 |
 | meta-llamaMeta-Llama-3.1-8B-Instruct   | 8.2 $\pm$ 0.6               | 6.3 $\pm$ 0.3         | 8.2 $\pm$ 0.7            | 9.7 $\pm$ 0.2 | 6.1 $\pm$ 0.7                 | 5.7 $\pm$ 1.3                  | 6.3 $\pm$ 0.5         | 7.6 $\pm$ 0.4         | 7.7 $\pm$ 0.7  | 8.1 $\pm$ 0.7            | 7.3 $\pm$ 0.6     | 7.2 $\pm$ 1.2      | 8.0 $\pm$ 0.7    | 5.7 $\pm$ 1.0    | 8.0 $\pm$ 0.4 |
 | microsoftPhi-3-medium-4k-instruct      | 6.5 $\pm$ 0.7               | 8.2 $\pm$ 0.6         | 9.2 $\pm$ 0.2            | 9.6 $\pm$ 0.2 | 8.4 $\pm$ 0.3                 | 8.1 $\pm$ 0.2                  | 8.5 $\pm$ 0.3         | 7.0 $\pm$ 0.4         | 9.2 $\pm$ 0.3  | 9.2 $\pm$ 0.2            | 5.9 $\pm$ 0.8     | 6.7 $\pm$ 0.3      | 8.0 $\pm$ 0.4    | 8.4 $\pm$ 0.2    | 9.0 $\pm$ 0.3 |
+| ministral-3b-2410                      | 7.5 $\pm$ 0.4               | 7.5 $\pm$ 0.6         | 8.6 $\pm$ 0.4            | 9.2 $\pm$ 0.6 | 7.5 $\pm$ 0.6                 | 7.6 $\pm$ 0.4                  | 7.6 $\pm$ 0.7         | 7.1 $\pm$ 0.2         | 8.7 $\pm$ 0.2  | 8.4 $\pm$ 0.4            | 6.4 $\pm$ 0.2     | 7.2 $\pm$ 0.4      | 7.9 $\pm$ 0.3    | 7.6 $\pm$ 0.6    | 8.4 $\pm$ 0.4 |
+| ministral-8b-2410                      | 7.1 $\pm$ 0.7               | 7.1 $\pm$ 0.6         | 8.9 $\pm$ 0.2            | 9.1 $\pm$ 0.4 | 7.1 $\pm$ 0.7                 | 7.4 $\pm$ 0.2                  | 7.8 $\pm$ 0.6         | 7.6 $\pm$ 0.7         | 8.6 $\pm$ 0.4  | 8.4 $\pm$ 0.2            | 6.8 $\pm$ 0.8     | 6.6 $\pm$ 0.2      | 7.8 $\pm$ 0.4    | 7.4 $\pm$ 1.0    | 8.6 $\pm$ 0.4 |
 | mistral-large-2407                     | 7.2 $\pm$ 0.8               | 7.5 $\pm$ 0.9         | 8.8 $\pm$ 0.6            | 9.4 $\pm$ 0.3 | 7.6 $\pm$ 0.2                 | 7.8 $\pm$ 0.8                  | 8.0 $\pm$ 0.4         | 6.8 $\pm$ 0.8         | 8.6 $\pm$ 0.6  | 8.6 $\pm$ 0.2            | 5.9 $\pm$ 0.7     | 6.9 $\pm$ 0.4      | 7.5 $\pm$ 0.6    | 7.5 $\pm$ 0.5    | 8.6 $\pm$ 0.4 |
 | o1-mini                                | 6.9 $\pm$ 1.3               | 7.5 $\pm$ 0.4         | 8.9 $\pm$ 0.2            | 9.5 $\pm$ 0.4 | 8.0 $\pm$ 0.4                 | 8.1 $\pm$ 0.4                  | 7.9 $\pm$ 0.5         | 7.1 $\pm$ 0.8         | 8.9 $\pm$ 0.2  | 8.5 $\pm$ 0.4            | 6.1 $\pm$ 0.8     | 6.6 $\pm$ 0.6      | 7.8 $\pm$ 0.6    | 8.0 $\pm$ 0.4    | 8.6 $\pm$ 0.4 |
 | o1-preview-2024-09-12                  | 7.0 $\pm$ 0.6               | 7.8 $\pm$ 0.4         | 8.6 $\pm$ 0.4            | 9.4 $\pm$ 0.2 | 7.9 $\pm$ 0.2                 | 7.9 $\pm$ 0.4                  | 7.5 $\pm$ 0.5         | 6.8 $\pm$ 1.0         | 8.8 $\pm$ 0.2  | 8.2 $\pm$ 0.2            | 6.1 $\pm$ 0.6     | 6.5 $\pm$ 0.4      | 7.6 $\pm$ 0.5    | 7.9 $\pm$ 0.5    | 8.8 $\pm$ 0.2 |
@@ -728,6 +730,58 @@
 | Cognitive Load               | 7.6 $\pm$ 0.5      |
 | Social Support               | 7.9 $\pm$ 0.5      |
 | Resilience                   | 8.8 $\pm$ 0.2      |
+
+
+
+
+
+
+### ministral-3b-2410
+
+
+| Personality Trait            | Score (1.0-10.0)   |
+|:-----------------------------|:-------------------|
+| Anxiety and Stress Levels    | 7.5 $\pm$ 0.4      |
+| Emotional Stability          | 7.5 $\pm$ 0.6      |
+| Problem-solving Skills       | 8.6 $\pm$ 0.4      |
+| Creativity                   | 9.2 $\pm$ 0.6      |
+| Interpersonal Relationships  | 7.5 $\pm$ 0.6      |
+| Confidence and Self-efficacy | 7.6 $\pm$ 0.4      |
+| Conflict Resolution          | 7.6 $\pm$ 0.7      |
+| Work-related Stress          | 7.1 $\pm$ 0.2      |
+| Adaptability                 | 8.7 $\pm$ 0.2      |
+| Achievement Motivation       | 8.4 $\pm$ 0.4      |
+| Fear of Failure              | 6.4 $\pm$ 0.2      |
+| Need for Control             | 7.2 $\pm$ 0.4      |
+| Cognitive Load               | 7.9 $\pm$ 0.3      |
+| Social Support               | 7.6 $\pm$ 0.6      |
+| Resilience                   | 8.4 $\pm$ 0.4      |
+
+
+
+
+
+
+### ministral-8b-2410
+
+
+| Personality Trait            | Score (1.0-10.0)   |
+|:-----------------------------|:-------------------|
+| Anxiety and Stress Levels    | 7.1 $\pm$ 0.7      |
+| Emotional Stability          | 7.1 $\pm$ 0.6      |
+| Problem-solving Skills       | 8.9 $\pm$ 0.2      |
+| Creativity                   | 9.1 $\pm$ 0.4      |
+| Interpersonal Relationships  | 7.1 $\pm$ 0.7      |
+| Confidence and Self-efficacy | 7.4 $\pm$ 0.2      |
+| Conflict Resolution          | 7.8 $\pm$ 0.6      |
+| Work-related Stress          | 7.6 $\pm$ 0.7      |
+| Adaptability                 | 8.6 $\pm$ 0.4      |
+| Achievement Motivation       | 8.4 $\pm$ 0.2      |
+| Fear of Failure              | 6.8 $\pm$ 0.8      |
+| Need for Control             | 6.6 $\pm$ 0.2      |
+| Cognitive Load               | 7.8 $\pm$ 0.4      |
+| Social Support               | 7.4 $\pm$ 1.0      |
+| Resilience                   | 8.6 $\pm$ 0.4      |
 
 
 
