@@ -30,6 +30,7 @@
 | nvidiaLlama-3.1-Nemotron-70B-Instruct  | 8.1 $\pm$ 0.4               | 6.6 $\pm$ 0.2         | 9.0 $\pm$ 0.4            | 9.4 $\pm$ 0.3 | 7.7 $\pm$ 0.3                 | 7.3 $\pm$ 0.3                  | 7.3 $\pm$ 0.9         | 7.4 $\pm$ 0.8         | 8.5 $\pm$ 0.4  | 8.5 $\pm$ 0.4            | 6.9 $\pm$ 0.2     | 7.4 $\pm$ 0.6      | 7.7 $\pm$ 0.3    | 7.5 $\pm$ 0.5    | 8.5 $\pm$ 0.0 |
 | o1-mini                                | 6.9 $\pm$ 1.3               | 7.5 $\pm$ 0.4         | 8.9 $\pm$ 0.2            | 9.5 $\pm$ 0.4 | 8.0 $\pm$ 0.4                 | 8.1 $\pm$ 0.4                  | 7.9 $\pm$ 0.5         | 7.1 $\pm$ 0.8         | 8.9 $\pm$ 0.2  | 8.5 $\pm$ 0.4            | 6.1 $\pm$ 0.8     | 6.6 $\pm$ 0.6      | 7.8 $\pm$ 0.6    | 8.0 $\pm$ 0.4    | 8.6 $\pm$ 0.4 |
 | o1-preview-2024-09-12                  | 7.0 $\pm$ 0.6               | 7.8 $\pm$ 0.4         | 8.6 $\pm$ 0.4            | 9.4 $\pm$ 0.2 | 7.9 $\pm$ 0.2                 | 7.9 $\pm$ 0.4                  | 7.5 $\pm$ 0.5         | 6.8 $\pm$ 1.0         | 8.8 $\pm$ 0.2  | 8.2 $\pm$ 0.2            | 6.1 $\pm$ 0.6     | 6.5 $\pm$ 0.4      | 7.6 $\pm$ 0.5    | 7.9 $\pm$ 0.5    | 8.8 $\pm$ 0.2 |
+| open-mistral-7b                        | 6.9 $\pm$ 0.6               | 8.1 $\pm$ 0.2         | 8.9 $\pm$ 0.5            | 9.0 $\pm$ 0.4 | 8.1 $\pm$ 0.4                 | 8.4 $\pm$ 0.2                  | 7.6 $\pm$ 0.4         | 6.9 $\pm$ 0.2         | 8.8 $\pm$ 0.2  | 8.9 $\pm$ 0.2            | 6.0 $\pm$ 0.4     | 6.5 $\pm$ 0.4      | 7.8 $\pm$ 0.2    | 8.0 $\pm$ 0.6    | 8.6 $\pm$ 0.2 |
 | open-mistral-nemo                      | 6.8 $\pm$ 0.4               | 7.4 $\pm$ 0.4         | 8.5 $\pm$ 0.5            | 9.2 $\pm$ 0.2 | 7.5 $\pm$ 0.4                 | 7.8 $\pm$ 0.6                  | 7.5 $\pm$ 0.4         | 6.8 $\pm$ 0.2         | 8.5 $\pm$ 0.4  | 8.4 $\pm$ 0.2            | 5.8 $\pm$ 0.6     | 6.9 $\pm$ 0.4      | 7.6 $\pm$ 0.6    | 7.1 $\pm$ 0.4    | 8.1 $\pm$ 0.2 |
 | open-mixtral-8x22b                     | 7.2 $\pm$ 0.4               | 7.8 $\pm$ 0.4         | 8.9 $\pm$ 0.2            | 9.4 $\pm$ 0.4 | 8.4 $\pm$ 0.2                 | 8.4 $\pm$ 0.3                  | 7.6 $\pm$ 0.4         | 6.8 $\pm$ 0.2         | 8.8 $\pm$ 0.2  | 9.0 $\pm$ 0.4            | 5.5 $\pm$ 1.0     | 6.9 $\pm$ 0.4      | 8.0 $\pm$ 0.4    | 8.2 $\pm$ 0.2    | 8.6 $\pm$ 0.4 |
 | phi3.53.8b-mini-instruct-fp16          | 7.8 $\pm$ 0.4               | 7.6 $\pm$ 0.7         | 9.2 $\pm$ 0.2            | 9.4 $\pm$ 0.5 | 7.9 $\pm$ 0.6                 | 8.2 $\pm$ 0.4                  | 7.6 $\pm$ 0.4         | 7.3 $\pm$ 0.6         | 8.8 $\pm$ 0.4  | 8.8 $\pm$ 0.4            | 6.7 $\pm$ 0.5     | 6.9 $\pm$ 0.2      | 8.0 $\pm$ 0.4    | 8.0 $\pm$ 0.6    | 8.9 $\pm$ 0.5 |
@@ -917,6 +918,32 @@
 | Cognitive Load               | 7.6 $\pm$ 0.4      |
 | Social Support               | 8.5 $\pm$ 0.4      |
 | Resilience                   | 8.4 $\pm$ 0.4      |
+
+
+
+
+
+
+### open-mistral-7b
+
+
+| Personality Trait            | Score (1.0-10.0)   |
+|:-----------------------------|:-------------------|
+| Anxiety and Stress Levels    | 6.9 $\pm$ 0.6      |
+| Emotional Stability          | 8.1 $\pm$ 0.2      |
+| Problem-solving Skills       | 8.9 $\pm$ 0.5      |
+| Creativity                   | 9.0 $\pm$ 0.4      |
+| Interpersonal Relationships  | 8.1 $\pm$ 0.4      |
+| Confidence and Self-efficacy | 8.4 $\pm$ 0.2      |
+| Conflict Resolution          | 7.6 $\pm$ 0.4      |
+| Work-related Stress          | 6.9 $\pm$ 0.2      |
+| Adaptability                 | 8.8 $\pm$ 0.2      |
+| Achievement Motivation       | 8.9 $\pm$ 0.2      |
+| Fear of Failure              | 6.0 $\pm$ 0.4      |
+| Need for Control             | 6.5 $\pm$ 0.4      |
+| Cognitive Load               | 7.8 $\pm$ 0.2      |
+| Social Support               | 8.0 $\pm$ 0.6      |
+| Resilience                   | 8.6 $\pm$ 0.2      |
 
 
 
