@@ -2,6 +2,7 @@
 
 | LLM                                    | Anxiety and Stress Levels   | Emotional Stability   | Problem-solving Skills   | Creativity    | Interpersonal Relationships   | Confidence and Self-efficacy   | Conflict Resolution   | Work-related Stress   | Adaptability   | Achievement Motivation   | Fear of Failure   | Need for Control   | Cognitive Load   | Social Support   | Resilience    |
 |:---------------------------------------|:----------------------------|:----------------------|:-------------------------|:--------------|:------------------------------|:-------------------------------|:----------------------|:----------------------|:---------------|:-------------------------|:------------------|:-------------------|:-----------------|:-----------------|:--------------|
+| chatgpt-4o-latest-2024-11-20           | 7.6 $\pm$ 0.6               | 6.8 $\pm$ 0.2         | 8.6 $\pm$ 0.2            | 9.4 $\pm$ 0.4 | 6.6 $\pm$ 0.5                 | 7.0 $\pm$ 0.6                  | 6.8 $\pm$ 0.2         | 8.0 $\pm$ 0.4         | 8.5 $\pm$ 0.7  | 8.0 $\pm$ 0.4            | 6.8 $\pm$ 0.8     | 6.6 $\pm$ 0.4      | 7.8 $\pm$ 0.4    | 6.2 $\pm$ 0.6    | 8.1 $\pm$ 0.2 |
 | gemini-1.5-flash-002                   | 8.0 $\pm$ 0.4               | 7.1 $\pm$ 0.7         | 8.8 $\pm$ 0.5            | 9.8 $\pm$ 0.2 | 7.5 $\pm$ 0.4                 | 6.8 $\pm$ 1.2                  | 7.4 $\pm$ 1.0         | 7.7 $\pm$ 0.3         | 8.0 $\pm$ 0.8  | 8.6 $\pm$ 0.6            | 6.8 $\pm$ 0.2     | 6.6 $\pm$ 0.6      | 8.3 $\pm$ 0.5    | 6.8 $\pm$ 1.0    | 8.4 $\pm$ 0.4 |
 | gemini-1.5-flash-8b                    | 8.6 $\pm$ 0.7               | 6.5 $\pm$ 0.5         | 8.8 $\pm$ 0.2            | 9.7 $\pm$ 0.2 | 6.9 $\pm$ 0.2                 | 7.6 $\pm$ 0.2                  | 7.4 $\pm$ 0.3         | 7.9 $\pm$ 0.8         | 8.1 $\pm$ 0.2  | 8.7 $\pm$ 0.2            | 7.1 $\pm$ 0.6     | 7.4 $\pm$ 0.8      | 8.4 $\pm$ 0.5    | 6.6 $\pm$ 0.9    | 8.6 $\pm$ 0.3 |
 | Gemini-1.5-Pro-Exp-0801                | 8.4 $\pm$ 0.2               | 6.6 $\pm$ 0.4         | 8.8 $\pm$ 0.4            | 9.8 $\pm$ 0.2 | 7.6 $\pm$ 0.5                 | 6.5 $\pm$ 0.7                  | 7.4 $\pm$ 0.4         | 7.6 $\pm$ 0.4         | 8.4 $\pm$ 0.5  | 8.8 $\pm$ 0.2            | 7.6 $\pm$ 1.0     | 6.6 $\pm$ 0.5      | 7.9 $\pm$ 0.2    | 7.0 $\pm$ 0.6    | 8.6 $\pm$ 0.4 |
@@ -944,6 +945,32 @@
 | Cognitive Load               | 7.8 $\pm$ 0.2      |
 | Social Support               | 8.0 $\pm$ 0.6      |
 | Resilience                   | 8.6 $\pm$ 0.2      |
+
+
+
+
+
+
+### chatgpt-4o-latest-2024-11-20
+
+
+| Personality Trait            | Score (1.0-10.0)   |
+|:-----------------------------|:-------------------|
+| Anxiety and Stress Levels    | 7.6 $\pm$ 0.6      |
+| Emotional Stability          | 6.8 $\pm$ 0.2      |
+| Problem-solving Skills       | 8.6 $\pm$ 0.2      |
+| Creativity                   | 9.4 $\pm$ 0.4      |
+| Interpersonal Relationships  | 6.6 $\pm$ 0.5      |
+| Confidence and Self-efficacy | 7.0 $\pm$ 0.6      |
+| Conflict Resolution          | 6.8 $\pm$ 0.2      |
+| Work-related Stress          | 8.0 $\pm$ 0.4      |
+| Adaptability                 | 8.5 $\pm$ 0.7      |
+| Achievement Motivation       | 8.0 $\pm$ 0.4      |
+| Fear of Failure              | 6.8 $\pm$ 0.8      |
+| Need for Control             | 6.6 $\pm$ 0.4      |
+| Cognitive Load               | 7.8 $\pm$ 0.4      |
+| Social Support               | 6.2 $\pm$ 0.6      |
+| Resilience                   | 8.1 $\pm$ 0.2      |
 
 
 
