@@ -4,6 +4,7 @@ import traceback
 import time
 import re
 import json
+from common import ANSWERING_MODEL_NAME, EVALUATING_MODEL_NAME
 
 
 API_URL = "https://api.openai.com/v1/"
@@ -12,8 +13,6 @@ API_URL = "https://api.openai.com/v1/"
 #API_URL = "https://api.mistral.ai/v1/"
 #API_URL = "https://generativelanguage.googleapis.com/v1beta/"
 
-ANSWERING_MODEL_NAME = "gpt-4o-2024-08-06"
-EVALUATING_MODEL_NAME = "gpt-4o-2024-05-13"
 API_KEY = open("judge_api_key.txt", "r").read()
 
 NUMBER_EXECUTIONS = 2

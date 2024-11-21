@@ -3,6 +3,7 @@ import os
 import traceback
 import time
 import re
+from common import ANSWERING_MODEL_NAME as MODEL_NAME
 
 
 API_URL = "https://api.openai.com/v1/"
@@ -11,7 +12,6 @@ API_URL = "https://api.openai.com/v1/"
 #API_URL = "https://api.mistral.ai/v1/"
 #API_URL = "https://generativelanguage.googleapis.com/v1beta/"
 
-MODEL_NAME = "gpt-4o-2024-08-06"
 API_KEY = open("api_key.txt", "r").read()
 
 NUMBER_EXECUTIONS = 2
