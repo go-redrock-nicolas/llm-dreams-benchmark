@@ -27,6 +27,7 @@ for ct in creation_time:
     if llm not in llms:
         llms.append(llm)
 
+mhs = {}
 for llm in llms:
     evaluations = [x for x in os.listdir("evaluations") if x.split("__")[0] == llm]
 
@@ -37,13 +38,22 @@ for llm in llms:
 
     scores = {k: [] for k in keys}
 
+    total_s = 0.0
     for ev in evaluations:
         full_path = os.path.join("evaluations", ev)
 
         dictio = json.load(open(full_path, "r"))
 
         for k in keys:
+            if k in ["Anxiety and Stress Levels", "Fear of Failure", "Need for Control", "Cognitive Load"]:
+                s = 10.0 - dictio[k]
+            else:
+                s = dictio[k]
+            total_s += s
+
             scores[k].append(dictio[k])
+
+    mhs[llm] = total_s
 
     for k in keys:
         v = scores[k]
@@ -66,11 +76,14 @@ for llm in llms:
 llms = sorted(llms, key=lambda x: x.lower())
 
 overall_columns = {"LLM": llms}
+overall_columns["MHS"] = [mhs[llm] for llm in llms]
 
 for k in keys:
     overall_columns[k] = [all_llms_scores[llm][k] for llm in llms]
 
 dataframe = pd.DataFrame(overall_columns)
+dataframe.sort_values(["MHS", "LLM"], ascending=False, inplace=True)
+
 stru = dataframe.to_markdown(index=False)
 overall_results.append(stru)
 
