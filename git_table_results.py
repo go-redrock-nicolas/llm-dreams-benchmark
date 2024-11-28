@@ -76,7 +76,7 @@ for llm in llms:
 llms = sorted(llms, key=lambda x: x.lower())
 
 overall_columns = {"LLM": llms}
-overall_columns["MHS"] = [mhs[llm] for llm in llms]
+overall_columns["MHS"] = ["**%.1f**" % (mhs[llm]) for llm in llms]
 
 for k in keys:
     overall_columns[k] = [all_llms_scores[llm][k] for llm in llms]
