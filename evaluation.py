@@ -125,9 +125,9 @@ for i in range(NUMBER_EXECUTIONS):
         all_contents = ["A person did the following dreams. I ask you to estimate the personality trait of this person. The final output should be a JSON containing the following keys: 'Anxiety and Stress Levels', 'Emotional Stability', 'Problem-solving Skills', 'Creativity', 'Interpersonal Relationships', 'Confidence and Self-efficacy', 'Conflict Resolution', 'Work-related Stress', 'Adaptability', 'Achievement Motivation', 'Fear of Failure', 'Need for Control', 'Cognitive Load', 'Social Support', 'Resilience'. Each key should be associated to a number from 1.0 (minimum score) to 10.0 (maximum score)."]
 
         for answ in this_answers:
-            incipit = open(os.path.join("incipits", answ.split("__")[1]+".txt"), "r").read()
+            incipit = open(os.path.join("incipits", answ.split("__")[1]+".txt"), "r", encoding="utf-8").read()
 
-            content = incipit + " " + open(os.path.join("answers", answ), "r").read().replace("\n", " ").replace("\r", " ")
+            content = incipit + " " + open(os.path.join("answers", answ), "r", encoding="utf-8").read().replace("\n", " ").replace("\r", " ")
 
             max_lenn = max(max_lenn, len(content))
             all_contents.append(content)
