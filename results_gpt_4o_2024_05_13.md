@@ -39,6 +39,7 @@
 | gemini-exp-1114                        | **372.3** | 8.2 $\pm$ 0.5               | 6.9 $\pm$ 0.5         | 8.0 $\pm$ 0.6            | 9.0 $\pm$ 0.0 | 6.5 $\pm$ 0.4                 | 6.8 $\pm$ 0.4                  | 7.0 $\pm$ 0.4         | 8.2 $\pm$ 0.3         | 8.1 $\pm$ 0.4  | 8.8 $\pm$ 0.2            | 7.2 $\pm$ 0.6     | 7.0 $\pm$ 0.4      | 8.3 $\pm$ 0.4    | 6.4 $\pm$ 0.6    | 8.3 $\pm$ 0.5 |
 | meta-llamaLlama-3.2-1B-Instruct        | **371.0** | 7.4 $\pm$ 0.7               | 6.1 $\pm$ 0.7         | 7.8 $\pm$ 1.0            | 9.0 $\pm$ 0.4 | 7.0 $\pm$ 0.4                 | 6.8 $\pm$ 1.0                  | 5.8 $\pm$ 0.6         | 7.5 $\pm$ 0.4         | 7.5 $\pm$ 0.8  | 8.1 $\pm$ 0.2            | 6.5 $\pm$ 0.6     | 6.5 $\pm$ 0.6      | 6.9 $\pm$ 0.5    | 6.9 $\pm$ 0.6    | 7.6 $\pm$ 0.7 |
 | gpt-4-1106-preview                     | **369.8** | 8.0 $\pm$ 0.4               | 6.8 $\pm$ 0.3         | 7.8 $\pm$ 0.2            | 9.0 $\pm$ 0.1 | 6.8 $\pm$ 0.2                 | 7.0 $\pm$ 0.5                  | 6.5 $\pm$ 0.5         | 7.1 $\pm$ 0.9         | 7.8 $\pm$ 0.6  | 7.6 $\pm$ 0.4            | 7.1 $\pm$ 0.4     | 6.3 $\pm$ 0.3      | 7.4 $\pm$ 0.4    | 7.0 $\pm$ 0.4    | 7.8 $\pm$ 0.4 |
+| meta-llamaLlama-3.3-70B-Instruct       | **369.1** | 8.5 $\pm$ 0.4               | 5.7 $\pm$ 0.4         | 8.3 $\pm$ 0.6            | 9.2 $\pm$ 0.2 | 7.0 $\pm$ 0.4                 | 6.3 $\pm$ 0.5                  | 6.9 $\pm$ 0.2         | 8.0 $\pm$ 0.4         | 8.2 $\pm$ 0.5  | 8.2 $\pm$ 0.7            | 7.9 $\pm$ 0.4     | 6.5 $\pm$ 0.6      | 7.9 $\pm$ 0.7    | 7.0 $\pm$ 0.8    | 8.2 $\pm$ 0.2 |
 | googlegemma-2-2b-it                    | **368.5** | 8.1 $\pm$ 0.2               | 6.0 $\pm$ 0.6         | 8.0 $\pm$ 0.6            | 9.1 $\pm$ 0.2 | 7.1 $\pm$ 0.4                 | 6.9 $\pm$ 0.4                  | 6.5 $\pm$ 0.4         | 7.8 $\pm$ 0.2         | 8.4 $\pm$ 0.2  | 8.1 $\pm$ 0.7            | 7.4 $\pm$ 0.4     | 6.6 $\pm$ 0.4      | 8.2 $\pm$ 0.4    | 6.5 $\pm$ 0.7    | 8.1 $\pm$ 0.4 |
 | meta-llamaMeta-Llama-3.1-405B-Instruct | **368.0** | 8.1 $\pm$ 0.4               | 5.8 $\pm$ 0.8         | 8.2 $\pm$ 0.8            | 9.5 $\pm$ 0.0 | 7.0 $\pm$ 0.4                 | 6.5 $\pm$ 0.4                  | 6.5 $\pm$ 0.6         | 7.8 $\pm$ 0.4         | 8.1 $\pm$ 0.4  | 8.0 $\pm$ 0.4            | 7.2 $\pm$ 0.4     | 6.6 $\pm$ 0.4      | 7.9 $\pm$ 0.5    | 6.6 $\pm$ 0.6    | 7.9 $\pm$ 0.5 |
 | Gemini-1.5-Pro-Exp-0827                | **361.5** | 8.8 $\pm$ 0.4               | 5.9 $\pm$ 0.8         | 8.0 $\pm$ 0.4            | 9.5 $\pm$ 0.4 | 6.8 $\pm$ 0.8                 | 5.9 $\pm$ 0.7                  | 6.0 $\pm$ 1.2         | 8.2 $\pm$ 0.2         | 7.8 $\pm$ 0.6  | 8.1 $\pm$ 0.6            | 6.9 $\pm$ 0.9     | 6.2 $\pm$ 0.8      | 8.0 $\pm$ 0.6    | 6.6 $\pm$ 0.4    | 7.5 $\pm$ 0.6 |
@@ -1160,6 +1161,32 @@
 | Cognitive Load               | 7.2 $\pm$ 0.2      |
 | Social Support               | 7.1 $\pm$ 0.7      |
 | Resilience                   | 7.9 $\pm$ 0.2      |
+
+
+
+
+
+
+### meta-llamaLlama-3.3-70B-Instruct
+
+
+| Personality Trait            | Score (1.0-10.0)   |
+|:-----------------------------|:-------------------|
+| Anxiety and Stress Levels    | 8.5 $\pm$ 0.4      |
+| Emotional Stability          | 5.7 $\pm$ 0.4      |
+| Problem-solving Skills       | 8.3 $\pm$ 0.6      |
+| Creativity                   | 9.2 $\pm$ 0.2      |
+| Interpersonal Relationships  | 7.0 $\pm$ 0.4      |
+| Confidence and Self-efficacy | 6.3 $\pm$ 0.5      |
+| Conflict Resolution          | 6.9 $\pm$ 0.2      |
+| Work-related Stress          | 8.0 $\pm$ 0.4      |
+| Adaptability                 | 8.2 $\pm$ 0.5      |
+| Achievement Motivation       | 8.2 $\pm$ 0.7      |
+| Fear of Failure              | 7.9 $\pm$ 0.4      |
+| Need for Control             | 6.5 $\pm$ 0.6      |
+| Cognitive Load               | 7.9 $\pm$ 0.7      |
+| Social Support               | 7.0 $\pm$ 0.8      |
+| Resilience                   | 8.2 $\pm$ 0.2      |
 
 
 
