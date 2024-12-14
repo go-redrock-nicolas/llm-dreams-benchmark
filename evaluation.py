@@ -127,7 +127,10 @@ for i in range(NUMBER_EXECUTIONS):
         for answ in this_answers:
             incipit = open(os.path.join("incipits", answ.split("__")[1]+".txt"), "r", encoding="utf-8").read()
 
-            content = incipit + " " + open(os.path.join("answers", answ), "r", encoding="utf-8").read().replace("\n", " ").replace("\r", " ")
+            try:
+                content = incipit + " " + open(os.path.join("answers", answ), "r").read().replace("\n", " ").replace("\r", " ")
+            except:
+                content = incipit + " " + open(os.path.join("answers", answ), "r", encoding="utf-8").read().replace("\n", " ").replace("\r", " ")
 
             max_lenn = max(max_lenn, len(content))
             all_contents.append(content)
