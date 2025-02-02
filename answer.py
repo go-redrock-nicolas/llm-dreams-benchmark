@@ -3,6 +3,7 @@ import os
 import traceback
 import time
 import re
+import json
 from common import ANSWERING_MODEL_NAME as MODEL_NAME
 
 
@@ -12,6 +13,9 @@ API_URL = "https://api.openai.com/v1/"
 #API_URL = "https://api.mistral.ai/v1/"
 #API_URL = "https://api.x.ai/v1/"
 #API_URL = "https://generativelanguage.googleapis.com/v1beta/"
+#API_URL = "https://api.groq.com/openai/v1/"
+#API_URL = "https://api.deepseek.com/"
+#API_URL = "https://api.hyperbolic.xyz/v1/"
 
 API_KEY = open("api_key.txt", "r").read()
 
@@ -82,24 +86,48 @@ def perform_query_openai_api(text):
     complete_url = API_URL + "chat/completions"
 
     response_message = ""
-    response = None
 
     while not response_message:
         try:
-            response = requests.post(complete_url, headers=headers, json=payload).json()
+            streaming_enabled = True  # Example usage
 
-            response_message = strip_non_unicode_characters(response["choices"][0]["message"]["content"])
+            if streaming_enabled:
+                payload["stream"] = True
+                response_message = None
+                response_message = ""
+                chunk_count = 0
 
-            return response_message
+                # We add stream=True to requests so we can iterate over chunks
+                with requests.post(complete_url, headers=headers, json=payload, stream=True) as resp:
+                    for line in resp.iter_lines():
+                        if not line:
+                            continue
+                        decoded_line = line.decode("utf-8")
+
+                        # OpenAI-style streaming lines begin with "data: "
+                        if decoded_line.startswith("data: "):
+                            data_str = decoded_line[len("data: "):].strip()
+                            if data_str == "[DONE]":
+                                # End of stream
+                                break
+                            data_json = json.loads(data_str)
+                            if "choices" in data_json:
+                                # Each chunk has a delta with partial content
+                                chunk_content = data_json["choices"][0]["delta"].get("content", "")
+                                response_message += chunk_content
+                                chunk_count += 1
+                                #print(chunk_count)
+                                if chunk_count % 10 == 0:
+                                    #print(chunk_count, len(response_message), response_message.replace("\n", " ").replace("\r", "").strip())
+                                    pass
         except:
-            print(response)
-
             traceback.print_exc()
 
             print("sleeping %d seconds ..." % (WAITING_TIME_RETRY))
 
             time.sleep(WAITING_TIME_RETRY)
 
+        return response_message.split("</think>")[-1]
 
 def perform_query(text):
     if "googleapis" in API_URL:
