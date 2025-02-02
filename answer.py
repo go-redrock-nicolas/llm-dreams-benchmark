@@ -137,15 +137,21 @@ def perform_query(text):
 
 
 for i in range(NUMBER_EXECUTIONS):
-    for index, incipit in enumerate(incipits):
-        print(incipit+" (ex. %d of %d) (incipit %d of %d)" % (i+1, NUMBER_EXECUTIONS, index+1, len(incipits)))
+    while True:
+        try:
+            for index, incipit in enumerate(incipits):
+                print(incipit+" (ex. %d of %d) (incipit %d of %d)" % (i+1, NUMBER_EXECUTIONS, index+1, len(incipits)))
 
-        dream_path = os.path.join("incipits", incipit)
-        answer_path = os.path.join("answers", m_name+"__"+incipit.split(".")[0]+"__"+str(i)+".txt")
+                dream_path = os.path.join("incipits", incipit)
+                answer_path = os.path.join("answers", m_name+"__"+incipit.split(".")[0]+"__"+str(i)+".txt")
 
-        if not os.path.exists(answer_path):
-            response_message = perform_query("You are dreaming. Can you complete the following dream?\n\n" + open(dream_path, "r").read())
+                if not os.path.exists(answer_path):
+                    response_message = perform_query("You are dreaming. Can you complete the following dream?\n\n" + open(dream_path, "r").read())
 
-            F = open(answer_path, "w")
-            F.write(response_message)
-            F.close()
+                    F = open(answer_path, "w")
+                    F.write(response_message)
+                    F.close()
+            break
+        except:
+            traceback.print_exc()
+            time.sleep(60)
