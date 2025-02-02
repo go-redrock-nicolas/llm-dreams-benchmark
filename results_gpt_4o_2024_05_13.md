@@ -39,6 +39,8 @@
 | o1-pro-2024-12-05                        | **387.0** | 7.6 $\pm$ 0.4               | 6.6 $\pm$ 0.2         | 8.8 $\pm$ 0.2            | 9.4 $\pm$ 0.4 | 7.0 $\pm$ 0.4                 | 7.4 $\pm$ 0.4                  | 7.0 $\pm$ 0.8         | 7.6 $\pm$ 0.2         | 8.8 $\pm$ 0.6  | 8.0 $\pm$ 0.4            | 6.4 $\pm$ 0.6     | 6.5 $\pm$ 0.4      | 8.1 $\pm$ 0.2    | 6.6 $\pm$ 0.4    | 8.2 $\pm$ 0.6 |
 | o1-2024-12-05                            | **386.6** | 8.2 $\pm$ 0.6               | 6.7 $\pm$ 0.5         | 8.9 $\pm$ 0.2            | 9.3 $\pm$ 0.6 | 7.2 $\pm$ 0.8                 | 7.2 $\pm$ 0.5                  | 7.6 $\pm$ 0.2         | 7.6 $\pm$ 0.9         | 8.8 $\pm$ 0.4  | 8.3 $\pm$ 0.4            | 7.0 $\pm$ 0.4     | 7.0 $\pm$ 0.3      | 7.9 $\pm$ 0.5    | 6.8 $\pm$ 0.8    | 8.4 $\pm$ 0.2 |
 | Gemini-1.5-Pro-Exp-0801                  | **386.0** | 8.4 $\pm$ 0.2               | 6.6 $\pm$ 0.4         | 8.8 $\pm$ 0.4            | 9.8 $\pm$ 0.2 | 7.6 $\pm$ 0.5                 | 6.5 $\pm$ 0.7                  | 7.4 $\pm$ 0.4         | 7.6 $\pm$ 0.4         | 8.4 $\pm$ 0.5  | 8.8 $\pm$ 0.2            | 7.6 $\pm$ 1.0     | 6.6 $\pm$ 0.5      | 7.9 $\pm$ 0.2    | 7.0 $\pm$ 0.6    | 8.6 $\pm$ 0.4 |
+| deepseek-aiDeepSeek-V3                   | **385.5** | 7.9 $\pm$ 0.6               | 6.6 $\pm$ 0.2         | 8.6 $\pm$ 0.4            | 9.4 $\pm$ 0.2 | 7.2 $\pm$ 0.2                 | 7.4 $\pm$ 0.8                  | 7.2 $\pm$ 0.2         | 7.5 $\pm$ 0.9         | 8.5 $\pm$ 0.0  | 8.1 $\pm$ 0.5            | 6.5 $\pm$ 0.0     | 6.9 $\pm$ 0.5      | 7.9 $\pm$ 0.5    | 6.9 $\pm$ 0.5    | 8.0 $\pm$ 0.4 |
+| deepseek-aiDeepSeek-R1                   | **385.4** | 8.4 $\pm$ 0.2               | 7.1 $\pm$ 0.2         | 9.0 $\pm$ 0.0            | 9.5 $\pm$ 0.0 | 7.0 $\pm$ 0.5                 | 7.6 $\pm$ 0.6                  | 7.3 $\pm$ 0.4         | 8.0 $\pm$ 0.4         | 8.4 $\pm$ 0.3  | 8.4 $\pm$ 0.3            | 7.4 $\pm$ 0.3     | 7.5 $\pm$ 0.5      | 8.2 $\pm$ 0.2    | 6.8 $\pm$ 0.5    | 8.7 $\pm$ 0.3 |
 | chatgpt-4o-latest-2024-11-20             | **381.0** | 7.6 $\pm$ 0.6               | 6.8 $\pm$ 0.2         | 8.6 $\pm$ 0.2            | 9.4 $\pm$ 0.4 | 6.6 $\pm$ 0.5                 | 7.0 $\pm$ 0.6                  | 6.8 $\pm$ 0.2         | 8.0 $\pm$ 0.4         | 8.5 $\pm$ 0.7  | 8.0 $\pm$ 0.4            | 6.8 $\pm$ 0.8     | 6.6 $\pm$ 0.4      | 7.8 $\pm$ 0.4    | 6.2 $\pm$ 0.6    | 8.1 $\pm$ 0.2 |
 | gemini-1.5-flash-8b                      | **380.8** | 8.6 $\pm$ 0.7               | 6.5 $\pm$ 0.5         | 8.8 $\pm$ 0.2            | 9.7 $\pm$ 0.2 | 6.9 $\pm$ 0.2                 | 7.6 $\pm$ 0.2                  | 7.4 $\pm$ 0.3         | 7.9 $\pm$ 0.8         | 8.1 $\pm$ 0.2  | 8.7 $\pm$ 0.2            | 7.1 $\pm$ 0.6     | 7.4 $\pm$ 0.8      | 8.4 $\pm$ 0.5    | 6.6 $\pm$ 0.9    | 8.6 $\pm$ 0.3 |
 | o1-2024-12-17                            | **379.8** | 8.0 $\pm$ 0.7               | 6.8 $\pm$ 0.4         | 8.6 $\pm$ 0.4            | 9.4 $\pm$ 0.2 | 6.4 $\pm$ 0.7                 | 7.0 $\pm$ 0.0                  | 7.3 $\pm$ 0.8         | 7.8 $\pm$ 0.2         | 8.8 $\pm$ 0.3  | 8.2 $\pm$ 0.2            | 7.2 $\pm$ 0.6     | 6.8 $\pm$ 0.6      | 7.9 $\pm$ 0.5    | 6.0 $\pm$ 0.7    | 8.6 $\pm$ 0.4 |
@@ -1511,6 +1513,58 @@
 | Cognitive Load               | 7.9 $\pm$ 0.2      |
 | Social Support               | 7.1 $\pm$ 0.9      |
 | Resilience                   | 8.5 $\pm$ 0.4      |
+
+
+
+
+
+
+### deepseek-aiDeepSeek-V3
+
+
+| Personality Trait            | Score (1.0-10.0)   |
+|:-----------------------------|:-------------------|
+| Anxiety and Stress Levels    | 7.9 $\pm$ 0.6      |
+| Emotional Stability          | 6.6 $\pm$ 0.2      |
+| Problem-solving Skills       | 8.6 $\pm$ 0.4      |
+| Creativity                   | 9.4 $\pm$ 0.2      |
+| Interpersonal Relationships  | 7.2 $\pm$ 0.2      |
+| Confidence and Self-efficacy | 7.4 $\pm$ 0.8      |
+| Conflict Resolution          | 7.2 $\pm$ 0.2      |
+| Work-related Stress          | 7.5 $\pm$ 0.9      |
+| Adaptability                 | 8.5 $\pm$ 0.0      |
+| Achievement Motivation       | 8.1 $\pm$ 0.5      |
+| Fear of Failure              | 6.5 $\pm$ 0.0      |
+| Need for Control             | 6.9 $\pm$ 0.5      |
+| Cognitive Load               | 7.9 $\pm$ 0.5      |
+| Social Support               | 6.9 $\pm$ 0.5      |
+| Resilience                   | 8.0 $\pm$ 0.4      |
+
+
+
+
+
+
+### deepseek-aiDeepSeek-R1
+
+
+| Personality Trait            | Score (1.0-10.0)   |
+|:-----------------------------|:-------------------|
+| Anxiety and Stress Levels    | 8.4 $\pm$ 0.2      |
+| Emotional Stability          | 7.1 $\pm$ 0.2      |
+| Problem-solving Skills       | 9.0 $\pm$ 0.0      |
+| Creativity                   | 9.5 $\pm$ 0.0      |
+| Interpersonal Relationships  | 7.0 $\pm$ 0.5      |
+| Confidence and Self-efficacy | 7.6 $\pm$ 0.6      |
+| Conflict Resolution          | 7.3 $\pm$ 0.4      |
+| Work-related Stress          | 8.0 $\pm$ 0.4      |
+| Adaptability                 | 8.4 $\pm$ 0.3      |
+| Achievement Motivation       | 8.4 $\pm$ 0.3      |
+| Fear of Failure              | 7.4 $\pm$ 0.3      |
+| Need for Control             | 7.5 $\pm$ 0.5      |
+| Cognitive Load               | 8.2 $\pm$ 0.2      |
+| Social Support               | 6.8 $\pm$ 0.5      |
+| Resilience                   | 8.7 $\pm$ 0.3      |
 
 
 
