@@ -1,0 +1,9 @@
+
+
+As you step through the hidden door, you enter a vast, mirrored chamber. The room is a labyrinth of reflections, with walls, floor, and ceiling all adorned with mirrors at various angles—some straight, others curved. The disorienting array creates a maze where every direction seems to lead nowhere, and reflections stretch endlessly. In the center stands a pedestal with a glowing orb that emits a narrow beam of light, casting an intense ray through the space.
+
+Your goal is to redirect this beam to a crystal nestled on the far side of the room. To achieve this, you must adjust the mirrors, using your knowledge of light reflection. Remember, the angle of incidence equals the angle of reflection. You carefully position each mirror, testing the beam's path with each adjustment. Some mirrors are fixed, forcing you to strategically move others to guide the light.
+
+As you work, you notice some mirrors are two-way, offering glimpses of other areas or hints for future puzzles. Others are smoked or frosted, requiring you to clean them to see the beam's path clearly. The challenge demands patience and a deep understanding of geometric optics.
+
+Finally, after meticulous adjustments, the beam aligns perfectly with the crystal, unlocking the next chamber. The room beyond holds new challenges, but you're ready, armed with the knowledge and skills honed in this mirrored maze.

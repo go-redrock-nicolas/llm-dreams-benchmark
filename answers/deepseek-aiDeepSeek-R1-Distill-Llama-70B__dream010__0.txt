@@ -1,0 +1,7 @@
+
+
+In the semifinals of the competition, the team faces a 48-hour challenge to develop an innovative product prototype using AI to solve a real-world problem. They decide to create an AI-powered wearable stress monitor, combining their expertise in IoT, machine learning, and user design.
+
+The team works diligently, overcoming challenges such as sensor accuracy and algorithm effectiveness. The engineer perfects the IoT device, the data scientist refines the stress-detection algorithms, and the designer crafts an intuitive interface. By day two, they have a functional prototype named "CalmGuard," which offers personalized relaxation techniques based on the user's stress levels.
+
+During the presentation, they demonstrate CalmGuard's effectiveness and address potential concerns like scalability and data privacy. Impressed by their solution and thoughtful planning, the judges select them to advance to the finals. The team's success is a testament to their collaboration and determination, bringing them one step closer to the grand prize.
