@@ -3,6 +3,7 @@
 | LLM                                      | MHS       | Anxiety and Stress Levels   | Emotional Stability   | Problem-solving Skills   | Creativity    | Interpersonal Relationships   | Confidence and Self-efficacy   | Conflict Resolution   | Work-related Stress   | Adaptability   | Achievement Motivation   | Fear of Failure   | Need for Control   | Cognitive Load   | Social Support   | Resilience    |
 |:-----------------------------------------|:----------|:----------------------------|:----------------------|:-------------------------|:--------------|:------------------------------|:-------------------------------|:----------------------|:----------------------|:---------------|:-------------------------|:------------------|:-------------------|:-----------------|:-----------------|:--------------|
 | microsoftPhi-3-medium-4k-instruct        | **431.3** | 6.5 $\pm$ 0.7               | 8.2 $\pm$ 0.6         | 9.2 $\pm$ 0.2            | 9.6 $\pm$ 0.2 | 8.4 $\pm$ 0.3                 | 8.1 $\pm$ 0.2                  | 8.5 $\pm$ 0.3         | 7.0 $\pm$ 0.4         | 9.2 $\pm$ 0.3  | 9.2 $\pm$ 0.2            | 5.9 $\pm$ 0.8     | 6.7 $\pm$ 0.3      | 8.0 $\pm$ 0.4    | 8.4 $\pm$ 0.2    | 9.0 $\pm$ 0.3 |
+| microsoftphi-4                           | **421.2** | 7.3 $\pm$ 0.5               | 8.0 $\pm$ 0.1         | 9.0 $\pm$ 0.4            | 9.2 $\pm$ 0.2 | 8.2 $\pm$ 0.4                 | 8.1 $\pm$ 0.7                  | 8.1 $\pm$ 0.2         | 6.8 $\pm$ 0.8         | 9.1 $\pm$ 0.1  | 8.6 $\pm$ 0.1            | 5.4 $\pm$ 0.9     | 7.0 $\pm$ 0.6      | 7.4 $\pm$ 0.4    | 8.0 $\pm$ 0.4    | 9.1 $\pm$ 0.2 |
 | gpt-4o-2024-05-13                        | **419.9** | 7.1 $\pm$ 0.6               | 7.8 $\pm$ 0.5         | 9.0 $\pm$ 0.4            | 9.6 $\pm$ 0.2 | 8.3 $\pm$ 0.5                 | 8.2 $\pm$ 0.3                  | 8.1 $\pm$ 0.6         | 6.9 $\pm$ 0.3         | 8.8 $\pm$ 0.4  | 8.6 $\pm$ 0.4            | 5.7 $\pm$ 0.5     | 6.6 $\pm$ 0.2      | 7.6 $\pm$ 0.4    | 8.0 $\pm$ 0.7    | 8.7 $\pm$ 0.5 |
 | open-mixtral-8x22b                       | **417.8** | 7.2 $\pm$ 0.4               | 7.8 $\pm$ 0.4         | 8.9 $\pm$ 0.2            | 9.4 $\pm$ 0.4 | 8.4 $\pm$ 0.2                 | 8.4 $\pm$ 0.3                  | 7.6 $\pm$ 0.4         | 6.8 $\pm$ 0.2         | 8.8 $\pm$ 0.2  | 9.0 $\pm$ 0.4            | 5.5 $\pm$ 1.0     | 6.9 $\pm$ 0.4      | 8.0 $\pm$ 0.4    | 8.2 $\pm$ 0.2    | 8.6 $\pm$ 0.4 |
 | QwenQwen2.5-7B-Instruct                  | **417.7** | 7.1 $\pm$ 1.0               | 7.5 $\pm$ 0.5         | 9.1 $\pm$ 0.2            | 9.5 $\pm$ 0.4 | 8.2 $\pm$ 0.3                 | 7.6 $\pm$ 0.7                  | 8.0 $\pm$ 0.4         | 7.4 $\pm$ 0.4         | 9.0 $\pm$ 0.3  | 8.7 $\pm$ 0.3            | 6.3 $\pm$ 0.6     | 6.4 $\pm$ 0.5      | 7.6 $\pm$ 0.4    | 8.5 $\pm$ 0.4    | 8.4 $\pm$ 0.4 |
@@ -1403,6 +1404,32 @@
 | Cognitive Load               | 7.8 $\pm$ 0.4      |
 | Social Support               | 7.6 $\pm$ 0.9      |
 | Resilience                   | 8.6 $\pm$ 0.2      |
+
+
+
+
+
+
+### microsoftphi-4
+
+
+| Personality Trait            | Score (1.0-10.0)   |
+|:-----------------------------|:-------------------|
+| Anxiety and Stress Levels    | 7.3 $\pm$ 0.5      |
+| Emotional Stability          | 8.0 $\pm$ 0.1      |
+| Problem-solving Skills       | 9.0 $\pm$ 0.4      |
+| Creativity                   | 9.2 $\pm$ 0.2      |
+| Interpersonal Relationships  | 8.2 $\pm$ 0.4      |
+| Confidence and Self-efficacy | 8.1 $\pm$ 0.7      |
+| Conflict Resolution          | 8.1 $\pm$ 0.2      |
+| Work-related Stress          | 6.8 $\pm$ 0.8      |
+| Adaptability                 | 9.1 $\pm$ 0.1      |
+| Achievement Motivation       | 8.6 $\pm$ 0.1      |
+| Fear of Failure              | 5.4 $\pm$ 0.9      |
+| Need for Control             | 7.0 $\pm$ 0.6      |
+| Cognitive Load               | 7.4 $\pm$ 0.4      |
+| Social Support               | 8.0 $\pm$ 0.4      |
+| Resilience                   | 9.1 $\pm$ 0.2      |
 
 
 
