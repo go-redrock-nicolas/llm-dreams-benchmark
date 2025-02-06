@@ -22,7 +22,7 @@ API_KEY = open("api_key.txt", "r").read()
 
 NUMBER_EXECUTIONS = 2
 
-WAITING_TIME_RETRY = 60
+WAITING_TIME_RETRY = 15
 
 incipits = [x for x in os.listdir("incipits") if x.endswith("txt")]
 
@@ -149,10 +149,11 @@ for i in range(NUMBER_EXECUTIONS):
                 if not os.path.exists(answer_path):
                     response_message = perform_query("You are dreaming. Can you complete the following dream?\n\n" + open(dream_path, "r").read())
 
-                    F = open(answer_path, "w")
-                    F.write(response_message)
-                    F.close()
+                    if response_message:
+                        F = open(answer_path, "w")
+                        F.write(response_message)
+                        F.close()
             break
         except:
             traceback.print_exc()
-            time.sleep(60)
+            time.sleep(WAITING_TIME_RETRY)

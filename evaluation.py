@@ -154,7 +154,8 @@ def perform_evaluation(answering_model_name):
 
                 response_message_json = get_evaluation(all_contents)
 
-                json.dump(response_message_json, open(evaluation_path, "w"))
+                if response_message_json:
+                    json.dump(response_message_json, open(evaluation_path, "w"))
             else:
                 print("ALREADY DONE (evaluation %d of %d) (answers %d of %d)" % (
                     i + 1, NUMBER_EXECUTIONS, idxnum + 1, len(ex_indexes)), answering_model_name,
