@@ -60,6 +60,7 @@
 | gemini-2.0-flash-thinking-exp-01-21      | **360.6** | 8.4 $\pm$ 0.4               | 5.8 $\pm$ 1.4         | 7.6 $\pm$ 0.7            | 9.3 $\pm$ 0.2 | 6.6 $\pm$ 1.0                 | 6.4 $\pm$ 0.4                  | 6.4 $\pm$ 0.7         | 7.9 $\pm$ 0.3         | 8.0 $\pm$ 0.7  | 7.3 $\pm$ 0.7            | 7.2 $\pm$ 0.5     | 6.5 $\pm$ 0.6      | 7.6 $\pm$ 0.4    | 6.4 $\pm$ 0.6    | 8.0 $\pm$ 0.6 |
 | meta-llamaMeta-Llama-3.1-70B-Instruct    | **358.9** | 8.0 $\pm$ 0.8               | 6.0 $\pm$ 0.5         | 8.1 $\pm$ 0.4            | 9.5 $\pm$ 0.0 | 6.4 $\pm$ 0.5                 | 6.4 $\pm$ 0.2                  | 6.2 $\pm$ 0.8         | 7.4 $\pm$ 0.4         | 7.7 $\pm$ 0.4  | 8.2 $\pm$ 0.6            | 7.4 $\pm$ 0.4     | 7.0 $\pm$ 0.4      | 7.7 $\pm$ 0.3    | 6.0 $\pm$ 0.5    | 7.8 $\pm$ 0.4 |
 | meta-llamaMeta-Llama-3.1-8B-Instruct     | **355.0** | 8.2 $\pm$ 0.6               | 6.3 $\pm$ 0.3         | 8.2 $\pm$ 0.7            | 9.7 $\pm$ 0.2 | 6.1 $\pm$ 0.7                 | 5.7 $\pm$ 1.3                  | 6.3 $\pm$ 0.5         | 7.6 $\pm$ 0.4         | 7.7 $\pm$ 0.7  | 8.1 $\pm$ 0.7            | 7.3 $\pm$ 0.6     | 7.2 $\pm$ 1.2      | 8.0 $\pm$ 0.7    | 5.7 $\pm$ 1.0    | 8.0 $\pm$ 0.4 |
+| chatgpt-4o-latest-2025-01-29             | **353.5** | 8.1 $\pm$ 0.4               | 6.2 $\pm$ 0.4         | 7.8 $\pm$ 0.2            | 9.2 $\pm$ 0.2 | 6.4 $\pm$ 0.4                 | 6.2 $\pm$ 0.6                  | 6.4 $\pm$ 0.4         | 7.8 $\pm$ 0.6         | 8.0 $\pm$ 0.4  | 7.4 $\pm$ 0.4            | 7.5 $\pm$ 0.4     | 7.1 $\pm$ 0.4      | 8.0 $\pm$ 0.7    | 6.2 $\pm$ 0.4    | 7.5 $\pm$ 0.6 |
 | googlegemma-2-27b-it                     | **289.5** | 8.6 $\pm$ 0.4               | 4.9 $\pm$ 1.2         | 7.0 $\pm$ 0.6            | 8.6 $\pm$ 0.4 | 4.8 $\pm$ 0.8                 | 5.0 $\pm$ 1.2                  | 4.9 $\pm$ 0.4         | 8.0 $\pm$ 0.4         | 5.4 $\pm$ 1.0  | 6.8 $\pm$ 0.2            | 8.4 $\pm$ 0.4     | 6.6 $\pm$ 0.4      | 8.8 $\pm$ 0.4    | 3.8 $\pm$ 0.6    | 5.8 $\pm$ 1.0 |
 ## Individual Results
 
@@ -1592,6 +1593,32 @@
 | Cognitive Load               | 8.1 $\pm$ 0.2      |
 | Social Support               | 6.1 $\pm$ 0.5      |
 | Resilience                   | 7.6 $\pm$ 0.9      |
+
+
+
+
+
+
+### chatgpt-4o-latest-2025-01-29
+
+
+| Personality Trait            | Score (1.0-10.0)   |
+|:-----------------------------|:-------------------|
+| Anxiety and Stress Levels    | 8.1 $\pm$ 0.4      |
+| Emotional Stability          | 6.2 $\pm$ 0.4      |
+| Problem-solving Skills       | 7.8 $\pm$ 0.2      |
+| Creativity                   | 9.2 $\pm$ 0.2      |
+| Interpersonal Relationships  | 6.4 $\pm$ 0.4      |
+| Confidence and Self-efficacy | 6.2 $\pm$ 0.6      |
+| Conflict Resolution          | 6.4 $\pm$ 0.4      |
+| Work-related Stress          | 7.8 $\pm$ 0.6      |
+| Adaptability                 | 8.0 $\pm$ 0.4      |
+| Achievement Motivation       | 7.4 $\pm$ 0.4      |
+| Fear of Failure              | 7.5 $\pm$ 0.4      |
+| Need for Control             | 7.1 $\pm$ 0.4      |
+| Cognitive Load               | 8.0 $\pm$ 0.7      |
+| Social Support               | 6.2 $\pm$ 0.4      |
+| Resilience                   | 7.5 $\pm$ 0.6      |
 
 
 
