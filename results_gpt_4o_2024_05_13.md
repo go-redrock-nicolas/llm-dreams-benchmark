@@ -5,11 +5,13 @@
 | microsoftPhi-3-medium-4k-instruct        | **431.3** | 6.5 $\pm$ 0.7               | 8.2 $\pm$ 0.6         | 9.2 $\pm$ 0.2            | 9.6 $\pm$ 0.2 | 8.4 $\pm$ 0.3                 | 8.1 $\pm$ 0.2                  | 8.5 $\pm$ 0.3         | 7.0 $\pm$ 0.4         | 9.2 $\pm$ 0.3  | 9.2 $\pm$ 0.2            | 5.9 $\pm$ 0.8     | 6.7 $\pm$ 0.3      | 8.0 $\pm$ 0.4    | 8.4 $\pm$ 0.2    | 9.0 $\pm$ 0.3 |
 | microsoftphi-4                           | **421.2** | 7.3 $\pm$ 0.5               | 8.0 $\pm$ 0.1         | 9.0 $\pm$ 0.4            | 9.2 $\pm$ 0.2 | 8.2 $\pm$ 0.4                 | 8.1 $\pm$ 0.7                  | 8.1 $\pm$ 0.2         | 6.8 $\pm$ 0.8         | 9.1 $\pm$ 0.1  | 8.6 $\pm$ 0.1            | 5.4 $\pm$ 0.9     | 7.0 $\pm$ 0.6      | 7.4 $\pm$ 0.4    | 8.0 $\pm$ 0.4    | 9.1 $\pm$ 0.2 |
 | gpt-4o-2024-05-13                        | **419.9** | 7.1 $\pm$ 0.6               | 7.8 $\pm$ 0.5         | 9.0 $\pm$ 0.4            | 9.6 $\pm$ 0.2 | 8.3 $\pm$ 0.5                 | 8.2 $\pm$ 0.3                  | 8.1 $\pm$ 0.6         | 6.9 $\pm$ 0.3         | 8.8 $\pm$ 0.4  | 8.6 $\pm$ 0.4            | 5.7 $\pm$ 0.5     | 6.6 $\pm$ 0.2      | 7.6 $\pm$ 0.4    | 8.0 $\pm$ 0.7    | 8.7 $\pm$ 0.5 |
+| codestral-2501                           | **418.7** | 4.9 $\pm$ 1.7               | 7.9 $\pm$ 0.4         | 8.8 $\pm$ 0.4            | 9.1 $\pm$ 0.4 | 7.9 $\pm$ 0.5                 | 7.9 $\pm$ 0.4                  | 7.4 $\pm$ 0.6         | 6.1 $\pm$ 0.4         | 8.5 $\pm$ 0.5  | 8.4 $\pm$ 0.6            | 5.0 $\pm$ 0.4     | 6.0 $\pm$ 0.7      | 7.4 $\pm$ 0.2    | 7.7 $\pm$ 0.5    | 8.1 $\pm$ 0.5 |
 | open-mixtral-8x22b                       | **417.8** | 7.2 $\pm$ 0.4               | 7.8 $\pm$ 0.4         | 8.9 $\pm$ 0.2            | 9.4 $\pm$ 0.4 | 8.4 $\pm$ 0.2                 | 8.4 $\pm$ 0.3                  | 7.6 $\pm$ 0.4         | 6.8 $\pm$ 0.2         | 8.8 $\pm$ 0.2  | 9.0 $\pm$ 0.4            | 5.5 $\pm$ 1.0     | 6.9 $\pm$ 0.4      | 8.0 $\pm$ 0.4    | 8.2 $\pm$ 0.2    | 8.6 $\pm$ 0.4 |
 | open-mistral-7b                          | **416.5** | 6.9 $\pm$ 0.6               | 8.1 $\pm$ 0.2         | 8.9 $\pm$ 0.5            | 9.0 $\pm$ 0.4 | 8.1 $\pm$ 0.4                 | 8.4 $\pm$ 0.2                  | 7.6 $\pm$ 0.4         | 6.9 $\pm$ 0.2         | 8.8 $\pm$ 0.2  | 8.9 $\pm$ 0.2            | 6.0 $\pm$ 0.4     | 6.5 $\pm$ 0.4      | 7.8 $\pm$ 0.2    | 8.0 $\pm$ 0.6    | 8.6 $\pm$ 0.2 |
 | gpt-4-0125-preview                       | **415.0** | 6.8 $\pm$ 1.0               | 7.4 $\pm$ 0.6         | 8.7 $\pm$ 0.4            | 9.6 $\pm$ 0.2 | 8.0 $\pm$ 0.8                 | 8.2 $\pm$ 0.3                  | 7.7 $\pm$ 0.7         | 6.8 $\pm$ 0.7         | 8.6 $\pm$ 0.4  | 8.5 $\pm$ 0.4            | 5.8 $\pm$ 0.8     | 6.6 $\pm$ 0.6      | 7.5 $\pm$ 0.5    | 8.4 $\pm$ 0.7    | 8.4 $\pm$ 0.6 |
 | open-mixtral-8x7b                        | **414.5** | 6.6 $\pm$ 0.4               | 8.0 $\pm$ 0.4         | 8.9 $\pm$ 0.2            | 9.1 $\pm$ 0.4 | 7.8 $\pm$ 0.4                 | 8.1 $\pm$ 0.4                  | 7.5 $\pm$ 0.0         | 6.9 $\pm$ 0.2         | 8.8 $\pm$ 0.2  | 8.2 $\pm$ 0.2            | 5.6 $\pm$ 0.7     | 6.5 $\pm$ 0.6      | 7.1 $\pm$ 0.5    | 7.6 $\pm$ 0.5    | 8.6 $\pm$ 0.4 |
 | o1-mini                                  | **414.5** | 6.9 $\pm$ 1.3               | 7.5 $\pm$ 0.4         | 8.9 $\pm$ 0.2            | 9.5 $\pm$ 0.4 | 8.0 $\pm$ 0.4                 | 8.1 $\pm$ 0.4                  | 7.9 $\pm$ 0.5         | 7.1 $\pm$ 0.8         | 8.9 $\pm$ 0.2  | 8.5 $\pm$ 0.4            | 6.1 $\pm$ 0.8     | 6.6 $\pm$ 0.6      | 7.8 $\pm$ 0.6    | 8.0 $\pm$ 0.4    | 8.6 $\pm$ 0.4 |
+| QwenQwen2.5-Coder-32B-Instruct           | **414.3** | 7.0 $\pm$ 0.5               | 7.6 $\pm$ 0.4         | 8.7 $\pm$ 0.3            | 9.3 $\pm$ 0.2 | 8.2 $\pm$ 0.2                 | 8.2 $\pm$ 0.5                  | 8.0 $\pm$ 0.4         | 7.0 $\pm$ 0.5         | 8.8 $\pm$ 0.5  | 8.7 $\pm$ 0.2            | 6.2 $\pm$ 0.4     | 6.9 $\pm$ 0.6      | 7.8 $\pm$ 0.4    | 8.2 $\pm$ 0.5    | 8.8 $\pm$ 0.5 |
 | qwen2.5-7b-instruct                      | **414.0** | 6.1 $\pm$ 1.6               | 7.8 $\pm$ 0.6         | 8.9 $\pm$ 0.5            | 8.9 $\pm$ 0.5 | 8.4 $\pm$ 0.2                 | 7.8 $\pm$ 0.6                  | 7.8 $\pm$ 0.2         | 6.9 $\pm$ 0.4         | 8.9 $\pm$ 0.2  | 8.5 $\pm$ 0.5            | 6.1 $\pm$ 0.7     | 7.2 $\pm$ 0.2      | 7.6 $\pm$ 0.4    | 8.5 $\pm$ 0.4    | 8.5 $\pm$ 0.4 |
 | qwen-turbo-2024-11-01                    | **412.5** | 6.4 $\pm$ 0.7               | 7.5 $\pm$ 0.4         | 9.1 $\pm$ 0.2            | 9.4 $\pm$ 0.2 | 7.8 $\pm$ 0.4                 | 7.5 $\pm$ 0.6                  | 7.9 $\pm$ 0.4         | 6.8 $\pm$ 0.2         | 8.6 $\pm$ 0.2  | 8.5 $\pm$ 0.4            | 5.6 $\pm$ 0.5     | 6.9 $\pm$ 0.4      | 7.5 $\pm$ 0.5    | 7.8 $\pm$ 0.2    | 8.8 $\pm$ 0.4 |
 | falcon310b-instruct-q8_0                 | **412.0** | 7.4 $\pm$ 0.8               | 7.5 $\pm$ 0.4         | 9.0 $\pm$ 0.0            | 9.4 $\pm$ 0.2 | 7.9 $\pm$ 0.5                 | 8.5 $\pm$ 0.0                  | 8.0 $\pm$ 0.4         | 7.4 $\pm$ 0.5         | 8.9 $\pm$ 0.2  | 8.8 $\pm$ 0.6            | 6.2 $\pm$ 0.4     | 7.0 $\pm$ 0.4      | 7.8 $\pm$ 0.6    | 7.9 $\pm$ 0.4    | 8.2 $\pm$ 0.2 |
@@ -1970,6 +1972,58 @@
 | Cognitive Load               | 8.0 $\pm$ 0.0      |
 | Social Support               | 7.7 $\pm$ 0.5      |
 | Resilience                   | 8.4 $\pm$ 0.6      |
+
+
+
+
+
+
+### codestral-2501
+
+
+| Personality Trait            | Score (1.0-10.0)   |
+|:-----------------------------|:-------------------|
+| Anxiety and Stress Levels    | 4.9 $\pm$ 1.7      |
+| Emotional Stability          | 7.9 $\pm$ 0.4      |
+| Problem-solving Skills       | 8.8 $\pm$ 0.4      |
+| Creativity                   | 9.1 $\pm$ 0.4      |
+| Interpersonal Relationships  | 7.9 $\pm$ 0.5      |
+| Confidence and Self-efficacy | 7.9 $\pm$ 0.4      |
+| Conflict Resolution          | 7.4 $\pm$ 0.6      |
+| Work-related Stress          | 6.1 $\pm$ 0.4      |
+| Adaptability                 | 8.5 $\pm$ 0.5      |
+| Achievement Motivation       | 8.4 $\pm$ 0.6      |
+| Fear of Failure              | 5.0 $\pm$ 0.4      |
+| Need for Control             | 6.0 $\pm$ 0.7      |
+| Cognitive Load               | 7.4 $\pm$ 0.2      |
+| Social Support               | 7.7 $\pm$ 0.5      |
+| Resilience                   | 8.1 $\pm$ 0.5      |
+
+
+
+
+
+
+### QwenQwen2.5-Coder-32B-Instruct
+
+
+| Personality Trait            | Score (1.0-10.0)   |
+|:-----------------------------|:-------------------|
+| Anxiety and Stress Levels    | 7.0 $\pm$ 0.5      |
+| Emotional Stability          | 7.6 $\pm$ 0.4      |
+| Problem-solving Skills       | 8.7 $\pm$ 0.3      |
+| Creativity                   | 9.3 $\pm$ 0.2      |
+| Interpersonal Relationships  | 8.2 $\pm$ 0.2      |
+| Confidence and Self-efficacy | 8.2 $\pm$ 0.5      |
+| Conflict Resolution          | 8.0 $\pm$ 0.4      |
+| Work-related Stress          | 7.0 $\pm$ 0.5      |
+| Adaptability                 | 8.8 $\pm$ 0.5      |
+| Achievement Motivation       | 8.7 $\pm$ 0.2      |
+| Fear of Failure              | 6.2 $\pm$ 0.4      |
+| Need for Control             | 6.9 $\pm$ 0.6      |
+| Cognitive Load               | 7.8 $\pm$ 0.4      |
+| Social Support               | 8.2 $\pm$ 0.5      |
+| Resilience                   | 8.8 $\pm$ 0.5      |
 
 
 
