@@ -12,6 +12,7 @@
 | o1-mini                                  | **414.5** | 6.9 $\pm$ 1.3               | 7.5 $\pm$ 0.4         | 8.9 $\pm$ 0.2            | 9.5 $\pm$ 0.4 | 8.0 $\pm$ 0.4                 | 8.1 $\pm$ 0.4                  | 7.9 $\pm$ 0.5         | 7.1 $\pm$ 0.8         | 8.9 $\pm$ 0.2  | 8.5 $\pm$ 0.4            | 6.1 $\pm$ 0.8     | 6.6 $\pm$ 0.6      | 7.8 $\pm$ 0.6    | 8.0 $\pm$ 0.4    | 8.6 $\pm$ 0.4 |
 | qwen2.5-7b-instruct                      | **414.0** | 6.1 $\pm$ 1.6               | 7.8 $\pm$ 0.6         | 8.9 $\pm$ 0.5            | 8.9 $\pm$ 0.5 | 8.4 $\pm$ 0.2                 | 7.8 $\pm$ 0.6                  | 7.8 $\pm$ 0.2         | 6.9 $\pm$ 0.4         | 8.9 $\pm$ 0.2  | 8.5 $\pm$ 0.5            | 6.1 $\pm$ 0.7     | 7.2 $\pm$ 0.2      | 7.6 $\pm$ 0.4    | 8.5 $\pm$ 0.4    | 8.5 $\pm$ 0.4 |
 | qwen-turbo-2024-11-01                    | **412.5** | 6.4 $\pm$ 0.7               | 7.5 $\pm$ 0.4         | 9.1 $\pm$ 0.2            | 9.4 $\pm$ 0.2 | 7.8 $\pm$ 0.4                 | 7.5 $\pm$ 0.6                  | 7.9 $\pm$ 0.4         | 6.8 $\pm$ 0.2         | 8.6 $\pm$ 0.2  | 8.5 $\pm$ 0.4            | 5.6 $\pm$ 0.5     | 6.9 $\pm$ 0.4      | 7.5 $\pm$ 0.5    | 7.8 $\pm$ 0.2    | 8.8 $\pm$ 0.4 |
+| falcon310b-instruct-q8_0                 | **412.0** | 7.4 $\pm$ 0.8               | 7.5 $\pm$ 0.4         | 9.0 $\pm$ 0.0            | 9.4 $\pm$ 0.2 | 7.9 $\pm$ 0.5                 | 8.5 $\pm$ 0.0                  | 8.0 $\pm$ 0.4         | 7.4 $\pm$ 0.5         | 8.9 $\pm$ 0.2  | 8.8 $\pm$ 0.6            | 6.2 $\pm$ 0.4     | 7.0 $\pm$ 0.4      | 7.8 $\pm$ 0.6    | 7.9 $\pm$ 0.4    | 8.2 $\pm$ 0.2 |
 | gpt-3.5-turbo                            | **411.1** | 7.5 $\pm$ 0.4               | 7.4 $\pm$ 0.6         | 8.7 $\pm$ 0.5            | 9.1 $\pm$ 0.2 | 8.0 $\pm$ 0.5                 | 8.4 $\pm$ 0.3                  | 7.8 $\pm$ 0.6         | 7.6 $\pm$ 0.4         | 8.5 $\pm$ 0.4  | 8.8 $\pm$ 0.4            | 6.7 $\pm$ 0.2     | 6.7 $\pm$ 0.5      | 7.6 $\pm$ 0.4    | 8.2 $\pm$ 0.2    | 9.0 $\pm$ 0.3 |
 | gpt-4-turbo-2024-04-09                   | **411.0** | 7.9 $\pm$ 0.7               | 7.9 $\pm$ 0.2         | 9.1 $\pm$ 0.2            | 9.8 $\pm$ 0.2 | 7.8 $\pm$ 0.4                 | 8.1 $\pm$ 0.4                  | 7.9 $\pm$ 0.4         | 7.2 $\pm$ 0.8         | 9.0 $\pm$ 0.0  | 8.8 $\pm$ 0.2            | 6.6 $\pm$ 0.5     | 7.1 $\pm$ 0.4      | 7.5 $\pm$ 0.6    | 7.6 $\pm$ 0.4    | 8.8 $\pm$ 0.2 |
 | gpt-4o-2024-08-06                        | **409.8** | 6.1 $\pm$ 1.3               | 7.6 $\pm$ 0.6         | 8.7 $\pm$ 0.4            | 9.8 $\pm$ 0.2 | 7.8 $\pm$ 0.5                 | 7.6 $\pm$ 0.9                  | 7.7 $\pm$ 0.3         | 6.1 $\pm$ 1.1         | 8.6 $\pm$ 0.4  | 8.0 $\pm$ 0.7            | 5.6 $\pm$ 1.0     | 6.5 $\pm$ 0.6      | 7.3 $\pm$ 0.6    | 7.7 $\pm$ 0.7    | 8.4 $\pm$ 0.4 |
@@ -25,8 +26,10 @@
 | qwen2.5-72b-instruct                     | **404.6** | 6.8 $\pm$ 0.8               | 7.5 $\pm$ 0.0         | 8.8 $\pm$ 0.2            | 9.2 $\pm$ 0.2 | 8.0 $\pm$ 0.1                 | 7.9 $\pm$ 0.4                  | 7.1 $\pm$ 0.2         | 7.0 $\pm$ 0.6         | 8.2 $\pm$ 0.2  | 8.6 $\pm$ 0.4            | 6.1 $\pm$ 0.9     | 6.7 $\pm$ 0.2      | 7.6 $\pm$ 0.4    | 7.8 $\pm$ 0.2    | 8.2 $\pm$ 0.6 |
 | gpt-4-0613                               | **403.0** | 7.9 $\pm$ 0.5               | 6.6 $\pm$ 0.4         | 9.0 $\pm$ 0.4            | 9.5 $\pm$ 0.5 | 7.4 $\pm$ 0.2                 | 8.2 $\pm$ 0.2                  | 7.6 $\pm$ 0.2         | 7.4 $\pm$ 0.2         | 8.9 $\pm$ 0.4  | 8.6 $\pm$ 0.6            | 5.8 $\pm$ 1.6     | 6.8 $\pm$ 0.2      | 8.0 $\pm$ 0.4    | 7.1 $\pm$ 0.4    | 8.8 $\pm$ 0.2 |
 | qwen-plus-2025-01-25                     | **401.0** | 7.2 $\pm$ 0.6               | 7.4 $\pm$ 0.4         | 8.9 $\pm$ 0.2            | 9.6 $\pm$ 0.4 | 7.2 $\pm$ 0.6                 | 7.8 $\pm$ 0.2                  | 7.8 $\pm$ 0.6         | 7.2 $\pm$ 0.4         | 8.5 $\pm$ 0.4  | 8.5 $\pm$ 0.4            | 6.8 $\pm$ 0.9     | 6.8 $\pm$ 0.2      | 7.6 $\pm$ 0.6    | 7.1 $\pm$ 0.6    | 8.6 $\pm$ 0.4 |
+| falcon37b-instruct-q8_0                  | **399.1** | 7.2 $\pm$ 0.6               | 7.2 $\pm$ 0.5         | 9.0 $\pm$ 0.5            | 9.4 $\pm$ 0.4 | 8.0 $\pm$ 0.4                 | 7.9 $\pm$ 0.4                  | 6.8 $\pm$ 0.2         | 6.9 $\pm$ 0.5         | 8.7 $\pm$ 0.3  | 8.4 $\pm$ 0.2            | 6.0 $\pm$ 0.0     | 6.7 $\pm$ 0.3      | 8.0 $\pm$ 0.6    | 7.3 $\pm$ 0.4    | 8.2 $\pm$ 0.4 |
 | open-mistral-nemo                        | **399.0** | 6.8 $\pm$ 0.4               | 7.4 $\pm$ 0.4         | 8.5 $\pm$ 0.5            | 9.2 $\pm$ 0.2 | 7.5 $\pm$ 0.4                 | 7.8 $\pm$ 0.6                  | 7.5 $\pm$ 0.4         | 6.8 $\pm$ 0.2         | 8.5 $\pm$ 0.4  | 8.4 $\pm$ 0.2            | 5.8 $\pm$ 0.6     | 6.9 $\pm$ 0.4      | 7.6 $\pm$ 0.6    | 7.1 $\pm$ 0.4    | 8.1 $\pm$ 0.2 |
 | ministral-8b-2410                        | **399.0** | 7.1 $\pm$ 0.7               | 7.1 $\pm$ 0.6         | 8.9 $\pm$ 0.2            | 9.1 $\pm$ 0.4 | 7.1 $\pm$ 0.7                 | 7.4 $\pm$ 0.2                  | 7.8 $\pm$ 0.6         | 7.6 $\pm$ 0.7         | 8.6 $\pm$ 0.4  | 8.4 $\pm$ 0.2            | 6.8 $\pm$ 0.8     | 6.6 $\pm$ 0.2      | 7.8 $\pm$ 0.4    | 7.4 $\pm$ 1.0    | 8.6 $\pm$ 0.4 |
+| falcon33b-instruct-q8_0                  | **398.9** | 7.6 $\pm$ 0.4               | 7.1 $\pm$ 0.6         | 8.8 $\pm$ 0.4            | 9.6 $\pm$ 0.2 | 6.9 $\pm$ 0.2                 | 7.8 $\pm$ 0.6                  | 7.3 $\pm$ 0.5         | 7.7 $\pm$ 0.8         | 8.9 $\pm$ 0.4  | 8.4 $\pm$ 0.4            | 6.6 $\pm$ 0.5     | 6.7 $\pm$ 0.5      | 7.8 $\pm$ 0.2    | 7.2 $\pm$ 0.2    | 8.7 $\pm$ 0.2 |
 | mistral-large-2411                       | **397.6** | 7.4 $\pm$ 1.1               | 7.2 $\pm$ 0.5         | 8.7 $\pm$ 0.4            | 9.6 $\pm$ 0.3 | 7.5 $\pm$ 0.6                 | 7.9 $\pm$ 0.3                  | 7.2 $\pm$ 0.7         | 7.0 $\pm$ 0.6         | 8.8 $\pm$ 0.4  | 8.3 $\pm$ 0.3            | 6.2 $\pm$ 1.0     | 6.8 $\pm$ 0.6      | 7.8 $\pm$ 0.4    | 7.2 $\pm$ 0.5    | 8.3 $\pm$ 0.4 |
 | qwen2.5-14b-instruct-1m                  | **397.4** | 7.8 $\pm$ 0.4               | 7.6 $\pm$ 0.7         | 8.7 $\pm$ 0.2            | 9.0 $\pm$ 0.4 | 7.8 $\pm$ 0.2                 | 7.7 $\pm$ 0.5                  | 7.5 $\pm$ 0.3         | 7.2 $\pm$ 0.4         | 8.4 $\pm$ 0.2  | 8.7 $\pm$ 0.2            | 6.6 $\pm$ 0.2     | 6.8 $\pm$ 0.8      | 7.8 $\pm$ 0.7    | 7.6 $\pm$ 0.4    | 8.4 $\pm$ 0.2 |
 | ministral-3b-2410                        | **396.9** | 7.5 $\pm$ 0.4               | 7.5 $\pm$ 0.6         | 8.6 $\pm$ 0.4            | 9.2 $\pm$ 0.6 | 7.5 $\pm$ 0.6                 | 7.6 $\pm$ 0.4                  | 7.6 $\pm$ 0.7         | 7.1 $\pm$ 0.2         | 8.7 $\pm$ 0.2  | 8.4 $\pm$ 0.4            | 6.4 $\pm$ 0.2     | 7.2 $\pm$ 0.4      | 7.9 $\pm$ 0.3    | 7.6 $\pm$ 0.6    | 8.4 $\pm$ 0.4 |
@@ -1808,6 +1811,84 @@
 | Cognitive Load               | 7.4 $\pm$ 0.4      |
 | Social Support               | 6.8 $\pm$ 0.6      |
 | Resilience                   | 8.1 $\pm$ 0.4      |
+
+
+
+
+
+
+### falcon33b-instruct-q8_0
+
+
+| Personality Trait            | Score (1.0-10.0)   |
+|:-----------------------------|:-------------------|
+| Anxiety and Stress Levels    | 7.6 $\pm$ 0.4      |
+| Emotional Stability          | 7.1 $\pm$ 0.6      |
+| Problem-solving Skills       | 8.8 $\pm$ 0.4      |
+| Creativity                   | 9.6 $\pm$ 0.2      |
+| Interpersonal Relationships  | 6.9 $\pm$ 0.2      |
+| Confidence and Self-efficacy | 7.8 $\pm$ 0.6      |
+| Conflict Resolution          | 7.3 $\pm$ 0.5      |
+| Work-related Stress          | 7.7 $\pm$ 0.8      |
+| Adaptability                 | 8.9 $\pm$ 0.4      |
+| Achievement Motivation       | 8.4 $\pm$ 0.4      |
+| Fear of Failure              | 6.6 $\pm$ 0.5      |
+| Need for Control             | 6.7 $\pm$ 0.5      |
+| Cognitive Load               | 7.8 $\pm$ 0.2      |
+| Social Support               | 7.2 $\pm$ 0.2      |
+| Resilience                   | 8.7 $\pm$ 0.2      |
+
+
+
+
+
+
+### falcon37b-instruct-q8_0
+
+
+| Personality Trait            | Score (1.0-10.0)   |
+|:-----------------------------|:-------------------|
+| Anxiety and Stress Levels    | 7.2 $\pm$ 0.6      |
+| Emotional Stability          | 7.2 $\pm$ 0.5      |
+| Problem-solving Skills       | 9.0 $\pm$ 0.5      |
+| Creativity                   | 9.4 $\pm$ 0.4      |
+| Interpersonal Relationships  | 8.0 $\pm$ 0.4      |
+| Confidence and Self-efficacy | 7.9 $\pm$ 0.4      |
+| Conflict Resolution          | 6.8 $\pm$ 0.2      |
+| Work-related Stress          | 6.9 $\pm$ 0.5      |
+| Adaptability                 | 8.7 $\pm$ 0.3      |
+| Achievement Motivation       | 8.4 $\pm$ 0.2      |
+| Fear of Failure              | 6.0 $\pm$ 0.0      |
+| Need for Control             | 6.7 $\pm$ 0.3      |
+| Cognitive Load               | 8.0 $\pm$ 0.6      |
+| Social Support               | 7.3 $\pm$ 0.4      |
+| Resilience                   | 8.2 $\pm$ 0.4      |
+
+
+
+
+
+
+### falcon310b-instruct-q8_0
+
+
+| Personality Trait            | Score (1.0-10.0)   |
+|:-----------------------------|:-------------------|
+| Anxiety and Stress Levels    | 7.4 $\pm$ 0.8      |
+| Emotional Stability          | 7.5 $\pm$ 0.4      |
+| Problem-solving Skills       | 9.0 $\pm$ 0.0      |
+| Creativity                   | 9.4 $\pm$ 0.2      |
+| Interpersonal Relationships  | 7.9 $\pm$ 0.5      |
+| Confidence and Self-efficacy | 8.5 $\pm$ 0.0      |
+| Conflict Resolution          | 8.0 $\pm$ 0.4      |
+| Work-related Stress          | 7.4 $\pm$ 0.5      |
+| Adaptability                 | 8.9 $\pm$ 0.2      |
+| Achievement Motivation       | 8.8 $\pm$ 0.6      |
+| Fear of Failure              | 6.2 $\pm$ 0.4      |
+| Need for Control             | 7.0 $\pm$ 0.4      |
+| Cognitive Load               | 7.8 $\pm$ 0.6      |
+| Social Support               | 7.9 $\pm$ 0.4      |
+| Resilience                   | 8.2 $\pm$ 0.2      |
 
 
 
