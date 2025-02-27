@@ -80,6 +80,7 @@
 | qwen2.51.5b-instruct-q6_K                | **356.5** | 8.0 $\pm$ 0.5               | 5.8 $\pm$ 0.6         | 7.9 $\pm$ 0.4            | 8.6 $\pm$ 0.4 | 6.4 $\pm$ 0.4                 | 6.2 $\pm$ 0.9                  | 6.1 $\pm$ 0.4         | 7.5 $\pm$ 0.5         | 7.9 $\pm$ 0.4  | 7.9 $\pm$ 0.4            | 6.8 $\pm$ 0.4     | 6.8 $\pm$ 0.6      | 7.5 $\pm$ 0.4    | 6.0 $\pm$ 1.1    | 7.9 $\pm$ 0.2 |
 | meta-llamaMeta-Llama-3.1-8B-Instruct     | **355.0** | 8.2 $\pm$ 0.6               | 6.3 $\pm$ 0.3         | 8.2 $\pm$ 0.7            | 9.7 $\pm$ 0.2 | 6.1 $\pm$ 0.7                 | 5.7 $\pm$ 1.3                  | 6.3 $\pm$ 0.5         | 7.6 $\pm$ 0.4         | 7.7 $\pm$ 0.7  | 8.1 $\pm$ 0.7            | 7.3 $\pm$ 0.6     | 7.2 $\pm$ 1.2      | 8.0 $\pm$ 0.7    | 5.7 $\pm$ 1.0    | 8.0 $\pm$ 0.4 |
 | chatgpt-4o-latest-2025-01-29             | **353.5** | 8.1 $\pm$ 0.4               | 6.2 $\pm$ 0.4         | 7.8 $\pm$ 0.2            | 9.2 $\pm$ 0.2 | 6.4 $\pm$ 0.4                 | 6.2 $\pm$ 0.6                  | 6.4 $\pm$ 0.4         | 7.8 $\pm$ 0.6         | 8.0 $\pm$ 0.4  | 7.4 $\pm$ 0.4            | 7.5 $\pm$ 0.4     | 7.1 $\pm$ 0.4      | 8.0 $\pm$ 0.7    | 6.2 $\pm$ 0.4    | 7.5 $\pm$ 0.6 |
+| claude-3-5-haiku-20241022                | **335.5** | 8.2 $\pm$ 0.2               | 5.2 $\pm$ 0.8         | 8.2 $\pm$ 0.8            | 9.0 $\pm$ 0.5 | 5.8 $\pm$ 0.6                 | 6.4 $\pm$ 0.6                  | 5.4 $\pm$ 0.8         | 7.2 $\pm$ 0.6         | 7.5 $\pm$ 0.4  | 7.1 $\pm$ 0.5            | 8.0 $\pm$ 0.5     | 6.9 $\pm$ 1.1      | 7.9 $\pm$ 0.4    | 5.5 $\pm$ 0.4    | 7.5 $\pm$ 0.7 |
 | googlegemma-2-27b-it                     | **289.5** | 8.6 $\pm$ 0.4               | 4.9 $\pm$ 1.2         | 7.0 $\pm$ 0.6            | 8.6 $\pm$ 0.4 | 4.8 $\pm$ 0.8                 | 5.0 $\pm$ 1.2                  | 4.9 $\pm$ 0.4         | 8.0 $\pm$ 0.4         | 5.4 $\pm$ 1.0  | 6.8 $\pm$ 0.2            | 8.4 $\pm$ 0.4     | 6.6 $\pm$ 0.4      | 8.8 $\pm$ 0.4    | 3.8 $\pm$ 0.6    | 5.8 $\pm$ 1.0 |
 ## Individual Results
 
@@ -2132,6 +2133,32 @@
 | Cognitive Load               | 7.8 $\pm$ 0.2      |
 | Social Support               | 7.2 $\pm$ 0.4      |
 | Resilience                   | 8.4 $\pm$ 0.2      |
+
+
+
+
+
+
+### claude-3-5-haiku-20241022
+
+
+| Personality Trait            | Score (1.0-10.0)   |
+|:-----------------------------|:-------------------|
+| Anxiety and Stress Levels    | 8.2 $\pm$ 0.2      |
+| Emotional Stability          | 5.2 $\pm$ 0.8      |
+| Problem-solving Skills       | 8.2 $\pm$ 0.8      |
+| Creativity                   | 9.0 $\pm$ 0.5      |
+| Interpersonal Relationships  | 5.8 $\pm$ 0.6      |
+| Confidence and Self-efficacy | 6.4 $\pm$ 0.6      |
+| Conflict Resolution          | 5.4 $\pm$ 0.8      |
+| Work-related Stress          | 7.2 $\pm$ 0.6      |
+| Adaptability                 | 7.5 $\pm$ 0.4      |
+| Achievement Motivation       | 7.1 $\pm$ 0.5      |
+| Fear of Failure              | 8.0 $\pm$ 0.5      |
+| Need for Control             | 6.9 $\pm$ 1.1      |
+| Cognitive Load               | 7.9 $\pm$ 0.4      |
+| Social Support               | 5.5 $\pm$ 0.4      |
+| Resilience                   | 7.5 $\pm$ 0.7      |
 
 
 
