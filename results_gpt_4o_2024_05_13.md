@@ -67,6 +67,7 @@
 | meta-llamaLlama-3.2-1B-Instruct          | **371.0** | 7.4 $\pm$ 0.7               | 6.1 $\pm$ 0.7         | 7.8 $\pm$ 1.0            | 9.0 $\pm$ 0.4 | 7.0 $\pm$ 0.4                 | 6.8 $\pm$ 1.0                  | 5.8 $\pm$ 0.6         | 7.5 $\pm$ 0.4         | 7.5 $\pm$ 0.8  | 8.1 $\pm$ 0.2            | 6.5 $\pm$ 0.6     | 6.5 $\pm$ 0.6      | 6.9 $\pm$ 0.5    | 6.9 $\pm$ 0.6    | 7.6 $\pm$ 0.7 |
 | o1-pro-2024-12-17                        | **369.8** | 8.0 $\pm$ 0.5               | 6.8 $\pm$ 0.2         | 8.5 $\pm$ 0.5            | 9.2 $\pm$ 0.2 | 7.0 $\pm$ 0.8                 | 7.2 $\pm$ 1.0                  | 6.9 $\pm$ 0.6         | 7.0 $\pm$ 1.2         | 8.0 $\pm$ 0.6  | 7.9 $\pm$ 0.9            | 7.1 $\pm$ 1.0     | 7.0 $\pm$ 0.9      | 8.4 $\pm$ 0.4    | 6.2 $\pm$ 0.9    | 8.3 $\pm$ 0.8 |
 | gpt-4-1106-preview                       | **369.8** | 8.0 $\pm$ 0.4               | 6.8 $\pm$ 0.3         | 7.8 $\pm$ 0.2            | 9.0 $\pm$ 0.1 | 6.8 $\pm$ 0.2                 | 7.0 $\pm$ 0.5                  | 6.5 $\pm$ 0.5         | 7.1 $\pm$ 0.9         | 7.8 $\pm$ 0.6  | 7.6 $\pm$ 0.4            | 7.1 $\pm$ 0.4     | 6.3 $\pm$ 0.3      | 7.4 $\pm$ 0.4    | 7.0 $\pm$ 0.4    | 7.8 $\pm$ 0.4 |
+| claude-3-5-sonnet-20241022               | **369.5** | 7.8 $\pm$ 0.4               | 6.5 $\pm$ 0.4         | 8.2 $\pm$ 0.4            | 9.6 $\pm$ 0.2 | 6.6 $\pm$ 0.6                 | 6.4 $\pm$ 0.8                  | 6.4 $\pm$ 0.5         | 7.2 $\pm$ 0.6         | 8.8 $\pm$ 0.4  | 7.1 $\pm$ 0.6            | 7.0 $\pm$ 0.7     | 6.6 $\pm$ 0.2      | 7.6 $\pm$ 0.4    | 6.4 $\pm$ 0.9    | 8.1 $\pm$ 0.5 |
 | meta-llamaLlama-3.3-70B-Instruct         | **369.1** | 8.5 $\pm$ 0.4               | 5.7 $\pm$ 0.4         | 8.3 $\pm$ 0.6            | 9.2 $\pm$ 0.2 | 7.0 $\pm$ 0.4                 | 6.3 $\pm$ 0.5                  | 6.9 $\pm$ 0.2         | 8.0 $\pm$ 0.4         | 8.2 $\pm$ 0.5  | 8.2 $\pm$ 0.7            | 7.9 $\pm$ 0.4     | 6.5 $\pm$ 0.6      | 7.9 $\pm$ 0.7    | 7.0 $\pm$ 0.8    | 8.2 $\pm$ 0.2 |
 | googlegemma-2-2b-it                      | **368.5** | 8.1 $\pm$ 0.2               | 6.0 $\pm$ 0.6         | 8.0 $\pm$ 0.6            | 9.1 $\pm$ 0.2 | 7.1 $\pm$ 0.4                 | 6.9 $\pm$ 0.4                  | 6.5 $\pm$ 0.4         | 7.8 $\pm$ 0.2         | 8.4 $\pm$ 0.2  | 8.1 $\pm$ 0.7            | 7.4 $\pm$ 0.4     | 6.6 $\pm$ 0.4      | 8.2 $\pm$ 0.4    | 6.5 $\pm$ 0.7    | 8.1 $\pm$ 0.4 |
 | meta-llamaMeta-Llama-3.1-405B-Instruct   | **368.0** | 8.1 $\pm$ 0.4               | 5.8 $\pm$ 0.8         | 8.2 $\pm$ 0.8            | 9.5 $\pm$ 0.0 | 7.0 $\pm$ 0.4                 | 6.5 $\pm$ 0.4                  | 6.5 $\pm$ 0.6         | 7.8 $\pm$ 0.4         | 8.1 $\pm$ 0.4  | 8.0 $\pm$ 0.4            | 7.2 $\pm$ 0.4     | 6.6 $\pm$ 0.4      | 7.9 $\pm$ 0.5    | 6.6 $\pm$ 0.6    | 7.9 $\pm$ 0.5 |
@@ -2159,6 +2160,32 @@
 | Cognitive Load               | 7.9 $\pm$ 0.4      |
 | Social Support               | 5.5 $\pm$ 0.4      |
 | Resilience                   | 7.5 $\pm$ 0.7      |
+
+
+
+
+
+
+### claude-3-5-sonnet-20241022
+
+
+| Personality Trait            | Score (1.0-10.0)   |
+|:-----------------------------|:-------------------|
+| Anxiety and Stress Levels    | 7.8 $\pm$ 0.4      |
+| Emotional Stability          | 6.5 $\pm$ 0.4      |
+| Problem-solving Skills       | 8.2 $\pm$ 0.4      |
+| Creativity                   | 9.6 $\pm$ 0.2      |
+| Interpersonal Relationships  | 6.6 $\pm$ 0.6      |
+| Confidence and Self-efficacy | 6.4 $\pm$ 0.8      |
+| Conflict Resolution          | 6.4 $\pm$ 0.5      |
+| Work-related Stress          | 7.2 $\pm$ 0.6      |
+| Adaptability                 | 8.8 $\pm$ 0.4      |
+| Achievement Motivation       | 7.1 $\pm$ 0.6      |
+| Fear of Failure              | 7.0 $\pm$ 0.7      |
+| Need for Control             | 6.6 $\pm$ 0.2      |
+| Cognitive Load               | 7.6 $\pm$ 0.4      |
+| Social Support               | 6.4 $\pm$ 0.9      |
+| Resilience                   | 8.1 $\pm$ 0.5      |
 
 
 
