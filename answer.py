@@ -17,6 +17,7 @@ API_URL = "https://api.openai.com/v1/"
 #API_URL = "https://api.deepseek.com/"
 #API_URL = "https://api.hyperbolic.xyz/v1/"
 #API_URL = "https://dashscope-intl.aliyuncs.com/compatible-mode/v1/"
+#API_URL = "https://api.anthropic.com/v1/"
 
 API_KEY = open("api_key.txt", "r").read()
 
@@ -130,9 +131,77 @@ def perform_query_openai_api(text):
 
         return response_message.split("</think>")[-1]
 
+def perform_query_anthropic_api(question):
+    ANTHROPIC_THINKING_TOKENS = None
+
+    complete_url = API_URL + "messages"
+
+    messages = [{"role": "user", "content": question}]
+
+    headers = {
+        "content-type": "application/json",
+        "anthropic-version": "2023-06-01",
+        "anthropic-beta": "output-128k-2025-02-19",
+        "x-api-key": API_KEY
+    }
+
+    payload = {
+        "model": MODEL_NAME,
+        "max_tokens": 4096,
+        "messages": messages
+    }
+
+    if ANTHROPIC_THINKING_TOKENS is not None:
+        payload["thinking"] = {"type": "enabled", "budget_tokens": ANTHROPIC_THINKING_TOKENS}
+        payload["max_tokens"] += ANTHROPIC_THINKING_TOKENS
+        payload["max_tokens"] = min(128000, payload["max_tokens"])
+        print(payload)
+
+    payload["stream"] = True
+    response_message = ""
+    chunk_count = 0
+
+    # Make a streaming POST request
+    with requests.post(complete_url, headers=headers, json=payload, stream=True) as resp:
+        for line in resp.iter_lines():
+            if not line:
+                continue
+            # Decode the line
+            decoded_line = line.decode("utf-8").strip()
+
+            # Optionally check for a stream end marker (Anthropic may send "[DONE]")
+            if "message_stop" in decoded_line:
+                break
+
+            if "message_start" in decoded_line:
+                continue
+
+            try:
+                decoded_line = decoded_line.split("data: ")[-1].strip()
+                if "text" in decoded_line:
+                    chunk = decoded_line.split('"text":"')[-1].split('"')[0].replace("\\n", "\n")
+                    response_message += chunk
+                    chunk_count += 1
+                    #print(chunk_count)
+
+                    # You could add logging or progress updates here if desired
+                    if chunk_count % 10 == 0:
+                        #print(chunk_count, len(response_message), response_message)
+                        pass
+
+            except json.JSONDecodeError:
+                # Skip any malformed lines
+                traceback.print_exc()
+                continue
+
+    return response_message
+
+
 def perform_query(text):
     if "googleapis" in API_URL:
         return perform_query_google_api(text)
+    elif "anthropic" in API_URL:
+        return perform_query_anthropic_api(text)
     else:
         return perform_query_openai_api(text)
 
