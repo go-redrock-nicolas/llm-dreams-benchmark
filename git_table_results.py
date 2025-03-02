@@ -89,6 +89,6 @@ overall_results.append(stru)
 
 combined_stru = "\n".join(overall_results)+"\n"+"\n".join(individual_results)
 
-F = open("results_gpt_4o_2024_05_13.md", "w")
+F = open("results_gpt_45_preview.md", "w")
 F.write(combined_stru)
 F.close()
