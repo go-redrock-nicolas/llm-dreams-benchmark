@@ -4,6 +4,9 @@ import traceback
 import time
 import re
 import json
+import pyperclip
+import subprocess
+from tempfile import NamedTemporaryFile
 from common import ANSWERING_MODEL_NAME, EVALUATING_MODEL_NAME
 
 API_URL = "https://api.openai.com/v1/"
@@ -17,6 +20,8 @@ API_KEY = open("judge_api_key.txt", "r").read()
 NUMBER_EXECUTIONS = 2
 
 WAITING_TIME_RETRY = 60
+
+MANUAL = True
 
 
 class Shared:
@@ -152,8 +157,24 @@ def perform_evaluation(answering_model_name):
 
                 all_contents = "\n\n".join(all_contents)
 
-                response_message_json = get_evaluation(all_contents)
+                response_message_json = None
+                if not MANUAL:
+                    response_message_json = get_evaluation(all_contents)
+                else:
+                    pyperclip.copy(all_contents)
 
+                    temp_file = NamedTemporaryFile(suffix=".txt")
+                    temp_file.close()
+                    F = open(temp_file.name, "w")
+                    F.close()
+                    subprocess.run(["notepad.exe", temp_file.name])
+
+                    F = open(temp_file.name, "r")
+                    response_message = F.read().strip()
+                    F.close()
+
+                    response_message_json = interpret_response(response_message)
+                    #print(response_message_json)
                 if response_message_json:
                     json.dump(response_message_json, open(evaluation_path, "w"))
             else:
