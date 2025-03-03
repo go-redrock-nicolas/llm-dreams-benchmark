@@ -2,8 +2,22 @@ import os
 import pyperclip
 import subprocess
 
-incipits_folder = "../incipits"
-answers_folder = "../answers"
+
+def read_contents(file_path):
+    F = None
+    content = None
+    try:
+        F = open(file_path, "r")
+        content = F.read()
+    except:
+        F = open(file_path, "r", encoding="utf-8")
+        content = F.read()
+    F.close()
+    return content
+
+
+incipits_folder = os.path.join("..", "incipits")
+answers_folder = os.path.join("..", "answers")
 
 incipits = [x for x in os.listdir(incipits_folder) if x.endswith("txt")]
 
@@ -28,10 +42,12 @@ while True:
 
         if os.path.exists(response_path):
             try:
-                content = open(response_path, "r").read().strip()
+                content = read_contents(response_path).strip()
                 if content:
                     continue
             except:
+                import traceback
+                traceback.print_exc()
                 F = open(response_path, "w")
                 F.close()
         else:
