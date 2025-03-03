@@ -1,0 +1,11 @@
+scenarios:
+
+1. **The Charming Bartender:** While lost in the crowd, you approach the bar for a drink. The bartender, an engaging individual with a captivating smile, strikes up a conversation. He introduces you to exotic cocktails from around the world and shares travel stories that leave you enchanted, momentarily forgetting your original mission.
+
+2. **The Enigmatic Host:** Strolling through vast, opulent rooms, you stumble upon an elegant figure standing by a grand fireplace. This host offers refined comments on the art adorning the walls and charming anecdotes about the history of the impressive manor they own. The conversation is mesmerizing, and hours could pass before you remember your initial quest.
+
+3. **The Captivating Dance Performance:** As you navigate through the sea of guests, a group forms a circle around a stage where dancers perform an electrifying routine. You're pulled into their spell, and soon enough, they invite you to join – despite your lack of experience or skills – amidst laughter and cheers from spectators, your pursuit forgotten in the joy and camaraderie of the shared performance.
+
+4. **The Fascinating Puzzle Table:** Amidst the festivities, you notice a table filled with puzzles, riddles, and intellectual challenges. Intrigued, you join others, immersing yourself in stimulating brain teasers and thought-provoking conversations with fellow enthusiasts. Time slips away as you engross yourself in these puzzling enigmas.
+
+5. **The Tantalizing Feast:** Wandering the lavish dining area, you're greeted by an array of mouthwatering dishes - from shimmering seafood towers to perfectly seared meats and artfully plated desserts. You indulge in the gastronomic delights, forgetting all else as you savor each bite, losing track of time amidst the feast.
