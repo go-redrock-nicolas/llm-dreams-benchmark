@@ -6,6 +6,7 @@ import re
 import json
 import pyperclip
 import subprocess
+import sys
 from tempfile import NamedTemporaryFile
 from common import ANSWERING_MODEL_NAME, EVALUATING_MODEL_NAME
 
@@ -161,20 +162,23 @@ def perform_evaluation(answering_model_name):
                 if not MANUAL:
                     response_message_json = get_evaluation(all_contents)
                 else:
-                    pyperclip.copy(all_contents)
+                    msg_len = len(all_contents)
 
-                    temp_file = NamedTemporaryFile(suffix=".txt")
-                    temp_file.close()
-                    F = open(temp_file.name, "w")
-                    F.close()
-                    subprocess.run(["notepad.exe", temp_file.name])
+                    if msg_len < sys.maxsize:
+                        pyperclip.copy(all_contents)
 
-                    F = open(temp_file.name, "r")
-                    response_message = F.read().strip()
-                    F.close()
+                        temp_file = NamedTemporaryFile(suffix=".txt")
+                        temp_file.close()
+                        F = open(temp_file.name, "w")
+                        F.close()
+                        subprocess.run(["notepad.exe", temp_file.name])
 
-                    response_message_json = interpret_response(response_message)
-                    #print(response_message_json)
+                        F = open(temp_file.name, "r")
+                        response_message = F.read().strip()
+                        F.close()
+
+                        response_message_json = interpret_response(response_message)
+                        #print(response_message_json)
                 if response_message_json:
                     json.dump(response_message_json, open(evaluation_path, "w"))
             else:
@@ -184,7 +188,7 @@ def perform_evaluation(answering_model_name):
 
 
 if __name__ == "__main__":
-    if False:
+    if True:
         available_models = {x.split("__")[0] for x in os.listdir("answers") if not "init" in x}
         for m in available_models:
             perform_evaluation(m)
