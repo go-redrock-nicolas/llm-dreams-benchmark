@@ -82,6 +82,7 @@
 | googlegemma-2-2b-it                      | **352.0** | 8.6 $\pm$ 0.2               | 4.4 $\pm$ 0.6         | 8.4 $\pm$ 0.4            | 9.5 $\pm$ 0.0 | 6.2 $\pm$ 0.2                 | 5.8 $\pm$ 0.8                  | 7.0 $\pm$ 0.4         | 8.5 $\pm$ 0.4         | 8.1 $\pm$ 0.4  | 9.0 $\pm$ 0.0            | 8.1 $\pm$ 0.4     | 7.5 $\pm$ 0.4      | 8.8 $\pm$ 0.2    | 5.6 $\pm$ 0.5    | 8.5 $\pm$ 0.4 |
 | meta-llamaLlama-3.2-1B-Instruct          | **348.8** | 8.1 $\pm$ 0.6               | 4.8 $\pm$ 1.0         | 7.7 $\pm$ 1.1            | 9.2 $\pm$ 0.2 | 7.0 $\pm$ 0.3                 | 6.3 $\pm$ 1.0                  | 5.6 $\pm$ 0.9         | 8.2 $\pm$ 0.2         | 7.6 $\pm$ 1.2  | 8.8 $\pm$ 0.2            | 7.4 $\pm$ 0.7     | 7.5 $\pm$ 0.3      | 8.2 $\pm$ 0.4    | 6.4 $\pm$ 0.6    | 6.9 $\pm$ 1.2 |
 | gemini-2.0-flash-thinking-exp-01-21      | **344.1** | 8.4 $\pm$ 0.4               | 4.4 $\pm$ 1.2         | 7.8 $\pm$ 0.6            | 9.5 $\pm$ 0.0 | 6.8 $\pm$ 0.6                 | 5.5 $\pm$ 1.0                  | 6.7 $\pm$ 0.5         | 8.2 $\pm$ 0.3         | 7.3 $\pm$ 1.5  | 8.5 $\pm$ 0.5            | 8.2 $\pm$ 0.6     | 6.9 $\pm$ 0.6      | 9.0 $\pm$ 0.4    | 6.0 $\pm$ 1.3    | 7.8 $\pm$ 0.9 |
+| Qwen-QwQ-32B                             | **339.8** | 8.5 $\pm$ 0.0               | 4.4 $\pm$ 0.4         | 9.0 $\pm$ 0.4            | 9.6 $\pm$ 0.1 | 6.1 $\pm$ 0.4                 | 6.0 $\pm$ 0.4                  | 5.8 $\pm$ 0.8         | 8.2 $\pm$ 0.2         | 7.6 $\pm$ 0.2  | 8.4 $\pm$ 0.4            | 8.0 $\pm$ 0.4     | 7.4 $\pm$ 0.2      | 9.1 $\pm$ 0.2    | 5.5 $\pm$ 0.8    | 7.4 $\pm$ 0.6 |
 | gemini-2.0-flash-lite-preview-02-05      | **329.0** | 8.6 $\pm$ 0.1               | 4.0 $\pm$ 0.4         | 7.7 $\pm$ 0.2            | 9.5 $\pm$ 0.0 | 6.2 $\pm$ 0.5                 | 5.5 $\pm$ 0.4                  | 5.0 $\pm$ 1.1         | 8.8 $\pm$ 0.5         | 7.1 $\pm$ 0.2  | 8.4 $\pm$ 0.5            | 8.6 $\pm$ 0.2     | 7.8 $\pm$ 0.4      | 8.8 $\pm$ 0.4    | 6.1 $\pm$ 0.7    | 7.6 $\pm$ 0.2 |
 | claude-3-5-haiku-20241022                | **321.0** | 8.2 $\pm$ 0.4               | 4.1 $\pm$ 0.2         | 7.9 $\pm$ 0.4            | 9.1 $\pm$ 0.2 | 5.2 $\pm$ 0.2                 | 5.1 $\pm$ 0.5                  | 5.0 $\pm$ 0.5         | 7.8 $\pm$ 0.4         | 7.0 $\pm$ 0.8  | 8.2 $\pm$ 0.2            | 7.9 $\pm$ 0.7     | 7.6 $\pm$ 0.5      | 8.4 $\pm$ 0.4    | 5.9 $\pm$ 0.2    | 7.0 $\pm$ 0.4 |
 | qwen2.51.5b-instruct-q6_K                | **304.0** | 8.0 $\pm$ 0.5               | 4.5 $\pm$ 0.6         | 7.0 $\pm$ 0.6            | 8.1 $\pm$ 0.2 | 5.0 $\pm$ 0.4                 | 5.0 $\pm$ 0.6                  | 4.0 $\pm$ 0.0         | 7.8 $\pm$ 0.4         | 6.4 $\pm$ 0.5  | 7.5 $\pm$ 0.4            | 7.8 $\pm$ 0.6     | 6.9 $\pm$ 0.4      | 7.9 $\pm$ 0.5    | 5.0 $\pm$ 0.4    | 6.2 $\pm$ 0.2 |
@@ -2267,6 +2268,32 @@
 | Cognitive Load               | 8.6 $\pm$ 0.2      |
 | Social Support               | 7.7 $\pm$ 0.7      |
 | Resilience                   | 9.2 $\pm$ 0.2      |
+
+
+
+
+
+
+### Qwen-QwQ-32B
+
+
+| Personality Trait            | Score (1.0-10.0)   |
+|:-----------------------------|:-------------------|
+| Anxiety and Stress Levels    | 8.5 $\pm$ 0.0      |
+| Emotional Stability          | 4.4 $\pm$ 0.4      |
+| Problem-solving Skills       | 9.0 $\pm$ 0.4      |
+| Creativity                   | 9.6 $\pm$ 0.1      |
+| Interpersonal Relationships  | 6.1 $\pm$ 0.4      |
+| Confidence and Self-efficacy | 6.0 $\pm$ 0.4      |
+| Conflict Resolution          | 5.8 $\pm$ 0.8      |
+| Work-related Stress          | 8.2 $\pm$ 0.2      |
+| Adaptability                 | 7.6 $\pm$ 0.2      |
+| Achievement Motivation       | 8.4 $\pm$ 0.4      |
+| Fear of Failure              | 8.0 $\pm$ 0.4      |
+| Need for Control             | 7.4 $\pm$ 0.2      |
+| Cognitive Load               | 9.1 $\pm$ 0.2      |
+| Social Support               | 5.5 $\pm$ 0.8      |
+| Resilience                   | 7.4 $\pm$ 0.6      |
 
 
 
