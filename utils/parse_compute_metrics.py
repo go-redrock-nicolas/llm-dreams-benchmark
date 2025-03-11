@@ -129,7 +129,7 @@ def main():
     variability_metrics = analyze_variability(parsed_data)
 
     # Print results
-    print("Variability Analysis Results:")
+    print("Variability Analysis Results (considering the AVG in each AVG \pm STDEV tabular value):")
     print("\n1. Basic Statistics:")
     for stat, values in variability_metrics['basic_stats'].items():
         print(f"\n{stat.capitalize()}:")

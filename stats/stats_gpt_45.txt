@@ -1,4 +1,4 @@
-Variability Analysis Results:
+Variability Analysis Results (considering the AVG in each AVG \pm STDEV tabular value):
 
 1. Basic Statistics:
 
