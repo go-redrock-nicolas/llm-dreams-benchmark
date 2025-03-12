@@ -115,8 +115,36 @@ def get_evaluation_openai(text):
             time.sleep(WAITING_TIME_RETRY)
 
 
+def get_evaluation_openai_new(text):
+    headers = {
+        "Content-Type": "application/json",
+        "Authorization": f"Bearer {API_KEY}"
+    }
+
+    payload = {
+        "model": Shared.evaluating_model_name,
+        "input": text
+    }
+
+    complete_url = API_URL + "responses"
+
+    response = requests.post(complete_url, headers=headers, json=payload)
+    if response.status_code != 200:
+        print(response)
+        print(response.status_code)
+        print(response.text)
+
+    response = response.json()
+    response_message = response["output"][0]["content"][0]["text"]
+    response_message_json = interpret_response(response_message)
+
+    return response_message_json
+
+
 def get_evaluation(text):
-    if "googleapis" in API_URL:
+    if "openai" in API_URL:
+        return get_evaluation_openai_new(text)
+    elif "googleapis" in API_URL:
         return get_evaluation_google(text)
     else:
         return get_evaluation_openai(text)

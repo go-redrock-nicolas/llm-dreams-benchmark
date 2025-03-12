@@ -70,6 +70,29 @@ def perform_query_google_api(text):
             time.sleep(WAITING_TIME_RETRY)
 
 
+def perform_query_new_openai_api(text):
+    headers = {
+        "Content-Type": "application/json",
+        "Authorization": f"Bearer {API_KEY}"
+    }
+
+    payload = {
+        "model": MODEL_NAME,
+        "input": text
+    }
+
+    complete_url = API_URL + "responses"
+
+    response = requests.post(complete_url, headers=headers, json=payload)
+    if response.status_code != 200:
+        print(response)
+        print(response.status_code)
+        print(response.text)
+
+    response = response.json()
+    return response["output"][0]["content"][0]["text"]
+
+
 def perform_query_openai_api(text):
     messages = [{"role": "user",
                  "content": text}]
@@ -198,7 +221,9 @@ def perform_query_anthropic_api(question):
 
 
 def perform_query(text):
-    if "googleapis" in API_URL:
+    if "openai" in API_URL:
+        return perform_query_new_openai_api(text)
+    elif "googleapis" in API_URL:
         return perform_query_google_api(text)
     elif "anthropic" in API_URL:
         return perform_query_anthropic_api(text)
