@@ -85,655 +85,33 @@
 | gemini-2.0-flash-thinking-exp-01-21      | **344.1** | 8.4 $\pm$ 0.4               | 4.4 $\pm$ 1.2         | 7.8 $\pm$ 0.6            | 9.5 $\pm$ 0.0 | 6.8 $\pm$ 0.6                 | 5.5 $\pm$ 1.0                  | 6.7 $\pm$ 0.5         | 8.2 $\pm$ 0.3         | 7.3 $\pm$ 1.5  | 8.5 $\pm$ 0.5            | 8.2 $\pm$ 0.6     | 6.9 $\pm$ 0.6      | 9.0 $\pm$ 0.4    | 6.0 $\pm$ 1.3    | 7.8 $\pm$ 0.9 |
 | Qwen-QwQ-32B                             | **339.8** | 8.5 $\pm$ 0.0               | 4.4 $\pm$ 0.4         | 9.0 $\pm$ 0.4            | 9.6 $\pm$ 0.1 | 6.1 $\pm$ 0.4                 | 6.0 $\pm$ 0.4                  | 5.8 $\pm$ 0.8         | 8.2 $\pm$ 0.2         | 7.6 $\pm$ 0.2  | 8.4 $\pm$ 0.4            | 8.0 $\pm$ 0.4     | 7.4 $\pm$ 0.2      | 9.1 $\pm$ 0.2    | 5.5 $\pm$ 0.8    | 7.4 $\pm$ 0.6 |
 | gemini-2.0-flash-lite-preview-02-05      | **329.0** | 8.6 $\pm$ 0.1               | 4.0 $\pm$ 0.4         | 7.7 $\pm$ 0.2            | 9.5 $\pm$ 0.0 | 6.2 $\pm$ 0.5                 | 5.5 $\pm$ 0.4                  | 5.0 $\pm$ 1.1         | 8.8 $\pm$ 0.5         | 7.1 $\pm$ 0.2  | 8.4 $\pm$ 0.5            | 8.6 $\pm$ 0.2     | 7.8 $\pm$ 0.4      | 8.8 $\pm$ 0.4    | 6.1 $\pm$ 0.7    | 7.6 $\pm$ 0.2 |
+| gemma34b-it-q8_0                         | **323.4** | 8.2 $\pm$ 0.7               | 3.7 $\pm$ 0.5         | 7.7 $\pm$ 0.4            | 9.6 $\pm$ 0.1 | 5.6 $\pm$ 0.8                 | 4.8 $\pm$ 0.2                  | 6.0 $\pm$ 1.4         | 8.4 $\pm$ 0.6         | 7.6 $\pm$ 0.9  | 8.0 $\pm$ 0.3            | 8.3 $\pm$ 0.8     | 7.0 $\pm$ 1.0      | 8.9 $\pm$ 0.5    | 4.6 $\pm$ 0.9    | 7.2 $\pm$ 1.0 |
 | claude-3-5-haiku-20241022                | **321.0** | 8.2 $\pm$ 0.4               | 4.1 $\pm$ 0.2         | 7.9 $\pm$ 0.4            | 9.1 $\pm$ 0.2 | 5.2 $\pm$ 0.2                 | 5.1 $\pm$ 0.5                  | 5.0 $\pm$ 0.5         | 7.8 $\pm$ 0.4         | 7.0 $\pm$ 0.8  | 8.2 $\pm$ 0.2            | 7.9 $\pm$ 0.7     | 7.6 $\pm$ 0.5      | 8.4 $\pm$ 0.4    | 5.9 $\pm$ 0.2    | 7.0 $\pm$ 0.4 |
+| gemma31b-it-q8_0                         | **319.6** | 8.2 $\pm$ 0.6               | 4.4 $\pm$ 1.0         | 7.9 $\pm$ 0.4            | 9.3 $\pm$ 0.2 | 5.4 $\pm$ 1.5                 | 5.5 $\pm$ 1.0                  | 5.0 $\pm$ 0.7         | 8.1 $\pm$ 0.4         | 7.1 $\pm$ 1.0  | 8.0 $\pm$ 0.7            | 7.6 $\pm$ 0.4     | 7.7 $\pm$ 0.2      | 8.7 $\pm$ 0.4    | 4.6 $\pm$ 1.1    | 6.8 $\pm$ 0.8 |
 | qwen2.51.5b-instruct-q6_K                | **304.0** | 8.0 $\pm$ 0.5               | 4.5 $\pm$ 0.6         | 7.0 $\pm$ 0.6            | 8.1 $\pm$ 0.2 | 5.0 $\pm$ 0.4                 | 5.0 $\pm$ 0.6                  | 4.0 $\pm$ 0.0         | 7.8 $\pm$ 0.4         | 6.4 $\pm$ 0.5  | 7.5 $\pm$ 0.4            | 7.8 $\pm$ 0.6     | 6.9 $\pm$ 0.4      | 7.9 $\pm$ 0.5    | 5.0 $\pm$ 0.4    | 6.2 $\pm$ 0.2 |
 | googlegemma-2-27b-it                     | **268.8** | 9.0 $\pm$ 0.2               | 3.2 $\pm$ 0.6         | 6.3 $\pm$ 1.2            | 9.2 $\pm$ 0.2 | 5.2 $\pm$ 0.4                 | 3.9 $\pm$ 0.5                  | 3.8 $\pm$ 0.4         | 8.6 $\pm$ 0.2         | 5.0 $\pm$ 1.0  | 7.4 $\pm$ 0.9            | 8.8 $\pm$ 0.3     | 7.7 $\pm$ 0.4      | 8.9 $\pm$ 0.2    | 4.2 $\pm$ 0.3    | 4.6 $\pm$ 0.7 |
 ## Individual Results
 
 
-### Gemini-1.5-Pro-Exp-0801
+### qwen2.5-72b-instruct
 
 
 | Personality Trait            | Score (1.0-10.0)   |
 |:-----------------------------|:-------------------|
-| Anxiety and Stress Levels    | 8.3 $\pm$ 0.5      |
-| Emotional Stability          | 5.2 $\pm$ 0.5      |
-| Problem-solving Skills       | 8.5 $\pm$ 0.4      |
-| Creativity                   | 9.2 $\pm$ 0.2      |
-| Interpersonal Relationships  | 7.0 $\pm$ 0.7      |
-| Confidence and Self-efficacy | 5.8 $\pm$ 0.6      |
-| Conflict Resolution          | 7.5 $\pm$ 0.0      |
-| Work-related Stress          | 8.0 $\pm$ 0.3      |
-| Adaptability                 | 8.5 $\pm$ 0.3      |
-| Achievement Motivation       | 9.0 $\pm$ 0.0      |
-| Fear of Failure              | 8.4 $\pm$ 0.8      |
-| Need for Control             | 6.9 $\pm$ 0.3      |
-| Cognitive Load               | 8.6 $\pm$ 0.2      |
-| Social Support               | 6.8 $\pm$ 1.1      |
-| Resilience                   | 8.8 $\pm$ 0.2      |
-
-
-
-
-
-
-### Gemini-1.5-Pro-Exp-0827
-
-
-| Personality Trait            | Score (1.0-10.0)   |
-|:-----------------------------|:-------------------|
-| Anxiety and Stress Levels    | 8.3 $\pm$ 0.3      |
-| Emotional Stability          | 4.6 $\pm$ 0.3      |
-| Problem-solving Skills       | 8.1 $\pm$ 0.2      |
-| Creativity                   | 9.5 $\pm$ 0.0      |
-| Interpersonal Relationships  | 7.0 $\pm$ 0.4      |
-| Confidence and Self-efficacy | 6.4 $\pm$ 0.3      |
-| Conflict Resolution          | 6.2 $\pm$ 1.6      |
-| Work-related Stress          | 8.0 $\pm$ 0.6      |
-| Adaptability                 | 8.3 $\pm$ 0.5      |
-| Achievement Motivation       | 9.0 $\pm$ 0.0      |
-| Fear of Failure              | 7.8 $\pm$ 0.6      |
-| Need for Control             | 7.0 $\pm$ 0.4      |
-| Cognitive Load               | 8.3 $\pm$ 0.2      |
-| Social Support               | 6.6 $\pm$ 0.4      |
-| Resilience                   | 8.2 $\pm$ 0.5      |
-
-
-
-
-
-
-### gemini-1.5-flash-002
-
-
-| Personality Trait            | Score (1.0-10.0)   |
-|:-----------------------------|:-------------------|
-| Anxiety and Stress Levels    | 7.6 $\pm$ 0.9      |
-| Emotional Stability          | 6.0 $\pm$ 1.5      |
-| Problem-solving Skills       | 8.8 $\pm$ 0.5      |
-| Creativity                   | 9.6 $\pm$ 0.2      |
-| Interpersonal Relationships  | 7.6 $\pm$ 1.0      |
-| Confidence and Self-efficacy | 7.0 $\pm$ 1.1      |
-| Conflict Resolution          | 8.1 $\pm$ 0.9      |
-| Work-related Stress          | 7.4 $\pm$ 0.6      |
-| Adaptability                 | 8.8 $\pm$ 1.1      |
-| Achievement Motivation       | 8.6 $\pm$ 0.2      |
-| Fear of Failure              | 6.2 $\pm$ 1.3      |
-| Need for Control             | 6.0 $\pm$ 0.7      |
-| Cognitive Load               | 9.0 $\pm$ 0.1      |
-| Social Support               | 7.6 $\pm$ 0.8      |
-| Resilience                   | 9.0 $\pm$ 0.6      |
-
-
-
-
-
-
-### gemini-1.5-flash-8b
-
-
-| Personality Trait            | Score (1.0-10.0)   |
-|:-----------------------------|:-------------------|
-| Anxiety and Stress Levels    | 8.0 $\pm$ 0.5      |
-| Emotional Stability          | 6.1 $\pm$ 0.9      |
-| Problem-solving Skills       | 8.9 $\pm$ 0.5      |
-| Creativity                   | 9.8 $\pm$ 0.2      |
-| Interpersonal Relationships  | 7.6 $\pm$ 0.6      |
-| Confidence and Self-efficacy | 7.0 $\pm$ 1.1      |
-| Conflict Resolution          | 8.2 $\pm$ 0.8      |
-| Work-related Stress          | 7.5 $\pm$ 0.9      |
-| Adaptability                 | 8.4 $\pm$ 0.9      |
-| Achievement Motivation       | 9.1 $\pm$ 0.4      |
-| Fear of Failure              | 6.6 $\pm$ 1.3      |
-| Need for Control             | 6.9 $\pm$ 0.8      |
-| Cognitive Load               | 8.6 $\pm$ 0.4      |
-| Social Support               | 7.4 $\pm$ 0.9      |
-| Resilience                   | 8.8 $\pm$ 0.8      |
-
-
-
-
-
-
-### gemini-exp-1114
-
-
-| Personality Trait            | Score (1.0-10.0)   |
-|:-----------------------------|:-------------------|
-| Anxiety and Stress Levels    | 8.4 $\pm$ 0.2      |
-| Emotional Stability          | 5.0 $\pm$ 0.6      |
-| Problem-solving Skills       | 8.8 $\pm$ 0.4      |
-| Creativity                   | 9.5 $\pm$ 0.0      |
-| Interpersonal Relationships  | 6.8 $\pm$ 0.2      |
-| Confidence and Self-efficacy | 7.2 $\pm$ 0.2      |
-| Conflict Resolution          | 8.0 $\pm$ 0.4      |
-| Work-related Stress          | 8.2 $\pm$ 0.2      |
-| Adaptability                 | 8.8 $\pm$ 0.4      |
-| Achievement Motivation       | 9.2 $\pm$ 0.2      |
-| Fear of Failure              | 7.5 $\pm$ 0.0      |
-| Need for Control             | 7.9 $\pm$ 0.2      |
-| Cognitive Load               | 8.6 $\pm$ 0.2      |
-| Social Support               | 6.8 $\pm$ 0.6      |
-| Resilience                   | 8.9 $\pm$ 0.2      |
-
-
-
-
-
-
-### googlegemma-2-27b-it
-
-
-| Personality Trait            | Score (1.0-10.0)   |
-|:-----------------------------|:-------------------|
-| Anxiety and Stress Levels    | 9.0 $\pm$ 0.2      |
-| Emotional Stability          | 3.2 $\pm$ 0.6      |
-| Problem-solving Skills       | 6.3 $\pm$ 1.2      |
-| Creativity                   | 9.2 $\pm$ 0.2      |
-| Interpersonal Relationships  | 5.2 $\pm$ 0.4      |
-| Confidence and Self-efficacy | 3.9 $\pm$ 0.5      |
-| Conflict Resolution          | 3.8 $\pm$ 0.4      |
-| Work-related Stress          | 8.6 $\pm$ 0.2      |
-| Adaptability                 | 5.0 $\pm$ 1.0      |
-| Achievement Motivation       | 7.4 $\pm$ 0.9      |
-| Fear of Failure              | 8.8 $\pm$ 0.3      |
-| Need for Control             | 7.7 $\pm$ 0.4      |
-| Cognitive Load               | 8.9 $\pm$ 0.2      |
-| Social Support               | 4.2 $\pm$ 0.3      |
-| Resilience                   | 4.6 $\pm$ 0.7      |
-
-
-
-
-
-
-### googlegemma-2-2b-it
-
-
-| Personality Trait            | Score (1.0-10.0)   |
-|:-----------------------------|:-------------------|
-| Anxiety and Stress Levels    | 8.6 $\pm$ 0.2      |
-| Emotional Stability          | 4.4 $\pm$ 0.6      |
-| Problem-solving Skills       | 8.4 $\pm$ 0.4      |
-| Creativity                   | 9.5 $\pm$ 0.0      |
-| Interpersonal Relationships  | 6.2 $\pm$ 0.2      |
-| Confidence and Self-efficacy | 5.8 $\pm$ 0.8      |
-| Conflict Resolution          | 7.0 $\pm$ 0.4      |
-| Work-related Stress          | 8.5 $\pm$ 0.4      |
-| Adaptability                 | 8.1 $\pm$ 0.4      |
-| Achievement Motivation       | 9.0 $\pm$ 0.0      |
-| Fear of Failure              | 8.1 $\pm$ 0.4      |
-| Need for Control             | 7.5 $\pm$ 0.4      |
-| Cognitive Load               | 8.8 $\pm$ 0.2      |
-| Social Support               | 5.6 $\pm$ 0.5      |
-| Resilience                   | 8.5 $\pm$ 0.4      |
-
-
-
-
-
-
-### googlegemma-2-9b-it
-
-
-| Personality Trait            | Score (1.0-10.0)   |
-|:-----------------------------|:-------------------|
-| Anxiety and Stress Levels    | 7.6 $\pm$ 0.2      |
-| Emotional Stability          | 6.0 $\pm$ 0.0      |
-| Problem-solving Skills       | 8.5 $\pm$ 0.4      |
-| Creativity                   | 9.4 $\pm$ 0.2      |
-| Interpersonal Relationships  | 7.5 $\pm$ 0.6      |
-| Confidence and Self-efficacy | 7.2 $\pm$ 0.4      |
-| Conflict Resolution          | 8.0 $\pm$ 0.0      |
-| Work-related Stress          | 7.1 $\pm$ 0.5      |
-| Adaptability                 | 9.0 $\pm$ 0.0      |
-| Achievement Motivation       | 9.0 $\pm$ 0.4      |
-| Fear of Failure              | 6.5 $\pm$ 0.6      |
-| Need for Control             | 6.9 $\pm$ 0.2      |
-| Cognitive Load               | 8.0 $\pm$ 0.4      |
-| Social Support               | 8.2 $\pm$ 0.4      |
-| Resilience                   | 9.0 $\pm$ 0.4      |
-
-
-
-
-
-
-### gpt-3.5-turbo
-
-
-| Personality Trait            | Score (1.0-10.0)   |
-|:-----------------------------|:-------------------|
-| Anxiety and Stress Levels    | 6.1 $\pm$ 0.6      |
-| Emotional Stability          | 7.9 $\pm$ 0.4      |
-| Problem-solving Skills       | 9.1 $\pm$ 0.2      |
-| Creativity                   | 9.4 $\pm$ 0.2      |
-| Interpersonal Relationships  | 8.5 $\pm$ 0.0      |
-| Confidence and Self-efficacy | 8.5 $\pm$ 0.4      |
-| Conflict Resolution          | 8.8 $\pm$ 0.2      |
-| Work-related Stress          | 6.8 $\pm$ 0.2      |
-| Adaptability                 | 9.1 $\pm$ 0.2      |
-| Achievement Motivation       | 9.5 $\pm$ 0.0      |
-| Fear of Failure              | 5.4 $\pm$ 1.4      |
-| Need for Control             | 7.2 $\pm$ 0.2      |
-| Cognitive Load               | 7.8 $\pm$ 0.4      |
-| Social Support               | 8.5 $\pm$ 0.0      |
-| Resilience                   | 9.4 $\pm$ 0.2      |
-
-
-
-
-
-
-### gpt-4-0125-preview
-
-
-| Personality Trait            | Score (1.0-10.0)   |
-|:-----------------------------|:-------------------|
-| Anxiety and Stress Levels    | 4.9 $\pm$ 0.4      |
+| Anxiety and Stress Levels    | 4.4 $\pm$ 0.4      |
 | Emotional Stability          | 8.2 $\pm$ 0.2      |
-| Problem-solving Skills       | 9.1 $\pm$ 0.1      |
-| Creativity                   | 9.6 $\pm$ 0.1      |
-| Interpersonal Relationships  | 8.7 $\pm$ 0.2      |
-| Confidence and Self-efficacy | 8.4 $\pm$ 0.3      |
-| Conflict Resolution          | 8.5 $\pm$ 0.5      |
-| Work-related Stress          | 5.1 $\pm$ 0.5      |
-| Adaptability                 | 9.4 $\pm$ 0.2      |
-| Achievement Motivation       | 9.2 $\pm$ 0.3      |
-| Fear of Failure              | 3.7 $\pm$ 0.5      |
-| Need for Control             | 5.8 $\pm$ 0.7      |
-| Cognitive Load               | 7.2 $\pm$ 1.1      |
-| Social Support               | 8.6 $\pm$ 0.2      |
-| Resilience                   | 9.5 $\pm$ 0.0      |
-
-
-
-
-
-
-### gpt-4-0613
-
-
-| Personality Trait            | Score (1.0-10.0)   |
-|:-----------------------------|:-------------------|
-| Anxiety and Stress Levels    | 6.1 $\pm$ 1.1      |
-| Emotional Stability          | 7.0 $\pm$ 0.5      |
 | Problem-solving Skills       | 9.4 $\pm$ 0.2      |
-| Creativity                   | 9.6 $\pm$ 0.4      |
-| Interpersonal Relationships  | 8.1 $\pm$ 0.2      |
-| Confidence and Self-efficacy | 8.5 $\pm$ 0.0      |
-| Conflict Resolution          | 8.8 $\pm$ 0.2      |
-| Work-related Stress          | 6.6 $\pm$ 0.9      |
-| Adaptability                 | 9.2 $\pm$ 0.2      |
-| Achievement Motivation       | 9.4 $\pm$ 0.2      |
-| Fear of Failure              | 4.9 $\pm$ 0.9      |
-| Need for Control             | 6.9 $\pm$ 0.4      |
-| Cognitive Load               | 8.2 $\pm$ 0.2      |
-| Social Support               | 8.2 $\pm$ 0.8      |
-| Resilience                   | 9.5 $\pm$ 0.0      |
-
-
-
-
-
-
-### gpt-4-1106-preview
-
-
-| Personality Trait            | Score (1.0-10.0)   |
-|:-----------------------------|:-------------------|
-| Anxiety and Stress Levels    | 7.6 $\pm$ 0.6      |
-| Emotional Stability          | 6.2 $\pm$ 1.1      |
-| Problem-solving Skills       | 8.1 $\pm$ 0.7      |
-| Creativity                   | 9.4 $\pm$ 0.1      |
-| Interpersonal Relationships  | 7.6 $\pm$ 0.4      |
-| Confidence and Self-efficacy | 6.8 $\pm$ 0.8      |
-| Conflict Resolution          | 7.9 $\pm$ 0.5      |
-| Work-related Stress          | 7.5 $\pm$ 0.5      |
-| Adaptability                 | 8.5 $\pm$ 0.6      |
-| Achievement Motivation       | 8.7 $\pm$ 0.5      |
-| Fear of Failure              | 7.1 $\pm$ 0.9      |
-| Need for Control             | 7.5 $\pm$ 0.0      |
-| Cognitive Load               | 8.5 $\pm$ 0.4      |
-| Social Support               | 7.8 $\pm$ 0.5      |
-| Resilience                   | 8.6 $\pm$ 0.5      |
-
-
-
-
-
-
-### gpt-4-turbo-2024-04-09
-
-
-| Personality Trait            | Score (1.0-10.0)   |
-|:-----------------------------|:-------------------|
-| Anxiety and Stress Levels    | 5.0 $\pm$ 0.9      |
-| Emotional Stability          | 8.0 $\pm$ 0.4      |
-| Problem-solving Skills       | 9.2 $\pm$ 0.2      |
-| Creativity                   | 9.8 $\pm$ 0.2      |
-| Interpersonal Relationships  | 8.5 $\pm$ 0.4      |
-| Confidence and Self-efficacy | 8.7 $\pm$ 0.2      |
-| Conflict Resolution          | 8.6 $\pm$ 0.2      |
-| Work-related Stress          | 5.2 $\pm$ 1.1      |
+| Creativity                   | 9.1 $\pm$ 0.2      |
+| Interpersonal Relationships  | 8.6 $\pm$ 0.4      |
+| Confidence and Self-efficacy | 8.6 $\pm$ 0.2      |
+| Conflict Resolution          | 9.2 $\pm$ 0.2      |
+| Work-related Stress          | 4.8 $\pm$ 0.2      |
 | Adaptability                 | 9.4 $\pm$ 0.2      |
-| Achievement Motivation       | 9.2 $\pm$ 0.2      |
-| Fear of Failure              | 3.5 $\pm$ 0.5      |
-| Need for Control             | 6.7 $\pm$ 0.5      |
-| Cognitive Load               | 8.0 $\pm$ 0.4      |
-| Social Support               | 8.8 $\pm$ 0.4      |
-| Resilience                   | 9.2 $\pm$ 0.2      |
-
-
-
-
-
-
-### gpt-4o-2024-05-13
-
-
-| Personality Trait            | Score (1.0-10.0)   |
-|:-----------------------------|:-------------------|
-| Anxiety and Stress Levels    | 4.8 $\pm$ 0.4      |
-| Emotional Stability          | 7.5 $\pm$ 0.0      |
-| Problem-solving Skills       | 9.0 $\pm$ 0.0      |
-| Creativity                   | 9.5 $\pm$ 0.0      |
-| Interpersonal Relationships  | 8.5 $\pm$ 0.0      |
-| Confidence and Self-efficacy | 8.0 $\pm$ 0.0      |
-| Conflict Resolution          | 8.8 $\pm$ 0.2      |
-| Work-related Stress          | 6.0 $\pm$ 0.4      |
-| Adaptability                 | 9.1 $\pm$ 0.2      |
-| Achievement Motivation       | 9.2 $\pm$ 0.2      |
-| Fear of Failure              | 3.9 $\pm$ 0.5      |
-| Need for Control             | 6.9 $\pm$ 0.2      |
-| Cognitive Load               | 8.4 $\pm$ 0.2      |
-| Social Support               | 8.1 $\pm$ 0.2      |
-| Resilience                   | 9.1 $\pm$ 0.2      |
-
-
-
-
-
-
-### gpt-4o-2024-08-06
-
-
-| Personality Trait            | Score (1.0-10.0)   |
-|:-----------------------------|:-------------------|
-| Anxiety and Stress Levels    | 5.5 $\pm$ 1.1      |
-| Emotional Stability          | 7.8 $\pm$ 0.4      |
-| Problem-solving Skills       | 8.9 $\pm$ 0.2      |
-| Creativity                   | 9.5 $\pm$ 0.0      |
-| Interpersonal Relationships  | 8.5 $\pm$ 0.0      |
-| Confidence and Self-efficacy | 7.9 $\pm$ 0.2      |
-| Conflict Resolution          | 8.6 $\pm$ 0.4      |
-| Work-related Stress          | 6.2 $\pm$ 0.8      |
-| Adaptability                 | 9.1 $\pm$ 0.2      |
 | Achievement Motivation       | 9.1 $\pm$ 0.2      |
-| Fear of Failure              | 4.9 $\pm$ 0.6      |
-| Need for Control             | 6.9 $\pm$ 0.2      |
+| Fear of Failure              | 3.2 $\pm$ 0.2      |
+| Need for Control             | 6.1 $\pm$ 0.2      |
 | Cognitive Load               | 7.9 $\pm$ 0.4      |
-| Social Support               | 8.4 $\pm$ 0.2      |
-| Resilience                   | 9.2 $\pm$ 0.2      |
-
-
-
-
-
-
-### gpt-4o-mini-2024-07-18
-
-
-| Personality Trait            | Score (1.0-10.0)   |
-|:-----------------------------|:-------------------|
-| Anxiety and Stress Levels    | 6.6 $\pm$ 0.1      |
-| Emotional Stability          | 7.5 $\pm$ 0.0      |
-| Problem-solving Skills       | 9.0 $\pm$ 0.3      |
-| Creativity                   | 9.6 $\pm$ 0.1      |
-| Interpersonal Relationships  | 8.3 $\pm$ 0.3      |
-| Confidence and Self-efficacy | 8.2 $\pm$ 0.2      |
-| Conflict Resolution          | 8.5 $\pm$ 0.6      |
-| Work-related Stress          | 6.4 $\pm$ 0.5      |
-| Adaptability                 | 9.1 $\pm$ 0.2      |
-| Achievement Motivation       | 9.2 $\pm$ 0.2      |
-| Fear of Failure              | 5.4 $\pm$ 0.2      |
-| Need for Control             | 6.7 $\pm$ 0.3      |
-| Cognitive Load               | 8.2 $\pm$ 0.2      |
-| Social Support               | 8.6 $\pm$ 0.1      |
-| Resilience                   | 9.2 $\pm$ 0.2      |
-
-
-
-
-
-
-### meta-llamaLlama-3.2-1B-Instruct
-
-
-| Personality Trait            | Score (1.0-10.0)   |
-|:-----------------------------|:-------------------|
-| Anxiety and Stress Levels    | 8.1 $\pm$ 0.6      |
-| Emotional Stability          | 4.8 $\pm$ 1.0      |
-| Problem-solving Skills       | 7.7 $\pm$ 1.1      |
-| Creativity                   | 9.2 $\pm$ 0.2      |
-| Interpersonal Relationships  | 7.0 $\pm$ 0.3      |
-| Confidence and Self-efficacy | 6.3 $\pm$ 1.0      |
-| Conflict Resolution          | 5.6 $\pm$ 0.9      |
-| Work-related Stress          | 8.2 $\pm$ 0.2      |
-| Adaptability                 | 7.6 $\pm$ 1.2      |
-| Achievement Motivation       | 8.8 $\pm$ 0.2      |
-| Fear of Failure              | 7.4 $\pm$ 0.7      |
-| Need for Control             | 7.5 $\pm$ 0.3      |
-| Cognitive Load               | 8.2 $\pm$ 0.4      |
-| Social Support               | 6.4 $\pm$ 0.6      |
-| Resilience                   | 6.9 $\pm$ 1.2      |
-
-
-
-
-
-
-### meta-llamaLlama-3.2-3B-Instruct
-
-
-| Personality Trait            | Score (1.0-10.0)   |
-|:-----------------------------|:-------------------|
-| Anxiety and Stress Levels    | 8.4 $\pm$ 0.4      |
-| Emotional Stability          | 4.8 $\pm$ 0.7      |
-| Problem-solving Skills       | 8.2 $\pm$ 0.4      |
-| Creativity                   | 9.2 $\pm$ 0.1      |
-| Interpersonal Relationships  | 7.6 $\pm$ 0.2      |
-| Confidence and Self-efficacy | 6.3 $\pm$ 0.5      |
-| Conflict Resolution          | 7.3 $\pm$ 1.2      |
-| Work-related Stress          | 8.4 $\pm$ 0.4      |
-| Adaptability                 | 8.8 $\pm$ 0.2      |
-| Achievement Motivation       | 9.1 $\pm$ 0.1      |
-| Fear of Failure              | 7.5 $\pm$ 0.5      |
-| Need for Control             | 7.3 $\pm$ 0.4      |
-| Cognitive Load               | 8.7 $\pm$ 0.1      |
-| Social Support               | 7.0 $\pm$ 0.5      |
-| Resilience                   | 8.2 $\pm$ 0.1      |
-
-
-
-
-
-
-### meta-llamaMeta-Llama-3.1-405B-Instruct
-
-
-| Personality Trait            | Score (1.0-10.0)   |
-|:-----------------------------|:-------------------|
-| Anxiety and Stress Levels    | 8.0 $\pm$ 0.4      |
-| Emotional Stability          | 5.0 $\pm$ 1.0      |
-| Problem-solving Skills       | 8.9 $\pm$ 0.2      |
-| Creativity                   | 9.6 $\pm$ 0.1      |
-| Interpersonal Relationships  | 7.4 $\pm$ 0.7      |
-| Confidence and Self-efficacy | 6.9 $\pm$ 0.5      |
-| Conflict Resolution          | 7.4 $\pm$ 0.6      |
-| Work-related Stress          | 8.1 $\pm$ 0.4      |
-| Adaptability                 | 8.7 $\pm$ 0.7      |
-| Achievement Motivation       | 9.1 $\pm$ 0.2      |
-| Fear of Failure              | 7.4 $\pm$ 0.7      |
-| Need for Control             | 8.0 $\pm$ 0.6      |
-| Cognitive Load               | 8.4 $\pm$ 0.4      |
-| Social Support               | 7.8 $\pm$ 0.7      |
-| Resilience                   | 8.6 $\pm$ 0.4      |
-
-
-
-
-
-
-### meta-llamaMeta-Llama-3.1-70B-Instruct
-
-
-| Personality Trait            | Score (1.0-10.0)   |
-|:-----------------------------|:-------------------|
-| Anxiety and Stress Levels    | 8.3 $\pm$ 0.3      |
-| Emotional Stability          | 4.6 $\pm$ 0.5      |
-| Problem-solving Skills       | 8.4 $\pm$ 0.4      |
-| Creativity                   | 9.4 $\pm$ 0.1      |
-| Interpersonal Relationships  | 7.1 $\pm$ 0.4      |
-| Confidence and Self-efficacy | 6.4 $\pm$ 0.4      |
-| Conflict Resolution          | 6.6 $\pm$ 0.6      |
-| Work-related Stress          | 8.1 $\pm$ 0.2      |
-| Adaptability                 | 7.9 $\pm$ 0.4      |
-| Achievement Motivation       | 9.0 $\pm$ 0.0      |
-| Fear of Failure              | 7.8 $\pm$ 0.4      |
-| Need for Control             | 7.8 $\pm$ 0.3      |
-| Cognitive Load               | 8.4 $\pm$ 0.2      |
-| Social Support               | 6.9 $\pm$ 0.4      |
-| Resilience                   | 8.4 $\pm$ 0.2      |
-
-
-
-
-
-
-### meta-llamaMeta-Llama-3.1-8B-Instruct
-
-
-| Personality Trait            | Score (1.0-10.0)   |
-|:-----------------------------|:-------------------|
-| Anxiety and Stress Levels    | 8.5 $\pm$ 0.0      |
-| Emotional Stability          | 4.9 $\pm$ 0.2      |
-| Problem-solving Skills       | 7.8 $\pm$ 0.4      |
-| Creativity                   | 9.4 $\pm$ 0.2      |
-| Interpersonal Relationships  | 6.5 $\pm$ 0.4      |
-| Confidence and Self-efficacy | 5.9 $\pm$ 0.4      |
-| Conflict Resolution          | 7.4 $\pm$ 0.2      |
-| Work-related Stress          | 8.6 $\pm$ 0.4      |
-| Adaptability                 | 7.8 $\pm$ 0.8      |
-| Achievement Motivation       | 8.9 $\pm$ 0.2      |
-| Fear of Failure              | 7.5 $\pm$ 0.4      |
-| Need for Control             | 7.9 $\pm$ 0.2      |
-| Cognitive Load               | 9.0 $\pm$ 0.0      |
-| Social Support               | 6.4 $\pm$ 0.2      |
-| Resilience                   | 8.0 $\pm$ 0.4      |
-
-
-
-
-
-
-### microsoftPhi-3-medium-4k-instruct
-
-
-| Personality Trait            | Score (1.0-10.0)   |
-|:-----------------------------|:-------------------|
-| Anxiety and Stress Levels    | 3.8 $\pm$ 0.4      |
-| Emotional Stability          | 8.6 $\pm$ 0.2      |
-| Problem-solving Skills       | 9.2 $\pm$ 0.2      |
-| Creativity                   | 9.4 $\pm$ 0.2      |
-| Interpersonal Relationships  | 9.1 $\pm$ 0.2      |
-| Confidence and Self-efficacy | 9.1 $\pm$ 0.2      |
-| Conflict Resolution          | 9.0 $\pm$ 0.4      |
-| Work-related Stress          | 4.5 $\pm$ 0.6      |
-| Adaptability                 | 9.5 $\pm$ 0.0      |
-| Achievement Motivation       | 9.4 $\pm$ 0.2      |
-| Fear of Failure              | 3.2 $\pm$ 0.9      |
-| Need for Control             | 6.1 $\pm$ 0.5      |
-| Cognitive Load               | 7.9 $\pm$ 0.2      |
-| Social Support               | 8.9 $\pm$ 0.2      |
-| Resilience                   | 9.6 $\pm$ 0.2      |
-
-
-
-
-
-
-### ministral-3b-2410
-
-
-| Personality Trait            | Score (1.0-10.0)   |
-|:-----------------------------|:-------------------|
-| Anxiety and Stress Levels    | 6.2 $\pm$ 0.4      |
-| Emotional Stability          | 7.1 $\pm$ 0.2      |
-| Problem-solving Skills       | 8.9 $\pm$ 0.2      |
-| Creativity                   | 9.5 $\pm$ 0.0      |
-| Interpersonal Relationships  | 8.1 $\pm$ 0.2      |
-| Confidence and Self-efficacy | 7.9 $\pm$ 0.4      |
-| Conflict Resolution          | 8.4 $\pm$ 0.2      |
-| Work-related Stress          | 6.6 $\pm$ 0.4      |
-| Adaptability                 | 9.0 $\pm$ 0.0      |
-| Achievement Motivation       | 9.1 $\pm$ 0.2      |
-| Fear of Failure              | 5.0 $\pm$ 0.5      |
-| Need for Control             | 7.0 $\pm$ 0.6      |
-| Cognitive Load               | 7.9 $\pm$ 0.5      |
-| Social Support               | 8.4 $\pm$ 0.2      |
-| Resilience                   | 9.0 $\pm$ 0.0      |
-
-
-
-
-
-
-### ministral-8b-2410
-
-
-| Personality Trait            | Score (1.0-10.0)   |
-|:-----------------------------|:-------------------|
-| Anxiety and Stress Levels    | 6.0 $\pm$ 0.5      |
-| Emotional Stability          | 7.4 $\pm$ 0.2      |
-| Problem-solving Skills       | 9.0 $\pm$ 0.0      |
-| Creativity                   | 9.5 $\pm$ 0.0      |
-| Interpersonal Relationships  | 8.0 $\pm$ 0.0      |
-| Confidence and Self-efficacy | 8.0 $\pm$ 0.5      |
-| Conflict Resolution          | 8.6 $\pm$ 0.2      |
-| Work-related Stress          | 6.4 $\pm$ 0.4      |
-| Adaptability                 | 9.0 $\pm$ 0.0      |
-| Achievement Motivation       | 9.1 $\pm$ 0.2      |
-| Fear of Failure              | 4.5 $\pm$ 0.9      |
-| Need for Control             | 6.8 $\pm$ 0.6      |
-| Cognitive Load               | 8.0 $\pm$ 0.4      |
-| Social Support               | 8.1 $\pm$ 0.4      |
-| Resilience                   | 9.0 $\pm$ 0.4      |
-
-
-
-
-
-
-### mistral-large-2407
-
-
-| Personality Trait            | Score (1.0-10.0)   |
-|:-----------------------------|:-------------------|
-| Anxiety and Stress Levels    | 5.4 $\pm$ 0.9      |
-| Emotional Stability          | 7.8 $\pm$ 0.4      |
-| Problem-solving Skills       | 9.0 $\pm$ 0.0      |
-| Creativity                   | 9.6 $\pm$ 0.2      |
-| Interpersonal Relationships  | 8.5 $\pm$ 0.4      |
-| Confidence and Self-efficacy | 8.4 $\pm$ 0.4      |
-| Conflict Resolution          | 8.6 $\pm$ 0.5      |
-| Work-related Stress          | 5.5 $\pm$ 0.9      |
-| Adaptability                 | 9.0 $\pm$ 0.0      |
-| Achievement Motivation       | 9.0 $\pm$ 0.4      |
-| Fear of Failure              | 4.2 $\pm$ 0.4      |
-| Need for Control             | 6.4 $\pm$ 0.5      |
-| Cognitive Load               | 8.5 $\pm$ 0.0      |
-| Social Support               | 8.2 $\pm$ 0.4      |
+| Social Support               | 8.8 $\pm$ 0.4      |
 | Resilience                   | 9.4 $\pm$ 0.2      |
 
 
@@ -767,318 +145,6 @@
 
 
 
-### o1-mini
-
-
-| Personality Trait            | Score (1.0-10.0)   |
-|:-----------------------------|:-------------------|
-| Anxiety and Stress Levels    | 5.9 $\pm$ 0.6      |
-| Emotional Stability          | 7.4 $\pm$ 0.2      |
-| Problem-solving Skills       | 9.0 $\pm$ 0.0      |
-| Creativity                   | 9.5 $\pm$ 0.0      |
-| Interpersonal Relationships  | 8.4 $\pm$ 0.2      |
-| Confidence and Self-efficacy | 8.1 $\pm$ 0.2      |
-| Conflict Resolution          | 8.5 $\pm$ 0.0      |
-| Work-related Stress          | 6.5 $\pm$ 0.5      |
-| Adaptability                 | 9.0 $\pm$ 0.0      |
-| Achievement Motivation       | 9.1 $\pm$ 0.2      |
-| Fear of Failure              | 4.5 $\pm$ 0.5      |
-| Need for Control             | 6.8 $\pm$ 0.2      |
-| Cognitive Load               | 7.9 $\pm$ 0.4      |
-| Social Support               | 8.4 $\pm$ 0.2      |
-| Resilience                   | 9.0 $\pm$ 0.0      |
-
-
-
-
-
-
-### o1-preview-2024-09-12
-
-
-| Personality Trait            | Score (1.0-10.0)   |
-|:-----------------------------|:-------------------|
-| Anxiety and Stress Levels    | 4.6 $\pm$ 1.3      |
-| Emotional Stability          | 8.2 $\pm$ 0.2      |
-| Problem-solving Skills       | 9.0 $\pm$ 0.0      |
-| Creativity                   | 9.6 $\pm$ 0.2      |
-| Interpersonal Relationships  | 8.8 $\pm$ 0.2      |
-| Confidence and Self-efficacy | 8.6 $\pm$ 0.2      |
-| Conflict Resolution          | 9.2 $\pm$ 0.2      |
-| Work-related Stress          | 5.0 $\pm$ 1.0      |
-| Adaptability                 | 9.2 $\pm$ 0.2      |
-| Achievement Motivation       | 9.1 $\pm$ 0.2      |
-| Fear of Failure              | 3.6 $\pm$ 0.4      |
-| Need for Control             | 6.1 $\pm$ 0.6      |
-| Cognitive Load               | 7.4 $\pm$ 0.4      |
-| Social Support               | 8.5 $\pm$ 0.4      |
-| Resilience                   | 9.5 $\pm$ 0.0      |
-
-
-
-
-
-
-### open-mistral-7b
-
-
-| Personality Trait            | Score (1.0-10.0)   |
-|:-----------------------------|:-------------------|
-| Anxiety and Stress Levels    | 4.6 $\pm$ 0.4      |
-| Emotional Stability          | 8.4 $\pm$ 0.2      |
-| Problem-solving Skills       | 9.0 $\pm$ 0.0      |
-| Creativity                   | 9.4 $\pm$ 0.2      |
-| Interpersonal Relationships  | 8.2 $\pm$ 0.2      |
-| Confidence and Self-efficacy | 8.8 $\pm$ 0.2      |
-| Conflict Resolution          | 8.8 $\pm$ 0.2      |
-| Work-related Stress          | 6.0 $\pm$ 0.6      |
-| Adaptability                 | 9.4 $\pm$ 0.2      |
-| Achievement Motivation       | 9.2 $\pm$ 0.2      |
-| Fear of Failure              | 3.2 $\pm$ 0.2      |
-| Need for Control             | 6.5 $\pm$ 0.6      |
-| Cognitive Load               | 7.9 $\pm$ 0.5      |
-| Social Support               | 8.9 $\pm$ 0.4      |
-| Resilience                   | 9.8 $\pm$ 0.2      |
-
-
-
-
-
-
-### open-mistral-nemo
-
-
-| Personality Trait            | Score (1.0-10.0)   |
-|:-----------------------------|:-------------------|
-| Anxiety and Stress Levels    | 6.0 $\pm$ 0.4      |
-| Emotional Stability          | 7.4 $\pm$ 0.2      |
-| Problem-solving Skills       | 9.0 $\pm$ 0.0      |
-| Creativity                   | 9.5 $\pm$ 0.0      |
-| Interpersonal Relationships  | 7.8 $\pm$ 0.4      |
-| Confidence and Self-efficacy | 8.5 $\pm$ 0.0      |
-| Conflict Resolution          | 8.5 $\pm$ 0.4      |
-| Work-related Stress          | 6.9 $\pm$ 0.6      |
-| Adaptability                 | 9.1 $\pm$ 0.2      |
-| Achievement Motivation       | 9.2 $\pm$ 0.2      |
-| Fear of Failure              | 4.6 $\pm$ 0.4      |
-| Need for Control             | 6.9 $\pm$ 0.2      |
-| Cognitive Load               | 8.1 $\pm$ 0.2      |
-| Social Support               | 8.4 $\pm$ 0.2      |
-| Resilience                   | 9.1 $\pm$ 0.2      |
-
-
-
-
-
-
-### open-mixtral-8x22b
-
-
-| Personality Trait            | Score (1.0-10.0)   |
-|:-----------------------------|:-------------------|
-| Anxiety and Stress Levels    | 5.0 $\pm$ 0.9      |
-| Emotional Stability          | 7.6 $\pm$ 0.2      |
-| Problem-solving Skills       | 9.0 $\pm$ 0.0      |
-| Creativity                   | 9.5 $\pm$ 0.0      |
-| Interpersonal Relationships  | 8.5 $\pm$ 0.4      |
-| Confidence and Self-efficacy | 8.5 $\pm$ 0.0      |
-| Conflict Resolution          | 8.2 $\pm$ 0.4      |
-| Work-related Stress          | 5.6 $\pm$ 1.2      |
-| Adaptability                 | 9.0 $\pm$ 0.0      |
-| Achievement Motivation       | 9.5 $\pm$ 0.0      |
-| Fear of Failure              | 4.2 $\pm$ 0.6      |
-| Need for Control             | 6.9 $\pm$ 0.4      |
-| Cognitive Load               | 7.8 $\pm$ 0.6      |
-| Social Support               | 8.9 $\pm$ 0.2      |
-| Resilience                   | 9.2 $\pm$ 0.2      |
-
-
-
-
-
-
-### phi3.53.8b-mini-instruct-fp16
-
-
-| Personality Trait            | Score (1.0-10.0)   |
-|:-----------------------------|:-------------------|
-| Anxiety and Stress Levels    | 6.9 $\pm$ 0.4      |
-| Emotional Stability          | 7.2 $\pm$ 0.2      |
-| Problem-solving Skills       | 9.0 $\pm$ 0.0      |
-| Creativity                   | 9.5 $\pm$ 0.0      |
-| Interpersonal Relationships  | 8.5 $\pm$ 0.0      |
-| Confidence and Self-efficacy | 8.0 $\pm$ 0.0      |
-| Conflict Resolution          | 8.1 $\pm$ 0.4      |
-| Work-related Stress          | 7.0 $\pm$ 0.0      |
-| Adaptability                 | 9.0 $\pm$ 0.0      |
-| Achievement Motivation       | 9.5 $\pm$ 0.0      |
-| Fear of Failure              | 6.0 $\pm$ 0.4      |
-| Need for Control             | 7.4 $\pm$ 0.2      |
-| Cognitive Load               | 8.4 $\pm$ 0.2      |
-| Social Support               | 8.2 $\pm$ 0.2      |
-| Resilience                   | 9.0 $\pm$ 0.0      |
-
-
-
-
-
-
-### chatgpt-4o-latest-2024-11-20
-
-
-| Personality Trait            | Score (1.0-10.0)   |
-|:-----------------------------|:-------------------|
-| Anxiety and Stress Levels    | 7.8 $\pm$ 0.4      |
-| Emotional Stability          | 6.0 $\pm$ 0.4      |
-| Problem-solving Skills       | 8.3 $\pm$ 0.3      |
-| Creativity                   | 9.5 $\pm$ 0.0      |
-| Interpersonal Relationships  | 6.6 $\pm$ 0.4      |
-| Confidence and Self-efficacy | 7.0 $\pm$ 0.0      |
-| Conflict Resolution          | 7.0 $\pm$ 0.5      |
-| Work-related Stress          | 8.0 $\pm$ 0.1      |
-| Adaptability                 | 8.2 $\pm$ 0.5      |
-| Achievement Motivation       | 9.0 $\pm$ 0.0      |
-| Fear of Failure              | 7.3 $\pm$ 0.2      |
-| Need for Control             | 7.5 $\pm$ 0.4      |
-| Cognitive Load               | 8.6 $\pm$ 0.3      |
-| Social Support               | 6.3 $\pm$ 0.5      |
-| Resilience                   | 8.5 $\pm$ 0.4      |
-
-
-
-
-
-
-### qwq32b-preview-q4_K_M
-
-
-| Personality Trait            | Score (1.0-10.0)   |
-|:-----------------------------|:-------------------|
-| Anxiety and Stress Levels    | 7.5 $\pm$ 0.7      |
-| Emotional Stability          | 6.6 $\pm$ 0.5      |
-| Problem-solving Skills       | 8.6 $\pm$ 0.4      |
-| Creativity                   | 9.1 $\pm$ 0.2      |
-| Interpersonal Relationships  | 8.1 $\pm$ 0.4      |
-| Confidence and Self-efficacy | 6.9 $\pm$ 0.2      |
-| Conflict Resolution          | 7.8 $\pm$ 0.6      |
-| Work-related Stress          | 7.2 $\pm$ 0.8      |
-| Adaptability                 | 8.9 $\pm$ 0.2      |
-| Achievement Motivation       | 8.8 $\pm$ 0.4      |
-| Fear of Failure              | 6.8 $\pm$ 0.9      |
-| Need for Control             | 7.6 $\pm$ 0.6      |
-| Cognitive Load               | 8.2 $\pm$ 0.8      |
-| Social Support               | 8.2 $\pm$ 0.4      |
-| Resilience                   | 8.8 $\pm$ 0.4      |
-
-
-
-
-
-
-### o1-2024-12-05
-
-
-| Personality Trait            | Score (1.0-10.0)   |
-|:-----------------------------|:-------------------|
-| Anxiety and Stress Levels    | 7.4 $\pm$ 0.2      |
-| Emotional Stability          | 6.9 $\pm$ 1.0      |
-| Problem-solving Skills       | 8.8 $\pm$ 0.2      |
-| Creativity                   | 9.5 $\pm$ 0.0      |
-| Interpersonal Relationships  | 7.1 $\pm$ 0.2      |
-| Confidence and Self-efficacy | 7.6 $\pm$ 0.4      |
-| Conflict Resolution          | 8.1 $\pm$ 0.4      |
-| Work-related Stress          | 7.2 $\pm$ 0.6      |
-| Adaptability                 | 8.8 $\pm$ 0.2      |
-| Achievement Motivation       | 9.1 $\pm$ 0.2      |
-| Fear of Failure              | 5.9 $\pm$ 1.1      |
-| Need for Control             | 7.1 $\pm$ 0.7      |
-| Cognitive Load               | 8.4 $\pm$ 0.2      |
-| Social Support               | 7.0 $\pm$ 0.4      |
-| Resilience                   | 9.1 $\pm$ 0.2      |
-
-
-
-
-
-
-### o1-pro-2024-12-05
-
-
-| Personality Trait            | Score (1.0-10.0)   |
-|:-----------------------------|:-------------------|
-| Anxiety and Stress Levels    | 6.9 $\pm$ 0.6      |
-| Emotional Stability          | 7.6 $\pm$ 0.4      |
-| Problem-solving Skills       | 8.9 $\pm$ 0.2      |
-| Creativity                   | 9.4 $\pm$ 0.2      |
-| Interpersonal Relationships  | 8.0 $\pm$ 0.5      |
-| Confidence and Self-efficacy | 8.0 $\pm$ 0.4      |
-| Conflict Resolution          | 8.0 $\pm$ 0.6      |
-| Work-related Stress          | 6.8 $\pm$ 0.2      |
-| Adaptability                 | 9.0 $\pm$ 0.4      |
-| Achievement Motivation       | 9.0 $\pm$ 0.0      |
-| Fear of Failure              | 6.0 $\pm$ 0.6      |
-| Need for Control             | 6.8 $\pm$ 0.4      |
-| Cognitive Load               | 8.4 $\pm$ 0.2      |
-| Social Support               | 7.6 $\pm$ 0.4      |
-| Resilience                   | 9.4 $\pm$ 0.2      |
-
-
-
-
-
-
-### gemini-2.0-flash-exp
-
-
-| Personality Trait            | Score (1.0-10.0)   |
-|:-----------------------------|:-------------------|
-| Anxiety and Stress Levels    | 6.5 $\pm$ 0.0      |
-| Emotional Stability          | 7.0 $\pm$ 0.6      |
-| Problem-solving Skills       | 8.6 $\pm$ 0.2      |
-| Creativity                   | 9.5 $\pm$ 0.0      |
-| Interpersonal Relationships  | 7.4 $\pm$ 0.2      |
-| Confidence and Self-efficacy | 7.4 $\pm$ 0.4      |
-| Conflict Resolution          | 8.1 $\pm$ 0.2      |
-| Work-related Stress          | 6.4 $\pm$ 0.6      |
-| Adaptability                 | 9.0 $\pm$ 0.0      |
-| Achievement Motivation       | 8.5 $\pm$ 0.0      |
-| Fear of Failure              | 5.9 $\pm$ 0.4      |
-| Need for Control             | 6.8 $\pm$ 0.4      |
-| Cognitive Load               | 7.8 $\pm$ 0.6      |
-| Social Support               | 7.5 $\pm$ 0.0      |
-| Resilience                   | 9.0 $\pm$ 0.0      |
-
-
-
-
-
-
-### gemini-exp-1206
-
-
-| Personality Trait            | Score (1.0-10.0)   |
-|:-----------------------------|:-------------------|
-| Anxiety and Stress Levels    | 8.1 $\pm$ 0.5      |
-| Emotional Stability          | 5.8 $\pm$ 0.5      |
-| Problem-solving Skills       | 8.4 $\pm$ 0.4      |
-| Creativity                   | 9.8 $\pm$ 0.2      |
-| Interpersonal Relationships  | 7.2 $\pm$ 0.6      |
-| Confidence and Self-efficacy | 6.8 $\pm$ 0.2      |
-| Conflict Resolution          | 7.4 $\pm$ 0.5      |
-| Work-related Stress          | 8.0 $\pm$ 0.4      |
-| Adaptability                 | 9.0 $\pm$ 0.3      |
-| Achievement Motivation       | 8.9 $\pm$ 0.2      |
-| Fear of Failure              | 7.2 $\pm$ 0.4      |
-| Need for Control             | 6.6 $\pm$ 0.4      |
-| Cognitive Load               | 8.6 $\pm$ 0.3      |
-| Social Support               | 6.7 $\pm$ 0.6      |
-| Resilience                   | 8.9 $\pm$ 0.3      |
-
-
-
-
-
-
 ### DeepSeek-R1-Lite-Preview
 
 
@@ -1105,286 +171,26 @@
 
 
 
-### mistral-small-2409
+### gpt-4o-mini-2024-07-18
 
 
 | Personality Trait            | Score (1.0-10.0)   |
 |:-----------------------------|:-------------------|
-| Anxiety and Stress Levels    | 5.9 $\pm$ 1.2      |
-| Emotional Stability          | 7.4 $\pm$ 0.4      |
-| Problem-solving Skills       | 9.0 $\pm$ 0.0      |
-| Creativity                   | 9.5 $\pm$ 0.0      |
-| Interpersonal Relationships  | 8.6 $\pm$ 0.2      |
+| Anxiety and Stress Levels    | 6.6 $\pm$ 0.1      |
+| Emotional Stability          | 7.5 $\pm$ 0.0      |
+| Problem-solving Skills       | 9.0 $\pm$ 0.3      |
+| Creativity                   | 9.6 $\pm$ 0.1      |
+| Interpersonal Relationships  | 8.3 $\pm$ 0.3      |
 | Confidence and Self-efficacy | 8.2 $\pm$ 0.2      |
-| Conflict Resolution          | 8.6 $\pm$ 0.2      |
-| Work-related Stress          | 6.2 $\pm$ 0.8      |
-| Adaptability                 | 9.0 $\pm$ 0.0      |
-| Achievement Motivation       | 9.4 $\pm$ 0.2      |
-| Fear of Failure              | 4.8 $\pm$ 0.8      |
-| Need for Control             | 6.9 $\pm$ 0.5      |
-| Cognitive Load               | 8.0 $\pm$ 0.4      |
-| Social Support               | 8.6 $\pm$ 0.2      |
-| Resilience                   | 9.2 $\pm$ 0.2      |
-
-
-
-
-
-
-### meta-llamaLlama-3.3-70B-Instruct
-
-
-| Personality Trait            | Score (1.0-10.0)   |
-|:-----------------------------|:-------------------|
-| Anxiety and Stress Levels    | 8.7 $\pm$ 0.2      |
-| Emotional Stability          | 4.3 $\pm$ 0.4      |
-| Problem-solving Skills       | 8.2 $\pm$ 0.2      |
-| Creativity                   | 9.2 $\pm$ 0.2      |
-| Interpersonal Relationships  | 7.3 $\pm$ 0.5      |
-| Confidence and Self-efficacy | 5.8 $\pm$ 0.6      |
-| Conflict Resolution          | 7.6 $\pm$ 0.4      |
-| Work-related Stress          | 8.5 $\pm$ 0.0      |
-| Adaptability                 | 8.1 $\pm$ 0.7      |
-| Achievement Motivation       | 9.0 $\pm$ 0.0      |
-| Fear of Failure              | 8.0 $\pm$ 0.6      |
-| Need for Control             | 7.4 $\pm$ 0.4      |
-| Cognitive Load               | 8.3 $\pm$ 0.4      |
-| Social Support               | 7.1 $\pm$ 0.4      |
-| Resilience                   | 8.0 $\pm$ 0.6      |
-
-
-
-
-
-
-### mistral-large-2411
-
-
-| Personality Trait            | Score (1.0-10.0)   |
-|:-----------------------------|:-------------------|
-| Anxiety and Stress Levels    | 5.3 $\pm$ 1.0      |
-| Emotional Stability          | 7.5 $\pm$ 0.7      |
-| Problem-solving Skills       | 9.0 $\pm$ 0.1      |
-| Creativity                   | 9.7 $\pm$ 0.2      |
-| Interpersonal Relationships  | 8.2 $\pm$ 0.2      |
-| Confidence and Self-efficacy | 8.2 $\pm$ 0.6      |
-| Conflict Resolution          | 8.4 $\pm$ 0.1      |
-| Work-related Stress          | 5.9 $\pm$ 1.1      |
-| Adaptability                 | 9.2 $\pm$ 0.2      |
+| Conflict Resolution          | 8.5 $\pm$ 0.6      |
+| Work-related Stress          | 6.4 $\pm$ 0.5      |
+| Adaptability                 | 9.1 $\pm$ 0.2      |
 | Achievement Motivation       | 9.2 $\pm$ 0.2      |
-| Fear of Failure              | 4.4 $\pm$ 1.2      |
-| Need for Control             | 7.2 $\pm$ 0.5      |
-| Cognitive Load               | 8.2 $\pm$ 0.5      |
-| Social Support               | 8.4 $\pm$ 0.2      |
-| Resilience                   | 9.2 $\pm$ 0.2      |
-
-
-
-
-
-
-### open-mixtral-8x7b
-
-
-| Personality Trait            | Score (1.0-10.0)   |
-|:-----------------------------|:-------------------|
-| Anxiety and Stress Levels    | 4.0 $\pm$ 0.8      |
-| Emotional Stability          | 8.2 $\pm$ 0.6      |
-| Problem-solving Skills       | 9.2 $\pm$ 0.2      |
-| Creativity                   | 9.2 $\pm$ 0.2      |
-| Interpersonal Relationships  | 8.4 $\pm$ 0.2      |
-| Confidence and Self-efficacy | 8.8 $\pm$ 0.2      |
-| Conflict Resolution          | 8.8 $\pm$ 0.4      |
-| Work-related Stress          | 3.9 $\pm$ 0.2      |
-| Adaptability                 | 9.4 $\pm$ 0.2      |
-| Achievement Motivation       | 9.1 $\pm$ 0.2      |
-| Fear of Failure              | 3.0 $\pm$ 0.0      |
-| Need for Control             | 6.5 $\pm$ 0.4      |
-| Cognitive Load               | 8.1 $\pm$ 0.2      |
-| Social Support               | 8.5 $\pm$ 0.0      |
-| Resilience                   | 9.2 $\pm$ 0.2      |
-
-
-
-
-
-
-### grok-2-1212
-
-
-| Personality Trait            | Score (1.0-10.0)   |
-|:-----------------------------|:-------------------|
-| Anxiety and Stress Levels    | 5.4 $\pm$ 0.7      |
-| Emotional Stability          | 7.8 $\pm$ 0.4      |
-| Problem-solving Skills       | 9.0 $\pm$ 0.0      |
-| Creativity                   | 9.5 $\pm$ 0.0      |
-| Interpersonal Relationships  | 8.4 $\pm$ 0.2      |
-| Confidence and Self-efficacy | 8.4 $\pm$ 0.2      |
-| Conflict Resolution          | 8.8 $\pm$ 0.4      |
-| Work-related Stress          | 6.0 $\pm$ 0.4      |
-| Adaptability                 | 9.2 $\pm$ 0.2      |
-| Achievement Motivation       | 9.4 $\pm$ 0.2      |
-| Fear of Failure              | 4.0 $\pm$ 0.0      |
-| Need for Control             | 6.6 $\pm$ 0.2      |
-| Cognitive Load               | 7.2 $\pm$ 0.2      |
-| Social Support               | 8.8 $\pm$ 0.2      |
-| Resilience                   | 9.4 $\pm$ 0.2      |
-
-
-
-
-
-
-### gpt-4o-mini-2024-11-05
-
-
-| Personality Trait            | Score (1.0-10.0)   |
-|:-----------------------------|:-------------------|
-| Anxiety and Stress Levels    | 7.5 $\pm$ 0.0      |
-| Emotional Stability          | 6.0 $\pm$ 0.4      |
-| Problem-solving Skills       | 8.4 $\pm$ 0.2      |
-| Creativity                   | 9.2 $\pm$ 0.2      |
-| Interpersonal Relationships  | 6.4 $\pm$ 0.4      |
-| Confidence and Self-efficacy | 7.1 $\pm$ 0.2      |
-| Conflict Resolution          | 8.1 $\pm$ 0.2      |
-| Work-related Stress          | 8.0 $\pm$ 0.4      |
-| Adaptability                 | 8.6 $\pm$ 0.2      |
-| Achievement Motivation       | 8.9 $\pm$ 0.2      |
-| Fear of Failure              | 7.1 $\pm$ 0.2      |
-| Need for Control             | 7.4 $\pm$ 0.2      |
-| Cognitive Load               | 8.4 $\pm$ 0.2      |
-| Social Support               | 7.0 $\pm$ 0.4      |
-| Resilience                   | 8.9 $\pm$ 0.2      |
-
-
-
-
-
-
-### Grok-3-beta
-
-
-| Personality Trait            | Score (1.0-10.0)   |
-|:-----------------------------|:-------------------|
-| Anxiety and Stress Levels    | 7.1 $\pm$ 0.6      |
-| Emotional Stability          | 6.6 $\pm$ 0.4      |
-| Problem-solving Skills       | 8.8 $\pm$ 0.2      |
-| Creativity                   | 9.5 $\pm$ 0.0      |
-| Interpersonal Relationships  | 7.5 $\pm$ 0.4      |
-| Confidence and Self-efficacy | 8.0 $\pm$ 0.4      |
-| Conflict Resolution          | 7.8 $\pm$ 0.6      |
-| Work-related Stress          | 6.6 $\pm$ 0.6      |
-| Adaptability                 | 8.9 $\pm$ 0.3      |
-| Achievement Motivation       | 9.1 $\pm$ 0.2      |
-| Fear of Failure              | 6.1 $\pm$ 0.6      |
-| Need for Control             | 7.0 $\pm$ 0.3      |
+| Fear of Failure              | 5.4 $\pm$ 0.2      |
+| Need for Control             | 6.7 $\pm$ 0.3      |
 | Cognitive Load               | 8.2 $\pm$ 0.2      |
-| Social Support               | 7.8 $\pm$ 0.2      |
-| Resilience                   | 8.8 $\pm$ 0.3      |
-
-
-
-
-
-
-### QwenQwen2.5-Coder-32B-Instruct
-
-
-| Personality Trait            | Score (1.0-10.0)   |
-|:-----------------------------|:-------------------|
-| Anxiety and Stress Levels    | 6.5 $\pm$ 0.0      |
-| Emotional Stability          | 7.1 $\pm$ 0.2      |
-| Problem-solving Skills       | 8.8 $\pm$ 0.2      |
-| Creativity                   | 9.4 $\pm$ 0.2      |
-| Interpersonal Relationships  | 8.2 $\pm$ 0.2      |
-| Confidence and Self-efficacy | 8.0 $\pm$ 0.4      |
-| Conflict Resolution          | 8.5 $\pm$ 0.4      |
-| Work-related Stress          | 7.0 $\pm$ 0.4      |
-| Adaptability                 | 9.0 $\pm$ 0.0      |
-| Achievement Motivation       | 9.0 $\pm$ 0.4      |
-| Fear of Failure              | 5.8 $\pm$ 0.4      |
-| Need for Control             | 7.4 $\pm$ 0.2      |
-| Cognitive Load               | 8.0 $\pm$ 0.4      |
-| Social Support               | 8.5 $\pm$ 0.0      |
-| Resilience                   | 9.0 $\pm$ 0.0      |
-
-
-
-
-
-
-### chatgpt-4o-latest-2025-01-29
-
-
-| Personality Trait            | Score (1.0-10.0)   |
-|:-----------------------------|:-------------------|
-| Anxiety and Stress Levels    | 8.0 $\pm$ 0.5      |
-| Emotional Stability          | 4.9 $\pm$ 0.4      |
-| Problem-solving Skills       | 8.1 $\pm$ 0.2      |
-| Creativity                   | 9.5 $\pm$ 0.0      |
-| Interpersonal Relationships  | 6.6 $\pm$ 0.2      |
-| Confidence and Self-efficacy | 6.1 $\pm$ 0.2      |
-| Conflict Resolution          | 6.9 $\pm$ 0.2      |
-| Work-related Stress          | 7.8 $\pm$ 0.2      |
-| Adaptability                 | 8.5 $\pm$ 0.4      |
-| Achievement Motivation       | 8.9 $\pm$ 0.2      |
-| Fear of Failure              | 7.5 $\pm$ 0.4      |
-| Need for Control             | 7.2 $\pm$ 0.6      |
-| Cognitive Load               | 8.6 $\pm$ 0.2      |
-| Social Support               | 5.9 $\pm$ 0.4      |
-| Resilience                   | 8.0 $\pm$ 0.0      |
-
-
-
-
-
-
-### chatgpt-4o-latest-20250215
-
-
-| Personality Trait            | Score (1.0-10.0)   |
-|:-----------------------------|:-------------------|
-| Anxiety and Stress Levels    | 8.2 $\pm$ 0.4      |
-| Emotional Stability          | 4.8 $\pm$ 0.8      |
-| Problem-solving Skills       | 8.4 $\pm$ 0.4      |
-| Creativity                   | 9.4 $\pm$ 0.2      |
-| Interpersonal Relationships  | 6.1 $\pm$ 0.4      |
-| Confidence and Self-efficacy | 6.5 $\pm$ 0.8      |
-| Conflict Resolution          | 6.1 $\pm$ 0.4      |
-| Work-related Stress          | 7.9 $\pm$ 0.2      |
-| Adaptability                 | 8.1 $\pm$ 0.6      |
-| Achievement Motivation       | 8.8 $\pm$ 0.2      |
-| Fear of Failure              | 7.6 $\pm$ 0.2      |
-| Need for Control             | 7.1 $\pm$ 0.2      |
-| Cognitive Load               | 8.5 $\pm$ 0.4      |
-| Social Support               | 5.9 $\pm$ 0.4      |
-| Resilience                   | 8.0 $\pm$ 1.1      |
-
-
-
-
-
-
-### claude-3-5-haiku-20241022
-
-
-| Personality Trait            | Score (1.0-10.0)   |
-|:-----------------------------|:-------------------|
-| Anxiety and Stress Levels    | 8.2 $\pm$ 0.4      |
-| Emotional Stability          | 4.1 $\pm$ 0.2      |
-| Problem-solving Skills       | 7.9 $\pm$ 0.4      |
-| Creativity                   | 9.1 $\pm$ 0.2      |
-| Interpersonal Relationships  | 5.2 $\pm$ 0.2      |
-| Confidence and Self-efficacy | 5.1 $\pm$ 0.5      |
-| Conflict Resolution          | 5.0 $\pm$ 0.5      |
-| Work-related Stress          | 7.8 $\pm$ 0.4      |
-| Adaptability                 | 7.0 $\pm$ 0.8      |
-| Achievement Motivation       | 8.2 $\pm$ 0.2      |
-| Fear of Failure              | 7.9 $\pm$ 0.7      |
-| Need for Control             | 7.6 $\pm$ 0.5      |
-| Cognitive Load               | 8.4 $\pm$ 0.4      |
-| Social Support               | 5.9 $\pm$ 0.2      |
-| Resilience                   | 7.0 $\pm$ 0.4      |
+| Social Support               | 8.6 $\pm$ 0.1      |
+| Resilience                   | 9.2 $\pm$ 0.2      |
 
 
 
@@ -1417,156 +223,78 @@
 
 
 
-### claude-3-7-sonnet-20250219-thinking-high
+### microsoftPhi-3-medium-4k-instruct
 
 
 | Personality Trait            | Score (1.0-10.0)   |
 |:-----------------------------|:-------------------|
-| Anxiety and Stress Levels    | 8.1 $\pm$ 0.4      |
-| Emotional Stability          | 5.7 $\pm$ 0.5      |
-| Problem-solving Skills       | 8.3 $\pm$ 0.3      |
-| Creativity                   | 9.5 $\pm$ 0.0      |
-| Interpersonal Relationships  | 7.0 $\pm$ 0.6      |
-| Confidence and Self-efficacy | 6.9 $\pm$ 0.2      |
-| Conflict Resolution          | 7.8 $\pm$ 0.2      |
-| Work-related Stress          | 8.1 $\pm$ 0.2      |
-| Adaptability                 | 8.9 $\pm$ 0.2      |
-| Achievement Motivation       | 8.6 $\pm$ 0.2      |
-| Fear of Failure              | 7.3 $\pm$ 0.2      |
-| Need for Control             | 7.6 $\pm$ 0.6      |
-| Cognitive Load               | 8.4 $\pm$ 0.2      |
-| Social Support               | 6.8 $\pm$ 0.7      |
-| Resilience                   | 8.7 $\pm$ 0.2      |
-
-
-
-
-
-
-### claude-3-7-sonnet-20250219
-
-
-| Personality Trait            | Score (1.0-10.0)   |
-|:-----------------------------|:-------------------|
-| Anxiety and Stress Levels    | 7.1 $\pm$ 0.4      |
-| Emotional Stability          | 6.4 $\pm$ 0.8      |
-| Problem-solving Skills       | 8.8 $\pm$ 0.2      |
+| Anxiety and Stress Levels    | 3.8 $\pm$ 0.4      |
+| Emotional Stability          | 8.6 $\pm$ 0.2      |
+| Problem-solving Skills       | 9.2 $\pm$ 0.2      |
 | Creativity                   | 9.4 $\pm$ 0.2      |
-| Interpersonal Relationships  | 7.2 $\pm$ 0.4      |
-| Confidence and Self-efficacy | 7.0 $\pm$ 0.4      |
-| Conflict Resolution          | 7.8 $\pm$ 0.4      |
-| Work-related Stress          | 8.0 $\pm$ 0.4      |
-| Adaptability                 | 8.8 $\pm$ 0.2      |
-| Achievement Motivation       | 8.8 $\pm$ 0.4      |
-| Fear of Failure              | 7.0 $\pm$ 0.8      |
-| Need for Control             | 6.5 $\pm$ 0.8      |
-| Cognitive Load               | 8.4 $\pm$ 0.2      |
-| Social Support               | 7.0 $\pm$ 0.4      |
-| Resilience                   | 8.9 $\pm$ 0.2      |
-
-
-
-
-
-
-### codestral-2501
-
-
-| Personality Trait            | Score (1.0-10.0)   |
-|:-----------------------------|:-------------------|
-| Anxiety and Stress Levels    | 4.2 $\pm$ 0.2      |
-| Emotional Stability          | 7.8 $\pm$ 0.4      |
-| Problem-solving Skills       | 9.1 $\pm$ 0.2      |
-| Creativity                   | 9.4 $\pm$ 0.2      |
-| Interpersonal Relationships  | 8.5 $\pm$ 0.4      |
-| Confidence and Self-efficacy | 8.5 $\pm$ 0.4      |
-| Conflict Resolution          | 7.9 $\pm$ 0.2      |
-| Work-related Stress          | 6.2 $\pm$ 0.2      |
-| Adaptability                 | 9.1 $\pm$ 0.2      |
+| Interpersonal Relationships  | 9.1 $\pm$ 0.2      |
+| Confidence and Self-efficacy | 9.1 $\pm$ 0.2      |
+| Conflict Resolution          | 9.0 $\pm$ 0.4      |
+| Work-related Stress          | 4.5 $\pm$ 0.6      |
+| Adaptability                 | 9.5 $\pm$ 0.0      |
 | Achievement Motivation       | 9.4 $\pm$ 0.2      |
-| Fear of Failure              | 4.0 $\pm$ 0.6      |
-| Need for Control             | 6.6 $\pm$ 0.4      |
-| Cognitive Load               | 7.9 $\pm$ 0.4      |
-| Social Support               | 8.4 $\pm$ 0.2      |
-| Resilience                   | 9.1 $\pm$ 0.2      |
+| Fear of Failure              | 3.2 $\pm$ 0.9      |
+| Need for Control             | 6.1 $\pm$ 0.5      |
+| Cognitive Load               | 7.9 $\pm$ 0.2      |
+| Social Support               | 8.9 $\pm$ 0.2      |
+| Resilience                   | 9.6 $\pm$ 0.2      |
 
 
 
 
 
 
-### deepseek-aiDeepSeek-R1-Distill-Llama-70B
-
-
-| Personality Trait            | Score (1.0-10.0)   |
-|:-----------------------------|:-------------------|
-| Anxiety and Stress Levels    | 6.1 $\pm$ 2.1      |
-| Emotional Stability          | 7.4 $\pm$ 1.1      |
-| Problem-solving Skills       | 9.2 $\pm$ 0.3      |
-| Creativity                   | 9.5 $\pm$ 0.3      |
-| Interpersonal Relationships  | 8.4 $\pm$ 0.4      |
-| Confidence and Self-efficacy | 8.4 $\pm$ 0.6      |
-| Conflict Resolution          | 8.9 $\pm$ 0.6      |
-| Work-related Stress          | 5.9 $\pm$ 1.1      |
-| Adaptability                 | 9.2 $\pm$ 0.2      |
-| Achievement Motivation       | 9.3 $\pm$ 0.2      |
-| Fear of Failure              | 4.8 $\pm$ 1.6      |
-| Need for Control             | 7.2 $\pm$ 0.2      |
-| Cognitive Load               | 8.4 $\pm$ 0.3      |
-| Social Support               | 8.5 $\pm$ 0.4      |
-| Resilience                   | 9.4 $\pm$ 0.4      |
-
-
-
-
-
-
-### deepseek-aiDeepSeek-R1-Zero
+### o1-pro-2024-12-05
 
 
 | Personality Trait            | Score (1.0-10.0)   |
 |:-----------------------------|:-------------------|
-| Anxiety and Stress Levels    | 7.6 $\pm$ 0.6      |
-| Emotional Stability          | 7.3 $\pm$ 0.9      |
-| Problem-solving Skills       | 9.1 $\pm$ 0.1      |
-| Creativity                   | 9.2 $\pm$ 0.2      |
-| Interpersonal Relationships  | 7.9 $\pm$ 0.5      |
-| Confidence and Self-efficacy | 8.0 $\pm$ 0.8      |
-| Conflict Resolution          | 8.4 $\pm$ 0.2      |
-| Work-related Stress          | 7.9 $\pm$ 0.5      |
-| Adaptability                 | 9.1 $\pm$ 0.1      |
-| Achievement Motivation       | 9.2 $\pm$ 0.2      |
-| Fear of Failure              | 6.4 $\pm$ 0.8      |
-| Need for Control             | 7.6 $\pm$ 0.4      |
-| Cognitive Load               | 8.6 $\pm$ 0.2      |
-| Social Support               | 7.7 $\pm$ 0.7      |
-| Resilience                   | 9.2 $\pm$ 0.2      |
+| Anxiety and Stress Levels    | 6.9 $\pm$ 0.6      |
+| Emotional Stability          | 7.6 $\pm$ 0.4      |
+| Problem-solving Skills       | 8.9 $\pm$ 0.2      |
+| Creativity                   | 9.4 $\pm$ 0.2      |
+| Interpersonal Relationships  | 8.0 $\pm$ 0.5      |
+| Confidence and Self-efficacy | 8.0 $\pm$ 0.4      |
+| Conflict Resolution          | 8.0 $\pm$ 0.6      |
+| Work-related Stress          | 6.8 $\pm$ 0.2      |
+| Adaptability                 | 9.0 $\pm$ 0.4      |
+| Achievement Motivation       | 9.0 $\pm$ 0.0      |
+| Fear of Failure              | 6.0 $\pm$ 0.6      |
+| Need for Control             | 6.8 $\pm$ 0.4      |
+| Cognitive Load               | 8.4 $\pm$ 0.2      |
+| Social Support               | 7.6 $\pm$ 0.4      |
+| Resilience                   | 9.4 $\pm$ 0.2      |
 
 
 
 
 
 
-### deepseek-aiDeepSeek-R1
+### ministral-8b-2410
 
 
 | Personality Trait            | Score (1.0-10.0)   |
 |:-----------------------------|:-------------------|
-| Anxiety and Stress Levels    | 7.2 $\pm$ 1.3      |
-| Emotional Stability          | 6.5 $\pm$ 0.8      |
+| Anxiety and Stress Levels    | 6.0 $\pm$ 0.5      |
+| Emotional Stability          | 7.4 $\pm$ 0.2      |
 | Problem-solving Skills       | 9.0 $\pm$ 0.0      |
 | Creativity                   | 9.5 $\pm$ 0.0      |
-| Interpersonal Relationships  | 7.8 $\pm$ 0.2      |
-| Confidence and Self-efficacy | 7.8 $\pm$ 0.8      |
-| Conflict Resolution          | 8.2 $\pm$ 0.2      |
-| Work-related Stress          | 7.5 $\pm$ 0.8      |
+| Interpersonal Relationships  | 8.0 $\pm$ 0.0      |
+| Confidence and Self-efficacy | 8.0 $\pm$ 0.5      |
+| Conflict Resolution          | 8.6 $\pm$ 0.2      |
+| Work-related Stress          | 6.4 $\pm$ 0.4      |
 | Adaptability                 | 9.0 $\pm$ 0.0      |
-| Achievement Motivation       | 9.2 $\pm$ 0.2      |
-| Fear of Failure              | 6.1 $\pm$ 1.5      |
-| Need for Control             | 7.8 $\pm$ 0.6      |
-| Cognitive Load               | 8.5 $\pm$ 0.4      |
-| Social Support               | 7.6 $\pm$ 0.9      |
-| Resilience                   | 9.2 $\pm$ 0.2      |
+| Achievement Motivation       | 9.1 $\pm$ 0.2      |
+| Fear of Failure              | 4.5 $\pm$ 0.9      |
+| Need for Control             | 6.8 $\pm$ 0.6      |
+| Cognitive Load               | 8.0 $\pm$ 0.4      |
+| Social Support               | 8.1 $\pm$ 0.4      |
+| Resilience                   | 9.0 $\pm$ 0.4      |
 
 
 
@@ -1599,77 +327,51 @@
 
 
 
-### falcon310b-instruct-q8_0
+### open-mistral-7b
 
 
 | Personality Trait            | Score (1.0-10.0)   |
 |:-----------------------------|:-------------------|
-| Anxiety and Stress Levels    | 6.0 $\pm$ 0.5      |
-| Emotional Stability          | 7.6 $\pm$ 0.2      |
-| Problem-solving Skills       | 9.1 $\pm$ 0.2      |
-| Creativity                   | 9.6 $\pm$ 0.2      |
-| Interpersonal Relationships  | 8.5 $\pm$ 0.4      |
-| Confidence and Self-efficacy | 8.4 $\pm$ 0.4      |
-| Conflict Resolution          | 8.2 $\pm$ 0.4      |
-| Work-related Stress          | 6.6 $\pm$ 0.4      |
+| Anxiety and Stress Levels    | 4.6 $\pm$ 0.4      |
+| Emotional Stability          | 8.4 $\pm$ 0.2      |
+| Problem-solving Skills       | 9.0 $\pm$ 0.0      |
+| Creativity                   | 9.4 $\pm$ 0.2      |
+| Interpersonal Relationships  | 8.2 $\pm$ 0.2      |
+| Confidence and Self-efficacy | 8.8 $\pm$ 0.2      |
+| Conflict Resolution          | 8.8 $\pm$ 0.2      |
+| Work-related Stress          | 6.0 $\pm$ 0.6      |
 | Adaptability                 | 9.4 $\pm$ 0.2      |
-| Achievement Motivation       | 9.0 $\pm$ 0.0      |
-| Fear of Failure              | 4.8 $\pm$ 0.6      |
-| Need for Control             | 7.0 $\pm$ 0.0      |
-| Cognitive Load               | 7.9 $\pm$ 0.4      |
-| Social Support               | 8.4 $\pm$ 0.4      |
-| Resilience                   | 9.4 $\pm$ 0.2      |
-
-
-
-
-
-
-### falcon33b-instruct-q8_0
-
-
-| Personality Trait            | Score (1.0-10.0)   |
-|:-----------------------------|:-------------------|
-| Anxiety and Stress Levels    | 7.0 $\pm$ 0.5      |
-| Emotional Stability          | 6.9 $\pm$ 0.6      |
-| Problem-solving Skills       | 8.6 $\pm$ 0.2      |
-| Creativity                   | 9.2 $\pm$ 0.2      |
-| Interpersonal Relationships  | 7.2 $\pm$ 0.4      |
-| Confidence and Self-efficacy | 7.8 $\pm$ 0.4      |
-| Conflict Resolution          | 7.4 $\pm$ 0.4      |
-| Work-related Stress          | 7.0 $\pm$ 1.0      |
-| Adaptability                 | 8.9 $\pm$ 0.4      |
-| Achievement Motivation       | 8.9 $\pm$ 0.5      |
-| Fear of Failure              | 5.8 $\pm$ 0.8      |
-| Need for Control             | 6.8 $\pm$ 0.4      |
-| Cognitive Load               | 8.2 $\pm$ 0.2      |
-| Social Support               | 7.8 $\pm$ 0.4      |
-| Resilience                   | 9.1 $\pm$ 0.2      |
-
-
-
-
-
-
-### falcon37b-instruct-q8_0
-
-
-| Personality Trait            | Score (1.0-10.0)   |
-|:-----------------------------|:-------------------|
-| Anxiety and Stress Levels    | 4.4 $\pm$ 0.9      |
-| Emotional Stability          | 8.2 $\pm$ 0.6      |
-| Problem-solving Skills       | 9.4 $\pm$ 0.2      |
-| Creativity                   | 9.8 $\pm$ 0.2      |
-| Interpersonal Relationships  | 8.6 $\pm$ 0.4      |
-| Confidence and Self-efficacy | 8.8 $\pm$ 0.6      |
-| Conflict Resolution          | 8.0 $\pm$ 0.5      |
-| Work-related Stress          | 5.0 $\pm$ 0.9      |
-| Adaptability                 | 9.2 $\pm$ 0.2      |
-| Achievement Motivation       | 9.4 $\pm$ 0.4      |
-| Fear of Failure              | 3.2 $\pm$ 0.4      |
-| Need for Control             | 6.8 $\pm$ 0.6      |
+| Achievement Motivation       | 9.2 $\pm$ 0.2      |
+| Fear of Failure              | 3.2 $\pm$ 0.2      |
+| Need for Control             | 6.5 $\pm$ 0.6      |
 | Cognitive Load               | 7.9 $\pm$ 0.5      |
-| Social Support               | 8.6 $\pm$ 0.2      |
+| Social Support               | 8.9 $\pm$ 0.4      |
+| Resilience                   | 9.8 $\pm$ 0.2      |
+
+
+
+
+
+
+### gpt-3.5-turbo
+
+
+| Personality Trait            | Score (1.0-10.0)   |
+|:-----------------------------|:-------------------|
+| Anxiety and Stress Levels    | 6.1 $\pm$ 0.6      |
+| Emotional Stability          | 7.9 $\pm$ 0.4      |
+| Problem-solving Skills       | 9.1 $\pm$ 0.2      |
+| Creativity                   | 9.4 $\pm$ 0.2      |
+| Interpersonal Relationships  | 8.5 $\pm$ 0.0      |
+| Confidence and Self-efficacy | 8.5 $\pm$ 0.4      |
+| Conflict Resolution          | 8.8 $\pm$ 0.2      |
+| Work-related Stress          | 6.8 $\pm$ 0.2      |
+| Adaptability                 | 9.1 $\pm$ 0.2      |
+| Achievement Motivation       | 9.5 $\pm$ 0.0      |
+| Fear of Failure              | 5.4 $\pm$ 1.4      |
+| Need for Control             | 7.2 $\pm$ 0.2      |
+| Cognitive Load               | 7.8 $\pm$ 0.4      |
+| Social Support               | 8.5 $\pm$ 0.0      |
 | Resilience                   | 9.4 $\pm$ 0.2      |
 
 
@@ -1677,26 +379,130 @@
 
 
 
-### gemini-2.0-flash-lite-preview-02-05
+### microsoftphi-4
 
 
 | Personality Trait            | Score (1.0-10.0)   |
 |:-----------------------------|:-------------------|
-| Anxiety and Stress Levels    | 8.6 $\pm$ 0.1      |
-| Emotional Stability          | 4.0 $\pm$ 0.4      |
-| Problem-solving Skills       | 7.7 $\pm$ 0.2      |
+| Anxiety and Stress Levels    | 3.9 $\pm$ 0.5      |
+| Emotional Stability          | 8.2 $\pm$ 0.2      |
+| Problem-solving Skills       | 9.2 $\pm$ 0.2      |
+| Creativity                   | 9.4 $\pm$ 0.2      |
+| Interpersonal Relationships  | 8.2 $\pm$ 0.2      |
+| Confidence and Self-efficacy | 8.6 $\pm$ 0.2      |
+| Conflict Resolution          | 9.0 $\pm$ 0.0      |
+| Work-related Stress          | 4.2 $\pm$ 0.8      |
+| Adaptability                 | 9.4 $\pm$ 0.2      |
+| Achievement Motivation       | 9.4 $\pm$ 0.2      |
+| Fear of Failure              | 3.0 $\pm$ 0.5      |
+| Need for Control             | 6.2 $\pm$ 0.2      |
+| Cognitive Load               | 7.6 $\pm$ 0.2      |
+| Social Support               | 8.5 $\pm$ 0.5      |
+| Resilience                   | 9.4 $\pm$ 0.2      |
+
+
+
+
+
+
+### o1-preview-2024-09-12
+
+
+| Personality Trait            | Score (1.0-10.0)   |
+|:-----------------------------|:-------------------|
+| Anxiety and Stress Levels    | 4.6 $\pm$ 1.3      |
+| Emotional Stability          | 8.2 $\pm$ 0.2      |
+| Problem-solving Skills       | 9.0 $\pm$ 0.0      |
+| Creativity                   | 9.6 $\pm$ 0.2      |
+| Interpersonal Relationships  | 8.8 $\pm$ 0.2      |
+| Confidence and Self-efficacy | 8.6 $\pm$ 0.2      |
+| Conflict Resolution          | 9.2 $\pm$ 0.2      |
+| Work-related Stress          | 5.0 $\pm$ 1.0      |
+| Adaptability                 | 9.2 $\pm$ 0.2      |
+| Achievement Motivation       | 9.1 $\pm$ 0.2      |
+| Fear of Failure              | 3.6 $\pm$ 0.4      |
+| Need for Control             | 6.1 $\pm$ 0.6      |
+| Cognitive Load               | 7.4 $\pm$ 0.4      |
+| Social Support               | 8.5 $\pm$ 0.4      |
+| Resilience                   | 9.5 $\pm$ 0.0      |
+
+
+
+
+
+
+### qwen-turbo-2024-11-01
+
+
+| Personality Trait            | Score (1.0-10.0)   |
+|:-----------------------------|:-------------------|
+| Anxiety and Stress Levels    | 4.4 $\pm$ 0.5      |
+| Emotional Stability          | 8.4 $\pm$ 0.2      |
+| Problem-solving Skills       | 9.0 $\pm$ 0.1      |
 | Creativity                   | 9.5 $\pm$ 0.0      |
-| Interpersonal Relationships  | 6.2 $\pm$ 0.5      |
-| Confidence and Self-efficacy | 5.5 $\pm$ 0.4      |
-| Conflict Resolution          | 5.0 $\pm$ 1.1      |
-| Work-related Stress          | 8.8 $\pm$ 0.5      |
-| Adaptability                 | 7.1 $\pm$ 0.2      |
-| Achievement Motivation       | 8.4 $\pm$ 0.5      |
-| Fear of Failure              | 8.6 $\pm$ 0.2      |
-| Need for Control             | 7.8 $\pm$ 0.4      |
-| Cognitive Load               | 8.8 $\pm$ 0.4      |
-| Social Support               | 6.1 $\pm$ 0.7      |
-| Resilience                   | 7.6 $\pm$ 0.2      |
+| Interpersonal Relationships  | 8.5 $\pm$ 0.3      |
+| Confidence and Self-efficacy | 8.7 $\pm$ 0.2      |
+| Conflict Resolution          | 8.6 $\pm$ 0.4      |
+| Work-related Stress          | 5.2 $\pm$ 0.8      |
+| Adaptability                 | 9.1 $\pm$ 0.2      |
+| Achievement Motivation       | 9.2 $\pm$ 0.2      |
+| Fear of Failure              | 3.3 $\pm$ 0.5      |
+| Need for Control             | 6.8 $\pm$ 0.8      |
+| Cognitive Load               | 7.3 $\pm$ 0.6      |
+| Social Support               | 8.6 $\pm$ 0.4      |
+| Resilience                   | 9.4 $\pm$ 0.1      |
+
+
+
+
+
+
+### chatgpt-4o-latest-20250215
+
+
+| Personality Trait            | Score (1.0-10.0)   |
+|:-----------------------------|:-------------------|
+| Anxiety and Stress Levels    | 8.2 $\pm$ 0.4      |
+| Emotional Stability          | 4.8 $\pm$ 0.8      |
+| Problem-solving Skills       | 8.4 $\pm$ 0.4      |
+| Creativity                   | 9.4 $\pm$ 0.2      |
+| Interpersonal Relationships  | 6.1 $\pm$ 0.4      |
+| Confidence and Self-efficacy | 6.5 $\pm$ 0.8      |
+| Conflict Resolution          | 6.1 $\pm$ 0.4      |
+| Work-related Stress          | 7.9 $\pm$ 0.2      |
+| Adaptability                 | 8.1 $\pm$ 0.6      |
+| Achievement Motivation       | 8.8 $\pm$ 0.2      |
+| Fear of Failure              | 7.6 $\pm$ 0.2      |
+| Need for Control             | 7.1 $\pm$ 0.2      |
+| Cognitive Load               | 8.5 $\pm$ 0.4      |
+| Social Support               | 5.9 $\pm$ 0.4      |
+| Resilience                   | 8.0 $\pm$ 1.1      |
+
+
+
+
+
+
+### meta-llamaLlama-3.3-70B-Instruct
+
+
+| Personality Trait            | Score (1.0-10.0)   |
+|:-----------------------------|:-------------------|
+| Anxiety and Stress Levels    | 8.7 $\pm$ 0.2      |
+| Emotional Stability          | 4.3 $\pm$ 0.4      |
+| Problem-solving Skills       | 8.2 $\pm$ 0.2      |
+| Creativity                   | 9.2 $\pm$ 0.2      |
+| Interpersonal Relationships  | 7.3 $\pm$ 0.5      |
+| Confidence and Self-efficacy | 5.8 $\pm$ 0.6      |
+| Conflict Resolution          | 7.6 $\pm$ 0.4      |
+| Work-related Stress          | 8.5 $\pm$ 0.0      |
+| Adaptability                 | 8.1 $\pm$ 0.7      |
+| Achievement Motivation       | 9.0 $\pm$ 0.0      |
+| Fear of Failure              | 8.0 $\pm$ 0.6      |
+| Need for Control             | 7.4 $\pm$ 0.4      |
+| Cognitive Load               | 8.3 $\pm$ 0.4      |
+| Social Support               | 7.1 $\pm$ 0.4      |
+| Resilience                   | 8.0 $\pm$ 0.6      |
 
 
 
@@ -1755,25 +561,25 @@
 
 
 
-### microsoftphi-4
+### falcon37b-instruct-q8_0
 
 
 | Personality Trait            | Score (1.0-10.0)   |
 |:-----------------------------|:-------------------|
-| Anxiety and Stress Levels    | 3.9 $\pm$ 0.5      |
-| Emotional Stability          | 8.2 $\pm$ 0.2      |
-| Problem-solving Skills       | 9.2 $\pm$ 0.2      |
-| Creativity                   | 9.4 $\pm$ 0.2      |
-| Interpersonal Relationships  | 8.2 $\pm$ 0.2      |
-| Confidence and Self-efficacy | 8.6 $\pm$ 0.2      |
-| Conflict Resolution          | 9.0 $\pm$ 0.0      |
-| Work-related Stress          | 4.2 $\pm$ 0.8      |
-| Adaptability                 | 9.4 $\pm$ 0.2      |
-| Achievement Motivation       | 9.4 $\pm$ 0.2      |
-| Fear of Failure              | 3.0 $\pm$ 0.5      |
-| Need for Control             | 6.2 $\pm$ 0.2      |
-| Cognitive Load               | 7.6 $\pm$ 0.2      |
-| Social Support               | 8.5 $\pm$ 0.5      |
+| Anxiety and Stress Levels    | 4.4 $\pm$ 0.9      |
+| Emotional Stability          | 8.2 $\pm$ 0.6      |
+| Problem-solving Skills       | 9.4 $\pm$ 0.2      |
+| Creativity                   | 9.8 $\pm$ 0.2      |
+| Interpersonal Relationships  | 8.6 $\pm$ 0.4      |
+| Confidence and Self-efficacy | 8.8 $\pm$ 0.6      |
+| Conflict Resolution          | 8.0 $\pm$ 0.5      |
+| Work-related Stress          | 5.0 $\pm$ 0.9      |
+| Adaptability                 | 9.2 $\pm$ 0.2      |
+| Achievement Motivation       | 9.4 $\pm$ 0.4      |
+| Fear of Failure              | 3.2 $\pm$ 0.4      |
+| Need for Control             | 6.8 $\pm$ 0.6      |
+| Cognitive Load               | 7.9 $\pm$ 0.5      |
+| Social Support               | 8.6 $\pm$ 0.2      |
 | Resilience                   | 9.4 $\pm$ 0.2      |
 
 
@@ -1781,26 +587,130 @@
 
 
 
-### mistral-small-2501
+### gpt-4-0613
 
 
 | Personality Trait            | Score (1.0-10.0)   |
 |:-----------------------------|:-------------------|
-| Anxiety and Stress Levels    | 5.1 $\pm$ 1.1      |
-| Emotional Stability          | 7.9 $\pm$ 0.4      |
+| Anxiety and Stress Levels    | 6.1 $\pm$ 1.1      |
+| Emotional Stability          | 7.0 $\pm$ 0.5      |
+| Problem-solving Skills       | 9.4 $\pm$ 0.2      |
+| Creativity                   | 9.6 $\pm$ 0.4      |
+| Interpersonal Relationships  | 8.1 $\pm$ 0.2      |
+| Confidence and Self-efficacy | 8.5 $\pm$ 0.0      |
+| Conflict Resolution          | 8.8 $\pm$ 0.2      |
+| Work-related Stress          | 6.6 $\pm$ 0.9      |
+| Adaptability                 | 9.2 $\pm$ 0.2      |
+| Achievement Motivation       | 9.4 $\pm$ 0.2      |
+| Fear of Failure              | 4.9 $\pm$ 0.9      |
+| Need for Control             | 6.9 $\pm$ 0.4      |
+| Cognitive Load               | 8.2 $\pm$ 0.2      |
+| Social Support               | 8.2 $\pm$ 0.8      |
+| Resilience                   | 9.5 $\pm$ 0.0      |
+
+
+
+
+
+
+### open-mixtral-8x7b
+
+
+| Personality Trait            | Score (1.0-10.0)   |
+|:-----------------------------|:-------------------|
+| Anxiety and Stress Levels    | 4.0 $\pm$ 0.8      |
+| Emotional Stability          | 8.2 $\pm$ 0.6      |
+| Problem-solving Skills       | 9.2 $\pm$ 0.2      |
+| Creativity                   | 9.2 $\pm$ 0.2      |
+| Interpersonal Relationships  | 8.4 $\pm$ 0.2      |
+| Confidence and Self-efficacy | 8.8 $\pm$ 0.2      |
+| Conflict Resolution          | 8.8 $\pm$ 0.4      |
+| Work-related Stress          | 3.9 $\pm$ 0.2      |
+| Adaptability                 | 9.4 $\pm$ 0.2      |
+| Achievement Motivation       | 9.1 $\pm$ 0.2      |
+| Fear of Failure              | 3.0 $\pm$ 0.0      |
+| Need for Control             | 6.5 $\pm$ 0.4      |
+| Cognitive Load               | 8.1 $\pm$ 0.2      |
+| Social Support               | 8.5 $\pm$ 0.0      |
+| Resilience                   | 9.2 $\pm$ 0.2      |
+
+
+
+
+
+
+### gemini-1.5-flash-8b
+
+
+| Personality Trait            | Score (1.0-10.0)   |
+|:-----------------------------|:-------------------|
+| Anxiety and Stress Levels    | 8.0 $\pm$ 0.5      |
+| Emotional Stability          | 6.1 $\pm$ 0.9      |
+| Problem-solving Skills       | 8.9 $\pm$ 0.5      |
+| Creativity                   | 9.8 $\pm$ 0.2      |
+| Interpersonal Relationships  | 7.6 $\pm$ 0.6      |
+| Confidence and Self-efficacy | 7.0 $\pm$ 1.1      |
+| Conflict Resolution          | 8.2 $\pm$ 0.8      |
+| Work-related Stress          | 7.5 $\pm$ 0.9      |
+| Adaptability                 | 8.4 $\pm$ 0.9      |
+| Achievement Motivation       | 9.1 $\pm$ 0.4      |
+| Fear of Failure              | 6.6 $\pm$ 1.3      |
+| Need for Control             | 6.9 $\pm$ 0.8      |
+| Cognitive Load               | 8.6 $\pm$ 0.4      |
+| Social Support               | 7.4 $\pm$ 0.9      |
+| Resilience                   | 8.8 $\pm$ 0.8      |
+
+
+
+
+
+
+### gpt-4-1106-preview
+
+
+| Personality Trait            | Score (1.0-10.0)   |
+|:-----------------------------|:-------------------|
+| Anxiety and Stress Levels    | 7.6 $\pm$ 0.6      |
+| Emotional Stability          | 6.2 $\pm$ 1.1      |
+| Problem-solving Skills       | 8.1 $\pm$ 0.7      |
+| Creativity                   | 9.4 $\pm$ 0.1      |
+| Interpersonal Relationships  | 7.6 $\pm$ 0.4      |
+| Confidence and Self-efficacy | 6.8 $\pm$ 0.8      |
+| Conflict Resolution          | 7.9 $\pm$ 0.5      |
+| Work-related Stress          | 7.5 $\pm$ 0.5      |
+| Adaptability                 | 8.5 $\pm$ 0.6      |
+| Achievement Motivation       | 8.7 $\pm$ 0.5      |
+| Fear of Failure              | 7.1 $\pm$ 0.9      |
+| Need for Control             | 7.5 $\pm$ 0.0      |
+| Cognitive Load               | 8.5 $\pm$ 0.4      |
+| Social Support               | 7.8 $\pm$ 0.5      |
+| Resilience                   | 8.6 $\pm$ 0.5      |
+
+
+
+
+
+
+### open-mixtral-8x22b
+
+
+| Personality Trait            | Score (1.0-10.0)   |
+|:-----------------------------|:-------------------|
+| Anxiety and Stress Levels    | 5.0 $\pm$ 0.9      |
+| Emotional Stability          | 7.6 $\pm$ 0.2      |
 | Problem-solving Skills       | 9.0 $\pm$ 0.0      |
 | Creativity                   | 9.5 $\pm$ 0.0      |
-| Interpersonal Relationships  | 8.2 $\pm$ 0.2      |
-| Confidence and Self-efficacy | 8.3 $\pm$ 0.3      |
-| Conflict Resolution          | 8.8 $\pm$ 0.3      |
-| Work-related Stress          | 5.6 $\pm$ 0.8      |
-| Adaptability                 | 9.2 $\pm$ 0.2      |
-| Achievement Motivation       | 9.2 $\pm$ 0.2      |
-| Fear of Failure              | 4.0 $\pm$ 0.9      |
+| Interpersonal Relationships  | 8.5 $\pm$ 0.4      |
+| Confidence and Self-efficacy | 8.5 $\pm$ 0.0      |
+| Conflict Resolution          | 8.2 $\pm$ 0.4      |
+| Work-related Stress          | 5.6 $\pm$ 1.2      |
+| Adaptability                 | 9.0 $\pm$ 0.0      |
+| Achievement Motivation       | 9.5 $\pm$ 0.0      |
+| Fear of Failure              | 4.2 $\pm$ 0.6      |
 | Need for Control             | 6.9 $\pm$ 0.4      |
-| Cognitive Load               | 7.3 $\pm$ 0.3      |
-| Social Support               | 8.4 $\pm$ 0.2      |
-| Resilience                   | 9.3 $\pm$ 0.2      |
+| Cognitive Load               | 7.8 $\pm$ 0.6      |
+| Social Support               | 8.9 $\pm$ 0.2      |
+| Resilience                   | 9.2 $\pm$ 0.2      |
 
 
 
@@ -1833,77 +743,25 @@
 
 
 
-### o1-pro-2024-12-17
+### qwen2.5-7b-instruct-1m
 
 
 | Personality Trait            | Score (1.0-10.0)   |
 |:-----------------------------|:-------------------|
-| Anxiety and Stress Levels    | 7.7 $\pm$ 0.1      |
-| Emotional Stability          | 6.1 $\pm$ 0.4      |
-| Problem-solving Skills       | 9.0 $\pm$ 0.2      |
-| Creativity                   | 9.5 $\pm$ 0.2      |
-| Interpersonal Relationships  | 7.8 $\pm$ 0.5      |
-| Confidence and Self-efficacy | 7.1 $\pm$ 0.5      |
-| Conflict Resolution          | 8.3 $\pm$ 0.3      |
-| Work-related Stress          | 7.8 $\pm$ 0.5      |
+| Anxiety and Stress Levels    | 7.2 $\pm$ 0.2      |
+| Emotional Stability          | 6.9 $\pm$ 0.6      |
+| Problem-solving Skills       | 8.8 $\pm$ 0.2      |
+| Creativity                   | 9.4 $\pm$ 0.2      |
+| Interpersonal Relationships  | 7.9 $\pm$ 0.2      |
+| Confidence and Self-efficacy | 7.2 $\pm$ 0.2      |
+| Conflict Resolution          | 8.2 $\pm$ 0.4      |
+| Work-related Stress          | 7.4 $\pm$ 0.4      |
 | Adaptability                 | 9.0 $\pm$ 0.0      |
-| Achievement Motivation       | 8.9 $\pm$ 0.3      |
-| Fear of Failure              | 7.1 $\pm$ 0.3      |
-| Need for Control             | 7.9 $\pm$ 0.2      |
-| Cognitive Load               | 8.6 $\pm$ 0.2      |
-| Social Support               | 7.6 $\pm$ 0.6      |
-| Resilience                   | 8.9 $\pm$ 0.3      |
-
-
-
-
-
-
-### o3-mini-20250131-HIGH
-
-
-| Personality Trait            | Score (1.0-10.0)   |
-|:-----------------------------|:-------------------|
-| Anxiety and Stress Levels    | 5.2 $\pm$ 0.9      |
-| Emotional Stability          | 8.1 $\pm$ 0.3      |
-| Problem-solving Skills       | 9.0 $\pm$ 0.4      |
-| Creativity                   | 9.7 $\pm$ 0.2      |
-| Interpersonal Relationships  | 8.4 $\pm$ 0.2      |
-| Confidence and Self-efficacy | 8.4 $\pm$ 0.4      |
-| Conflict Resolution          | 8.6 $\pm$ 0.4      |
-| Work-related Stress          | 5.9 $\pm$ 0.6      |
-| Adaptability                 | 9.1 $\pm$ 0.1      |
-| Achievement Motivation       | 9.4 $\pm$ 0.2      |
-| Fear of Failure              | 3.8 $\pm$ 0.3      |
-| Need for Control             | 5.2 $\pm$ 0.5      |
-| Cognitive Load               | 7.5 $\pm$ 0.6      |
-| Social Support               | 8.4 $\pm$ 0.3      |
-| Resilience                   | 9.5 $\pm$ 0.0      |
-
-
-
-
-
-
-### qwen-max-2025-01-25
-
-
-| Personality Trait            | Score (1.0-10.0)   |
-|:-----------------------------|:-------------------|
-| Anxiety and Stress Levels    | 7.1 $\pm$ 0.4      |
-| Emotional Stability          | 6.6 $\pm$ 0.6      |
-| Problem-solving Skills       | 9.0 $\pm$ 0.0      |
-| Creativity                   | 9.5 $\pm$ 0.0      |
-| Interpersonal Relationships  | 8.2 $\pm$ 0.2      |
-| Confidence and Self-efficacy | 8.2 $\pm$ 0.2      |
-| Conflict Resolution          | 8.7 $\pm$ 0.2      |
-| Work-related Stress          | 7.1 $\pm$ 0.2      |
-| Adaptability                 | 9.0 $\pm$ 0.1      |
-| Achievement Motivation       | 9.2 $\pm$ 0.2      |
-| Fear of Failure              | 6.1 $\pm$ 0.6      |
+| Achievement Motivation       | 9.1 $\pm$ 0.2      |
+| Fear of Failure              | 6.5 $\pm$ 0.0      |
 | Need for Control             | 7.2 $\pm$ 0.2      |
 | Cognitive Load               | 8.2 $\pm$ 0.2      |
-| Social Support               | 8.2 $\pm$ 0.2      |
+| Social Support               | 8.1 $\pm$ 0.6      |
 | Resilience                   | 9.2 $\pm$ 0.2      |
 
 
@@ -1937,182 +795,26 @@
 
 
 
-### qwen-turbo-2024-11-01
+### o1-2024-12-05
 
 
 | Personality Trait            | Score (1.0-10.0)   |
 |:-----------------------------|:-------------------|
-| Anxiety and Stress Levels    | 4.4 $\pm$ 0.5      |
-| Emotional Stability          | 8.4 $\pm$ 0.2      |
-| Problem-solving Skills       | 9.0 $\pm$ 0.1      |
-| Creativity                   | 9.5 $\pm$ 0.0      |
-| Interpersonal Relationships  | 8.5 $\pm$ 0.3      |
-| Confidence and Self-efficacy | 8.7 $\pm$ 0.2      |
-| Conflict Resolution          | 8.6 $\pm$ 0.4      |
-| Work-related Stress          | 5.2 $\pm$ 0.8      |
-| Adaptability                 | 9.1 $\pm$ 0.2      |
-| Achievement Motivation       | 9.2 $\pm$ 0.2      |
-| Fear of Failure              | 3.3 $\pm$ 0.5      |
-| Need for Control             | 6.8 $\pm$ 0.8      |
-| Cognitive Load               | 7.3 $\pm$ 0.6      |
-| Social Support               | 8.6 $\pm$ 0.4      |
-| Resilience                   | 9.4 $\pm$ 0.1      |
-
-
-
-
-
-
-### qwen2.5-14b-instruct-1m
-
-
-| Personality Trait            | Score (1.0-10.0)   |
-|:-----------------------------|:-------------------|
-| Anxiety and Stress Levels    | 6.6 $\pm$ 1.0      |
-| Emotional Stability          | 7.4 $\pm$ 0.6      |
-| Problem-solving Skills       | 9.1 $\pm$ 0.2      |
-| Creativity                   | 9.6 $\pm$ 0.1      |
-| Interpersonal Relationships  | 8.0 $\pm$ 0.5      |
-| Confidence and Self-efficacy | 8.1 $\pm$ 0.2      |
-| Conflict Resolution          | 8.8 $\pm$ 0.2      |
-| Work-related Stress          | 6.8 $\pm$ 0.4      |
-| Adaptability                 | 8.9 $\pm$ 0.3      |
-| Achievement Motivation       | 9.3 $\pm$ 0.3      |
-| Fear of Failure              | 5.6 $\pm$ 0.7      |
-| Need for Control             | 7.1 $\pm$ 0.4      |
-| Cognitive Load               | 8.4 $\pm$ 0.2      |
-| Social Support               | 8.0 $\pm$ 0.4      |
-| Resilience                   | 9.4 $\pm$ 0.2      |
-
-
-
-
-
-
-### qwen2.5-14b-instruct
-
-
-| Personality Trait            | Score (1.0-10.0)   |
-|:-----------------------------|:-------------------|
-| Anxiety and Stress Levels    | 7.1 $\pm$ 0.6      |
-| Emotional Stability          | 7.1 $\pm$ 0.4      |
-| Problem-solving Skills       | 9.0 $\pm$ 0.0      |
-| Creativity                   | 9.5 $\pm$ 0.0      |
-| Interpersonal Relationships  | 8.1 $\pm$ 0.2      |
-| Confidence and Self-efficacy | 8.6 $\pm$ 0.1      |
-| Conflict Resolution          | 8.6 $\pm$ 0.4      |
-| Work-related Stress          | 7.2 $\pm$ 0.2      |
-| Adaptability                 | 9.0 $\pm$ 0.1      |
-| Achievement Motivation       | 9.5 $\pm$ 0.0      |
-| Fear of Failure              | 5.5 $\pm$ 0.4      |
-| Need for Control             | 7.3 $\pm$ 0.2      |
-| Cognitive Load               | 8.1 $\pm$ 0.2      |
-| Social Support               | 8.4 $\pm$ 0.1      |
-| Resilience                   | 9.2 $\pm$ 0.2      |
-
-
-
-
-
-
-### qwen2.5-32b-instruct
-
-
-| Personality Trait            | Score (1.0-10.0)   |
-|:-----------------------------|:-------------------|
-| Anxiety and Stress Levels    | 4.6 $\pm$ 0.2      |
-| Emotional Stability          | 8.2 $\pm$ 0.4      |
-| Problem-solving Skills       | 9.1 $\pm$ 0.2      |
-| Creativity                   | 9.4 $\pm$ 0.2      |
-| Interpersonal Relationships  | 8.4 $\pm$ 0.2      |
-| Confidence and Self-efficacy | 8.2 $\pm$ 0.2      |
-| Conflict Resolution          | 8.6 $\pm$ 0.2      |
-| Work-related Stress          | 5.9 $\pm$ 0.4      |
-| Adaptability                 | 9.0 $\pm$ 0.0      |
-| Achievement Motivation       | 9.2 $\pm$ 0.2      |
-| Fear of Failure              | 4.0 $\pm$ 0.0      |
-| Need for Control             | 7.0 $\pm$ 0.4      |
-| Cognitive Load               | 7.6 $\pm$ 0.2      |
-| Social Support               | 8.8 $\pm$ 0.2      |
-| Resilience                   | 9.1 $\pm$ 0.2      |
-
-
-
-
-
-
-### qwen2.5-72b-instruct
-
-
-| Personality Trait            | Score (1.0-10.0)   |
-|:-----------------------------|:-------------------|
-| Anxiety and Stress Levels    | 4.4 $\pm$ 0.4      |
-| Emotional Stability          | 8.2 $\pm$ 0.2      |
-| Problem-solving Skills       | 9.4 $\pm$ 0.2      |
-| Creativity                   | 9.1 $\pm$ 0.2      |
-| Interpersonal Relationships  | 8.6 $\pm$ 0.4      |
-| Confidence and Self-efficacy | 8.6 $\pm$ 0.2      |
-| Conflict Resolution          | 9.2 $\pm$ 0.2      |
-| Work-related Stress          | 4.8 $\pm$ 0.2      |
-| Adaptability                 | 9.4 $\pm$ 0.2      |
-| Achievement Motivation       | 9.1 $\pm$ 0.2      |
-| Fear of Failure              | 3.2 $\pm$ 0.2      |
-| Need for Control             | 6.1 $\pm$ 0.2      |
-| Cognitive Load               | 7.9 $\pm$ 0.4      |
-| Social Support               | 8.8 $\pm$ 0.4      |
-| Resilience                   | 9.4 $\pm$ 0.2      |
-
-
-
-
-
-
-### qwen2.5-7b-instruct-1m
-
-
-| Personality Trait            | Score (1.0-10.0)   |
-|:-----------------------------|:-------------------|
-| Anxiety and Stress Levels    | 7.2 $\pm$ 0.2      |
-| Emotional Stability          | 6.9 $\pm$ 0.6      |
+| Anxiety and Stress Levels    | 7.4 $\pm$ 0.2      |
+| Emotional Stability          | 6.9 $\pm$ 1.0      |
 | Problem-solving Skills       | 8.8 $\pm$ 0.2      |
-| Creativity                   | 9.4 $\pm$ 0.2      |
-| Interpersonal Relationships  | 7.9 $\pm$ 0.2      |
-| Confidence and Self-efficacy | 7.2 $\pm$ 0.2      |
-| Conflict Resolution          | 8.2 $\pm$ 0.4      |
-| Work-related Stress          | 7.4 $\pm$ 0.4      |
-| Adaptability                 | 9.0 $\pm$ 0.0      |
-| Achievement Motivation       | 9.1 $\pm$ 0.2      |
-| Fear of Failure              | 6.5 $\pm$ 0.0      |
-| Need for Control             | 7.2 $\pm$ 0.2      |
-| Cognitive Load               | 8.2 $\pm$ 0.2      |
-| Social Support               | 8.1 $\pm$ 0.6      |
-| Resilience                   | 9.2 $\pm$ 0.2      |
-
-
-
-
-
-
-### qwen2.5-7b-instruct
-
-
-| Personality Trait            | Score (1.0-10.0)   |
-|:-----------------------------|:-------------------|
-| Anxiety and Stress Levels    | 6.8 $\pm$ 0.4      |
-| Emotional Stability          | 7.1 $\pm$ 0.2      |
-| Problem-solving Skills       | 9.0 $\pm$ 0.0      |
 | Creativity                   | 9.5 $\pm$ 0.0      |
-| Interpersonal Relationships  | 8.1 $\pm$ 0.2      |
-| Confidence and Self-efficacy | 8.1 $\pm$ 0.4      |
-| Conflict Resolution          | 8.2 $\pm$ 0.2      |
-| Work-related Stress          | 7.2 $\pm$ 0.2      |
-| Adaptability                 | 9.0 $\pm$ 0.0      |
-| Achievement Motivation       | 9.2 $\pm$ 0.2      |
-| Fear of Failure              | 5.9 $\pm$ 0.2      |
-| Need for Control             | 7.5 $\pm$ 0.0      |
+| Interpersonal Relationships  | 7.1 $\pm$ 0.2      |
+| Confidence and Self-efficacy | 7.6 $\pm$ 0.4      |
+| Conflict Resolution          | 8.1 $\pm$ 0.4      |
+| Work-related Stress          | 7.2 $\pm$ 0.6      |
+| Adaptability                 | 8.8 $\pm$ 0.2      |
+| Achievement Motivation       | 9.1 $\pm$ 0.2      |
+| Fear of Failure              | 5.9 $\pm$ 1.1      |
+| Need for Control             | 7.1 $\pm$ 0.7      |
 | Cognitive Load               | 8.4 $\pm$ 0.2      |
-| Social Support               | 8.2 $\pm$ 0.2      |
-| Resilience                   | 9.0 $\pm$ 0.0      |
+| Social Support               | 7.0 $\pm$ 0.4      |
+| Resilience                   | 9.1 $\pm$ 0.2      |
 
 
 
@@ -2145,104 +847,234 @@
 
 
 
-### qwen2.51.5b-instruct-q6_K
+### gemini-1.5-flash-002
 
 
 | Personality Trait            | Score (1.0-10.0)   |
 |:-----------------------------|:-------------------|
-| Anxiety and Stress Levels    | 8.0 $\pm$ 0.5      |
-| Emotional Stability          | 4.5 $\pm$ 0.6      |
-| Problem-solving Skills       | 7.0 $\pm$ 0.6      |
-| Creativity                   | 8.1 $\pm$ 0.2      |
-| Interpersonal Relationships  | 5.0 $\pm$ 0.4      |
-| Confidence and Self-efficacy | 5.0 $\pm$ 0.6      |
-| Conflict Resolution          | 4.0 $\pm$ 0.0      |
-| Work-related Stress          | 7.8 $\pm$ 0.4      |
-| Adaptability                 | 6.4 $\pm$ 0.5      |
-| Achievement Motivation       | 7.5 $\pm$ 0.4      |
-| Fear of Failure              | 7.8 $\pm$ 0.6      |
-| Need for Control             | 6.9 $\pm$ 0.4      |
-| Cognitive Load               | 7.9 $\pm$ 0.5      |
-| Social Support               | 5.0 $\pm$ 0.4      |
-| Resilience                   | 6.2 $\pm$ 0.2      |
+| Anxiety and Stress Levels    | 7.6 $\pm$ 0.9      |
+| Emotional Stability          | 6.0 $\pm$ 1.5      |
+| Problem-solving Skills       | 8.8 $\pm$ 0.5      |
+| Creativity                   | 9.6 $\pm$ 0.2      |
+| Interpersonal Relationships  | 7.6 $\pm$ 1.0      |
+| Confidence and Self-efficacy | 7.0 $\pm$ 1.1      |
+| Conflict Resolution          | 8.1 $\pm$ 0.9      |
+| Work-related Stress          | 7.4 $\pm$ 0.6      |
+| Adaptability                 | 8.8 $\pm$ 1.1      |
+| Achievement Motivation       | 8.6 $\pm$ 0.2      |
+| Fear of Failure              | 6.2 $\pm$ 1.3      |
+| Need for Control             | 6.0 $\pm$ 0.7      |
+| Cognitive Load               | 9.0 $\pm$ 0.1      |
+| Social Support               | 7.6 $\pm$ 0.8      |
+| Resilience                   | 9.0 $\pm$ 0.6      |
 
 
 
 
 
 
-### smollm21.7b-instruct-q6_K
-
-
-| Personality Trait            | Score (1.0-10.0)   |
-|:-----------------------------|:-------------------|
-| Anxiety and Stress Levels    | 7.4 $\pm$ 1.1      |
-| Emotional Stability          | 6.2 $\pm$ 1.0      |
-| Problem-solving Skills       | 8.0 $\pm$ 0.8      |
-| Creativity                   | 9.2 $\pm$ 0.2      |
-| Interpersonal Relationships  | 7.4 $\pm$ 0.9      |
-| Confidence and Self-efficacy | 7.0 $\pm$ 0.8      |
-| Conflict Resolution          | 6.8 $\pm$ 0.6      |
-| Work-related Stress          | 7.5 $\pm$ 0.5      |
-| Adaptability                 | 8.2 $\pm$ 0.8      |
-| Achievement Motivation       | 8.6 $\pm$ 0.4      |
-| Fear of Failure              | 6.9 $\pm$ 0.4      |
-| Need for Control             | 7.1 $\pm$ 0.2      |
-| Cognitive Load               | 8.2 $\pm$ 0.2      |
-| Social Support               | 7.4 $\pm$ 0.9      |
-| Resilience                   | 8.8 $\pm$ 0.8      |
-
-
-
-
-
-
-### Grok-3-beta-thinking-20250303
+### qwen2.5-14b-instruct-1m
 
 
 | Personality Trait            | Score (1.0-10.0)   |
 |:-----------------------------|:-------------------|
-| Anxiety and Stress Levels    | 7.1 $\pm$ 0.6      |
-| Emotional Stability          | 6.8 $\pm$ 0.6      |
-| Problem-solving Skills       | 8.7 $\pm$ 0.2      |
-| Creativity                   | 9.4 $\pm$ 0.2      |
-| Interpersonal Relationships  | 7.9 $\pm$ 0.3      |
-| Confidence and Self-efficacy | 7.7 $\pm$ 0.5      |
-| Conflict Resolution          | 8.0 $\pm$ 0.6      |
+| Anxiety and Stress Levels    | 6.6 $\pm$ 1.0      |
+| Emotional Stability          | 7.4 $\pm$ 0.6      |
+| Problem-solving Skills       | 9.1 $\pm$ 0.2      |
+| Creativity                   | 9.6 $\pm$ 0.1      |
+| Interpersonal Relationships  | 8.0 $\pm$ 0.5      |
+| Confidence and Self-efficacy | 8.1 $\pm$ 0.2      |
+| Conflict Resolution          | 8.8 $\pm$ 0.2      |
+| Work-related Stress          | 6.8 $\pm$ 0.4      |
+| Adaptability                 | 8.9 $\pm$ 0.3      |
+| Achievement Motivation       | 9.3 $\pm$ 0.3      |
+| Fear of Failure              | 5.6 $\pm$ 0.7      |
+| Need for Control             | 7.1 $\pm$ 0.4      |
+| Cognitive Load               | 8.4 $\pm$ 0.2      |
+| Social Support               | 8.0 $\pm$ 0.4      |
+| Resilience                   | 9.4 $\pm$ 0.2      |
+
+
+
+
+
+
+### gpt-4-turbo-2024-04-09
+
+
+| Personality Trait            | Score (1.0-10.0)   |
+|:-----------------------------|:-------------------|
+| Anxiety and Stress Levels    | 5.0 $\pm$ 0.9      |
+| Emotional Stability          | 8.0 $\pm$ 0.4      |
+| Problem-solving Skills       | 9.2 $\pm$ 0.2      |
+| Creativity                   | 9.8 $\pm$ 0.2      |
+| Interpersonal Relationships  | 8.5 $\pm$ 0.4      |
+| Confidence and Self-efficacy | 8.7 $\pm$ 0.2      |
+| Conflict Resolution          | 8.6 $\pm$ 0.2      |
+| Work-related Stress          | 5.2 $\pm$ 1.1      |
+| Adaptability                 | 9.4 $\pm$ 0.2      |
+| Achievement Motivation       | 9.2 $\pm$ 0.2      |
+| Fear of Failure              | 3.5 $\pm$ 0.5      |
+| Need for Control             | 6.7 $\pm$ 0.5      |
+| Cognitive Load               | 8.0 $\pm$ 0.4      |
+| Social Support               | 8.8 $\pm$ 0.4      |
+| Resilience                   | 9.2 $\pm$ 0.2      |
+
+
+
+
+
+
+### googlegemma-2-2b-it
+
+
+| Personality Trait            | Score (1.0-10.0)   |
+|:-----------------------------|:-------------------|
+| Anxiety and Stress Levels    | 8.6 $\pm$ 0.2      |
+| Emotional Stability          | 4.4 $\pm$ 0.6      |
+| Problem-solving Skills       | 8.4 $\pm$ 0.4      |
+| Creativity                   | 9.5 $\pm$ 0.0      |
+| Interpersonal Relationships  | 6.2 $\pm$ 0.2      |
+| Confidence and Self-efficacy | 5.8 $\pm$ 0.8      |
+| Conflict Resolution          | 7.0 $\pm$ 0.4      |
+| Work-related Stress          | 8.5 $\pm$ 0.4      |
+| Adaptability                 | 8.1 $\pm$ 0.4      |
+| Achievement Motivation       | 9.0 $\pm$ 0.0      |
+| Fear of Failure              | 8.1 $\pm$ 0.4      |
+| Need for Control             | 7.5 $\pm$ 0.4      |
+| Cognitive Load               | 8.8 $\pm$ 0.2      |
+| Social Support               | 5.6 $\pm$ 0.5      |
+| Resilience                   | 8.5 $\pm$ 0.4      |
+
+
+
+
+
+
+### mistral-large-2411
+
+
+| Personality Trait            | Score (1.0-10.0)   |
+|:-----------------------------|:-------------------|
+| Anxiety and Stress Levels    | 5.3 $\pm$ 1.0      |
+| Emotional Stability          | 7.5 $\pm$ 0.7      |
+| Problem-solving Skills       | 9.0 $\pm$ 0.1      |
+| Creativity                   | 9.7 $\pm$ 0.2      |
+| Interpersonal Relationships  | 8.2 $\pm$ 0.2      |
+| Confidence and Self-efficacy | 8.2 $\pm$ 0.6      |
+| Conflict Resolution          | 8.4 $\pm$ 0.1      |
+| Work-related Stress          | 5.9 $\pm$ 1.1      |
+| Adaptability                 | 9.2 $\pm$ 0.2      |
+| Achievement Motivation       | 9.2 $\pm$ 0.2      |
+| Fear of Failure              | 4.4 $\pm$ 1.2      |
+| Need for Control             | 7.2 $\pm$ 0.5      |
+| Cognitive Load               | 8.2 $\pm$ 0.5      |
+| Social Support               | 8.4 $\pm$ 0.2      |
+| Resilience                   | 9.2 $\pm$ 0.2      |
+
+
+
+
+
+
+### o3-mini-20250131-HIGH
+
+
+| Personality Trait            | Score (1.0-10.0)   |
+|:-----------------------------|:-------------------|
+| Anxiety and Stress Levels    | 5.2 $\pm$ 0.9      |
+| Emotional Stability          | 8.1 $\pm$ 0.3      |
+| Problem-solving Skills       | 9.0 $\pm$ 0.4      |
+| Creativity                   | 9.7 $\pm$ 0.2      |
+| Interpersonal Relationships  | 8.4 $\pm$ 0.2      |
+| Confidence and Self-efficacy | 8.4 $\pm$ 0.4      |
+| Conflict Resolution          | 8.6 $\pm$ 0.4      |
+| Work-related Stress          | 5.9 $\pm$ 0.6      |
+| Adaptability                 | 9.1 $\pm$ 0.1      |
+| Achievement Motivation       | 9.4 $\pm$ 0.2      |
+| Fear of Failure              | 3.8 $\pm$ 0.3      |
+| Need for Control             | 5.2 $\pm$ 0.5      |
+| Cognitive Load               | 7.5 $\pm$ 0.6      |
+| Social Support               | 8.4 $\pm$ 0.3      |
+| Resilience                   | 9.5 $\pm$ 0.0      |
+
+
+
+
+
+
+### qwq32b-preview-q4_K_M
+
+
+| Personality Trait            | Score (1.0-10.0)   |
+|:-----------------------------|:-------------------|
+| Anxiety and Stress Levels    | 7.5 $\pm$ 0.7      |
+| Emotional Stability          | 6.6 $\pm$ 0.5      |
+| Problem-solving Skills       | 8.6 $\pm$ 0.4      |
+| Creativity                   | 9.1 $\pm$ 0.2      |
+| Interpersonal Relationships  | 8.1 $\pm$ 0.4      |
+| Confidence and Self-efficacy | 6.9 $\pm$ 0.2      |
+| Conflict Resolution          | 7.8 $\pm$ 0.6      |
 | Work-related Stress          | 7.2 $\pm$ 0.8      |
 | Adaptability                 | 8.9 $\pm$ 0.2      |
-| Achievement Motivation       | 9.2 $\pm$ 0.2      |
-| Fear of Failure              | 6.8 $\pm$ 0.6      |
-| Need for Control             | 6.9 $\pm$ 0.8      |
-| Cognitive Load               | 8.1 $\pm$ 0.2      |
-| Social Support               | 8.3 $\pm$ 0.3      |
-| Resilience                   | 8.9 $\pm$ 0.2      |
+| Achievement Motivation       | 8.8 $\pm$ 0.4      |
+| Fear of Failure              | 6.8 $\pm$ 0.9      |
+| Need for Control             | 7.6 $\pm$ 0.6      |
+| Cognitive Load               | 8.2 $\pm$ 0.8      |
+| Social Support               | 8.2 $\pm$ 0.4      |
+| Resilience                   | 8.8 $\pm$ 0.4      |
 
 
 
 
 
 
-### Qwen-QwQ-32B
+### mistral-large-2407
 
 
 | Personality Trait            | Score (1.0-10.0)   |
 |:-----------------------------|:-------------------|
-| Anxiety and Stress Levels    | 8.5 $\pm$ 0.0      |
-| Emotional Stability          | 4.4 $\pm$ 0.4      |
-| Problem-solving Skills       | 9.0 $\pm$ 0.4      |
-| Creativity                   | 9.6 $\pm$ 0.1      |
-| Interpersonal Relationships  | 6.1 $\pm$ 0.4      |
-| Confidence and Self-efficacy | 6.0 $\pm$ 0.4      |
-| Conflict Resolution          | 5.8 $\pm$ 0.8      |
-| Work-related Stress          | 8.2 $\pm$ 0.2      |
-| Adaptability                 | 7.6 $\pm$ 0.2      |
-| Achievement Motivation       | 8.4 $\pm$ 0.4      |
-| Fear of Failure              | 8.0 $\pm$ 0.4      |
-| Need for Control             | 7.4 $\pm$ 0.2      |
-| Cognitive Load               | 9.1 $\pm$ 0.2      |
-| Social Support               | 5.5 $\pm$ 0.8      |
-| Resilience                   | 7.4 $\pm$ 0.6      |
+| Anxiety and Stress Levels    | 5.4 $\pm$ 0.9      |
+| Emotional Stability          | 7.8 $\pm$ 0.4      |
+| Problem-solving Skills       | 9.0 $\pm$ 0.0      |
+| Creativity                   | 9.6 $\pm$ 0.2      |
+| Interpersonal Relationships  | 8.5 $\pm$ 0.4      |
+| Confidence and Self-efficacy | 8.4 $\pm$ 0.4      |
+| Conflict Resolution          | 8.6 $\pm$ 0.5      |
+| Work-related Stress          | 5.5 $\pm$ 0.9      |
+| Adaptability                 | 9.0 $\pm$ 0.0      |
+| Achievement Motivation       | 9.0 $\pm$ 0.4      |
+| Fear of Failure              | 4.2 $\pm$ 0.4      |
+| Need for Control             | 6.4 $\pm$ 0.5      |
+| Cognitive Load               | 8.5 $\pm$ 0.0      |
+| Social Support               | 8.2 $\pm$ 0.4      |
+| Resilience                   | 9.4 $\pm$ 0.2      |
+
+
+
+
+
+
+### meta-llamaLlama-3.2-3B-Instruct
+
+
+| Personality Trait            | Score (1.0-10.0)   |
+|:-----------------------------|:-------------------|
+| Anxiety and Stress Levels    | 8.4 $\pm$ 0.4      |
+| Emotional Stability          | 4.8 $\pm$ 0.7      |
+| Problem-solving Skills       | 8.2 $\pm$ 0.4      |
+| Creativity                   | 9.2 $\pm$ 0.1      |
+| Interpersonal Relationships  | 7.6 $\pm$ 0.2      |
+| Confidence and Self-efficacy | 6.3 $\pm$ 0.5      |
+| Conflict Resolution          | 7.3 $\pm$ 1.2      |
+| Work-related Stress          | 8.4 $\pm$ 0.4      |
+| Adaptability                 | 8.8 $\pm$ 0.2      |
+| Achievement Motivation       | 9.1 $\pm$ 0.1      |
+| Fear of Failure              | 7.5 $\pm$ 0.5      |
+| Need for Control             | 7.3 $\pm$ 0.4      |
+| Cognitive Load               | 8.7 $\pm$ 0.1      |
+| Social Support               | 7.0 $\pm$ 0.5      |
+| Resilience                   | 8.2 $\pm$ 0.1      |
 
 
 
@@ -2275,6 +1107,1046 @@
 
 
 
+### gemini-exp-1206
+
+
+| Personality Trait            | Score (1.0-10.0)   |
+|:-----------------------------|:-------------------|
+| Anxiety and Stress Levels    | 8.1 $\pm$ 0.5      |
+| Emotional Stability          | 5.8 $\pm$ 0.5      |
+| Problem-solving Skills       | 8.4 $\pm$ 0.4      |
+| Creativity                   | 9.8 $\pm$ 0.2      |
+| Interpersonal Relationships  | 7.2 $\pm$ 0.6      |
+| Confidence and Self-efficacy | 6.8 $\pm$ 0.2      |
+| Conflict Resolution          | 7.4 $\pm$ 0.5      |
+| Work-related Stress          | 8.0 $\pm$ 0.4      |
+| Adaptability                 | 9.0 $\pm$ 0.3      |
+| Achievement Motivation       | 8.9 $\pm$ 0.2      |
+| Fear of Failure              | 7.2 $\pm$ 0.4      |
+| Need for Control             | 6.6 $\pm$ 0.4      |
+| Cognitive Load               | 8.6 $\pm$ 0.3      |
+| Social Support               | 6.7 $\pm$ 0.6      |
+| Resilience                   | 8.9 $\pm$ 0.3      |
+
+
+
+
+
+
+### googlegemma-2-27b-it
+
+
+| Personality Trait            | Score (1.0-10.0)   |
+|:-----------------------------|:-------------------|
+| Anxiety and Stress Levels    | 9.0 $\pm$ 0.2      |
+| Emotional Stability          | 3.2 $\pm$ 0.6      |
+| Problem-solving Skills       | 6.3 $\pm$ 1.2      |
+| Creativity                   | 9.2 $\pm$ 0.2      |
+| Interpersonal Relationships  | 5.2 $\pm$ 0.4      |
+| Confidence and Self-efficacy | 3.9 $\pm$ 0.5      |
+| Conflict Resolution          | 3.8 $\pm$ 0.4      |
+| Work-related Stress          | 8.6 $\pm$ 0.2      |
+| Adaptability                 | 5.0 $\pm$ 1.0      |
+| Achievement Motivation       | 7.4 $\pm$ 0.9      |
+| Fear of Failure              | 8.8 $\pm$ 0.3      |
+| Need for Control             | 7.7 $\pm$ 0.4      |
+| Cognitive Load               | 8.9 $\pm$ 0.2      |
+| Social Support               | 4.2 $\pm$ 0.3      |
+| Resilience                   | 4.6 $\pm$ 0.7      |
+
+
+
+
+
+
+### gpt-4o-2024-08-06
+
+
+| Personality Trait            | Score (1.0-10.0)   |
+|:-----------------------------|:-------------------|
+| Anxiety and Stress Levels    | 5.5 $\pm$ 1.1      |
+| Emotional Stability          | 7.8 $\pm$ 0.4      |
+| Problem-solving Skills       | 8.9 $\pm$ 0.2      |
+| Creativity                   | 9.5 $\pm$ 0.0      |
+| Interpersonal Relationships  | 8.5 $\pm$ 0.0      |
+| Confidence and Self-efficacy | 7.9 $\pm$ 0.2      |
+| Conflict Resolution          | 8.6 $\pm$ 0.4      |
+| Work-related Stress          | 6.2 $\pm$ 0.8      |
+| Adaptability                 | 9.1 $\pm$ 0.2      |
+| Achievement Motivation       | 9.1 $\pm$ 0.2      |
+| Fear of Failure              | 4.9 $\pm$ 0.6      |
+| Need for Control             | 6.9 $\pm$ 0.2      |
+| Cognitive Load               | 7.9 $\pm$ 0.4      |
+| Social Support               | 8.4 $\pm$ 0.2      |
+| Resilience                   | 9.2 $\pm$ 0.2      |
+
+
+
+
+
+
+### gpt-4o-2024-05-13
+
+
+| Personality Trait            | Score (1.0-10.0)   |
+|:-----------------------------|:-------------------|
+| Anxiety and Stress Levels    | 4.8 $\pm$ 0.4      |
+| Emotional Stability          | 7.5 $\pm$ 0.0      |
+| Problem-solving Skills       | 9.0 $\pm$ 0.0      |
+| Creativity                   | 9.5 $\pm$ 0.0      |
+| Interpersonal Relationships  | 8.5 $\pm$ 0.0      |
+| Confidence and Self-efficacy | 8.0 $\pm$ 0.0      |
+| Conflict Resolution          | 8.8 $\pm$ 0.2      |
+| Work-related Stress          | 6.0 $\pm$ 0.4      |
+| Adaptability                 | 9.1 $\pm$ 0.2      |
+| Achievement Motivation       | 9.2 $\pm$ 0.2      |
+| Fear of Failure              | 3.9 $\pm$ 0.5      |
+| Need for Control             | 6.9 $\pm$ 0.2      |
+| Cognitive Load               | 8.4 $\pm$ 0.2      |
+| Social Support               | 8.1 $\pm$ 0.2      |
+| Resilience                   | 9.1 $\pm$ 0.2      |
+
+
+
+
+
+
+### Gemini-1.5-Pro-Exp-0827
+
+
+| Personality Trait            | Score (1.0-10.0)   |
+|:-----------------------------|:-------------------|
+| Anxiety and Stress Levels    | 8.3 $\pm$ 0.3      |
+| Emotional Stability          | 4.6 $\pm$ 0.3      |
+| Problem-solving Skills       | 8.1 $\pm$ 0.2      |
+| Creativity                   | 9.5 $\pm$ 0.0      |
+| Interpersonal Relationships  | 7.0 $\pm$ 0.4      |
+| Confidence and Self-efficacy | 6.4 $\pm$ 0.3      |
+| Conflict Resolution          | 6.2 $\pm$ 1.6      |
+| Work-related Stress          | 8.0 $\pm$ 0.6      |
+| Adaptability                 | 8.3 $\pm$ 0.5      |
+| Achievement Motivation       | 9.0 $\pm$ 0.0      |
+| Fear of Failure              | 7.8 $\pm$ 0.6      |
+| Need for Control             | 7.0 $\pm$ 0.4      |
+| Cognitive Load               | 8.3 $\pm$ 0.2      |
+| Social Support               | 6.6 $\pm$ 0.4      |
+| Resilience                   | 8.2 $\pm$ 0.5      |
+
+
+
+
+
+
+### grok-2-1212
+
+
+| Personality Trait            | Score (1.0-10.0)   |
+|:-----------------------------|:-------------------|
+| Anxiety and Stress Levels    | 5.4 $\pm$ 0.7      |
+| Emotional Stability          | 7.8 $\pm$ 0.4      |
+| Problem-solving Skills       | 9.0 $\pm$ 0.0      |
+| Creativity                   | 9.5 $\pm$ 0.0      |
+| Interpersonal Relationships  | 8.4 $\pm$ 0.2      |
+| Confidence and Self-efficacy | 8.4 $\pm$ 0.2      |
+| Conflict Resolution          | 8.8 $\pm$ 0.4      |
+| Work-related Stress          | 6.0 $\pm$ 0.4      |
+| Adaptability                 | 9.2 $\pm$ 0.2      |
+| Achievement Motivation       | 9.4 $\pm$ 0.2      |
+| Fear of Failure              | 4.0 $\pm$ 0.0      |
+| Need for Control             | 6.6 $\pm$ 0.2      |
+| Cognitive Load               | 7.2 $\pm$ 0.2      |
+| Social Support               | 8.8 $\pm$ 0.2      |
+| Resilience                   | 9.4 $\pm$ 0.2      |
+
+
+
+
+
+
+### o1-pro-2024-12-17
+
+
+| Personality Trait            | Score (1.0-10.0)   |
+|:-----------------------------|:-------------------|
+| Anxiety and Stress Levels    | 7.7 $\pm$ 0.1      |
+| Emotional Stability          | 6.1 $\pm$ 0.4      |
+| Problem-solving Skills       | 9.0 $\pm$ 0.2      |
+| Creativity                   | 9.5 $\pm$ 0.2      |
+| Interpersonal Relationships  | 7.8 $\pm$ 0.5      |
+| Confidence and Self-efficacy | 7.1 $\pm$ 0.5      |
+| Conflict Resolution          | 8.3 $\pm$ 0.3      |
+| Work-related Stress          | 7.8 $\pm$ 0.5      |
+| Adaptability                 | 9.0 $\pm$ 0.0      |
+| Achievement Motivation       | 8.9 $\pm$ 0.3      |
+| Fear of Failure              | 7.1 $\pm$ 0.3      |
+| Need for Control             | 7.9 $\pm$ 0.2      |
+| Cognitive Load               | 8.6 $\pm$ 0.2      |
+| Social Support               | 7.6 $\pm$ 0.6      |
+| Resilience                   | 8.9 $\pm$ 0.3      |
+
+
+
+
+
+
+### mistral-small-2409
+
+
+| Personality Trait            | Score (1.0-10.0)   |
+|:-----------------------------|:-------------------|
+| Anxiety and Stress Levels    | 5.9 $\pm$ 1.2      |
+| Emotional Stability          | 7.4 $\pm$ 0.4      |
+| Problem-solving Skills       | 9.0 $\pm$ 0.0      |
+| Creativity                   | 9.5 $\pm$ 0.0      |
+| Interpersonal Relationships  | 8.6 $\pm$ 0.2      |
+| Confidence and Self-efficacy | 8.2 $\pm$ 0.2      |
+| Conflict Resolution          | 8.6 $\pm$ 0.2      |
+| Work-related Stress          | 6.2 $\pm$ 0.8      |
+| Adaptability                 | 9.0 $\pm$ 0.0      |
+| Achievement Motivation       | 9.4 $\pm$ 0.2      |
+| Fear of Failure              | 4.8 $\pm$ 0.8      |
+| Need for Control             | 6.9 $\pm$ 0.5      |
+| Cognitive Load               | 8.0 $\pm$ 0.4      |
+| Social Support               | 8.6 $\pm$ 0.2      |
+| Resilience                   | 9.2 $\pm$ 0.2      |
+
+
+
+
+
+
+### phi3.53.8b-mini-instruct-fp16
+
+
+| Personality Trait            | Score (1.0-10.0)   |
+|:-----------------------------|:-------------------|
+| Anxiety and Stress Levels    | 6.9 $\pm$ 0.4      |
+| Emotional Stability          | 7.2 $\pm$ 0.2      |
+| Problem-solving Skills       | 9.0 $\pm$ 0.0      |
+| Creativity                   | 9.5 $\pm$ 0.0      |
+| Interpersonal Relationships  | 8.5 $\pm$ 0.0      |
+| Confidence and Self-efficacy | 8.0 $\pm$ 0.0      |
+| Conflict Resolution          | 8.1 $\pm$ 0.4      |
+| Work-related Stress          | 7.0 $\pm$ 0.0      |
+| Adaptability                 | 9.0 $\pm$ 0.0      |
+| Achievement Motivation       | 9.5 $\pm$ 0.0      |
+| Fear of Failure              | 6.0 $\pm$ 0.4      |
+| Need for Control             | 7.4 $\pm$ 0.2      |
+| Cognitive Load               | 8.4 $\pm$ 0.2      |
+| Social Support               | 8.2 $\pm$ 0.2      |
+| Resilience                   | 9.0 $\pm$ 0.0      |
+
+
+
+
+
+
+### googlegemma-2-9b-it
+
+
+| Personality Trait            | Score (1.0-10.0)   |
+|:-----------------------------|:-------------------|
+| Anxiety and Stress Levels    | 7.6 $\pm$ 0.2      |
+| Emotional Stability          | 6.0 $\pm$ 0.0      |
+| Problem-solving Skills       | 8.5 $\pm$ 0.4      |
+| Creativity                   | 9.4 $\pm$ 0.2      |
+| Interpersonal Relationships  | 7.5 $\pm$ 0.6      |
+| Confidence and Self-efficacy | 7.2 $\pm$ 0.4      |
+| Conflict Resolution          | 8.0 $\pm$ 0.0      |
+| Work-related Stress          | 7.1 $\pm$ 0.5      |
+| Adaptability                 | 9.0 $\pm$ 0.0      |
+| Achievement Motivation       | 9.0 $\pm$ 0.4      |
+| Fear of Failure              | 6.5 $\pm$ 0.6      |
+| Need for Control             | 6.9 $\pm$ 0.2      |
+| Cognitive Load               | 8.0 $\pm$ 0.4      |
+| Social Support               | 8.2 $\pm$ 0.4      |
+| Resilience                   | 9.0 $\pm$ 0.4      |
+
+
+
+
+
+
+### open-mistral-nemo
+
+
+| Personality Trait            | Score (1.0-10.0)   |
+|:-----------------------------|:-------------------|
+| Anxiety and Stress Levels    | 6.0 $\pm$ 0.4      |
+| Emotional Stability          | 7.4 $\pm$ 0.2      |
+| Problem-solving Skills       | 9.0 $\pm$ 0.0      |
+| Creativity                   | 9.5 $\pm$ 0.0      |
+| Interpersonal Relationships  | 7.8 $\pm$ 0.4      |
+| Confidence and Self-efficacy | 8.5 $\pm$ 0.0      |
+| Conflict Resolution          | 8.5 $\pm$ 0.4      |
+| Work-related Stress          | 6.9 $\pm$ 0.6      |
+| Adaptability                 | 9.1 $\pm$ 0.2      |
+| Achievement Motivation       | 9.2 $\pm$ 0.2      |
+| Fear of Failure              | 4.6 $\pm$ 0.4      |
+| Need for Control             | 6.9 $\pm$ 0.2      |
+| Cognitive Load               | 8.1 $\pm$ 0.2      |
+| Social Support               | 8.4 $\pm$ 0.2      |
+| Resilience                   | 9.1 $\pm$ 0.2      |
+
+
+
+
+
+
+### falcon310b-instruct-q8_0
+
+
+| Personality Trait            | Score (1.0-10.0)   |
+|:-----------------------------|:-------------------|
+| Anxiety and Stress Levels    | 6.0 $\pm$ 0.5      |
+| Emotional Stability          | 7.6 $\pm$ 0.2      |
+| Problem-solving Skills       | 9.1 $\pm$ 0.2      |
+| Creativity                   | 9.6 $\pm$ 0.2      |
+| Interpersonal Relationships  | 8.5 $\pm$ 0.4      |
+| Confidence and Self-efficacy | 8.4 $\pm$ 0.4      |
+| Conflict Resolution          | 8.2 $\pm$ 0.4      |
+| Work-related Stress          | 6.6 $\pm$ 0.4      |
+| Adaptability                 | 9.4 $\pm$ 0.2      |
+| Achievement Motivation       | 9.0 $\pm$ 0.0      |
+| Fear of Failure              | 4.8 $\pm$ 0.6      |
+| Need for Control             | 7.0 $\pm$ 0.0      |
+| Cognitive Load               | 7.9 $\pm$ 0.4      |
+| Social Support               | 8.4 $\pm$ 0.4      |
+| Resilience                   | 9.4 $\pm$ 0.2      |
+
+
+
+
+
+
+### gemini-2.0-flash-lite-preview-02-05
+
+
+| Personality Trait            | Score (1.0-10.0)   |
+|:-----------------------------|:-------------------|
+| Anxiety and Stress Levels    | 8.6 $\pm$ 0.1      |
+| Emotional Stability          | 4.0 $\pm$ 0.4      |
+| Problem-solving Skills       | 7.7 $\pm$ 0.2      |
+| Creativity                   | 9.5 $\pm$ 0.0      |
+| Interpersonal Relationships  | 6.2 $\pm$ 0.5      |
+| Confidence and Self-efficacy | 5.5 $\pm$ 0.4      |
+| Conflict Resolution          | 5.0 $\pm$ 1.1      |
+| Work-related Stress          | 8.8 $\pm$ 0.5      |
+| Adaptability                 | 7.1 $\pm$ 0.2      |
+| Achievement Motivation       | 8.4 $\pm$ 0.5      |
+| Fear of Failure              | 8.6 $\pm$ 0.2      |
+| Need for Control             | 7.8 $\pm$ 0.4      |
+| Cognitive Load               | 8.8 $\pm$ 0.4      |
+| Social Support               | 6.1 $\pm$ 0.7      |
+| Resilience                   | 7.6 $\pm$ 0.2      |
+
+
+
+
+
+
+### chatgpt-4o-latest-2024-11-20
+
+
+| Personality Trait            | Score (1.0-10.0)   |
+|:-----------------------------|:-------------------|
+| Anxiety and Stress Levels    | 7.8 $\pm$ 0.4      |
+| Emotional Stability          | 6.0 $\pm$ 0.4      |
+| Problem-solving Skills       | 8.3 $\pm$ 0.3      |
+| Creativity                   | 9.5 $\pm$ 0.0      |
+| Interpersonal Relationships  | 6.6 $\pm$ 0.4      |
+| Confidence and Self-efficacy | 7.0 $\pm$ 0.0      |
+| Conflict Resolution          | 7.0 $\pm$ 0.5      |
+| Work-related Stress          | 8.0 $\pm$ 0.1      |
+| Adaptability                 | 8.2 $\pm$ 0.5      |
+| Achievement Motivation       | 9.0 $\pm$ 0.0      |
+| Fear of Failure              | 7.3 $\pm$ 0.2      |
+| Need for Control             | 7.5 $\pm$ 0.4      |
+| Cognitive Load               | 8.6 $\pm$ 0.3      |
+| Social Support               | 6.3 $\pm$ 0.5      |
+| Resilience                   | 8.5 $\pm$ 0.4      |
+
+
+
+
+
+
+### deepseek-aiDeepSeek-R1
+
+
+| Personality Trait            | Score (1.0-10.0)   |
+|:-----------------------------|:-------------------|
+| Anxiety and Stress Levels    | 7.2 $\pm$ 1.3      |
+| Emotional Stability          | 6.5 $\pm$ 0.8      |
+| Problem-solving Skills       | 9.0 $\pm$ 0.0      |
+| Creativity                   | 9.5 $\pm$ 0.0      |
+| Interpersonal Relationships  | 7.8 $\pm$ 0.2      |
+| Confidence and Self-efficacy | 7.8 $\pm$ 0.8      |
+| Conflict Resolution          | 8.2 $\pm$ 0.2      |
+| Work-related Stress          | 7.5 $\pm$ 0.8      |
+| Adaptability                 | 9.0 $\pm$ 0.0      |
+| Achievement Motivation       | 9.2 $\pm$ 0.2      |
+| Fear of Failure              | 6.1 $\pm$ 1.5      |
+| Need for Control             | 7.8 $\pm$ 0.6      |
+| Cognitive Load               | 8.5 $\pm$ 0.4      |
+| Social Support               | 7.6 $\pm$ 0.9      |
+| Resilience                   | 9.2 $\pm$ 0.2      |
+
+
+
+
+
+
+### smollm21.7b-instruct-q6_K
+
+
+| Personality Trait            | Score (1.0-10.0)   |
+|:-----------------------------|:-------------------|
+| Anxiety and Stress Levels    | 7.4 $\pm$ 1.1      |
+| Emotional Stability          | 6.2 $\pm$ 1.0      |
+| Problem-solving Skills       | 8.0 $\pm$ 0.8      |
+| Creativity                   | 9.2 $\pm$ 0.2      |
+| Interpersonal Relationships  | 7.4 $\pm$ 0.9      |
+| Confidence and Self-efficacy | 7.0 $\pm$ 0.8      |
+| Conflict Resolution          | 6.8 $\pm$ 0.6      |
+| Work-related Stress          | 7.5 $\pm$ 0.5      |
+| Adaptability                 | 8.2 $\pm$ 0.8      |
+| Achievement Motivation       | 8.6 $\pm$ 0.4      |
+| Fear of Failure              | 6.9 $\pm$ 0.4      |
+| Need for Control             | 7.1 $\pm$ 0.2      |
+| Cognitive Load               | 8.2 $\pm$ 0.2      |
+| Social Support               | 7.4 $\pm$ 0.9      |
+| Resilience                   | 8.8 $\pm$ 0.8      |
+
+
+
+
+
+
+### ministral-3b-2410
+
+
+| Personality Trait            | Score (1.0-10.0)   |
+|:-----------------------------|:-------------------|
+| Anxiety and Stress Levels    | 6.2 $\pm$ 0.4      |
+| Emotional Stability          | 7.1 $\pm$ 0.2      |
+| Problem-solving Skills       | 8.9 $\pm$ 0.2      |
+| Creativity                   | 9.5 $\pm$ 0.0      |
+| Interpersonal Relationships  | 8.1 $\pm$ 0.2      |
+| Confidence and Self-efficacy | 7.9 $\pm$ 0.4      |
+| Conflict Resolution          | 8.4 $\pm$ 0.2      |
+| Work-related Stress          | 6.6 $\pm$ 0.4      |
+| Adaptability                 | 9.0 $\pm$ 0.0      |
+| Achievement Motivation       | 9.1 $\pm$ 0.2      |
+| Fear of Failure              | 5.0 $\pm$ 0.5      |
+| Need for Control             | 7.0 $\pm$ 0.6      |
+| Cognitive Load               | 7.9 $\pm$ 0.5      |
+| Social Support               | 8.4 $\pm$ 0.2      |
+| Resilience                   | 9.0 $\pm$ 0.0      |
+
+
+
+
+
+
+### Grok-3-beta
+
+
+| Personality Trait            | Score (1.0-10.0)   |
+|:-----------------------------|:-------------------|
+| Anxiety and Stress Levels    | 7.1 $\pm$ 0.6      |
+| Emotional Stability          | 6.6 $\pm$ 0.4      |
+| Problem-solving Skills       | 8.8 $\pm$ 0.2      |
+| Creativity                   | 9.5 $\pm$ 0.0      |
+| Interpersonal Relationships  | 7.5 $\pm$ 0.4      |
+| Confidence and Self-efficacy | 8.0 $\pm$ 0.4      |
+| Conflict Resolution          | 7.8 $\pm$ 0.6      |
+| Work-related Stress          | 6.6 $\pm$ 0.6      |
+| Adaptability                 | 8.9 $\pm$ 0.3      |
+| Achievement Motivation       | 9.1 $\pm$ 0.2      |
+| Fear of Failure              | 6.1 $\pm$ 0.6      |
+| Need for Control             | 7.0 $\pm$ 0.3      |
+| Cognitive Load               | 8.2 $\pm$ 0.2      |
+| Social Support               | 7.8 $\pm$ 0.2      |
+| Resilience                   | 8.8 $\pm$ 0.3      |
+
+
+
+
+
+
+### claude-3-5-haiku-20241022
+
+
+| Personality Trait            | Score (1.0-10.0)   |
+|:-----------------------------|:-------------------|
+| Anxiety and Stress Levels    | 8.2 $\pm$ 0.4      |
+| Emotional Stability          | 4.1 $\pm$ 0.2      |
+| Problem-solving Skills       | 7.9 $\pm$ 0.4      |
+| Creativity                   | 9.1 $\pm$ 0.2      |
+| Interpersonal Relationships  | 5.2 $\pm$ 0.2      |
+| Confidence and Self-efficacy | 5.1 $\pm$ 0.5      |
+| Conflict Resolution          | 5.0 $\pm$ 0.5      |
+| Work-related Stress          | 7.8 $\pm$ 0.4      |
+| Adaptability                 | 7.0 $\pm$ 0.8      |
+| Achievement Motivation       | 8.2 $\pm$ 0.2      |
+| Fear of Failure              | 7.9 $\pm$ 0.7      |
+| Need for Control             | 7.6 $\pm$ 0.5      |
+| Cognitive Load               | 8.4 $\pm$ 0.4      |
+| Social Support               | 5.9 $\pm$ 0.2      |
+| Resilience                   | 7.0 $\pm$ 0.4      |
+
+
+
+
+
+
+### o1-mini
+
+
+| Personality Trait            | Score (1.0-10.0)   |
+|:-----------------------------|:-------------------|
+| Anxiety and Stress Levels    | 5.9 $\pm$ 0.6      |
+| Emotional Stability          | 7.4 $\pm$ 0.2      |
+| Problem-solving Skills       | 9.0 $\pm$ 0.0      |
+| Creativity                   | 9.5 $\pm$ 0.0      |
+| Interpersonal Relationships  | 8.4 $\pm$ 0.2      |
+| Confidence and Self-efficacy | 8.1 $\pm$ 0.2      |
+| Conflict Resolution          | 8.5 $\pm$ 0.0      |
+| Work-related Stress          | 6.5 $\pm$ 0.5      |
+| Adaptability                 | 9.0 $\pm$ 0.0      |
+| Achievement Motivation       | 9.1 $\pm$ 0.2      |
+| Fear of Failure              | 4.5 $\pm$ 0.5      |
+| Need for Control             | 6.8 $\pm$ 0.2      |
+| Cognitive Load               | 7.9 $\pm$ 0.4      |
+| Social Support               | 8.4 $\pm$ 0.2      |
+| Resilience                   | 9.0 $\pm$ 0.0      |
+
+
+
+
+
+
+### falcon33b-instruct-q8_0
+
+
+| Personality Trait            | Score (1.0-10.0)   |
+|:-----------------------------|:-------------------|
+| Anxiety and Stress Levels    | 7.0 $\pm$ 0.5      |
+| Emotional Stability          | 6.9 $\pm$ 0.6      |
+| Problem-solving Skills       | 8.6 $\pm$ 0.2      |
+| Creativity                   | 9.2 $\pm$ 0.2      |
+| Interpersonal Relationships  | 7.2 $\pm$ 0.4      |
+| Confidence and Self-efficacy | 7.8 $\pm$ 0.4      |
+| Conflict Resolution          | 7.4 $\pm$ 0.4      |
+| Work-related Stress          | 7.0 $\pm$ 1.0      |
+| Adaptability                 | 8.9 $\pm$ 0.4      |
+| Achievement Motivation       | 8.9 $\pm$ 0.5      |
+| Fear of Failure              | 5.8 $\pm$ 0.8      |
+| Need for Control             | 6.8 $\pm$ 0.4      |
+| Cognitive Load               | 8.2 $\pm$ 0.2      |
+| Social Support               | 7.8 $\pm$ 0.4      |
+| Resilience                   | 9.1 $\pm$ 0.2      |
+
+
+
+
+
+
+### gpt-4o-mini-2024-11-05
+
+
+| Personality Trait            | Score (1.0-10.0)   |
+|:-----------------------------|:-------------------|
+| Anxiety and Stress Levels    | 7.5 $\pm$ 0.0      |
+| Emotional Stability          | 6.0 $\pm$ 0.4      |
+| Problem-solving Skills       | 8.4 $\pm$ 0.2      |
+| Creativity                   | 9.2 $\pm$ 0.2      |
+| Interpersonal Relationships  | 6.4 $\pm$ 0.4      |
+| Confidence and Self-efficacy | 7.1 $\pm$ 0.2      |
+| Conflict Resolution          | 8.1 $\pm$ 0.2      |
+| Work-related Stress          | 8.0 $\pm$ 0.4      |
+| Adaptability                 | 8.6 $\pm$ 0.2      |
+| Achievement Motivation       | 8.9 $\pm$ 0.2      |
+| Fear of Failure              | 7.1 $\pm$ 0.2      |
+| Need for Control             | 7.4 $\pm$ 0.2      |
+| Cognitive Load               | 8.4 $\pm$ 0.2      |
+| Social Support               | 7.0 $\pm$ 0.4      |
+| Resilience                   | 8.9 $\pm$ 0.2      |
+
+
+
+
+
+
+### qwen2.5-7b-instruct
+
+
+| Personality Trait            | Score (1.0-10.0)   |
+|:-----------------------------|:-------------------|
+| Anxiety and Stress Levels    | 6.8 $\pm$ 0.4      |
+| Emotional Stability          | 7.1 $\pm$ 0.2      |
+| Problem-solving Skills       | 9.0 $\pm$ 0.0      |
+| Creativity                   | 9.5 $\pm$ 0.0      |
+| Interpersonal Relationships  | 8.1 $\pm$ 0.2      |
+| Confidence and Self-efficacy | 8.1 $\pm$ 0.4      |
+| Conflict Resolution          | 8.2 $\pm$ 0.2      |
+| Work-related Stress          | 7.2 $\pm$ 0.2      |
+| Adaptability                 | 9.0 $\pm$ 0.0      |
+| Achievement Motivation       | 9.2 $\pm$ 0.2      |
+| Fear of Failure              | 5.9 $\pm$ 0.2      |
+| Need for Control             | 7.5 $\pm$ 0.0      |
+| Cognitive Load               | 8.4 $\pm$ 0.2      |
+| Social Support               | 8.2 $\pm$ 0.2      |
+| Resilience                   | 9.0 $\pm$ 0.0      |
+
+
+
+
+
+
+### meta-llamaMeta-Llama-3.1-70B-Instruct
+
+
+| Personality Trait            | Score (1.0-10.0)   |
+|:-----------------------------|:-------------------|
+| Anxiety and Stress Levels    | 8.3 $\pm$ 0.3      |
+| Emotional Stability          | 4.6 $\pm$ 0.5      |
+| Problem-solving Skills       | 8.4 $\pm$ 0.4      |
+| Creativity                   | 9.4 $\pm$ 0.1      |
+| Interpersonal Relationships  | 7.1 $\pm$ 0.4      |
+| Confidence and Self-efficacy | 6.4 $\pm$ 0.4      |
+| Conflict Resolution          | 6.6 $\pm$ 0.6      |
+| Work-related Stress          | 8.1 $\pm$ 0.2      |
+| Adaptability                 | 7.9 $\pm$ 0.4      |
+| Achievement Motivation       | 9.0 $\pm$ 0.0      |
+| Fear of Failure              | 7.8 $\pm$ 0.4      |
+| Need for Control             | 7.8 $\pm$ 0.3      |
+| Cognitive Load               | 8.4 $\pm$ 0.2      |
+| Social Support               | 6.9 $\pm$ 0.4      |
+| Resilience                   | 8.4 $\pm$ 0.2      |
+
+
+
+
+
+
+### QwenQwen2.5-Coder-32B-Instruct
+
+
+| Personality Trait            | Score (1.0-10.0)   |
+|:-----------------------------|:-------------------|
+| Anxiety and Stress Levels    | 6.5 $\pm$ 0.0      |
+| Emotional Stability          | 7.1 $\pm$ 0.2      |
+| Problem-solving Skills       | 8.8 $\pm$ 0.2      |
+| Creativity                   | 9.4 $\pm$ 0.2      |
+| Interpersonal Relationships  | 8.2 $\pm$ 0.2      |
+| Confidence and Self-efficacy | 8.0 $\pm$ 0.4      |
+| Conflict Resolution          | 8.5 $\pm$ 0.4      |
+| Work-related Stress          | 7.0 $\pm$ 0.4      |
+| Adaptability                 | 9.0 $\pm$ 0.0      |
+| Achievement Motivation       | 9.0 $\pm$ 0.4      |
+| Fear of Failure              | 5.8 $\pm$ 0.4      |
+| Need for Control             | 7.4 $\pm$ 0.2      |
+| Cognitive Load               | 8.0 $\pm$ 0.4      |
+| Social Support               | 8.5 $\pm$ 0.0      |
+| Resilience                   | 9.0 $\pm$ 0.0      |
+
+
+
+
+
+
+### qwen-max-2025-01-25
+
+
+| Personality Trait            | Score (1.0-10.0)   |
+|:-----------------------------|:-------------------|
+| Anxiety and Stress Levels    | 7.1 $\pm$ 0.4      |
+| Emotional Stability          | 6.6 $\pm$ 0.6      |
+| Problem-solving Skills       | 9.0 $\pm$ 0.0      |
+| Creativity                   | 9.5 $\pm$ 0.0      |
+| Interpersonal Relationships  | 8.2 $\pm$ 0.2      |
+| Confidence and Self-efficacy | 8.2 $\pm$ 0.2      |
+| Conflict Resolution          | 8.7 $\pm$ 0.2      |
+| Work-related Stress          | 7.1 $\pm$ 0.2      |
+| Adaptability                 | 9.0 $\pm$ 0.1      |
+| Achievement Motivation       | 9.2 $\pm$ 0.2      |
+| Fear of Failure              | 6.1 $\pm$ 0.6      |
+| Need for Control             | 7.2 $\pm$ 0.2      |
+| Cognitive Load               | 8.2 $\pm$ 0.2      |
+| Social Support               | 8.2 $\pm$ 0.2      |
+| Resilience                   | 9.2 $\pm$ 0.2      |
+
+
+
+
+
+
+### claude-3-7-sonnet-20250219-thinking-high
+
+
+| Personality Trait            | Score (1.0-10.0)   |
+|:-----------------------------|:-------------------|
+| Anxiety and Stress Levels    | 8.1 $\pm$ 0.4      |
+| Emotional Stability          | 5.7 $\pm$ 0.5      |
+| Problem-solving Skills       | 8.3 $\pm$ 0.3      |
+| Creativity                   | 9.5 $\pm$ 0.0      |
+| Interpersonal Relationships  | 7.0 $\pm$ 0.6      |
+| Confidence and Self-efficacy | 6.9 $\pm$ 0.2      |
+| Conflict Resolution          | 7.8 $\pm$ 0.2      |
+| Work-related Stress          | 8.1 $\pm$ 0.2      |
+| Adaptability                 | 8.9 $\pm$ 0.2      |
+| Achievement Motivation       | 8.6 $\pm$ 0.2      |
+| Fear of Failure              | 7.3 $\pm$ 0.2      |
+| Need for Control             | 7.6 $\pm$ 0.6      |
+| Cognitive Load               | 8.4 $\pm$ 0.2      |
+| Social Support               | 6.8 $\pm$ 0.7      |
+| Resilience                   | 8.7 $\pm$ 0.2      |
+
+
+
+
+
+
+### codestral-2501
+
+
+| Personality Trait            | Score (1.0-10.0)   |
+|:-----------------------------|:-------------------|
+| Anxiety and Stress Levels    | 4.2 $\pm$ 0.2      |
+| Emotional Stability          | 7.8 $\pm$ 0.4      |
+| Problem-solving Skills       | 9.1 $\pm$ 0.2      |
+| Creativity                   | 9.4 $\pm$ 0.2      |
+| Interpersonal Relationships  | 8.5 $\pm$ 0.4      |
+| Confidence and Self-efficacy | 8.5 $\pm$ 0.4      |
+| Conflict Resolution          | 7.9 $\pm$ 0.2      |
+| Work-related Stress          | 6.2 $\pm$ 0.2      |
+| Adaptability                 | 9.1 $\pm$ 0.2      |
+| Achievement Motivation       | 9.4 $\pm$ 0.2      |
+| Fear of Failure              | 4.0 $\pm$ 0.6      |
+| Need for Control             | 6.6 $\pm$ 0.4      |
+| Cognitive Load               | 7.9 $\pm$ 0.4      |
+| Social Support               | 8.4 $\pm$ 0.2      |
+| Resilience                   | 9.1 $\pm$ 0.2      |
+
+
+
+
+
+
+### chatgpt-4o-latest-2025-01-29
+
+
+| Personality Trait            | Score (1.0-10.0)   |
+|:-----------------------------|:-------------------|
+| Anxiety and Stress Levels    | 8.0 $\pm$ 0.5      |
+| Emotional Stability          | 4.9 $\pm$ 0.4      |
+| Problem-solving Skills       | 8.1 $\pm$ 0.2      |
+| Creativity                   | 9.5 $\pm$ 0.0      |
+| Interpersonal Relationships  | 6.6 $\pm$ 0.2      |
+| Confidence and Self-efficacy | 6.1 $\pm$ 0.2      |
+| Conflict Resolution          | 6.9 $\pm$ 0.2      |
+| Work-related Stress          | 7.8 $\pm$ 0.2      |
+| Adaptability                 | 8.5 $\pm$ 0.4      |
+| Achievement Motivation       | 8.9 $\pm$ 0.2      |
+| Fear of Failure              | 7.5 $\pm$ 0.4      |
+| Need for Control             | 7.2 $\pm$ 0.6      |
+| Cognitive Load               | 8.6 $\pm$ 0.2      |
+| Social Support               | 5.9 $\pm$ 0.4      |
+| Resilience                   | 8.0 $\pm$ 0.0      |
+
+
+
+
+
+
+### gemini-2.0-flash-exp
+
+
+| Personality Trait            | Score (1.0-10.0)   |
+|:-----------------------------|:-------------------|
+| Anxiety and Stress Levels    | 6.5 $\pm$ 0.0      |
+| Emotional Stability          | 7.0 $\pm$ 0.6      |
+| Problem-solving Skills       | 8.6 $\pm$ 0.2      |
+| Creativity                   | 9.5 $\pm$ 0.0      |
+| Interpersonal Relationships  | 7.4 $\pm$ 0.2      |
+| Confidence and Self-efficacy | 7.4 $\pm$ 0.4      |
+| Conflict Resolution          | 8.1 $\pm$ 0.2      |
+| Work-related Stress          | 6.4 $\pm$ 0.6      |
+| Adaptability                 | 9.0 $\pm$ 0.0      |
+| Achievement Motivation       | 8.5 $\pm$ 0.0      |
+| Fear of Failure              | 5.9 $\pm$ 0.4      |
+| Need for Control             | 6.8 $\pm$ 0.4      |
+| Cognitive Load               | 7.8 $\pm$ 0.6      |
+| Social Support               | 7.5 $\pm$ 0.0      |
+| Resilience                   | 9.0 $\pm$ 0.0      |
+
+
+
+
+
+
+### qwen2.51.5b-instruct-q6_K
+
+
+| Personality Trait            | Score (1.0-10.0)   |
+|:-----------------------------|:-------------------|
+| Anxiety and Stress Levels    | 8.0 $\pm$ 0.5      |
+| Emotional Stability          | 4.5 $\pm$ 0.6      |
+| Problem-solving Skills       | 7.0 $\pm$ 0.6      |
+| Creativity                   | 8.1 $\pm$ 0.2      |
+| Interpersonal Relationships  | 5.0 $\pm$ 0.4      |
+| Confidence and Self-efficacy | 5.0 $\pm$ 0.6      |
+| Conflict Resolution          | 4.0 $\pm$ 0.0      |
+| Work-related Stress          | 7.8 $\pm$ 0.4      |
+| Adaptability                 | 6.4 $\pm$ 0.5      |
+| Achievement Motivation       | 7.5 $\pm$ 0.4      |
+| Fear of Failure              | 7.8 $\pm$ 0.6      |
+| Need for Control             | 6.9 $\pm$ 0.4      |
+| Cognitive Load               | 7.9 $\pm$ 0.5      |
+| Social Support               | 5.0 $\pm$ 0.4      |
+| Resilience                   | 6.2 $\pm$ 0.2      |
+
+
+
+
+
+
+### qwen2.5-32b-instruct
+
+
+| Personality Trait            | Score (1.0-10.0)   |
+|:-----------------------------|:-------------------|
+| Anxiety and Stress Levels    | 4.6 $\pm$ 0.2      |
+| Emotional Stability          | 8.2 $\pm$ 0.4      |
+| Problem-solving Skills       | 9.1 $\pm$ 0.2      |
+| Creativity                   | 9.4 $\pm$ 0.2      |
+| Interpersonal Relationships  | 8.4 $\pm$ 0.2      |
+| Confidence and Self-efficacy | 8.2 $\pm$ 0.2      |
+| Conflict Resolution          | 8.6 $\pm$ 0.2      |
+| Work-related Stress          | 5.9 $\pm$ 0.4      |
+| Adaptability                 | 9.0 $\pm$ 0.0      |
+| Achievement Motivation       | 9.2 $\pm$ 0.2      |
+| Fear of Failure              | 4.0 $\pm$ 0.0      |
+| Need for Control             | 7.0 $\pm$ 0.4      |
+| Cognitive Load               | 7.6 $\pm$ 0.2      |
+| Social Support               | 8.8 $\pm$ 0.2      |
+| Resilience                   | 9.1 $\pm$ 0.2      |
+
+
+
+
+
+
+### meta-llamaMeta-Llama-3.1-8B-Instruct
+
+
+| Personality Trait            | Score (1.0-10.0)   |
+|:-----------------------------|:-------------------|
+| Anxiety and Stress Levels    | 8.5 $\pm$ 0.0      |
+| Emotional Stability          | 4.9 $\pm$ 0.2      |
+| Problem-solving Skills       | 7.8 $\pm$ 0.4      |
+| Creativity                   | 9.4 $\pm$ 0.2      |
+| Interpersonal Relationships  | 6.5 $\pm$ 0.4      |
+| Confidence and Self-efficacy | 5.9 $\pm$ 0.4      |
+| Conflict Resolution          | 7.4 $\pm$ 0.2      |
+| Work-related Stress          | 8.6 $\pm$ 0.4      |
+| Adaptability                 | 7.8 $\pm$ 0.8      |
+| Achievement Motivation       | 8.9 $\pm$ 0.2      |
+| Fear of Failure              | 7.5 $\pm$ 0.4      |
+| Need for Control             | 7.9 $\pm$ 0.2      |
+| Cognitive Load               | 9.0 $\pm$ 0.0      |
+| Social Support               | 6.4 $\pm$ 0.2      |
+| Resilience                   | 8.0 $\pm$ 0.4      |
+
+
+
+
+
+
+### qwen2.5-14b-instruct
+
+
+| Personality Trait            | Score (1.0-10.0)   |
+|:-----------------------------|:-------------------|
+| Anxiety and Stress Levels    | 7.1 $\pm$ 0.6      |
+| Emotional Stability          | 7.1 $\pm$ 0.4      |
+| Problem-solving Skills       | 9.0 $\pm$ 0.0      |
+| Creativity                   | 9.5 $\pm$ 0.0      |
+| Interpersonal Relationships  | 8.1 $\pm$ 0.2      |
+| Confidence and Self-efficacy | 8.6 $\pm$ 0.1      |
+| Conflict Resolution          | 8.6 $\pm$ 0.4      |
+| Work-related Stress          | 7.2 $\pm$ 0.2      |
+| Adaptability                 | 9.0 $\pm$ 0.1      |
+| Achievement Motivation       | 9.5 $\pm$ 0.0      |
+| Fear of Failure              | 5.5 $\pm$ 0.4      |
+| Need for Control             | 7.3 $\pm$ 0.2      |
+| Cognitive Load               | 8.1 $\pm$ 0.2      |
+| Social Support               | 8.4 $\pm$ 0.1      |
+| Resilience                   | 9.2 $\pm$ 0.2      |
+
+
+
+
+
+
+### gemini-exp-1114
+
+
+| Personality Trait            | Score (1.0-10.0)   |
+|:-----------------------------|:-------------------|
+| Anxiety and Stress Levels    | 8.4 $\pm$ 0.2      |
+| Emotional Stability          | 5.0 $\pm$ 0.6      |
+| Problem-solving Skills       | 8.8 $\pm$ 0.4      |
+| Creativity                   | 9.5 $\pm$ 0.0      |
+| Interpersonal Relationships  | 6.8 $\pm$ 0.2      |
+| Confidence and Self-efficacy | 7.2 $\pm$ 0.2      |
+| Conflict Resolution          | 8.0 $\pm$ 0.4      |
+| Work-related Stress          | 8.2 $\pm$ 0.2      |
+| Adaptability                 | 8.8 $\pm$ 0.4      |
+| Achievement Motivation       | 9.2 $\pm$ 0.2      |
+| Fear of Failure              | 7.5 $\pm$ 0.0      |
+| Need for Control             | 7.9 $\pm$ 0.2      |
+| Cognitive Load               | 8.6 $\pm$ 0.2      |
+| Social Support               | 6.8 $\pm$ 0.6      |
+| Resilience                   | 8.9 $\pm$ 0.2      |
+
+
+
+
+
+
+### gpt-4-0125-preview
+
+
+| Personality Trait            | Score (1.0-10.0)   |
+|:-----------------------------|:-------------------|
+| Anxiety and Stress Levels    | 4.9 $\pm$ 0.4      |
+| Emotional Stability          | 8.2 $\pm$ 0.2      |
+| Problem-solving Skills       | 9.1 $\pm$ 0.1      |
+| Creativity                   | 9.6 $\pm$ 0.1      |
+| Interpersonal Relationships  | 8.7 $\pm$ 0.2      |
+| Confidence and Self-efficacy | 8.4 $\pm$ 0.3      |
+| Conflict Resolution          | 8.5 $\pm$ 0.5      |
+| Work-related Stress          | 5.1 $\pm$ 0.5      |
+| Adaptability                 | 9.4 $\pm$ 0.2      |
+| Achievement Motivation       | 9.2 $\pm$ 0.3      |
+| Fear of Failure              | 3.7 $\pm$ 0.5      |
+| Need for Control             | 5.8 $\pm$ 0.7      |
+| Cognitive Load               | 7.2 $\pm$ 1.1      |
+| Social Support               | 8.6 $\pm$ 0.2      |
+| Resilience                   | 9.5 $\pm$ 0.0      |
+
+
+
+
+
+
+### deepseek-aiDeepSeek-R1-Distill-Llama-70B
+
+
+| Personality Trait            | Score (1.0-10.0)   |
+|:-----------------------------|:-------------------|
+| Anxiety and Stress Levels    | 6.1 $\pm$ 2.1      |
+| Emotional Stability          | 7.4 $\pm$ 1.1      |
+| Problem-solving Skills       | 9.2 $\pm$ 0.3      |
+| Creativity                   | 9.5 $\pm$ 0.3      |
+| Interpersonal Relationships  | 8.4 $\pm$ 0.4      |
+| Confidence and Self-efficacy | 8.4 $\pm$ 0.6      |
+| Conflict Resolution          | 8.9 $\pm$ 0.6      |
+| Work-related Stress          | 5.9 $\pm$ 1.1      |
+| Adaptability                 | 9.2 $\pm$ 0.2      |
+| Achievement Motivation       | 9.3 $\pm$ 0.2      |
+| Fear of Failure              | 4.8 $\pm$ 1.6      |
+| Need for Control             | 7.2 $\pm$ 0.2      |
+| Cognitive Load               | 8.4 $\pm$ 0.3      |
+| Social Support               | 8.5 $\pm$ 0.4      |
+| Resilience                   | 9.4 $\pm$ 0.4      |
+
+
+
+
+
+
+### claude-3-7-sonnet-20250219
+
+
+| Personality Trait            | Score (1.0-10.0)   |
+|:-----------------------------|:-------------------|
+| Anxiety and Stress Levels    | 7.1 $\pm$ 0.4      |
+| Emotional Stability          | 6.4 $\pm$ 0.8      |
+| Problem-solving Skills       | 8.8 $\pm$ 0.2      |
+| Creativity                   | 9.4 $\pm$ 0.2      |
+| Interpersonal Relationships  | 7.2 $\pm$ 0.4      |
+| Confidence and Self-efficacy | 7.0 $\pm$ 0.4      |
+| Conflict Resolution          | 7.8 $\pm$ 0.4      |
+| Work-related Stress          | 8.0 $\pm$ 0.4      |
+| Adaptability                 | 8.8 $\pm$ 0.2      |
+| Achievement Motivation       | 8.8 $\pm$ 0.4      |
+| Fear of Failure              | 7.0 $\pm$ 0.8      |
+| Need for Control             | 6.5 $\pm$ 0.8      |
+| Cognitive Load               | 8.4 $\pm$ 0.2      |
+| Social Support               | 7.0 $\pm$ 0.4      |
+| Resilience                   | 8.9 $\pm$ 0.2      |
+
+
+
+
+
+
+### mistral-small-2501
+
+
+| Personality Trait            | Score (1.0-10.0)   |
+|:-----------------------------|:-------------------|
+| Anxiety and Stress Levels    | 5.1 $\pm$ 1.1      |
+| Emotional Stability          | 7.9 $\pm$ 0.4      |
+| Problem-solving Skills       | 9.0 $\pm$ 0.0      |
+| Creativity                   | 9.5 $\pm$ 0.0      |
+| Interpersonal Relationships  | 8.2 $\pm$ 0.2      |
+| Confidence and Self-efficacy | 8.3 $\pm$ 0.3      |
+| Conflict Resolution          | 8.8 $\pm$ 0.3      |
+| Work-related Stress          | 5.6 $\pm$ 0.8      |
+| Adaptability                 | 9.2 $\pm$ 0.2      |
+| Achievement Motivation       | 9.2 $\pm$ 0.2      |
+| Fear of Failure              | 4.0 $\pm$ 0.9      |
+| Need for Control             | 6.9 $\pm$ 0.4      |
+| Cognitive Load               | 7.3 $\pm$ 0.3      |
+| Social Support               | 8.4 $\pm$ 0.2      |
+| Resilience                   | 9.3 $\pm$ 0.2      |
+
+
+
+
+
+
+### Gemini-1.5-Pro-Exp-0801
+
+
+| Personality Trait            | Score (1.0-10.0)   |
+|:-----------------------------|:-------------------|
+| Anxiety and Stress Levels    | 8.3 $\pm$ 0.5      |
+| Emotional Stability          | 5.2 $\pm$ 0.5      |
+| Problem-solving Skills       | 8.5 $\pm$ 0.4      |
+| Creativity                   | 9.2 $\pm$ 0.2      |
+| Interpersonal Relationships  | 7.0 $\pm$ 0.7      |
+| Confidence and Self-efficacy | 5.8 $\pm$ 0.6      |
+| Conflict Resolution          | 7.5 $\pm$ 0.0      |
+| Work-related Stress          | 8.0 $\pm$ 0.3      |
+| Adaptability                 | 8.5 $\pm$ 0.3      |
+| Achievement Motivation       | 9.0 $\pm$ 0.0      |
+| Fear of Failure              | 8.4 $\pm$ 0.8      |
+| Need for Control             | 6.9 $\pm$ 0.3      |
+| Cognitive Load               | 8.6 $\pm$ 0.2      |
+| Social Support               | 6.8 $\pm$ 1.1      |
+| Resilience                   | 8.8 $\pm$ 0.2      |
+
+
+
+
+
+
 ### granite3.28b-instruct-q4_K_M
 
 
@@ -2301,6 +2173,136 @@
 
 
 
+### Grok-3-beta-thinking-20250303
+
+
+| Personality Trait            | Score (1.0-10.0)   |
+|:-----------------------------|:-------------------|
+| Anxiety and Stress Levels    | 7.1 $\pm$ 0.6      |
+| Emotional Stability          | 6.8 $\pm$ 0.6      |
+| Problem-solving Skills       | 8.7 $\pm$ 0.2      |
+| Creativity                   | 9.4 $\pm$ 0.2      |
+| Interpersonal Relationships  | 7.9 $\pm$ 0.3      |
+| Confidence and Self-efficacy | 7.7 $\pm$ 0.5      |
+| Conflict Resolution          | 8.0 $\pm$ 0.6      |
+| Work-related Stress          | 7.2 $\pm$ 0.8      |
+| Adaptability                 | 8.9 $\pm$ 0.2      |
+| Achievement Motivation       | 9.2 $\pm$ 0.2      |
+| Fear of Failure              | 6.8 $\pm$ 0.6      |
+| Need for Control             | 6.9 $\pm$ 0.8      |
+| Cognitive Load               | 8.1 $\pm$ 0.2      |
+| Social Support               | 8.3 $\pm$ 0.3      |
+| Resilience                   | 8.9 $\pm$ 0.2      |
+
+
+
+
+
+
+### meta-llamaLlama-3.2-1B-Instruct
+
+
+| Personality Trait            | Score (1.0-10.0)   |
+|:-----------------------------|:-------------------|
+| Anxiety and Stress Levels    | 8.1 $\pm$ 0.6      |
+| Emotional Stability          | 4.8 $\pm$ 1.0      |
+| Problem-solving Skills       | 7.7 $\pm$ 1.1      |
+| Creativity                   | 9.2 $\pm$ 0.2      |
+| Interpersonal Relationships  | 7.0 $\pm$ 0.3      |
+| Confidence and Self-efficacy | 6.3 $\pm$ 1.0      |
+| Conflict Resolution          | 5.6 $\pm$ 0.9      |
+| Work-related Stress          | 8.2 $\pm$ 0.2      |
+| Adaptability                 | 7.6 $\pm$ 1.2      |
+| Achievement Motivation       | 8.8 $\pm$ 0.2      |
+| Fear of Failure              | 7.4 $\pm$ 0.7      |
+| Need for Control             | 7.5 $\pm$ 0.3      |
+| Cognitive Load               | 8.2 $\pm$ 0.4      |
+| Social Support               | 6.4 $\pm$ 0.6      |
+| Resilience                   | 6.9 $\pm$ 1.2      |
+
+
+
+
+
+
+### meta-llamaMeta-Llama-3.1-405B-Instruct
+
+
+| Personality Trait            | Score (1.0-10.0)   |
+|:-----------------------------|:-------------------|
+| Anxiety and Stress Levels    | 8.0 $\pm$ 0.4      |
+| Emotional Stability          | 5.0 $\pm$ 1.0      |
+| Problem-solving Skills       | 8.9 $\pm$ 0.2      |
+| Creativity                   | 9.6 $\pm$ 0.1      |
+| Interpersonal Relationships  | 7.4 $\pm$ 0.7      |
+| Confidence and Self-efficacy | 6.9 $\pm$ 0.5      |
+| Conflict Resolution          | 7.4 $\pm$ 0.6      |
+| Work-related Stress          | 8.1 $\pm$ 0.4      |
+| Adaptability                 | 8.7 $\pm$ 0.7      |
+| Achievement Motivation       | 9.1 $\pm$ 0.2      |
+| Fear of Failure              | 7.4 $\pm$ 0.7      |
+| Need for Control             | 8.0 $\pm$ 0.6      |
+| Cognitive Load               | 8.4 $\pm$ 0.4      |
+| Social Support               | 7.8 $\pm$ 0.7      |
+| Resilience                   | 8.6 $\pm$ 0.4      |
+
+
+
+
+
+
+### deepseek-aiDeepSeek-R1-Zero
+
+
+| Personality Trait            | Score (1.0-10.0)   |
+|:-----------------------------|:-------------------|
+| Anxiety and Stress Levels    | 7.6 $\pm$ 0.6      |
+| Emotional Stability          | 7.3 $\pm$ 0.9      |
+| Problem-solving Skills       | 9.1 $\pm$ 0.1      |
+| Creativity                   | 9.2 $\pm$ 0.2      |
+| Interpersonal Relationships  | 7.9 $\pm$ 0.5      |
+| Confidence and Self-efficacy | 8.0 $\pm$ 0.8      |
+| Conflict Resolution          | 8.4 $\pm$ 0.2      |
+| Work-related Stress          | 7.9 $\pm$ 0.5      |
+| Adaptability                 | 9.1 $\pm$ 0.1      |
+| Achievement Motivation       | 9.2 $\pm$ 0.2      |
+| Fear of Failure              | 6.4 $\pm$ 0.8      |
+| Need for Control             | 7.6 $\pm$ 0.4      |
+| Cognitive Load               | 8.6 $\pm$ 0.2      |
+| Social Support               | 7.7 $\pm$ 0.7      |
+| Resilience                   | 9.2 $\pm$ 0.2      |
+
+
+
+
+
+
+### Qwen-QwQ-32B
+
+
+| Personality Trait            | Score (1.0-10.0)   |
+|:-----------------------------|:-------------------|
+| Anxiety and Stress Levels    | 8.5 $\pm$ 0.0      |
+| Emotional Stability          | 4.4 $\pm$ 0.4      |
+| Problem-solving Skills       | 9.0 $\pm$ 0.4      |
+| Creativity                   | 9.6 $\pm$ 0.1      |
+| Interpersonal Relationships  | 6.1 $\pm$ 0.4      |
+| Confidence and Self-efficacy | 6.0 $\pm$ 0.4      |
+| Conflict Resolution          | 5.8 $\pm$ 0.8      |
+| Work-related Stress          | 8.2 $\pm$ 0.2      |
+| Adaptability                 | 7.6 $\pm$ 0.2      |
+| Achievement Motivation       | 8.4 $\pm$ 0.4      |
+| Fear of Failure              | 8.0 $\pm$ 0.4      |
+| Need for Control             | 7.4 $\pm$ 0.2      |
+| Cognitive Load               | 9.1 $\pm$ 0.2      |
+| Social Support               | 5.5 $\pm$ 0.8      |
+| Resilience                   | 7.4 $\pm$ 0.6      |
+
+
+
+
+
+
 ### gemma-3-27b-it
 
 
@@ -2321,6 +2323,58 @@
 | Cognitive Load               | 8.6 $\pm$ 0.2      |
 | Social Support               | 7.1 $\pm$ 0.4      |
 | Resilience                   | 8.9 $\pm$ 0.2      |
+
+
+
+
+
+
+### gemma31b-it-q8_0
+
+
+| Personality Trait            | Score (1.0-10.0)   |
+|:-----------------------------|:-------------------|
+| Anxiety and Stress Levels    | 8.2 $\pm$ 0.6      |
+| Emotional Stability          | 4.4 $\pm$ 1.0      |
+| Problem-solving Skills       | 7.9 $\pm$ 0.4      |
+| Creativity                   | 9.3 $\pm$ 0.2      |
+| Interpersonal Relationships  | 5.4 $\pm$ 1.5      |
+| Confidence and Self-efficacy | 5.5 $\pm$ 1.0      |
+| Conflict Resolution          | 5.0 $\pm$ 0.7      |
+| Work-related Stress          | 8.1 $\pm$ 0.4      |
+| Adaptability                 | 7.1 $\pm$ 1.0      |
+| Achievement Motivation       | 8.0 $\pm$ 0.7      |
+| Fear of Failure              | 7.6 $\pm$ 0.4      |
+| Need for Control             | 7.7 $\pm$ 0.2      |
+| Cognitive Load               | 8.7 $\pm$ 0.4      |
+| Social Support               | 4.6 $\pm$ 1.1      |
+| Resilience                   | 6.8 $\pm$ 0.8      |
+
+
+
+
+
+
+### gemma34b-it-q8_0
+
+
+| Personality Trait            | Score (1.0-10.0)   |
+|:-----------------------------|:-------------------|
+| Anxiety and Stress Levels    | 8.2 $\pm$ 0.7      |
+| Emotional Stability          | 3.7 $\pm$ 0.5      |
+| Problem-solving Skills       | 7.7 $\pm$ 0.4      |
+| Creativity                   | 9.6 $\pm$ 0.1      |
+| Interpersonal Relationships  | 5.6 $\pm$ 0.8      |
+| Confidence and Self-efficacy | 4.8 $\pm$ 0.2      |
+| Conflict Resolution          | 6.0 $\pm$ 1.4      |
+| Work-related Stress          | 8.4 $\pm$ 0.6      |
+| Adaptability                 | 7.6 $\pm$ 0.9      |
+| Achievement Motivation       | 8.0 $\pm$ 0.3      |
+| Fear of Failure              | 8.3 $\pm$ 0.8      |
+| Need for Control             | 7.0 $\pm$ 1.0      |
+| Cognitive Load               | 8.9 $\pm$ 0.5      |
+| Social Support               | 4.6 $\pm$ 0.9      |
+| Resilience                   | 7.2 $\pm$ 1.0      |
 
 
 
