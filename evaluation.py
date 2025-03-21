@@ -135,7 +135,7 @@ def get_evaluation_openai_new(text):
         print(response.text)
 
     response = response.json()
-    response_message = response["output"][0]["content"][0]["text"]
+    response_message = response["output"][-1]["content"][0]["text"]
     response_message_json = interpret_response(response_message)
 
     return response_message_json

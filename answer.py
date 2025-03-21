@@ -105,7 +105,7 @@ def perform_query_new_openai_api(text):
         print(response.text)
 
     response = response.json()
-    return response["output"][0]["content"][0]["text"]
+    return response["output"][-1]["content"][0]["text"]
 
 
 def perform_query_openai_api(text):
