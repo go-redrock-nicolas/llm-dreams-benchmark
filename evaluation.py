@@ -142,7 +142,7 @@ def get_evaluation_openai_new(text):
 
 
 def get_evaluation(text):
-    if "openai" in API_URL:
+    if "api.openai" in API_URL:
         return get_evaluation_openai_new(text)
     elif "googleapis" in API_URL:
         return get_evaluation_google(text)

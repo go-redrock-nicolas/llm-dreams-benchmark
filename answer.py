@@ -236,7 +236,7 @@ def perform_query_anthropic_api(question):
 
 
 def perform_query(text):
-    if "openai" in API_URL:
+    if "api.openai" in API_URL:
         return perform_query_new_openai_api(text)
     elif "googleapis" in API_URL:
         return perform_query_google_api(text)
