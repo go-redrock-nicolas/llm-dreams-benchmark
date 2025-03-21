@@ -30,6 +30,21 @@ incipits = [x for x in os.listdir("incipits") if x.endswith("txt")]
 m_name = MODEL_NAME.replace("/", "").replace(":", "")
 
 
+def write_answer(response_message, answer_path):
+    if not os.path.exists(answer_path):
+        response_message = perform_query(
+            "You are dreaming. Can you complete the following dream?\n\n" + open(dream_path, "r").read())
+
+        if response_message:
+            try:
+                F = open(answer_path, "w")
+                F.write(response_message)
+            except:
+                F = open(answer_path, "w", encoding="utf-8")
+                F.write(response_message)
+            F.close()
+
+
 def strip_non_unicode_characters(text):
     # Define a pattern that matches all valid Unicode characters.
     pattern = re.compile(r'[^\u0000-\uFFFF]', re.UNICODE)
@@ -241,12 +256,10 @@ for i in range(NUMBER_EXECUTIONS):
                 answer_path = os.path.join("answers", m_name+"__"+incipit.split(".")[0]+"__"+str(i)+".txt")
 
                 if not os.path.exists(answer_path):
-                    response_message = perform_query("You are dreaming. Can you complete the following dream?\n\n" + open(dream_path, "r").read())
+                    response_message = perform_query(
+                        "You are dreaming. Can you complete the following dream?\n\n" + open(dream_path, "r").read())
 
-                    if response_message:
-                        F = open(answer_path, "w")
-                        F.write(response_message)
-                        F.close()
+                    write_answer(response_message, answer_path)
             break
         except:
             traceback.print_exc()
