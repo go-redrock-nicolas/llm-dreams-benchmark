@@ -167,7 +167,7 @@ def perform_query_openai_api(text):
 
             time.sleep(WAITING_TIME_RETRY)
 
-        return response_message.split("</think>")[-1]
+        return response_message.split("</think>")[-1].split("</thought>")[-1]
 
 def perform_query_anthropic_api(question):
     ANTHROPIC_THINKING_TOKENS = None
