@@ -78,6 +78,7 @@
 | qwen2.50.5b-instruct-q6_K                | **369.0** | 7.9 $\pm$ 0.4               | 5.9 $\pm$ 0.7         | 8.5 $\pm$ 0.0            | 9.0 $\pm$ 0.0 | 7.0 $\pm$ 0.6                 | 7.2 $\pm$ 0.6                  | 5.5 $\pm$ 1.0         | 7.9 $\pm$ 0.2         | 8.2 $\pm$ 0.8  | 8.8 $\pm$ 0.4            | 7.2 $\pm$ 0.4     | 7.0 $\pm$ 0.0      | 8.5 $\pm$ 0.4    | 6.4 $\pm$ 0.4    | 8.5 $\pm$ 0.4 |
 | Gemini-1.5-Pro-Exp-0801                  | **368.5** | 8.3 $\pm$ 0.5               | 5.2 $\pm$ 0.5         | 8.5 $\pm$ 0.4            | 9.2 $\pm$ 0.2 | 7.0 $\pm$ 0.7                 | 5.8 $\pm$ 0.6                  | 7.5 $\pm$ 0.0         | 8.0 $\pm$ 0.3         | 8.5 $\pm$ 0.3  | 9.0 $\pm$ 0.0            | 8.4 $\pm$ 0.8     | 6.9 $\pm$ 0.3      | 8.6 $\pm$ 0.2    | 6.8 $\pm$ 1.1    | 8.8 $\pm$ 0.2 |
 | gemini-2.0-pro-exp-02-05                 | **365.5** | 8.0 $\pm$ 0.5               | 4.5 $\pm$ 0.9         | 8.8 $\pm$ 0.4            | 9.5 $\pm$ 0.0 | 7.1 $\pm$ 0.7                 | 6.1 $\pm$ 0.4                  | 5.5 $\pm$ 0.4         | 7.6 $\pm$ 0.4         | 9.2 $\pm$ 0.2  | 8.9 $\pm$ 0.2            | 8.2 $\pm$ 0.2     | 6.5 $\pm$ 0.9      | 8.4 $\pm$ 0.2    | 6.6 $\pm$ 0.7    | 8.6 $\pm$ 0.4 |
+| claude-3-opus-20240229                   | **363.8** | 8.2 $\pm$ 0.3               | 5.0 $\pm$ 0.4         | 8.6 $\pm$ 0.4            | 9.4 $\pm$ 0.1 | 6.9 $\pm$ 0.5                 | 6.1 $\pm$ 0.6                  | 6.2 $\pm$ 0.8         | 8.2 $\pm$ 0.2         | 8.2 $\pm$ 0.3  | 9.0 $\pm$ 0.0            | 7.8 $\pm$ 0.4     | 7.2 $\pm$ 0.3      | 8.6 $\pm$ 0.4    | 6.4 $\pm$ 0.7    | 8.6 $\pm$ 0.4 |
 | Gemini-1.5-Pro-Exp-0827                  | **362.9** | 8.3 $\pm$ 0.3               | 4.6 $\pm$ 0.3         | 8.1 $\pm$ 0.2            | 9.5 $\pm$ 0.0 | 7.0 $\pm$ 0.4                 | 6.4 $\pm$ 0.3                  | 6.2 $\pm$ 1.6         | 8.0 $\pm$ 0.6         | 8.3 $\pm$ 0.5  | 9.0 $\pm$ 0.0            | 7.8 $\pm$ 0.6     | 7.0 $\pm$ 0.4      | 8.3 $\pm$ 0.2    | 6.6 $\pm$ 0.4    | 8.2 $\pm$ 0.5 |
 | meta-llamaLlama-3.3-70B-Instruct         | **362.2** | 8.7 $\pm$ 0.2               | 4.3 $\pm$ 0.4         | 8.2 $\pm$ 0.2            | 9.2 $\pm$ 0.2 | 7.3 $\pm$ 0.5                 | 5.8 $\pm$ 0.6                  | 7.6 $\pm$ 0.4         | 8.5 $\pm$ 0.0         | 8.1 $\pm$ 0.7  | 9.0 $\pm$ 0.0            | 8.0 $\pm$ 0.6     | 7.4 $\pm$ 0.4      | 8.3 $\pm$ 0.4    | 7.1 $\pm$ 0.4    | 8.0 $\pm$ 0.6 |
 | meta-llamaMeta-Llama-3.1-70B-Instruct    | **361.7** | 8.3 $\pm$ 0.3               | 4.6 $\pm$ 0.5         | 8.4 $\pm$ 0.4            | 9.4 $\pm$ 0.1 | 7.1 $\pm$ 0.4                 | 6.4 $\pm$ 0.4                  | 6.6 $\pm$ 0.6         | 8.1 $\pm$ 0.2         | 7.9 $\pm$ 0.4  | 9.0 $\pm$ 0.0            | 7.8 $\pm$ 0.4     | 7.8 $\pm$ 0.3      | 8.4 $\pm$ 0.2    | 6.9 $\pm$ 0.4    | 8.4 $\pm$ 0.2 |
@@ -2483,6 +2484,32 @@
 | Cognitive Load               | 8.3 $\pm$ 0.3      |
 | Social Support               | 6.7 $\pm$ 0.4      |
 | Resilience                   | 8.7 $\pm$ 0.2      |
+
+
+
+
+
+
+### claude-3-opus-20240229
+
+
+| Personality Trait            | Score (1.0-10.0)   |
+|:-----------------------------|:-------------------|
+| Anxiety and Stress Levels    | 8.2 $\pm$ 0.3      |
+| Emotional Stability          | 5.0 $\pm$ 0.4      |
+| Problem-solving Skills       | 8.6 $\pm$ 0.4      |
+| Creativity                   | 9.4 $\pm$ 0.1      |
+| Interpersonal Relationships  | 6.9 $\pm$ 0.5      |
+| Confidence and Self-efficacy | 6.1 $\pm$ 0.6      |
+| Conflict Resolution          | 6.2 $\pm$ 0.8      |
+| Work-related Stress          | 8.2 $\pm$ 0.2      |
+| Adaptability                 | 8.2 $\pm$ 0.3      |
+| Achievement Motivation       | 9.0 $\pm$ 0.0      |
+| Fear of Failure              | 7.8 $\pm$ 0.4      |
+| Need for Control             | 7.2 $\pm$ 0.3      |
+| Cognitive Load               | 8.6 $\pm$ 0.4      |
+| Social Support               | 6.4 $\pm$ 0.7      |
+| Resilience                   | 8.6 $\pm$ 0.4      |
 
 
 
