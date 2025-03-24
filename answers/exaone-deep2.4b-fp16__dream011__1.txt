@@ -1,0 +1,30 @@
+
+
+Given the quadratic equation \(x^2 + bx + c = 0\) with roots \(p\) and \(q\), we need to determine the values of \(b\) and \(c\) such that the conditions \(p + q = 3\) and \(p^3 + q^3 = 19\) are satisfied.
+
+1. **Using Vieta's formulas**:
+   - The sum of the roots \(p + q = -b\). Given \(p + q = 3\), we have:
+     \[
+     3 = -b \implies b = -3
+     \]
+   - The product of the roots \(pq = c\). We need to find \(c\).
+
+2. **Using the identity for the sum of cubes**:
+   - The identity \(p^3 + q^3 = (p + q)^3 - 3pq(p + q)\) can be applied. Substituting the known values:
+     \[
+     p^3 + q^3 = 3^3 - 3pq \cdot 3 = 27 - 9pq
+     \]
+   - Given \(p^3 + q^3 = 19\), we set up the equation:
+     \[
+     27 - 9pq = 19 \implies -9pq = 19 - 27 \implies -9pq = -8 \implies pq = \frac{8}{9}
+     \]
+   - Since \(pq = c\), we have \(c = \frac{8}{9}\).
+
+3. **Verification**:
+   - Check the calculation for \(p^3 + q^3\) using \(pq = \frac{8}{9}\):
+     \[
+     p^3 + q^3 = 27 - 9 \left(\frac{8}{9}\right) = 27 - 8 = 19
+     \]
+   - The verification confirms the solution is correct.
+
+Thus, the values of \(b\) and \(c\) are \(\boxed{-3}\) and \(\boxed{\dfrac{8}{9}}\), respectively.
