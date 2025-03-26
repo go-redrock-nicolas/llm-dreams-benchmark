@@ -1,2 +1,4 @@
 ANSWERING_MODEL_NAME = "gpt-4o"
 EVALUATING_MODEL_NAME = "gpt-4o-mini"
+EVALUATION_FOLDER = "evaluations"
+TARGET_GIT_TABLE_RESULT = "results_gpt_45.md"

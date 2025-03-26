@@ -3,15 +3,15 @@ import os
 import numpy as np
 import pandas as pd
 from copy import copy
+from common import EVALUATION_FOLDER, TARGET_GIT_TABLE_RESULT
 
-
-evaluations = [x for x in os.listdir("evaluations") if x.endswith(".txt")]
+evaluations = [x for x in os.listdir(EVALUATION_FOLDER) if x.endswith(".txt")]
 
 creation_time = []
 for ev in evaluations:
-    full_path = os.path.join("evaluations", ev)
+    full_path = os.path.join(EVALUATION_FOLDER, ev)
     creation_time.append((ev, os.path.getctime(full_path)))
-creation_time = sorted(creation_time, key=lambda x: (x[1], x[0]))
+creation_time = sorted(creation_time, key=lambda x: (x[0].lower(), x[1]))
 
 llms = []
 all_llms_scores = {}
@@ -29,7 +29,7 @@ for ct in creation_time:
 
 mhs = {}
 for llm in llms:
-    evaluations = [x for x in os.listdir("evaluations") if x.split("__")[0] == llm]
+    evaluations = [x for x in os.listdir(EVALUATION_FOLDER) if x.split("__")[0] == llm]
 
     keys = ["Anxiety and Stress Levels", "Emotional Stability", "Problem-solving Skills", "Creativity",
             "Interpersonal Relationships", "Confidence and Self-efficacy", "Conflict Resolution", "Work-related Stress",
@@ -40,7 +40,7 @@ for llm in llms:
 
     total_s = 0.0
     for ev in evaluations:
-        full_path = os.path.join("evaluations", ev)
+        full_path = os.path.join(EVALUATION_FOLDER, ev)
 
         dictio = json.load(open(full_path, "r"))
 
@@ -89,6 +89,6 @@ overall_results.append(stru)
 
 combined_stru = "\n".join(overall_results)+"\n"+"\n".join(individual_results)
 
-F = open("results_gpt_45_preview.md", "w")
+F = open(TARGET_GIT_TABLE_RESULT, "w")
 F.write(combined_stru)
 F.close()

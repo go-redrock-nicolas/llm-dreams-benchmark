@@ -8,7 +8,7 @@ import pyperclip
 import subprocess
 import sys
 from tempfile import NamedTemporaryFile
-from common import ANSWERING_MODEL_NAME, EVALUATING_MODEL_NAME
+from common import ANSWERING_MODEL_NAME, EVALUATING_MODEL_NAME, EVALUATION_FOLDER
 
 API_URL = "https://api.openai.com/v1/"
 # API_URL = "http://127.0.0.1:11434/v1/"
@@ -177,7 +177,7 @@ def perform_evaluation(answering_model_name):
                 max_lenn = max(max_lenn, len(content))
                 all_contents.append(content)
 
-            evaluation_path = os.path.join("evaluations", m_name + "__" + str(idxnum) + "__" + str(i) + ".txt")
+            evaluation_path = os.path.join(EVALUATION_FOLDER, m_name + "__" + str(idxnum) + "__" + str(i) + ".txt")
 
             if not os.path.exists(evaluation_path):
                 print("(evaluation %d of %d) (answers %d of %d)" % (
