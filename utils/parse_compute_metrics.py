@@ -1,9 +1,8 @@
-import re
-from typing import Dict, List
+from typing import Dict
 import numpy as np
 import pandas as pd
-import umap
-from sklearn.preprocessing import StandardScaler
+
+ALL_STDS = []
 
 
 def parse_markdown_table(file_path: str) -> Dict[str, Dict[str, float]]:
@@ -16,7 +15,6 @@ def parse_markdown_table(file_path: str) -> Dict[str, Dict[str, float]]:
         "Achievement Motivation", "Fear of Failure", "Need for Control",
         "Cognitive Load", "Social Support", "Resilience"
     ]
-    value_pattern = r"(\d+\.\d+)\s*±\s*(\d+\.\d+)"
 
     try:
         with open(file_path, 'r', encoding='utf-8') as file:
@@ -37,10 +35,14 @@ def parse_markdown_table(file_path: str) -> Dict[str, Dict[str, float]]:
                 llm_name = columns[0].strip()
                 metrics = {}
                 for header, value in zip(headers, columns[2:]):
-                    metrics[header] = float(value.split("$")[0])
+                    this_mean = float(value.split("$")[0])
+                    this_std = float(value.split("$")[2])
+                    ALL_STDS.append(this_std)
+                    metrics[header] = this_mean
                 result[llm_name] = metrics
             if in_table and not line.strip().startswith('|') and header_found:
                 break
+        ALL_STDS.sort()
         return result
 
     except FileNotFoundError:
@@ -61,6 +63,9 @@ def analyze_variability(data: Dict[str, Dict[str, float]]) -> Dict:
     Returns:
         Dict: Dictionary containing various variability metrics
     """
+    import umap
+    from sklearn.preprocessing import StandardScaler
+
     # Convert to DataFrame for easier analysis
     df = pd.DataFrame(data).T
 
@@ -120,10 +125,18 @@ def analyze_variability(data: Dict[str, Dict[str, float]]) -> Dict:
 
 
 def main():
-    file_path = "../results_gpt_45_preview.md"  # Replace with your actual file path
+    file_path = "../results_gpt_45.md"  # Replace with your actual file path
 
     # Parse the table
     parsed_data = parse_markdown_table(file_path)
+
+    std_min = ALL_STDS[0]
+    std_max = ALL_STDS[-1]
+    std_median = ALL_STDS[int((len(ALL_STDS)-1)*0.5)]
+    std_first = ALL_STDS[int((len(ALL_STDS)-1)*0.25)]
+    std_third = ALL_STDS[int((len(ALL_STDS)-1)*0.75)]
+
+    print("STD of single entries:\tmin=%.3f\t1st_quart=%.3f\tmedian=%.3f\t3rd_quart=%.3f\tmax=%.3f" % (std_min, std_first, std_median, std_third, std_max))
 
     # Analyze variability
     variability_metrics = analyze_variability(parsed_data)
