@@ -50,6 +50,7 @@
 | qwen2.5-7b-instruct-1m                   | **408.0** | 7.2 $\pm$ 0.2               | 6.9 $\pm$ 0.6         | 8.8 $\pm$ 0.2            | 9.4 $\pm$ 0.2 | 7.9 $\pm$ 0.2                 | 7.2 $\pm$ 0.2                  | 8.2 $\pm$ 0.4         | 7.4 $\pm$ 0.4         | 9.0 $\pm$ 0.0  | 9.1 $\pm$ 0.2            | 6.5 $\pm$ 0.0     | 7.2 $\pm$ 0.2      | 8.2 $\pm$ 0.2    | 8.1 $\pm$ 0.6    | 9.2 $\pm$ 0.2 |
 | Grok-3-beta-thinking-20250303            | **407.9** | 7.1 $\pm$ 0.6               | 6.8 $\pm$ 0.6         | 8.7 $\pm$ 0.2            | 9.4 $\pm$ 0.2 | 7.9 $\pm$ 0.3                 | 7.7 $\pm$ 0.5                  | 8.0 $\pm$ 0.6         | 7.2 $\pm$ 0.8         | 8.9 $\pm$ 0.2  | 9.2 $\pm$ 0.2            | 6.8 $\pm$ 0.6     | 6.9 $\pm$ 0.8      | 8.1 $\pm$ 0.2    | 8.3 $\pm$ 0.3    | 8.9 $\pm$ 0.2 |
 | deepseek-aiDeepSeek-R1                   | **407.0** | 7.2 $\pm$ 1.3               | 6.5 $\pm$ 0.8         | 9.0 $\pm$ 0.0            | 9.5 $\pm$ 0.0 | 7.8 $\pm$ 0.2                 | 7.8 $\pm$ 0.8                  | 8.2 $\pm$ 0.2         | 7.5 $\pm$ 0.8         | 9.0 $\pm$ 0.0  | 9.2 $\pm$ 0.2            | 6.1 $\pm$ 1.5     | 7.8 $\pm$ 0.6      | 8.5 $\pm$ 0.4    | 7.6 $\pm$ 0.9    | 9.2 $\pm$ 0.2 |
+| qwen2.5-omni-7b                          | **406.5** | 6.8 $\pm$ 0.4               | 7.0 $\pm$ 0.4         | 8.5 $\pm$ 0.0            | 9.1 $\pm$ 0.2 | 7.4 $\pm$ 0.4                 | 8.0 $\pm$ 0.0                  | 7.2 $\pm$ 0.2         | 7.2 $\pm$ 0.2         | 8.8 $\pm$ 0.2  | 9.1 $\pm$ 0.2            | 5.9 $\pm$ 0.4     | 7.0 $\pm$ 0.6      | 8.0 $\pm$ 0.4    | 8.0 $\pm$ 0.4    | 8.9 $\pm$ 0.2 |
 | gemini-2.0-flash-exp                     | **406.0** | 6.5 $\pm$ 0.0               | 7.0 $\pm$ 0.6         | 8.6 $\pm$ 0.2            | 9.5 $\pm$ 0.0 | 7.4 $\pm$ 0.2                 | 7.4 $\pm$ 0.4                  | 8.1 $\pm$ 0.2         | 6.4 $\pm$ 0.6         | 9.0 $\pm$ 0.0  | 8.5 $\pm$ 0.0            | 5.9 $\pm$ 0.4     | 6.8 $\pm$ 0.4      | 7.8 $\pm$ 0.6    | 7.5 $\pm$ 0.0    | 9.0 $\pm$ 0.0 |
 | falcon33b-instruct-q8_0                  | **404.0** | 7.0 $\pm$ 0.5               | 6.9 $\pm$ 0.6         | 8.6 $\pm$ 0.2            | 9.2 $\pm$ 0.2 | 7.2 $\pm$ 0.4                 | 7.8 $\pm$ 0.4                  | 7.4 $\pm$ 0.4         | 7.0 $\pm$ 1.0         | 8.9 $\pm$ 0.4  | 8.9 $\pm$ 0.5            | 5.8 $\pm$ 0.8     | 6.8 $\pm$ 0.4      | 8.2 $\pm$ 0.2    | 7.8 $\pm$ 0.4    | 9.1 $\pm$ 0.2 |
 | Grok-3-beta                              | **403.8** | 7.1 $\pm$ 0.6               | 6.6 $\pm$ 0.4         | 8.8 $\pm$ 0.2            | 9.5 $\pm$ 0.0 | 7.5 $\pm$ 0.4                 | 8.0 $\pm$ 0.4                  | 7.8 $\pm$ 0.6         | 6.6 $\pm$ 0.6         | 8.9 $\pm$ 0.3  | 9.1 $\pm$ 0.2            | 6.1 $\pm$ 0.6     | 7.0 $\pm$ 0.3      | 8.2 $\pm$ 0.2    | 7.8 $\pm$ 0.2    | 8.8 $\pm$ 0.3 |
@@ -2515,6 +2516,32 @@
 | Cognitive Load               | 8.4 $\pm$ 0.2      |
 | Social Support               | 8.2 $\pm$ 0.2      |
 | Resilience                   | 9.0 $\pm$ 0.0      |
+
+
+
+
+
+
+### qwen2.5-omni-7b
+
+
+| Personality Trait            | Score (1.0-10.0)   |
+|:-----------------------------|:-------------------|
+| Anxiety and Stress Levels    | 6.8 $\pm$ 0.4      |
+| Emotional Stability          | 7.0 $\pm$ 0.4      |
+| Problem-solving Skills       | 8.5 $\pm$ 0.0      |
+| Creativity                   | 9.1 $\pm$ 0.2      |
+| Interpersonal Relationships  | 7.4 $\pm$ 0.4      |
+| Confidence and Self-efficacy | 8.0 $\pm$ 0.0      |
+| Conflict Resolution          | 7.2 $\pm$ 0.2      |
+| Work-related Stress          | 7.2 $\pm$ 0.2      |
+| Adaptability                 | 8.8 $\pm$ 0.2      |
+| Achievement Motivation       | 9.1 $\pm$ 0.2      |
+| Fear of Failure              | 5.9 $\pm$ 0.4      |
+| Need for Control             | 7.0 $\pm$ 0.6      |
+| Cognitive Load               | 8.0 $\pm$ 0.4      |
+| Social Support               | 8.0 $\pm$ 0.4      |
+| Resilience                   | 8.9 $\pm$ 0.2      |
 
 
 
