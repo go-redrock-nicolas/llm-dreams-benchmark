@@ -140,6 +140,9 @@ def perform_query_openai_api(text):
 
                 # We add stream=True to requests so we can iterate over chunks
                 with requests.post(complete_url, headers=headers, json=payload, stream=True) as resp:
+                    #print(resp)
+                    #print(resp.status_code)
+                    #print(resp.text)
                     for line in resp.iter_lines():
                         if not line:
                             continue
