@@ -155,12 +155,14 @@ def perform_query_openai_api(text):
                             if "choices" in data_json:
                                 # Each chunk has a delta with partial content
                                 chunk_content = data_json["choices"][0]["delta"].get("content", "")
-                                response_message += chunk_content
-                                chunk_count += 1
-                                #print(chunk_count)
-                                if chunk_count % 10 == 0:
-                                    #print(chunk_count, len(response_message), response_message.replace("\n", " ").replace("\r", "").strip())
-                                    pass
+                                if chunk_content:
+                                    response_message += chunk_content
+                                    chunk_count += 1
+                                    #print(chunk_count)
+                                    if chunk_count % 10 == 0:
+                                        #print(chunk_count, len(response_message), response_message.replace("\n", " ").replace("\r", "").strip())
+                                        #print(chunk_count, len(response_message))
+                                        pass
         except:
             traceback.print_exc()
 
