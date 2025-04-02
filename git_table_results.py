@@ -5,6 +5,11 @@ import pandas as pd
 from copy import copy
 from common import EVALUATION_FOLDER, TARGET_GIT_TABLE_RESULT
 
+
+if not os.path.exists(EVALUATION_FOLDER):
+    os.mkdir(EVALUATION_FOLDER)
+
+
 evaluations = [x for x in os.listdir(EVALUATION_FOLDER) if x.endswith(".txt")]
 
 creation_time = []

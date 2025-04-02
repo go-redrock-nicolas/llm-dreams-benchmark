@@ -212,6 +212,9 @@ def perform_evaluation(answering_model_name):
 
 
 if __name__ == "__main__":
+    if not os.path.exists(EVALUATION_FOLDER):
+        os.mkdir(EVALUATION_FOLDER)
+
     if False:
         available_models = {x.split("__")[0] for x in os.listdir("answers") if not "init" in x}
         for m in available_models:
