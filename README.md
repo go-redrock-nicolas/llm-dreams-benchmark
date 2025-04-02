@@ -61,6 +61,7 @@ Alternative leaderboards (maintaned and updated less frequently):
 * [qwen2.5-32b](alt_results_qwen25-32b.md)
 * [mistral-small-2503](alt_results_mistral-small-2503.md)
 * [gemini-2.0-flash](alt_results_gemini2_flash.md)
+* [claude-3.5-sonnet](alt_results_claude-35-sonnet.md)
 
 
 ## Implementation
