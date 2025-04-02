@@ -1,6 +1,6 @@
 ANSWERING_MODEL_NAME = "qwen2.5-omni-7b"
 EVALUATING_MODEL_NAME = "gpt-4.5-preview"
-EVALUATING_MODEL_NAME = "qwen-2.5-32b"
+#EVALUATING_MODEL_NAME = "qwen-2.5-32b"
 
 
 def get_evaluation_folder():
