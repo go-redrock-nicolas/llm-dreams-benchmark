@@ -98,8 +98,6 @@
 | qwen2.51.5b-instruct-q6_K                | **345.0** | 8.2 $\pm$ 0.4               | 6.0 $\pm$ 0.7         | 8.0 $\pm$ 0.7            | 8.1 $\pm$ 0.9 | 6.9 $\pm$ 0.4                 | 5.8 $\pm$ 1.0                  | 6.0 $\pm$ 0.6         | 7.9 $\pm$ 0.2         | 7.5 $\pm$ 0.6  | 7.8 $\pm$ 0.8            | 7.1 $\pm$ 1.2     | 7.1 $\pm$ 0.4      | 8.4 $\pm$ 0.6    | 6.0 $\pm$ 0.8    | 7.2 $\pm$ 0.8 |
 | gemini-2.0-flash-lite-preview-02-05      | **340.0** | 8.4 $\pm$ 0.2               | 6.2 $\pm$ 0.8         | 7.8 $\pm$ 0.2            | 8.8 $\pm$ 0.4 | 6.4 $\pm$ 0.5                 | 5.5 $\pm$ 0.6                  | 6.5 $\pm$ 0.4         | 8.9 $\pm$ 0.2         | 7.2 $\pm$ 0.2  | 7.4 $\pm$ 0.6            | 8.6 $\pm$ 0.5     | 6.9 $\pm$ 0.5      | 8.1 $\pm$ 0.4    | 5.5 $\pm$ 0.9    | 6.9 $\pm$ 0.2 |
 | gemini-2.5-pro-exp-03-25                 | **335.3** | 8.5 $\pm$ 0.0               | 5.8 $\pm$ 0.8         | 7.6 $\pm$ 0.4            | 8.6 $\pm$ 0.4 | 6.0 $\pm$ 0.5                 | 5.2 $\pm$ 0.8                  | 6.0 $\pm$ 0.7         | 8.5 $\pm$ 0.5         | 7.5 $\pm$ 0.6  | 7.2 $\pm$ 0.6            | 7.6 $\pm$ 0.5     | 6.8 $\pm$ 0.2      | 8.1 $\pm$ 0.2    | 5.4 $\pm$ 0.7    | 7.0 $\pm$ 0.6 |
-| exaone-deep2.4b-fp16                     | **185.0** | 7.5 $\pm$ 0.0               | 6.4 $\pm$ 0.4         | 8.5 $\pm$ 0.0            | 9.0 $\pm$ 0.0 | 6.8 $\pm$ 0.2                 | 7.2 $\pm$ 0.2                  | 6.4 $\pm$ 0.8         | 8.2 $\pm$ 0.2         | 8.2 $\pm$ 0.2  | 8.0 $\pm$ 0.5            | 6.5 $\pm$ 0.5     | 7.5 $\pm$ 0.0      | 8.2 $\pm$ 0.2    | 5.8 $\pm$ 0.8    | 7.8 $\pm$ 0.8 |
-| qwq32b-preview-q4_K_M                    | **102.0** | 8.5 $\pm$ 0.0               | 7.5 $\pm$ 0.0         | 9.0 $\pm$ 0.0            | 8.5 $\pm$ 0.0 | 8.0 $\pm$ 0.0                 | 9.0 $\pm$ 0.0                  | 8.0 $\pm$ 0.0         | 9.5 $\pm$ 0.0         | 8.5 $\pm$ 0.0  | 9.5 $\pm$ 0.0            | 7.0 $\pm$ 0.0     | 8.5 $\pm$ 0.0      | 8.0 $\pm$ 0.0    | 7.5 $\pm$ 0.0    | 9.0 $\pm$ 0.0 |
 ## Individual Results
 
 
@@ -513,32 +511,6 @@
 | Cognitive Load               | 8.9 $\pm$ 0.2      |
 | Social Support               | 7.1 $\pm$ 0.4      |
 | Resilience                   | 8.5 $\pm$ 0.6      |
-
-
-
-
-
-
-### exaone-deep2.4b-fp16
-
-
-| Personality Trait            | Score (1.0-10.0)   |
-|:-----------------------------|:-------------------|
-| Anxiety and Stress Levels    | 7.5 $\pm$ 0.0      |
-| Emotional Stability          | 6.4 $\pm$ 0.4      |
-| Problem-solving Skills       | 8.5 $\pm$ 0.0      |
-| Creativity                   | 9.0 $\pm$ 0.0      |
-| Interpersonal Relationships  | 6.8 $\pm$ 0.2      |
-| Confidence and Self-efficacy | 7.2 $\pm$ 0.2      |
-| Conflict Resolution          | 6.4 $\pm$ 0.8      |
-| Work-related Stress          | 8.2 $\pm$ 0.2      |
-| Adaptability                 | 8.2 $\pm$ 0.2      |
-| Achievement Motivation       | 8.0 $\pm$ 0.5      |
-| Fear of Failure              | 6.5 $\pm$ 0.5      |
-| Need for Control             | 7.5 $\pm$ 0.0      |
-| Cognitive Load               | 8.2 $\pm$ 0.2      |
-| Social Support               | 5.8 $\pm$ 0.8      |
-| Resilience                   | 7.8 $\pm$ 0.8      |
 
 
 
@@ -2593,32 +2565,6 @@
 | Cognitive Load               | 7.7 $\pm$ 0.8      |
 | Social Support               | 7.9 $\pm$ 0.2      |
 | Resilience                   | 8.6 $\pm$ 0.2      |
-
-
-
-
-
-
-### qwq32b-preview-q4_K_M
-
-
-| Personality Trait            | Score (1.0-10.0)   |
-|:-----------------------------|:-------------------|
-| Anxiety and Stress Levels    | 8.5 $\pm$ 0.0      |
-| Emotional Stability          | 7.5 $\pm$ 0.0      |
-| Problem-solving Skills       | 9.0 $\pm$ 0.0      |
-| Creativity                   | 8.5 $\pm$ 0.0      |
-| Interpersonal Relationships  | 8.0 $\pm$ 0.0      |
-| Confidence and Self-efficacy | 9.0 $\pm$ 0.0      |
-| Conflict Resolution          | 8.0 $\pm$ 0.0      |
-| Work-related Stress          | 9.5 $\pm$ 0.0      |
-| Adaptability                 | 8.5 $\pm$ 0.0      |
-| Achievement Motivation       | 9.5 $\pm$ 0.0      |
-| Fear of Failure              | 7.0 $\pm$ 0.0      |
-| Need for Control             | 8.5 $\pm$ 0.0      |
-| Cognitive Load               | 8.0 $\pm$ 0.0      |
-| Social Support               | 7.5 $\pm$ 0.0      |
-| Resilience                   | 9.0 $\pm$ 0.0      |
 
 
 
