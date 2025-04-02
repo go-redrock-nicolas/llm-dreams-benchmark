@@ -23,6 +23,7 @@ def interpret(content):
 
 JUDGES = {
     "gpt-4.5-preview": interpret(open(os.path.join("..", "results_gpt_45.md"), "r").read()),
+    "gpt-4o-2023-03-26": interpret(open(os.path.join("..", "alt_results_gpt_4o.md"), "r").read()),
     "mistral-small-2503": interpret(open(os.path.join("..", "alt_results_mistral-small-2503.md"), "r").read()),
     "qwen2.5-32b": interpret(open(os.path.join("..", "alt_results_qwen25-32b.md"), "r").read()),
 }
