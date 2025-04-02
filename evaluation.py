@@ -300,9 +300,14 @@ if __name__ == "__main__":
     if False:
         cont = True
         while cont:
-            cont = False
-            available_models = {x.split("__")[0] for x in os.listdir("answers") if not "init" in x}
-            for m in available_models:
-                cont = cont or perform_evaluation(m)
+            try:
+                cont = False
+                available_models = {x.split("__")[0] for x in os.listdir("answers") if not "init" in x}
+                for m in available_models:
+                    xy = perform_evaluation(m)
+                    cont = cont or xy
+            except:
+                time.sleep(WAITING_TIME_RETRY)
+                cont = True
     else:
         perform_evaluation(Shared.answering_model_name)
