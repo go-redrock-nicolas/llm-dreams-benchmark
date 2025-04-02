@@ -4,6 +4,7 @@ EVALUATING_MODEL_NAME = "gpt-4.5-preview"
 # EVALUATING_MODEL_NAME = "mistral-small-2503"
 # EVALUATING_MODEL_NAME = "chatgpt-4o-latest"
 # EVALUATING_MODEL_NAME = "grok-2-1212"
+# EVALUATING_MODEL_NAME = "gemini-2.0-flash"
 
 
 def get_evaluation_folder():
@@ -17,6 +18,8 @@ def get_evaluation_folder():
         return "evaluations-gpt4o"
     elif "grok-2" in EVALUATING_MODEL_NAME:
         return "evaluations-grok2"
+    elif "gemini-2.0-flash" in EVALUATING_MODEL_NAME:
+        return "evaluations-gemini2-flash"
 
 
 def get_git_table_result():
@@ -30,6 +33,8 @@ def get_git_table_result():
         return "alt_results_gpt_4o.md"
     elif "grok-2" in EVALUATING_MODEL_NAME:
         return "alt_results_grok2.md"
+    elif "gemini-2.0-flash" in EVALUATING_MODEL_NAME:
+        return "alt_results_gemini2_flash.md"
 
 
 def get_evaluation_api_url():
@@ -41,6 +46,8 @@ def get_evaluation_api_url():
         return "https://api.mistral.ai/v1/"
     elif "grok-2" in EVALUATING_MODEL_NAME:
         return "https://api.x.ai/v1/"
+    elif "gemini-2.0-flash" in EVALUATING_MODEL_NAME:
+        return "https://generativelanguage.googleapis.com/v1beta/"
 
 
 def get_manual():

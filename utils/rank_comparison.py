@@ -27,6 +27,7 @@ JUDGES = {
     "grok-2-1212": interpret(open(os.path.join("..", "alt_results_grok2.md"), "r").read()),
     "mistral-small-2503": interpret(open(os.path.join("..", "alt_results_mistral-small-2503.md"), "r").read()),
     "qwen2.5-32b": interpret(open(os.path.join("..", "alt_results_qwen25-32b.md"), "r").read()),
+    "gemini-2.0-flash": interpret(open(os.path.join("..", "alt_results_gemini2_flash.md"), "r").read()),
 }
 
 model_keys = []
