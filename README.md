@@ -57,6 +57,7 @@ The following tables collect results evaluated by the same judge LLM:
 Alternative leaderboards (maintaned and updated less frequently):
 
 * [gpt-4o](alt_results_gpt_4o.md)
+* [grok-2](alt_results_grok2.md)
 * [qwen2.5-32b](alt_results_qwen25-32b.md)
 * [mistral-small-2503](alt_results_mistral-small-2503.md)
 
