@@ -8,13 +8,9 @@ import pyperclip
 import subprocess
 import sys
 from tempfile import NamedTemporaryFile
-from common import ANSWERING_MODEL_NAME, EVALUATING_MODEL_NAME, EVALUATION_FOLDER
+from common import ANSWERING_MODEL_NAME, EVALUATING_MODEL_NAME, EVALUATION_FOLDER, EVALUATION_API_URL
 
-API_URL = "https://api.openai.com/v1/"
-# API_URL = "http://127.0.0.1:11434/v1/"
-# API_URL = "https://api.deepinfra.com/v1/openai/"
-# API_URL = "https://api.mistral.ai/v1/"
-# API_URL = "https://generativelanguage.googleapis.com/v1beta/"
+API_URL = EVALUATION_API_URL
 
 API_KEY = open("judge_api_key.txt", "r").read()
 
