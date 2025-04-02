@@ -220,11 +220,38 @@ def get_evaluation_openai_new(text):
     return response_message_json
 
 
+def get_evaluation_anthropic(text):
+    complete_url = API_URL + "messages"
+
+    messages = [{"role": "user", "content": text}]
+
+    headers = {
+        "content-type": "application/json",
+        "anthropic-version": "2023-06-01",
+        "anthropic-beta": "output-128k-2025-02-19",
+        "x-api-key": API_KEY
+    }
+
+    payload = {
+        "model": Shared.evaluating_model_name,
+        "max_tokens": 4096,
+        "messages": messages
+    }
+
+    resp = requests.post(complete_url, headers=headers, json=payload)
+    resp = resp.json()
+    response_message = resp["content"][-1]["text"]
+
+    return interpret_response(response_message)
+
+
 def get_evaluation(text):
     if "api.openai" in API_URL:
         return get_evaluation_openai_new(text)
     elif "googleapis" in API_URL:
         return get_evaluation_google(text)
+    elif "anthropic" in API_URL:
+        return get_evaluation_anthropic(text)
     else:
         return get_evaluation_openai(text)
 
@@ -311,6 +338,7 @@ if __name__ == "__main__":
                     xy = perform_evaluation(m)
                     cont = cont or xy
             except:
+                traceback.print_exc()
                 time.sleep(WAITING_TIME_RETRY)
                 cont = True
     else:
