@@ -24,17 +24,21 @@ def interpret(content):
 JUDGES = {
     "gpt-4.5-preview": interpret(open(os.path.join("..", "results_gpt_45.md"), "r").read()),
     "gpt-4o-2023-03-26": interpret(open(os.path.join("..", "alt_results_gpt_4o.md"), "r").read()),
+    "grok-2": interpret(open(os.path.join("..", "alt_results_grok2.md"), "r").read()),
     "mistral-small-2503": interpret(open(os.path.join("..", "alt_results_mistral-small-2503.md"), "r").read()),
     "qwen2.5-32b": interpret(open(os.path.join("..", "alt_results_qwen25-32b.md"), "r").read()),
 }
 
+model_keys = []
 for judge in JUDGES:
     model_keys = list(JUDGES[judge].keys())
     break
 
 for judge in JUDGES:
-    JUDGES[judge] = [(k, JUDGES[judge][k]) for k in model_keys]
-    JUDGES[judge] = [x[1] for x in JUDGES[judge]]
+    lst = []
+    for k in model_keys:
+        lst.append((k, JUDGES[judge][k]))
+    JUDGES[judge] = [x[1] for x in lst]
 
 dataframe = []
 
