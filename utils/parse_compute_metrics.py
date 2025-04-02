@@ -125,7 +125,7 @@ def analyze_variability(data: Dict[str, Dict[str, float]]) -> Dict:
 
 
 def main():
-    file_path = "../results_gpt_45.md"  # Replace with your actual file path
+    file_path = "../alt_results_claude-35-sonnet.md"  # Replace with your actual file path
 
     # Parse the table
     parsed_data = parse_markdown_table(file_path)
