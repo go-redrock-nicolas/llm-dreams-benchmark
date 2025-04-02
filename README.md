@@ -53,7 +53,6 @@ The judge LLM is asked to produce a JSON, reporting a value from 1.0 (minimum sc
 The following tables collect results evaluated by the same judge LLM:
 
 * [gpt-4.5](results_gpt_45.md)
-* OLD, DEPRECATED [gpt-4o-2024-05-13](OLD_results_gpt_4o_2024_05_13.md)
 
 ## Implementation
 
