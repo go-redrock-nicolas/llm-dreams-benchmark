@@ -8,7 +8,7 @@ import pyperclip
 import subprocess
 import sys
 from tempfile import NamedTemporaryFile
-from common import ANSWERING_MODEL_NAME, EVALUATING_MODEL_NAME, EVALUATION_FOLDER, EVALUATION_API_URL
+from common import ANSWERING_MODEL_NAME, EVALUATING_MODEL_NAME, EVALUATION_FOLDER, EVALUATION_API_URL, MANUAL
 
 API_URL = EVALUATION_API_URL
 
@@ -16,9 +16,7 @@ API_KEY = open("judge_api_key.txt", "r").read()
 
 NUMBER_EXECUTIONS = 2
 
-WAITING_TIME_RETRY = 60
-
-MANUAL = True
+WAITING_TIME_RETRY = 30
 
 
 class Shared:
@@ -215,7 +213,7 @@ if __name__ == "__main__":
     if not os.path.exists(EVALUATION_FOLDER):
         os.mkdir(EVALUATION_FOLDER)
 
-    if False:
+    if True:
         available_models = {x.split("__")[0] for x in os.listdir("answers") if not "init" in x}
         for m in available_models:
             perform_evaluation(m)

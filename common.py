@@ -24,6 +24,13 @@ def get_evaluation_api_url():
         return "https://api.groq.com/openai/v1/"
 
 
+def get_manual():
+    if "gpt-4.5" in EVALUATING_MODEL_NAME:
+        return True
+    return False
+
+
 EVALUATION_FOLDER = get_evaluation_folder()
 TARGET_GIT_TABLE_RESULT = get_git_table_result()
 EVALUATION_API_URL = get_evaluation_api_url()
+MANUAL = get_manual()
