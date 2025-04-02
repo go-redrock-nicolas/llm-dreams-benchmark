@@ -54,6 +54,11 @@ The following tables collect results evaluated by the same judge LLM:
 
 * [gpt-4.5](results_gpt_45.md)
 
+Alternative leaderboards (maintaned and updated less frequently):
+
+* [qwen2.5-32b](alt_results_qwen25-32b.md)
+
+
 ## Implementation
 
 The following scripts are available for executing the benchmark:
