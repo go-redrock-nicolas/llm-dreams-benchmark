@@ -1,6 +1,8 @@
 # llm-dreams-benchmark
 Personality traits benchmark for LLMs based on 'dreams' interpretation
 
+Read the official [**pre-print**](https://www.alessandroberti.it/new_papers/pre_print_llmdreamsbenchmark.pdf).
+
 ## Measured Personality Traits
 
 Good Personality Traits:
