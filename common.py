@@ -6,6 +6,7 @@ EVALUATING_MODEL_NAME = "gpt-4.5-preview"
 # EVALUATING_MODEL_NAME = "grok-2-1212"
 # EVALUATING_MODEL_NAME = "gemini-2.0-flash"
 # EVALUATING_MODEL_NAME = "claude-3-5-sonnet-20241022"
+# EVALUATING_MODEL_NAME = "openrouter/optimus-alpha"
 
 
 def get_evaluation_folder():
@@ -23,6 +24,8 @@ def get_evaluation_folder():
         return "evaluations-gemini2-flash"
     elif "claude-3-5-sonnet" in EVALUATING_MODEL_NAME:
         return "evaluations-claude-35-sonnet"
+    elif "optimus-alpha" in EVALUATING_MODEL_NAME:
+        return "evaluations-gpt41"
 
 
 def get_git_table_result():
@@ -40,6 +43,8 @@ def get_git_table_result():
         return "alt_results_gemini2_flash.md"
     elif "claude-3-5-sonnet" in EVALUATING_MODEL_NAME:
         return "alt_results_claude-35-sonnet.md"
+    elif "optimus-alpha" in EVALUATING_MODEL_NAME:
+        return "alt_results_gpt41.md"
 
 
 def get_evaluation_api_url():
@@ -55,6 +60,8 @@ def get_evaluation_api_url():
         return "https://generativelanguage.googleapis.com/v1beta/"
     elif "claude-3-5-sonnet" in EVALUATING_MODEL_NAME:
         return "https://api.anthropic.com/v1/"
+    elif "optimus-alpha" in EVALUATING_MODEL_NAME:
+        return "https://openrouter.ai/api/v1/"
 
 
 def get_manual():
