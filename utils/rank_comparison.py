@@ -29,6 +29,7 @@ JUDGES = {
     "qwen2.5-32b": interpret(open(os.path.join("..", "alt_results_qwen25-32b.md"), "r").read()),
     "gemini-2.0-flash": interpret(open(os.path.join("..", "alt_results_gemini2_flash.md"), "r").read()),
     "claude-3-5-sonnet": interpret(open(os.path.join("..", "alt_results_claude-35-sonnet.md"), "r").read()),
+    "gpt-4.1-alpha": interpret(open(os.path.join("..", "alt_results_gpt41.md"), "r").read()),
 }
 
 model_keys = []
