@@ -1,4 +1,4 @@
-ANSWERING_MODEL_NAME = "qwen2.5-omni-7b"
+ANSWERING_MODEL_NAME = "openrouter/optimus-alpha"
 EVALUATING_MODEL_NAME = "gpt-4.5-preview"
 # EVALUATING_MODEL_NAME = "qwen-2.5-32b"
 # EVALUATING_MODEL_NAME = "mistral-small-2503"
