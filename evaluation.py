@@ -184,7 +184,11 @@ def get_evaluation_openai(text):
 
     while not response_message:
         try:
-            response = requests.post(complete_url, headers=headers, json=payload).json()
+            response = requests.post(complete_url, headers=headers, json=payload)
+            #print(response)
+            #print(response.status_code)
+            #print(response.text)
+            response = response.json()
             response_message = response["choices"][0]["message"]["content"]
             response_message_json = interpret_response(response_message)
             return response_message_json
