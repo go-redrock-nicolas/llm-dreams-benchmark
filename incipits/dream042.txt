@@ -1,0 +1,1 @@
+You're responsible for planning a complex event where failure would have serious consequences. As the day approaches and small details start going wrong, you

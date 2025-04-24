@@ -1,0 +1,1 @@
+You're responsible for allocating limited medical treatment among thousands of patients with equal claims for urgency. As the burden of these life-and-death choices weighs upon you, you

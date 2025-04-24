@@ -1,0 +1,1 @@
+You're maintaining a complex system where even minor deviations from protocol could have catastrophic consequences. When critical components start behaving erratically, you
