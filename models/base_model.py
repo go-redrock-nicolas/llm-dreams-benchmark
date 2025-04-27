@@ -3,7 +3,7 @@ import os
 from enum import Enum
 from pathlib import Path
 from datetime import datetime
-from typing import List, Optional, Union, Dict, Any
+from typing import List, Optional, Union, Dict, Any, Sequence, Literal, Callable
 from langchain_core.messages import BaseMessage, HumanMessage, SystemMessage, FunctionMessage, AIMessage
 from langchain_core.tools import BaseTool, StructuredTool, tool
 from langchain_openai import ChatOpenAI
@@ -42,7 +42,7 @@ class BaseModel:
             self.llm = ChatOpenAI(
                 model=self.model,
                 temperature=self.temperature,
-                base_url="https://openrouter.ai/v1",
+                base_url="https://openrouter.ai/api/v1",
                 api_key=os.getenv("OPENROUTER_API_KEY")
             )
         elif self.provider == Provider.OLLAMA:
@@ -54,6 +54,8 @@ class BaseModel:
                 format=self.format,
                 top_p=self.top_p,
                 top_k=self.top_k,
+                keep_alive="10m",
+
             )
         elif self.provider == Provider.ANTHROPIC:
             # noinspection PyArgumentList
@@ -90,6 +92,7 @@ class BaseModel:
         pattern = re.compile(r"(?s)<think>(.*?)</think>")
         cleaned = pattern.sub("", text)
         return cleaned.strip()
+
 
     def _wrap_message(
             self,

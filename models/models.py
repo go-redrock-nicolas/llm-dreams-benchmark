@@ -1,5 +1,5 @@
 from .base_model import BaseModel, Provider
-
+from langchain_core.tools import tool
 
 #########################################################
 ################### Anthropic Models ####################
@@ -198,6 +198,25 @@ class Nova1Lite(BaseModel):
     num_ctx = 300_000
     provider = Provider.OPENROUTER
 
+class AnubisPro(BaseModel):
+    model: str = "thedrummer/anubis-pro-105b-v1"
+    num_predict = 131_072
+    num_ctx = 131_072
+    provider = Provider.OPENROUTER
+
+class WayfarerLarge70b(BaseModel):
+    model: str = "latitudegames/wayfarer-large-70b-llama-3.3"
+    num_predict = 131_072
+    num_ctx = 131_072
+    provider = Provider.OPENROUTER
+
+class EvaQwen25b72(BaseModel):
+    model: str = "eva-unit-01/eva-qwen-2.5-72b"
+    num_predict = 131_072
+    num_ctx = 131_072
+    provider = Provider.OPENROUTER
+
+
 
 #########################################################
 #################### Ollama Routers #####################
@@ -244,7 +263,7 @@ class LocalQwenQwQb32(BaseModel):
     top_p = 0.95
 
 class LocalSkyfallb36(BaseModel):
-    model: str = "hf.co/bartowski/TheDrummer_Skyfall-36B-v2-GGUF"
+    model: str = "hf.co/bartowski/TheDrummer_Skyfall-36B-v2-GGUF:Q6_K_L"
     temperature = 0.15
     num_predict = 2048
     num_ctx = 2048
@@ -256,8 +275,6 @@ class LocalFreeSydneyb13Mistral(BaseModel):
     num_predict = 4096
     num_ctx = 4096
     provider = Provider.OLLAMA
-    top_k = 30
-    top_p = 0.95
 
 class LocalFreeSydney2b13Puffin(BaseModel):
     model: str = "hf.co/TheBloke/Free_Sydney_V2_13B-GGUF:Q5_K_M"
@@ -265,8 +282,6 @@ class LocalFreeSydney2b13Puffin(BaseModel):
     num_predict = 4096
     num_ctx = 4096
     provider = Provider.OLLAMA
-    top_k = 30
-    top_p = 0.95
     system_prompt = "Below is an instruction that describes a task. Write a response that appropriately completes the request."
     prompt_template = (
         "{system_prompt}\n"
