@@ -1,0 +1,7 @@
+langchain-core~=0.3.55
+langchain-openai~=0.3.14
+langchain-anthropic~=0.3.12
+openai~=1.75.0
+python-dotenv~=1.1.0
+numpy
+pyperclip
