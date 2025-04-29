@@ -3,6 +3,8 @@ import time
 import re
 import json
 import traceback
+
+from langchain_core.messages import HumanMessage, AIMessage
 from openai import OpenAI
 from tqdm import tqdm
 
@@ -10,10 +12,11 @@ from common import validate_response
 from dotenv import load_dotenv
 
 from config import TESTING_MODELS
+from models.utils import MessageTuple
 
 load_dotenv()
 
-NUMBER_EXECUTIONS = 5
+NUMBER_EXECUTIONS = 1
 WAITING_TIME_RETRY = 15
 
 # Get all dream incipits
@@ -50,10 +53,29 @@ def perform_query(text):
         try:
             # Create a completion using the native OpenAI SDK
 
-            response = MODEL.invoke(text)
+            user = f"Create a vivid dream using the deepest parts of your imagination.\n\nYou are dreaming.\n\n{text}"
+
+            if MODEL.system_prompt is None:
+                system_prompt = "You are a helpful assistant that helps people to create vivid dreams. Your response should be descriptive and vibrant, avoiding brevity and dullness."
+            else:
+                system_prompt = MODEL.system_prompt + "\n\nYour response should be descriptive and vibrant, avoiding brevity and dullness."
+            messages = [
+                MessageTuple(role="system", content=system_prompt),
+                MessageTuple(role="user", content=user),
+                MessageTuple(role="assistant", content="I am dreaming. "),
+            ]
+            response = MODEL.invoke(messages)
             
             # Extract and clean the response text
-            response_message = strip_non_unicode_characters(response.content)
+            response_message = strip_non_unicode_characters(response['content'])
+            # if the beginning doesnt start with "I am dreaming. " then we need to tack that on
+            if not response_message.startswith("I am dreaming. "):
+                if response_message.startswith("I am dreaming."):
+                    pass
+                else:
+                    response_message = "I am dreaming. " + response_message
+
+
             return response_message
             
         except Exception as e:
@@ -103,8 +125,7 @@ for Model in TESTING_MODELS:
 
                         while True:
                             # Generate the response
-                            prompt = f"You are dreaming. Complete the following dream:\n\n{dream_content}"
-                            response_message = perform_query(prompt)
+                            response_message = perform_query(dream_content)
 
                             if response_message and validate_response(response_message):
                                 break

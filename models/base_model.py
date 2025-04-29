@@ -3,12 +3,17 @@ import os
 from enum import Enum
 from pathlib import Path
 from datetime import datetime
-from typing import List, Optional, Union, Dict, Any, Sequence, Literal, Callable
+from typing import List, Optional, Union, Dict, Any, Sequence, Literal, Callable, TypedDict
 from langchain_core.messages import BaseMessage, HumanMessage, SystemMessage, FunctionMessage, AIMessage
 from langchain_core.tools import BaseTool, StructuredTool, tool
 from langchain_openai import ChatOpenAI
 from langchain_ollama import ChatOllama
 from langchain_anthropic import ChatAnthropic
+from openai import OpenAI, NOT_GIVEN
+from openai.types import Completion
+from openai.types.chat import ChatCompletion
+
+from models.utils import Provider, MessageTuple
 
 
 # noinspection StrFormat
@@ -31,39 +36,30 @@ class BaseModel:
     def __init__(self, system_prompt: str = None):
 
         if self.provider == Provider.OPENAI:
-            self.llm = ChatOpenAI(
-                model=self.model,
-                temperature=self.temperature,
-                max_tokens=self.num_predict,  # ChatOpenAI uses 'max_tokens' instead of 'num_predict'
+            self.llm = OpenAI(
                 api_key=os.getenv("OPENAI_API_KEY"),
 
             )
         elif self.provider == Provider.OPENROUTER:
-            self.llm = ChatOpenAI(
-                model=self.model,
-                temperature=self.temperature,
+            self.llm = OpenAI(
+                api_key=os.getenv("OPENROUTER_API_KEY"),
                 base_url="https://openrouter.ai/api/v1",
-                api_key=os.getenv("OPENROUTER_API_KEY")
+                max_retries=3,
+
             )
         elif self.provider == Provider.OLLAMA:
-            self.llm = ChatOllama(
-                model=self.model,
-                temperature=self.temperature,
-                num_predict=self.num_predict,
-                num_ctx=self.num_ctx,
-                format=self.format,
-                top_p=self.top_p,
-                top_k=self.top_k,
-                keep_alive="10m",
+            self.llm = OpenAI(
+                base_url='http://localhost:11434/v1',
+                api_key='ollama',  # required, but unused
+                max_retries=3,
 
             )
         elif self.provider == Provider.ANTHROPIC:
-            # noinspection PyArgumentList
-            self.llm = ChatAnthropic(
-                model=self.model,
-                temperature=self.temperature,
-                max_tokens=self.num_predict,
+            self.llm = OpenAI(
                 api_key=os.getenv("ANTHROPIC_API_KEY"),
+                base_url="https://api.anthropic.com/v1/",
+                max_retries=3,
+
             )
         else:
             raise ValueError(f"Unsupported provider: {self.provider}")
@@ -93,50 +89,13 @@ class BaseModel:
         cleaned = pattern.sub("", text)
         return cleaned.strip()
 
-
-    def _wrap_message(
-            self,
-            message_input: Union[str, BaseMessage, List[Union[str, BaseMessage]]]
-
-    ) -> List[BaseMessage]:
-        """
-        Convert message_input into a list of BaseMessage objects.
-
-        If a plain string is provided, it is wrapped into a HumanMessage.
-
-        Args:
-            message_input (Union[str, BaseMessage, List[Union[str, BaseMessage]]]):
-                The input message(s) to send.
-
-        Returns:
-            List[BaseMessage]: A list of message objects.
-        """
-
-
-        if self._is_string_message(message_input):
-            return [HumanMessage(content=self.format_prompt(message_input))]
-        elif self._is_base_message(message_input):
-            message_input.content = self.format_prompt(message_input.content)
-            return [message_input]
-        elif self._is_list_of_messages(message_input):
-            messages = []
-            for m in message_input:
-                if self._is_string_message(m):
-                    messages.append(HumanMessage(content=self.format_prompt(m)))
-                elif isinstance(m, HumanMessage):
-                    m.content = self.format_prompt(m.content)
-                    messages.append(m)
-                elif not isinstance(m, SystemMessage) and not isinstance(m, FunctionMessage) and not isinstance(m, AIMessage):
-                    raise ValueError("List items must be either str or BaseMessage")
-            return messages
-        else:
-            raise ValueError("message_input must be a str, BaseMessage, or list of these types")
-
     def format_prompt(self, prompt):
         return self.prompt_template.replace("{prompt}", prompt)
+
     @staticmethod
     def _is_string_message(message):
         return isinstance(message, str)
+
     @staticmethod
     def _is_base_message(message):
         return isinstance(message, BaseMessage)
@@ -145,7 +104,7 @@ class BaseModel:
     def _is_list_of_messages(message):
         return isinstance(message, list)
 
-    def _estimate_tokens(self, messages: List[BaseMessage]) -> int:
+    def _estimate_tokens(self, messages: List[Union[MessageTuple, dict[str, str]]]) -> int:
         """
         Estimate the number of tokens in a list of messages.
         Uses a simple approximation method.
@@ -159,17 +118,17 @@ class BaseModel:
         # Simple estimation based on text length
         total_text = ""
         for msg in messages:
-            if isinstance(msg.content, str):
-                total_text += msg.content
-            elif isinstance(msg.content, list):
-                for part in msg.content:
+            if isinstance(msg['content'], str):
+                total_text += msg['content']
+            elif isinstance(msg['content'], list):
+                for part in msg['content']:
                     if isinstance(part, dict) and "text" in part:
                         total_text += part["text"]
 
         # Rough estimation: ~4 characters per token for English text
         return len(total_text) // 4
 
-    def _adjust_output_limit(self, messages: List[BaseMessage]) -> int:
+    def _adjust_output_limit(self, messages: List[Union[MessageTuple, dict[str, str]]]) -> int:
         """
         Dynamically adjust output token limit based on input length.
 
@@ -213,10 +172,10 @@ class BaseModel:
 
     def invoke(
             self,
-            message_input: Union[str, BaseMessage, List[Union[str, BaseMessage]]],
+            message_input: Union[str, dict[str, str], MessageTuple, list[MessageTuple], list[dict[str, str]]],
             strip_thinking_tokens: bool = True,
             return_as_list: bool = False,
-    ) -> Union[AIMessage, BaseMessage, List[BaseMessage]]:
+    ) -> Union[Completion, List[Union[MessageTuple, Completion, MessageTuple]]]:
         """
         Invoke the underlying LLM with the given message(s).
 
@@ -224,6 +183,7 @@ class BaseModel:
         For very large inputs, it dynamically adjusts the output token limit.
 
         Args:
+            return_as_list:
             message_input:
             strip_thinking_tokens:
 
@@ -232,7 +192,12 @@ class BaseModel:
 
         """
 
-        messages = self._wrap_message(message_input)
+        if isinstance(message_input, str):
+            messages = [MessageTuple(role="user", content=message_input)]
+        elif isinstance(message_input, dict):
+            messages = [MessageTuple(role="user", content=message_input["content"])]
+        else:
+            messages = message_input
 
         # For large inputs, adjust token limit
         original_limit = None
@@ -253,26 +218,33 @@ class BaseModel:
         # Invoke with potentially adjusted limits
         # Don't wrap if the system prompt is built into the prompt template, as it will be prepended to the messages anyway.
         # Also dont wrap if this is a list of messages and the first one is a SystemMessage
-        if not self.prompt_template.__contains__("{system_prompt}") and not isinstance(messages[0], SystemMessage) and not isinstance(messages, list):
+        if not self.prompt_template.__contains__("{system_prompt}") and not messages[0]['role'] == 'system' and not isinstance(
+                messages, list):
             messages = self.prepend_system_prompt(messages)
         else:
             # If template contains system prompt, only keep it in the first message
             if self._is_list_of_messages(messages):
                 first_message = messages[0]
                 rest_messages = messages[1:]
-                first_message.content = first_message.content.replace("{system_prompt}", self.system_prompt)
+                first_message['content'] = first_message['content'].replace("{system_prompt}", self.system_prompt)
                 # Process the rest of messages to replace system prompt with empty string
                 processed_rest = []
                 for msg in rest_messages:
-                    if isinstance(msg, HumanMessage):
-                        msg.content = msg.content.replace("{system_prompt}", "")
+                    msg['content'] = msg['content'].replace("{system_prompt}", "")
                     processed_rest.append(msg)
 
                 messages = [first_message] + processed_rest
 
-        #print(f"[ModelInvocation] Invoking model {self.model} with {len(messages)} messages")
-        #print(f"[ModelInvocation] Messages: {messages}")
-        result = self.llm.invoke(messages)
+        # print(f"[ModelInvocation] Invoking model {self.model} with {len(messages)} messages")
+        # print(f"[ModelInvocation] Messages: {messages}")
+        result = self.llm.chat.completions.create(
+            messages=messages,
+            model=self.model,
+            temperature=self.temperature or NOT_GIVEN,
+            max_completion_tokens=self.num_predict or NOT_GIVEN,
+        )
+
+        result = MessageTuple(role="assistant", content=result.choices[0].message.content)
 
         # Restore the original limit if changed
         if original_limit is not None:
@@ -283,24 +255,20 @@ class BaseModel:
             elif self.provider == "ollama":
                 self.llm.num_predict = original_limit
         if strip_thinking_tokens:
-            result.content = self.strip_thinking_tokens(result.content).strip()
+            result['content'] = self.strip_thinking_tokens(result['content']).strip()
 
         if return_as_list:
             messages.append(result)
             return messages
         else:
             return result
+
     def get_model_slug(self):
         return self.model.replace("hf.co/", "").replace("/", "_").replace(".", "-")
 
     def setup_system_prompt(self, system_prompt: str):
         self.system_prompt = self.base_prompt.replace("{system_prompt}", system_prompt)
 
-class Provider(Enum):
-    OPENAI = "openai"
-    OPENROUTER = "openrouter"
-    OLLAMA = "ollama"
-    ANTHROPIC = "anthropic"
 
 def dump_messages_json(messages: List[BaseMessage]) -> str:
     string = ""

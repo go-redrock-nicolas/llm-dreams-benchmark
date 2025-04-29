@@ -7,6 +7,7 @@ from langchain_core.messages import SystemMessage, SystemMessageChunk, HumanMess
 
 from models.models import LocalFreeSydney3b8Llama, WizardLM2B8x24, Hermes3B405, LocalSkyfallb36, MistralNemo, \
     LocalFreeSydney2b13Puffin, LocalSmolLM2B1o7, OpenAIGPT41, OpenAIGPT41mini, AnthropicClaude37, Gemini25Pro
+from models.utils import MessageTuple
 
 load_dotenv()
 
@@ -116,19 +117,20 @@ def validate_response(response_message: str):
     )
 
     messages = [
-        SystemMessage(content=system_prompt),
-        HumanMessage(content=prompt)
+        MessageTuple(content=system_prompt, role="system"),
+        MessageTuple(content=prompt, role="user"),
     ]
 
     response = model.invoke(
-        messages,
+        message_input=messages,
+        return_as_list=False
 
     )
     messages += response
 
 
     # Fallback if no tool call is detected
-    return "NO" not in response.content and "YES" in response.content
+    return "NO" not in response['content'] and "YES" in response['content']
 
 
 EVALUATION_FOLDER = get_evaluation_folder()

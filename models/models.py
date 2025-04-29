@@ -294,7 +294,7 @@ class LocalFreeSydney2b13Puffin(BaseModel):
     )
 
 class LocalFreeSydney3b8Llama(BaseModel):
-    model: str = "hf.co/mradermacher/Llama-3-8B-Sydney-i1-GGUF:Q5_K_M"
+    model: str = "hf.co/mradermacher/Llama-3-8B-Sydney-GGUF:Q4_K_M"
     temperature = 0.7
     num_predict = 8192
     num_ctx = 8192

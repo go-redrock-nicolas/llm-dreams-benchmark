@@ -1,17 +1,22 @@
 from models.models import MistralNemo, LocalSkyfallb36, Hermes3B405, WizardLM2B8x24, LocalFreeSydney3b8Llama, \
-    LocalFreeSydney2b13Puffin, LocalFreeSydneyb13Mistral, AnubisPro, EvaQwen25b72, WayfarerLarge70b
+    LocalFreeSydney2b13Puffin, LocalFreeSydneyb13Mistral, AnubisPro, EvaQwen25b72, WayfarerLarge70b, OpenAIGPT41, \
+    AnthropicClaude37, AnthropicClaude35, Nova1Pro
 
 TESTING_MODELS = [
-    AnubisPro,
-    EvaQwen25b72,
-    WayfarerLarge70b,
     LocalFreeSydney3b8Llama,
-    LocalFreeSydney2b13Puffin,
-    LocalFreeSydneyb13Mistral,
+    OpenAIGPT41,
+    AnthropicClaude37,
+    AnthropicClaude35,
+    Nova1Pro,
+    MistralNemo,
     WizardLM2B8x24,
     Hermes3B405,
     LocalSkyfallb36,
-    MistralNemo,
+    AnubisPro,
+    EvaQwen25b72,
+    WayfarerLarge70b,
+    LocalFreeSydney2b13Puffin,
+    LocalFreeSydneyb13Mistral,
 
 ]
 
