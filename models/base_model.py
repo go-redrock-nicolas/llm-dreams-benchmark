@@ -13,7 +13,7 @@ from openai import OpenAI, NOT_GIVEN
 from openai.types import Completion
 from openai.types.chat import ChatCompletion
 
-from models.utils import Provider, MessageTuple
+from models.utils import Provider, ChatMessage, ApiError, RefusalError
 
 
 # noinspection StrFormat
@@ -104,7 +104,7 @@ class BaseModel:
     def _is_list_of_messages(message):
         return isinstance(message, list)
 
-    def _estimate_tokens(self, messages: List[Union[MessageTuple, dict[str, str]]]) -> int:
+    def _estimate_tokens(self, messages: List[Union[ChatMessage, dict[str, str]]]) -> int:
         """
         Estimate the number of tokens in a list of messages.
         Uses a simple approximation method.
@@ -126,9 +126,9 @@ class BaseModel:
                         total_text += part["text"]
 
         # Rough estimation: ~4 characters per token for English text
-        return len(total_text) // 4
+        return round(len(total_text) //3.5)
 
-    def _adjust_output_limit(self, messages: List[Union[MessageTuple, dict[str, str]]]) -> int:
+    def _adjust_output_limit(self, messages: List[Union[ChatMessage, dict[str, str]]]) -> int:
         """
         Dynamically adjust output token limit based on input length.
 
@@ -140,26 +140,15 @@ class BaseModel:
         """
         # Only apply for large inputs (>50k tokens)
         input_tokens = self._estimate_tokens(messages)
-        if input_tokens < 50_000:
-            return self.num_predict
+        if input_tokens < self.num_ctx:
+            return self.num_predict - input_tokens
 
         # Get model context limits
         # Each model class can define a 'context_window' attribute with its limits
-        context_window = getattr(self, "context_window", 0)
+        context_window = self.num_ctx
 
-        # If not defined in the model class, use conservative defaults
-        if context_window == 0:
-            if self.provider == "openai":
-                context_window = 128_000  # For newer models
-            elif self.provider == "anthropic":
-                context_window = 200_000  # For Claude 3 models
-            elif self.provider == "ollama":
-                context_window = 43_690  # Conservative default
-            else:
-                context_window = 32_768  # Very conservative default
-
-        # Calculate available tokens, with 5000 token buffer
-        buffer = 5000
+        # Calculate available tokens, with 250 token buffer
+        buffer = 250
         available_tokens = max(1000, context_window - input_tokens - buffer)
 
         # Use minimum of original num_predict or available tokens
@@ -172,10 +161,10 @@ class BaseModel:
 
     def invoke(
             self,
-            message_input: Union[str, dict[str, str], MessageTuple, list[MessageTuple], list[dict[str, str]]],
+            message_input: Union[str, dict[str, str], ChatMessage, list[ChatMessage], list[dict[str, str]]],
             strip_thinking_tokens: bool = True,
             return_as_list: bool = False,
-    ) -> Union[Completion, List[Union[MessageTuple, Completion, MessageTuple]]]:
+    ) -> Union[ChatMessage, List[ChatMessage], List[dict]]:
         """
         Invoke the underlying LLM with the given message(s).
 
@@ -193,27 +182,20 @@ class BaseModel:
         """
 
         if isinstance(message_input, str):
-            messages = [MessageTuple(role="user", content=message_input)]
+            messages = [ChatMessage(role="user", content=message_input)]
         elif isinstance(message_input, dict):
-            messages = [MessageTuple(role="user", content=message_input["content"])]
+            messages = [ChatMessage(role="user", content=message_input["content"])]
         else:
             messages = message_input
 
         # For large inputs, adjust token limit
         original_limit = None
-        if self._estimate_tokens(messages) > 50_000:
+        if self._estimate_tokens(messages) + self.num_predict > self.num_ctx:
             adjusted_limit = self._adjust_output_limit(messages)
-
+            # todo fix the limit not being changed
             # Save original limit to restore later
-            if self.provider == "openai":
-                original_limit = self.llm.max_tokens
-                self.llm.max_tokens = adjusted_limit
-            elif self.provider == "anthropic":
-                original_limit = self.llm.max_tokens
-                self.llm.max_tokens = adjusted_limit
-            elif self.provider == "ollama":
-                original_limit = self.llm.num_predict
-                self.llm.num_predict = adjusted_limit
+            original_limit = self.num_predict
+            self.num_predict = adjusted_limit
 
         # Invoke with potentially adjusted limits
         # Don't wrap if the system prompt is built into the prompt template, as it will be prepended to the messages anyway.
@@ -244,16 +226,18 @@ class BaseModel:
             max_completion_tokens=self.num_predict or NOT_GIVEN,
         )
 
-        result = MessageTuple(role="assistant", content=result.choices[0].message.content)
+        if "error" in result.model_extra or result.choices[0].message.content is None:
+            raise ApiError(f"[{result.model_extra['error']['code']}] {result.model_extra['error']['message']}")
+        if result.choices[0].message.refusal:
+            raise RefusalError(f"Refusal Error: {result.choices[0].message.refusal}")
+        result = ChatMessage(
+            role="assistant",
+            content=result.choices[0].message.content,
+            metadata={}
+        )
 
         # Restore the original limit if changed
-        if original_limit is not None:
-            if self.provider == "openai":
-                self.llm.max_tokens = original_limit
-            elif self.provider == "anthropic":
-                self.llm.max_tokens = original_limit
-            elif self.provider == "ollama":
-                self.llm.num_predict = original_limit
+        self.num_predict = original_limit or self.num_predict
         if strip_thinking_tokens:
             result['content'] = self.strip_thinking_tokens(result['content']).strip()
 

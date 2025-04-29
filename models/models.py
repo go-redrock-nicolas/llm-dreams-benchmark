@@ -216,6 +216,11 @@ class EvaQwen25b72(BaseModel):
     num_ctx = 131_072
     provider = Provider.OPENROUTER
 
+class Qwen3b235a22(BaseModel):
+    model: str = "qwen/qwen3-235b-a22b"
+    num_predict = 40_959
+    num_ctx = 40_959
+    provider = Provider.OPENROUTER
 
 
 #########################################################
