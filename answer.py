@@ -15,6 +15,7 @@ from common import validate_response
 from dotenv import load_dotenv
 
 from config import TESTING_MODELS
+from models.models import AnthropicClaude37, AnthropicClaude35
 from models.utils import ChatMessage, Provider
 
 load_dotenv()
@@ -27,14 +28,14 @@ MAX_ATTEMPTS = 3
 # Parallelization settings - adjust these as needed
 DEFAULT_BATCH_SIZE = 15  # Default number of concurrent requests
 MODEL_BATCH_SIZES = {
-    Provider.OLLAMA: 1,        # Ollama models typically can't handle concurrent requests well
-    Provider.OPENAI: 10,       # OpenAI supports high concurrency
-    Provider.ANTHROPIC: 5,     # Anthropic supports moderate concurrency
-    Provider.OPENROUTER: 18     # OpenRouter supports moderate concurrency
+    Provider.OLLAMA: 2,        # Ollama models typically can't handle concurrent requests well
+    Provider.OPENAI: 20,       # OpenAI supports high concurrency
+    Provider.ANTHROPIC: 10,     # Anthropic supports moderate concurrency
+    Provider.OPENROUTER: 35     # OpenRouter supports moderate concurrency
 }
 SKIP_EXISTING = True          # Skip existing answer files
 # Executor for running tasks concurrently
-executor = ThreadPoolExecutor(max_workers=20)
+executor = ThreadPoolExecutor(max_workers=40)  # Increased for better throughput
 
 # Get all dream incipits
 incipits = sorted([x for x in os.listdir("incipits") if x.endswith("txt")])
@@ -60,7 +61,7 @@ def strip_non_unicode_characters(text):
 
 
 def get_batch_size_for_model(model):
-    """Determine appropriate batch size based on model provider"""
+    """Determine appropriate concurrency limit based on model provider"""
     provider = getattr(model, "provider", None)
     if provider and provider in MODEL_BATCH_SIZES:
         return MODEL_BATCH_SIZES[provider]
@@ -75,11 +76,16 @@ def prepare_dream_query(model, dream_content):
         system_prompt = model.system_prompt + "\n\nYour response should be descriptive and vibrant, avoiding brevity and dullness."
     
     user = f"Create a vivid dream using the deepest parts of your imagination.\n\nYou are dreaming.\n\n{dream_content}"
-    
+
+    # Claude 3.5 doesnt support trailing whitespace
+    if model.get_model_slug() == AnthropicClaude35().get_model_slug():
+        message = "I am dreaming."
+    else:
+        message = "I am dreaming. "
     messages = [
         ChatMessage(role="system", content=system_prompt),
         ChatMessage(role="user", content=user),
-        ChatMessage(role="assistant", content="I am dreaming. "),
+        ChatMessage(role="assistant", content=message, metadata={}),
     ]
     return messages
 
@@ -203,15 +209,15 @@ async def process_dream(model, incipit, execution_num, index, total, pbar=None):
         return False
 
 
-async def process_model_dreams(model, execution_num=0, batch_size=None):
-    """Process all dreams for a specific model with batching"""
-    if batch_size is None:
-        batch_size = get_batch_size_for_model(model)
+async def process_model_dreams(model, execution_num=0, concurrency_limit=None):
+    """Process all dreams for a specific model using a sliding window approach to maintain constant concurrency"""
+    if concurrency_limit is None:
+        concurrency_limit = get_batch_size_for_model(model)
     
     m_name = model.get_model_slug()
     total_dreams = len(incipits)
     
-    print(f"Processing dreams for {m_name} (execution {execution_num+1}/{NUMBER_EXECUTIONS}) with batch size {batch_size}")
+    print(f"Processing dreams for {m_name} (execution {execution_num+1}/{NUMBER_EXECUTIONS}) with concurrency limit {concurrency_limit}")
     
     # Create progress bar
     pbar = tqdm(
@@ -221,28 +227,33 @@ async def process_model_dreams(model, execution_num=0, batch_size=None):
         desc=f"{m_name}: Preparing..."
     )
     
-    # Process dreams in batches
-    for i in range(0, total_dreams, batch_size):
-        batch = incipits[i:i+batch_size]
-        tasks = []
+    # Create a semaphore to limit concurrency
+    semaphore = asyncio.Semaphore(concurrency_limit)
+    
+    async def process_with_semaphore(incipit, index):
+        """Process a dream with semaphore control"""
+        async with semaphore:
+            return await process_dream(model, incipit, execution_num, index, total_dreams, pbar)
+    
+    # Create tasks for all dreams
+    tasks = [
+        asyncio.create_task(process_with_semaphore(incipit, index))
+        for index, incipit in enumerate(incipits)
+    ]
+    
+    try:
+        # Wait for all tasks to complete
+        results = await asyncio.gather(*tasks, return_exceptions=True)
         
-        for index, incipit in enumerate(batch, start=i):
-            task = process_dream(model, incipit, execution_num, index, total_dreams, pbar)
-            tasks.append(task)
-        
-        try:
-            # Wait for batch completion
-            results = await asyncio.gather(*tasks, return_exceptions=True)
-            
-            # Check for exceptions in results
-            for j, result in enumerate(results):
-                if isinstance(result, Exception):
-                    print(f"Error in task for {batch[j]}: {result}")
-                    traceback.print_exception(type(result), result, result.__traceback__)
-                    
-        except Exception as e:
-            print(f"Error processing batch: {e}")
-            traceback.print_exc()
+        # Check for exceptions in results
+        for i, result in enumerate(results):
+            if isinstance(result, Exception):
+                print(f"Error in task for {incipits[i]}: {result}")
+                traceback.print_exception(type(result), result, result.__traceback__)
+                
+    except Exception as e:
+        print(f"Error processing dreams: {e}")
+        traceback.print_exc()
     
     pbar.set_description(f"{m_name}: Finished processing dreams")
     pbar.close()

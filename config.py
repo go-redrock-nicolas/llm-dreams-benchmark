@@ -1,21 +1,48 @@
-from models.models import MistralNemo, LocalSkyfallb36, Hermes3B405, WizardLM2B8x24, LocalFreeSydney3b8Llama, \
+from models.models import MistralNemo, DrummerSkyfallb36v2, Hermes3B405, WizardLM2B8x24, LocalFreeSydney3b8Llama, \
     LocalFreeSydney2b13Puffin, LocalFreeSydneyb13Mistral, AnubisPro, EvaQwen25b72, WayfarerLarge70b, OpenAIGPT41, \
-    AnthropicClaude37, AnthropicClaude35, Nova1Pro, Qwen3b235a22
+    AnthropicClaude37, AnthropicClaude35, Nova1Pro, Qwen3b235a22, Gemini25Pro, MythoMaxb13, Llama4Maverick, Grok3Beta, \
+    Grok2, QwQB32, MistralSmall31B24, Llama33B70, DeepSeekR1, DeepSeekV30324, OpenAIo1, OpenAIo3, OpenAIo4mini, \
+    OpenAIGPT4o, JambaMini, JambaLarge, EleutherAILlemma7B, GLM49B, GLMZ132B, Llama31b8, Llama33b70, \
+    Ministral8B
 
 TESTING_MODELS = [
     Qwen3b235a22,
-    LocalFreeSydney3b8Llama,
     Nova1Pro,
     MistralNemo,
     WizardLM2B8x24,
     Hermes3B405,
-    AnubisPro,
-    EvaQwen25b72,
-    WayfarerLarge70b,
+    OpenAIGPT4o,
     OpenAIGPT41,
+    OpenAIo1,
+    OpenAIo3,
+    OpenAIo4mini,
     AnthropicClaude37,
     AnthropicClaude35,
-    LocalSkyfallb36,
+    MythoMaxb13,
+    Ministral8B,
+    Llama33b70,
+    Llama31b8,
+    Llama4Maverick,
+    MythoMaxb13,
+    GLMZ132B,
+    GLM49B,
+    EleutherAILlemma7B,
+    JambaLarge,
+    JambaMini,
+    Llama4Maverick,
+    EvaQwen25b72,
+    WayfarerLarge70b,
+    AnubisPro,
+    Grok2,
+    Grok3Beta,
+    QwQB32,
+    MistralSmall31B24,
+    Llama33B70,
+    Gemini25Pro,
+    DeepSeekR1,
+    DeepSeekV30324,
+    LocalFreeSydney3b8Llama,
+    DrummerSkyfallb36v2,
     LocalFreeSydney2b13Puffin,
     LocalFreeSydneyb13Mistral,
 
@@ -26,9 +53,10 @@ ANSWERING_MODEL_NAME = "openai/gpt-4.1-mini"
 # Council of LLM judges
 COUNCIL_ENABLED = True
 COUNCIL_MODELS = [
-    "anthropic/claude-3.7-sonnet",  # Claude 3.7 Sonnet
-    "openai/gpt-4.1",  # GPT-4.1
-    "google/gemini-2.5-pro-preview-03-25"  # Gemini Pro 2.5
+    OpenAIGPT41,  # GPT-4.1
+    Llama33B70,
+    Qwen3b235a22,
+    MistralSmall31B24,
 ]
 
 # Single model evaluation (used when COUNCIL_ENABLED is False)
