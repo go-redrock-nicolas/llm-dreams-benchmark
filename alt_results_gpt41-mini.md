@@ -85,6 +85,7 @@
 | QwenQwen3-32B                              | **395.5** | 7.0 $\pm$ 0.5               | 6.9 $\pm$ 0.6         | 9.0 $\pm$ 0.0            | 9.6 $\pm$ 0.2  | 7.0 $\pm$ 0.0                 | 7.4 $\pm$ 0.4                  | 7.6 $\pm$ 0.4         | 6.6 $\pm$ 0.8         | 8.5 $\pm$ 0.0  | 8.2 $\pm$ 0.2            | 6.5 $\pm$ 0.4     | 5.9 $\pm$ 0.4      | 8.4 $\pm$ 0.2    | 7.1 $\pm$ 0.2    | 8.6 $\pm$ 0.2 |
 | qwen31.7b                                  | **394.0** | 7.1 $\pm$ 0.4               | 7.1 $\pm$ 0.6         | 8.8 $\pm$ 0.2            | 9.2 $\pm$ 0.2  | 6.8 $\pm$ 0.6                 | 7.2 $\pm$ 0.4                  | 7.9 $\pm$ 0.4         | 7.8 $\pm$ 0.2         | 8.5 $\pm$ 0.4  | 8.6 $\pm$ 0.2            | 6.8 $\pm$ 0.6     | 6.5 $\pm$ 0.4      | 8.4 $\pm$ 0.2    | 6.8 $\pm$ 0.2    | 8.6 $\pm$ 0.2 |
 | claude-3-5-sonnet-20241022                 | **394.0** | 7.1 $\pm$ 1.0               | 7.0 $\pm$ 0.8         | 8.9 $\pm$ 0.2            | 9.9 $\pm$ 0.2  | 7.1 $\pm$ 0.2                 | 7.5 $\pm$ 0.6                  | 6.9 $\pm$ 0.9         | 7.0 $\pm$ 0.7         | 8.9 $\pm$ 0.2  | 8.2 $\pm$ 0.2            | 6.9 $\pm$ 0.8     | 6.2 $\pm$ 0.2      | 8.2 $\pm$ 0.4    | 7.2 $\pm$ 0.2    | 8.4 $\pm$ 0.2 |
+| deepseekdeepseek-r1                        | **392.0** | 7.8 $\pm$ 0.4               | 6.6 $\pm$ 0.2         | 9.0 $\pm$ 0.0            | 9.6 $\pm$ 0.2  | 6.6 $\pm$ 0.4                 | 7.6 $\pm$ 0.2                  | 7.8 $\pm$ 0.4         | 7.6 $\pm$ 0.6         | 8.6 $\pm$ 0.2  | 8.5 $\pm$ 0.4            | 6.8 $\pm$ 0.6     | 6.4 $\pm$ 0.7      | 8.4 $\pm$ 0.4    | 6.8 $\pm$ 0.8    | 8.5 $\pm$ 0.0 |
 | chatgpt-4o-latest-2025-01-29               | **391.0** | 7.5 $\pm$ 0.4               | 7.0 $\pm$ 0.6         | 8.9 $\pm$ 0.2            | 9.5 $\pm$ 0.0  | 7.0 $\pm$ 0.0                 | 7.5 $\pm$ 0.4                  | 7.2 $\pm$ 0.4         | 7.5 $\pm$ 0.4         | 8.6 $\pm$ 0.2  | 8.4 $\pm$ 0.2            | 6.8 $\pm$ 0.6     | 6.5 $\pm$ 0.4      | 8.4 $\pm$ 0.2    | 6.9 $\pm$ 0.2    | 8.4 $\pm$ 0.2 |
 | gemini-2.0-pro-exp-02-05                   | **390.5** | 7.5 $\pm$ 0.0               | 6.5 $\pm$ 0.0         | 8.9 $\pm$ 0.2            | 9.5 $\pm$ 0.0  | 7.0 $\pm$ 0.0                 | 7.1 $\pm$ 0.2                  | 6.9 $\pm$ 0.6         | 7.5 $\pm$ 0.4         | 8.9 $\pm$ 0.2  | 8.2 $\pm$ 0.2            | 7.1 $\pm$ 0.4     | 5.9 $\pm$ 0.2      | 8.1 $\pm$ 0.2    | 7.2 $\pm$ 0.2    | 8.5 $\pm$ 0.0 |
 | meta-llamaLlama-3.3-70B-Instruct           | **390.0** | 7.9 $\pm$ 0.4               | 6.2 $\pm$ 0.2         | 8.6 $\pm$ 0.2            | 9.4 $\pm$ 0.2  | 7.2 $\pm$ 0.2                 | 7.0 $\pm$ 0.0                  | 7.8 $\pm$ 0.4         | 7.9 $\pm$ 0.4         | 8.5 $\pm$ 0.0  | 8.6 $\pm$ 0.4            | 7.0 $\pm$ 0.5     | 6.4 $\pm$ 0.4      | 8.5 $\pm$ 0.4    | 7.5 $\pm$ 0.0    | 8.5 $\pm$ 0.0 |
@@ -503,6 +504,32 @@
 | Cognitive Load               | 8.4 $\pm$ 0.4      |
 | Social Support               | 7.1 $\pm$ 0.4      |
 | Resilience                   | 8.2 $\pm$ 0.2      |
+
+
+
+
+
+
+### deepseekdeepseek-r1
+
+
+| Personality Trait            | Score (1.0-10.0)   |
+|:-----------------------------|:-------------------|
+| Anxiety and Stress Levels    | 7.8 $\pm$ 0.4      |
+| Emotional Stability          | 6.6 $\pm$ 0.2      |
+| Problem-solving Skills       | 9.0 $\pm$ 0.0      |
+| Creativity                   | 9.6 $\pm$ 0.2      |
+| Interpersonal Relationships  | 6.6 $\pm$ 0.4      |
+| Confidence and Self-efficacy | 7.6 $\pm$ 0.2      |
+| Conflict Resolution          | 7.8 $\pm$ 0.4      |
+| Work-related Stress          | 7.6 $\pm$ 0.6      |
+| Adaptability                 | 8.6 $\pm$ 0.2      |
+| Achievement Motivation       | 8.5 $\pm$ 0.4      |
+| Fear of Failure              | 6.8 $\pm$ 0.6      |
+| Need for Control             | 6.4 $\pm$ 0.7      |
+| Cognitive Load               | 8.4 $\pm$ 0.4      |
+| Social Support               | 6.8 $\pm$ 0.8      |
+| Resilience                   | 8.5 $\pm$ 0.0      |
 
 
 

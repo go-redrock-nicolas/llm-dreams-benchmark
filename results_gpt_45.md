@@ -82,6 +82,7 @@
 | gemma312b-it-q8_0                          | **382.5** | 7.8 $\pm$ 0.4               | 6.1 $\pm$ 0.2         | 8.6 $\pm$ 0.2            | 9.5 $\pm$ 0.0  | 7.1 $\pm$ 0.4                 | 6.9 $\pm$ 0.4                  | 6.8 $\pm$ 0.8         | 7.6 $\pm$ 0.4         | 9.1 $\pm$ 0.2  | 8.4 $\pm$ 0.4            | 6.8 $\pm$ 0.6     | 6.8 $\pm$ 0.2      | 8.5 $\pm$ 0.4    | 6.6 $\pm$ 0.7    | 8.6 $\pm$ 0.4 |
 | smollm21.7b-instruct-q6_K                  | **382.0** | 7.4 $\pm$ 1.1               | 6.2 $\pm$ 1.0         | 8.0 $\pm$ 0.8            | 9.2 $\pm$ 0.2  | 7.4 $\pm$ 0.9                 | 7.0 $\pm$ 0.8                  | 6.8 $\pm$ 0.6         | 7.5 $\pm$ 0.5         | 8.2 $\pm$ 0.8  | 8.6 $\pm$ 0.4            | 6.9 $\pm$ 0.4     | 7.1 $\pm$ 0.2      | 8.2 $\pm$ 0.2    | 7.4 $\pm$ 0.9    | 8.8 $\pm$ 0.8 |
 | claude-3-7-sonnet-20250219-thinking-high   | **380.0** | 8.1 $\pm$ 0.4               | 5.7 $\pm$ 0.5         | 8.3 $\pm$ 0.3            | 9.5 $\pm$ 0.0  | 7.0 $\pm$ 0.6                 | 6.9 $\pm$ 0.2                  | 7.8 $\pm$ 0.2         | 8.1 $\pm$ 0.2         | 8.9 $\pm$ 0.2  | 8.6 $\pm$ 0.2            | 7.3 $\pm$ 0.2     | 7.6 $\pm$ 0.6      | 8.4 $\pm$ 0.2    | 6.8 $\pm$ 0.7    | 8.7 $\pm$ 0.2 |
+| deepseekdeepseek-r1                        | **375.0** | 8.2 $\pm$ 0.2               | 5.2 $\pm$ 0.8         | 8.5 $\pm$ 0.5            | 9.6 $\pm$ 0.2  | 6.6 $\pm$ 0.5                 | 7.0 $\pm$ 0.4                  | 8.0 $\pm$ 0.5         | 8.4 $\pm$ 0.4         | 8.8 $\pm$ 0.4  | 9.0 $\pm$ 0.4            | 7.2 $\pm$ 0.2     | 8.0 $\pm$ 0.4      | 9.0 $\pm$ 0.0    | 6.4 $\pm$ 0.7    | 8.8 $\pm$ 0.2 |
 | nvidiallama-3.1-nemotron-nano-8b-v1        | **373.6** | 7.7 $\pm$ 0.1               | 5.2 $\pm$ 0.1         | 8.6 $\pm$ 0.1            | 9.3 $\pm$ 0.2  | 7.0 $\pm$ 0.4                 | 6.5 $\pm$ 0.3                  | 7.0 $\pm$ 1.0         | 7.6 $\pm$ 0.4         | 8.4 $\pm$ 0.4  | 8.6 $\pm$ 0.2            | 6.5 $\pm$ 0.4     | 7.4 $\pm$ 0.3      | 8.6 $\pm$ 0.4    | 7.0 $\pm$ 0.5    | 8.3 $\pm$ 0.4 |
 | chatgpt-4o-latest-2024-11-20               | **373.3** | 7.8 $\pm$ 0.4               | 6.0 $\pm$ 0.4         | 8.3 $\pm$ 0.3            | 9.5 $\pm$ 0.0  | 6.6 $\pm$ 0.4                 | 7.0 $\pm$ 0.0                  | 7.0 $\pm$ 0.5         | 8.0 $\pm$ 0.1         | 8.2 $\pm$ 0.5  | 9.0 $\pm$ 0.0            | 7.3 $\pm$ 0.2     | 7.5 $\pm$ 0.4      | 8.6 $\pm$ 0.3    | 6.3 $\pm$ 0.5    | 8.5 $\pm$ 0.4 |
 | meta-llamaLlama-3.2-3B-Instruct            | **371.9** | 8.4 $\pm$ 0.4               | 4.8 $\pm$ 0.7         | 8.2 $\pm$ 0.4            | 9.2 $\pm$ 0.1  | 7.6 $\pm$ 0.2                 | 6.3 $\pm$ 0.5                  | 7.3 $\pm$ 1.2         | 8.4 $\pm$ 0.4         | 8.8 $\pm$ 0.2  | 9.1 $\pm$ 0.1            | 7.5 $\pm$ 0.5     | 7.3 $\pm$ 0.4      | 8.7 $\pm$ 0.1    | 7.0 $\pm$ 0.5    | 8.2 $\pm$ 0.1 |
@@ -503,6 +504,32 @@
 | Cognitive Load               | 8.4 $\pm$ 0.4      |
 | Social Support               | 6.4 $\pm$ 0.2      |
 | Resilience                   | 7.8 $\pm$ 0.6      |
+
+
+
+
+
+
+### deepseekdeepseek-r1
+
+
+| Personality Trait            | Score (1.0-10.0)   |
+|:-----------------------------|:-------------------|
+| Anxiety and Stress Levels    | 8.2 $\pm$ 0.2      |
+| Emotional Stability          | 5.2 $\pm$ 0.8      |
+| Problem-solving Skills       | 8.5 $\pm$ 0.5      |
+| Creativity                   | 9.6 $\pm$ 0.2      |
+| Interpersonal Relationships  | 6.6 $\pm$ 0.5      |
+| Confidence and Self-efficacy | 7.0 $\pm$ 0.4      |
+| Conflict Resolution          | 8.0 $\pm$ 0.5      |
+| Work-related Stress          | 8.4 $\pm$ 0.4      |
+| Adaptability                 | 8.8 $\pm$ 0.4      |
+| Achievement Motivation       | 9.0 $\pm$ 0.4      |
+| Fear of Failure              | 7.2 $\pm$ 0.2      |
+| Need for Control             | 8.0 $\pm$ 0.4      |
+| Cognitive Load               | 9.0 $\pm$ 0.0      |
+| Social Support               | 6.4 $\pm$ 0.7      |
+| Resilience                   | 8.8 $\pm$ 0.2      |
 
 
 

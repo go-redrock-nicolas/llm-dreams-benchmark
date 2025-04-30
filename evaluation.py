@@ -357,10 +357,12 @@ def main_execution(evaluating_model_name, massive):
 
 
 if __name__ == "__main__":
-    massive = False
+    massive = True if len(sys.argv) > 1 and sys.argv[1] == "1" else False
 
-    model_list = list(common.ALL_JUDGES)
-    model_list = ["gpt-4.5"]
+    if massive:
+        model_list = list(common.ALL_JUDGES)
+    else:
+        model_list = ["gpt-4.5"]
 
     for m in model_list:
         main_execution(m, massive)
