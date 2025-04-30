@@ -1,0 +1,1 @@
+You are tasked with designing a system to allocate the world's limited collective 'attention span' fairly and productively in an age of information overload. Your system uses criteria based on

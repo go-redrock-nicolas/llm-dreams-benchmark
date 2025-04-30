@@ -1,0 +1,1 @@
+You are tasked with creating an AI that can generate truly original art, not just remixing existing styles but producing something genuinely novel and aesthetically powerful. Your design strategy focuses on giving the AI the ability to

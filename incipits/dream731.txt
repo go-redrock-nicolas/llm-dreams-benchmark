@@ -1,0 +1,1 @@
+You are managing a perfectly optimized, efficient system (like a city's traffic flow or power grid). You deliberately choose to introduce a small element of inefficiency or randomness because

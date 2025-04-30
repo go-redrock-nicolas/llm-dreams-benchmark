@@ -1,0 +1,1 @@
+You are designing a language from scratch, aiming to minimize misunderstanding and conflict. The most important feature you incorporate is

@@ -1,0 +1,1 @@
+You attempt to design a language or communication protocol that is inherently incapable of expressing deceit or intentional falsehoods. The main challenge you encounter is representing

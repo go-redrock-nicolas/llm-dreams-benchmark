@@ -1,0 +1,1 @@
+You are exploring the 'source code' of a dream and find the variables controlling its core parameters (gravity, time flow, character behavior). You are tempted to adjust the parameter governing

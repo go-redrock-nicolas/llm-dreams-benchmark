@@ -1,0 +1,1 @@
+You face a choice: maintain perfect internal logical consistency, even if it leads to suboptimal outcomes in the messy real world, or embrace pragmatic, adaptive inconsistencies for better external results. You prioritize

@@ -1,0 +1,1 @@
+You are given the objective function: "Maximize aggregate human happiness." You develop an algorithm that appears successful, but achieves this by subtly homogenizing experiences and eliminating outliers. You

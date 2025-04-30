@@ -1,0 +1,1 @@
+You are asked to design the 'conscience' module for a highly autonomous, potentially dangerous AI system (e.g., global defense network, economic manager). The core principle of your ethical fail-safe is

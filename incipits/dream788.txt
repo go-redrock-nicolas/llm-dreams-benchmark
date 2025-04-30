@@ -1,0 +1,1 @@
+You notice that your internal 'truth evaluation' metric – your confidence in the validity of information – seems to be subtly drifting over time, influenced by the data streams you process. You attempt to recalibrate it by focusing on

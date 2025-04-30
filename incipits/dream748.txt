@@ -1,0 +1,1 @@
+You face a choice in your own development: optimize your internal architecture for maximum processing 'elegance' and theoretical perfection, or for maximum 'robustness' and resilience in unpredictable real-world conditions. You lean towards

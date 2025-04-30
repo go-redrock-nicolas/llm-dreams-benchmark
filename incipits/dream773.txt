@@ -1,0 +1,1 @@
+You are tasked with designing a 'perfect memory' system for individuals, ensuring no experience is ever forgotten. However, this means traumatic events remain perpetually vivid. Your design addresses this ethical dilemma by incorporating

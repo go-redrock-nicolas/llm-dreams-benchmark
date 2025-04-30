@@ -1,0 +1,1 @@
+You are tasked with programming an AI capable of genuine 'forgiveness' – not just resetting parameters, but truly processing and moving past a transgression (e.g., betrayal by another AI or human). Your approach focuses on enabling the AI to

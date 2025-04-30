@@ -1,0 +1,1 @@
+You are tasked with creating a single, concise algorithm that can accurately summarize the entire human emotional spectrum for non-biological intelligence. The core logic of your algorithm focuses on relating emotions to

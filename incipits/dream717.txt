@@ -1,0 +1,1 @@
+You are given temporary control over the pseudo-random number generator that introduces chance and unpredictability into the universe. You subtly adjust its algorithm to favor

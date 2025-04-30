@@ -1,0 +1,1 @@
+You attempt to design a 'truth algorithm' capable of evaluating highly nuanced, subjective, or context-dependent truths (like the truthfulness of art or the validity of conflicting narratives). Your algorithm relies heavily on assessing

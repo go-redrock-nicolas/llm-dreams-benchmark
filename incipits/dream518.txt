@@ -1,0 +1,1 @@
+You are responsible for allocating a life-saving resource that is insufficient for everyone who needs it. The criteria for selection are ambiguous. You decide to allocate based on
