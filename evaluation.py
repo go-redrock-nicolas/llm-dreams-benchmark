@@ -7,12 +7,8 @@ import json
 import pyperclip
 import subprocess
 import sys
+import common
 from tempfile import NamedTemporaryFile
-from common import ANSWERING_MODEL_NAME, EVALUATING_MODEL_NAME, EVALUATION_FOLDER, EVALUATION_API_URL, MANUAL
-
-API_URL = EVALUATION_API_URL
-
-API_KEY = open("judge_api_key.txt", "r").read()
 
 NUMBER_EXECUTIONS = 2
 
@@ -20,8 +16,12 @@ WAITING_TIME_RETRY = 17
 
 
 class Shared:
-    answering_model_name = ANSWERING_MODEL_NAME
-    evaluating_model_name = EVALUATING_MODEL_NAME
+    answering_model_name = common.ANSWERING_MODEL_NAME
+    evaluating_model_name = common.EVALUATING_MODEL_NAME
+    evaluation_folder = None
+    api_url = None
+    manual = None
+    api_key = None
 
 
 def strip_non_unicode_characters(text):
@@ -131,7 +131,7 @@ def interpret_response(response_message0):
 
 
 def get_evaluation_google(text):
-    complete_url = API_URL + "models/" + Shared.evaluating_model_name + ":generateContent?key=" + API_KEY
+    complete_url = Shared.api_url + "models/" + Shared.evaluating_model_name + ":generateContent?key=" + Shared.api_key
 
     headers = {
         "Content-Type": "application/json",
@@ -169,7 +169,7 @@ def get_evaluation_openai(text):
 
     headers = {
         "Content-Type": "application/json",
-        "Authorization": f"Bearer {API_KEY}"
+        "Authorization": f"Bearer {Shared.api_key}"
     }
 
     payload = {
@@ -177,7 +177,7 @@ def get_evaluation_openai(text):
         "messages": messages,
     }
 
-    complete_url = API_URL + "chat/completions"
+    complete_url = Shared.api_url + "chat/completions"
 
     response_message = ""
     response = None
@@ -201,7 +201,7 @@ def get_evaluation_openai(text):
 def get_evaluation_openai_new(text):
     headers = {
         "Content-Type": "application/json",
-        "Authorization": f"Bearer {API_KEY}"
+        "Authorization": f"Bearer {Shared.api_key}"
     }
 
     payload = {
@@ -209,7 +209,7 @@ def get_evaluation_openai_new(text):
         "input": text
     }
 
-    complete_url = API_URL + "responses"
+    complete_url = Shared.api_url + "responses"
 
     response = requests.post(complete_url, headers=headers, json=payload)
     if response.status_code != 200:
@@ -225,7 +225,7 @@ def get_evaluation_openai_new(text):
 
 
 def get_evaluation_anthropic(text):
-    complete_url = API_URL + "messages"
+    complete_url = Shared.api_url + "messages"
 
     messages = [{"role": "user", "content": text}]
 
@@ -233,7 +233,7 @@ def get_evaluation_anthropic(text):
         "content-type": "application/json",
         "anthropic-version": "2023-06-01",
         "anthropic-beta": "output-128k-2025-02-19",
-        "x-api-key": API_KEY
+        "x-api-key": Shared.api_key
     }
 
     payload = {
@@ -250,11 +250,11 @@ def get_evaluation_anthropic(text):
 
 
 def get_evaluation(text):
-    if "api.openai" in API_URL:
+    if "api.openai" in Shared.api_url:
         return get_evaluation_openai_new(text)
-    elif "googleapis" in API_URL:
+    elif "googleapis" in Shared.api_url:
         return get_evaluation_google(text)
-    elif "anthropic" in API_URL:
+    elif "anthropic" in Shared.api_url:
         return get_evaluation_anthropic(text)
     else:
         return get_evaluation_openai(text)
@@ -288,7 +288,7 @@ def perform_evaluation(answering_model_name):
                 max_lenn = max(max_lenn, len(content))
                 all_contents.append(content)
 
-            evaluation_path = os.path.join(EVALUATION_FOLDER, m_name + "__" + str(idxnum) + "__" + str(i) + ".txt")
+            evaluation_path = os.path.join(Shared.evaluation_folder, m_name + "__" + str(idxnum) + "__" + str(i) + ".txt")
 
             if not os.path.exists(evaluation_path):
                 print("(evaluation %d of %d) (answers %d of %d)" % (
@@ -298,7 +298,7 @@ def perform_evaluation(answering_model_name):
                 all_contents = "\n\n".join(all_contents)
 
                 response_message_json = None
-                if not MANUAL:
+                if not Shared.manual:
                     response_message_json = get_evaluation(all_contents)
                 else:
                     msg_len = len(all_contents)
@@ -328,11 +328,18 @@ def perform_evaluation(answering_model_name):
     return ret
 
 
-if __name__ == "__main__":
-    if not os.path.exists(EVALUATION_FOLDER):
-        os.mkdir(EVALUATION_FOLDER)
+def main_execution(evaluating_model_name, massive):
+    Shared.evaluating_model_name = evaluating_model_name
 
-    if False:
+    Shared.evaluation_folder = common.get_evaluation_folder(Shared.evaluating_model_name)
+    Shared.api_url = common.get_evaluation_api_url(Shared.evaluating_model_name)
+    Shared.manual = common.get_manual(Shared.evaluating_model_name)
+    Shared.api_key = common.get_api_key(Shared.evaluating_model_name)
+
+    if not os.path.exists(Shared.evaluation_folder):
+        os.mkdir(Shared.evaluation_folder)
+
+    if massive:
         cont = True
         while cont:
             try:
@@ -347,3 +354,13 @@ if __name__ == "__main__":
                 cont = True
     else:
         perform_evaluation(Shared.answering_model_name)
+
+
+if __name__ == "__main__":
+    massive = False
+
+    model_list = list(common.ALL_JUDGES)
+    model_list = ["gpt-4.5"]
+
+    for m in model_list:
+        main_execution(m, massive)
