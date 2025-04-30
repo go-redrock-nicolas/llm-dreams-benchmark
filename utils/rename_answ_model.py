@@ -14,9 +14,22 @@ def do_renaming(base_path, original_name, novel_name):
 
 if __name__ == "__main__":
     original_name = "chatgpt-4o-latest_"
-    novel_name = "chatgpt-4o-latest-2024-11-20_"
+    novel_name = "chatgpt-4o-latest-2025-04-30_"
 
-    do_renaming("../answers", original_name, novel_name)
-    do_renaming("../evaluations", original_name, novel_name)
+    if not original_name.endswith("_"):
+        raise Exception("error")
 
+    if not novel_name.endswith("_"):
+        raise Exception("error")
 
+    base_path = ".."
+
+    answer_directory = os.path.join(base_path, "answers")
+    do_renaming(answer_directory, original_name, novel_name)
+
+    evaluation_directories = [x for x in os.listdir(base_path) if "evaluations-" in x]
+
+    for x in evaluation_directories:
+        ev_dir = os.path.join(base_path, x)
+
+        do_renaming(ev_dir, original_name, novel_name)
