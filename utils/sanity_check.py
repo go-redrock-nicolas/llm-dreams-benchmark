@@ -3,7 +3,8 @@ from collections import Counter
 
 base_path = ".."
 
-answering_models = [x.split("_")[0] for x in os.listdir(os.path.join(base_path, "answers")) if x.split("_")[0]]
+andir = os.path.join(base_path, "answers")
+answering_models = [x.split("_")[0] for x in os.listdir(andir) if x.split("_")[0] and os.path.getsize(os.path.join(andir, x)) > 0]
 answering_models = Counter(answering_models)
 
 for m in answering_models:
@@ -16,7 +17,8 @@ evaluations_models_counter = {}
 evaluation_folders = [x for x in os.listdir(base_path) if x.startswith("evaluations-")]
 
 for ev in evaluation_folders:
-    eval_models = [x.split("_")[0] for x in os.listdir(os.path.join(base_path, ev)) if x.split("_")[0]]
+    dev = os.path.join(base_path, ev)
+    eval_models = [x.split("_")[0] for x in os.listdir(dev) if x.split("_")[0] and os.path.getsize(os.path.join(dev, x)) > 0]
     eval_models = Counter(eval_models)
 
     evaluation_models.update(set(eval_models))
