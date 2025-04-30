@@ -1,16 +1,16 @@
 from .base_model import BaseModel, Provider
 from langchain_core.tools import tool
 
+
 #########################################################
 ################### Anthropic Models ####################
 #########################################################
 
 class AnthropicClaude35(BaseModel):
-    model: str = "claude-3-5-sonnet-latest"
-    num_predict = 8000  # Maximum is 8192 for Claude 3.5 Sonnet
-    num_ctx = None
-    provider = Provider.ANTHROPIC
-
+    model: str = "anthropic/claude-3.5-sonnet"
+    num_predict = 8192  # Maximum is 8192 for Claude 3.5 Sonnet
+    num_ctx = 200_000
+    provider = Provider.OPENROUTER
 
 
 class AnthropicClaude37(BaseModel):
@@ -111,6 +111,7 @@ class DeepSeekV30324(BaseModel):
     num_ctx = 163_840
     provider = Provider.OPENROUTER
 
+
 class DeepSeekR1(BaseModel):
     model: str = "deepseek/deepseek-r1"
     num_predict = 163_840
@@ -138,11 +139,13 @@ class MistralNemo(BaseModel):
     num_ctx = 131_072
     provider = Provider.OPENROUTER
 
+
 class Llama33B70(BaseModel):
     model: str = "meta-llama/llama-3.3-70b-instruct"
     num_predict = 16_384
     num_ctx = 128_000
     provider = Provider.OPENROUTER
+
 
 class Llama31B8(BaseModel):
     model: str = "meta-llama/llama-3.1-8b-instruct"
@@ -150,11 +153,13 @@ class Llama31B8(BaseModel):
     num_ctx = 16_384
     provider = Provider.OPENROUTER
 
+
 class WizardLM2B8x24(BaseModel):
     model: str = "microsoft/wizardlm-2-8x22b"
     num_predict = 66_535
     num_ctx = 16_384
     provider = Provider.OPENROUTER
+
 
 class Qwen25B7(BaseModel):
     model: str = "qwen/qwen-2.5-7b-instruct"
@@ -162,11 +167,20 @@ class Qwen25B7(BaseModel):
     num_ctx = 1_048_576
     provider = Provider.OPENROUTER
 
+
 class MistralSmall31B24(BaseModel):
     model: str = "mistralai/mistral-small-3.1-24b-instruct"
     num_predict = 128_000
     num_ctx = 128_000
     provider = Provider.OPENROUTER
+
+
+class Ministral8B(BaseModel):
+    model: str = "mistral/ministral-8b"
+    num_predict = 131_072
+    num_ctx = 131_072
+    provider = Provider.OPENROUTER
+
 
 class QwQB32(BaseModel):
     model: str = "qwen/qwq-32b"
@@ -174,11 +188,19 @@ class QwQB32(BaseModel):
     num_ctx = 131_072
     provider = Provider.OPENROUTER
 
+
 class Hermes3B405(BaseModel):
     model: str = "nousresearch/hermes-3-llama-3.1-405b"
     num_predict = 131_072
     num_ctx = 131_072
     provider = Provider.OPENROUTER
+
+
+class Hermes3b70(BaseModel):
+    model: str = "nousresearch/hermes-3-llama-3.1-70b"
+    num_predict = 131_072
+    num_ctx = 131_072
+
 
 class Nova1Pro(BaseModel):
     model: str = "amazon/nova-pro-v1"
@@ -186,11 +208,13 @@ class Nova1Pro(BaseModel):
     num_ctx = 300_000
     provider = Provider.OPENROUTER
 
+
 class Nova1Micro(BaseModel):
     model: str = "amazon/nova-micro-v1"
     num_predict = 5_120
     num_ctx = 128_000
     provider = Provider.OPENROUTER
+
 
 class Nova1Lite(BaseModel):
     model: str = "amazon/nova-lite-v1"
@@ -198,11 +222,13 @@ class Nova1Lite(BaseModel):
     num_ctx = 300_000
     provider = Provider.OPENROUTER
 
+
 class AnubisPro(BaseModel):
     model: str = "thedrummer/anubis-pro-105b-v1"
     num_predict = 131_072
     num_ctx = 131_072
     provider = Provider.OPENROUTER
+
 
 class WayfarerLarge70b(BaseModel):
     model: str = "latitudegames/wayfarer-large-70b-llama-3.3"
@@ -210,16 +236,95 @@ class WayfarerLarge70b(BaseModel):
     num_ctx = 131_072
     provider = Provider.OPENROUTER
 
+
 class EvaQwen25b72(BaseModel):
     model: str = "eva-unit-01/eva-qwen-2.5-72b"
     num_predict = 131_072
     num_ctx = 131_072
     provider = Provider.OPENROUTER
 
+
 class Qwen3b235a22(BaseModel):
     model: str = "qwen/qwen3-235b-a22b"
     num_predict = 40_959
     num_ctx = 40_959
+    provider = Provider.OPENROUTER
+
+
+class Llama33b70(BaseModel):
+    model: str = "meta-llama/llama-3.3-70b-instruct"
+    num_predict = 16_384
+    num_ctx = 128_000
+    provider = Provider.OPENROUTER
+
+
+class Llama31b8(BaseModel):
+    model: str = "meta-llama/llama-3.1-8b-instruct"
+    num_predict = 16_384
+    num_ctx = 16_384
+    provider = Provider.OPENROUTER
+
+
+class Llama4Maverick(BaseModel):
+    model: str = "meta-llama/llama-4-maverick"
+    num_predict = 1_048_576
+    num_ctx = 1_048_576
+    provider = Provider.OPENROUTER
+
+
+class MythoMaxb13(BaseModel):
+    model: str = "gryphe/mythomax-l2-13b"
+    num_predict = 4_096
+    num_ctx = 4_096
+    provider = Provider.OPENROUTER
+
+
+class Grok2(BaseModel):
+    model: str = "x-ai/grok-2-1212"
+    num_predict = 131_072
+    num_ctx = 131_072
+    provider = Provider.OPENROUTER
+
+
+class Grok3Beta(BaseModel):
+    model: str = "x-ai/grok-3-beta"
+    num_predict = 131_072
+    num_ctx = 131_072
+    provider = Provider.OPENROUTER
+
+
+class GLMZ132B(BaseModel):
+    model: str = "thudm/glm-z1-32b"
+    num_predict = 32_000
+    num_ctx = 32_000
+    provider = Provider.OPENROUTER
+
+
+class GLM49B(BaseModel):
+    model: str = "thudm/glm-4-9b"
+    num_predict = 32_000
+    num_ctx = 32_000
+    provider = Provider.OPENROUTER
+
+
+class EleutherAILlemma7B(BaseModel):
+    model: str = "eleutherai/llemma_7b"
+    num_predict = 4_096
+    num_ctx = 4_096
+    provider = Provider.OPENROUTER
+
+
+class JambaLarge(BaseModel):
+    model: str = "ai21/jamba-1.6-large"
+    num_predict = 4_096
+    num_ctx = 256_000
+    provider = Provider.OPENROUTER
+
+
+class JambaMini(BaseModel):
+    model: str = "ai21/jamba-1.6-mini"
+    num_predict = 4_096
+    num_ctx = 256_000
     provider = Provider.OPENROUTER
 
 
@@ -234,6 +339,7 @@ class LocalSmolLM2B1o7(BaseModel):
     num_ctx = 32768
     provider = Provider.OLLAMA
 
+
 class LocalDeepHermes3b24(BaseModel):
     model: str = "hf.co/bartowski/NousResearch_DeepHermes-3-Mistral-24B-Preview-GGUF:Q6_K_L"
     temperature = 0.8
@@ -242,6 +348,7 @@ class LocalDeepHermes3b24(BaseModel):
     provider = Provider.OLLAMA
     top_k = 30
     top_p = 0.95
+
 
 class LocalMistralSmall31b24(BaseModel):
     model: str = "hf.co/bartowski/mistralai_Mistral-Small-3.1-24B-Instruct-2503-GGUF:Q6_K_L"
@@ -252,11 +359,13 @@ class LocalMistralSmall31b24(BaseModel):
     top_k = 30
     top_p = 0.95
 
+
 class LocalQwen25b72(BaseModel):
     model: str = "hf.co/mradermacher/Qwen2.5-72B-Instruct-abliterated-i1-GGUF:Q4_K_M"
     num_predict = 16_384
     num_ctx = 131_072
     provider = Provider.OLLAMA
+
 
 class LocalQwenQwQb32(BaseModel):
     model: str = "hf.co/bartowski/Qwen_QwQ-32B-GGUF:Q8_0"
@@ -267,12 +376,13 @@ class LocalQwenQwQb32(BaseModel):
     top_k = 30
     top_p = 0.95
 
-class LocalSkyfallb36(BaseModel):
-    model: str = "hf.co/bartowski/TheDrummer_Skyfall-36B-v2-GGUF:Q6_K_L"
-    temperature = 0.15
-    num_predict = 2048
-    num_ctx = 2048
-    provider = Provider.OLLAMA
+
+class DrummerSkyfallb36v2(BaseModel):
+    model: str = "thedrummer/skyfall-36b-v2"
+    num_predict = 32_768
+    num_ctx = 32_768
+    provider = Provider.OPENROUTER
+
 
 class LocalFreeSydneyb13Mistral(BaseModel):
     model: str = "hf.co/mradermacher/Free_Sydney_13b_HF-i1-GGUF:Q4_K_M"
@@ -280,6 +390,7 @@ class LocalFreeSydneyb13Mistral(BaseModel):
     num_predict = 4096
     num_ctx = 4096
     provider = Provider.OLLAMA
+
 
 class LocalFreeSydney2b13Puffin(BaseModel):
     model: str = "hf.co/TheBloke/Free_Sydney_V2_13B-GGUF:Q5_K_M"
@@ -297,6 +408,7 @@ class LocalFreeSydney2b13Puffin(BaseModel):
         "### Response:\n"
         "\n"
     )
+
 
 class LocalFreeSydney3b8Llama(BaseModel):
     model: str = "hf.co/mradermacher/Llama-3-8B-Sydney-GGUF:Q4_K_M"

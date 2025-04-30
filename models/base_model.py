@@ -126,7 +126,7 @@ class BaseModel:
                         total_text += part["text"]
 
         # Rough estimation: ~4 characters per token for English text
-        return round(len(total_text) //3.5)
+        return round(len(total_text) // 2)
 
     def _adjust_output_limit(self, messages: List[Union[ChatMessage, dict[str, str]]]) -> int:
         """
@@ -140,16 +140,18 @@ class BaseModel:
         """
         # Only apply for large inputs (>50k tokens)
         input_tokens = self._estimate_tokens(messages)
-        if input_tokens < self.num_ctx:
+        if input_tokens + self.num_predict < self.num_ctx:
             return self.num_predict - input_tokens
 
         # Get model context limits
         # Each model class can define a 'context_window' attribute with its limits
         context_window = self.num_ctx
 
-        # Calculate available tokens, with 250 token buffer
-        buffer = 250
-        available_tokens = max(1000, context_window - input_tokens - buffer)
+        # Calculate available tokens, with a buffer
+        buffer = round(context_window * 0.1)
+        available_tokens = context_window - input_tokens - buffer
+        if available_tokens < context_window + 200:
+            return available_tokens - 1000
 
         # Use minimum of original num_predict or available tokens
         adjusted_limit = min(self.num_predict, available_tokens)
@@ -209,10 +211,14 @@ class BaseModel:
                 first_message = messages[0]
                 rest_messages = messages[1:]
                 first_message['content'] = first_message['content'].replace("{system_prompt}", self.system_prompt)
+                if "metadata" in first_message:
+                    first_message.pop('metadata')
                 # Process the rest of messages to replace system prompt with empty string
                 processed_rest = []
                 for msg in rest_messages:
                     msg['content'] = msg['content'].replace("{system_prompt}", "")
+                    if "metadata" in msg:
+                        msg.pop('metadata')
                     processed_rest.append(msg)
 
                 messages = [first_message] + processed_rest
@@ -227,7 +233,7 @@ class BaseModel:
         )
 
         if "error" in result.model_extra or result.choices[0].message.content is None:
-            raise ApiError(f"[{result.model_extra['error']['code']}] {result.model_extra['error']['message']}")
+            raise ApiError(f"[{result.model_extra['error']['code']}] {result.model_extra['error']['message']} {result.model_extra['error']['metadata']['raw']}")
         if result.choices[0].message.refusal:
             raise RefusalError(f"Refusal Error: {result.choices[0].message.refusal}")
         result = ChatMessage(
