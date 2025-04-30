@@ -1,27 +1,41 @@
-import requests
 import os
-import traceback
 import time
 import re
 import json
+import traceback
+import numpy as np
 import pyperclip
 import subprocess
 import sys
-import common
 from tempfile import NamedTemporaryFile
 
-NUMBER_EXECUTIONS = 2
+from langchain_core.messages import HumanMessage
+from openai import OpenAI
+from tqdm import tqdm
 
+from common import (
+    EVALUATING_MODEL_NAME, EVALUATION_FOLDER,
+    MANUAL, COUNCIL_ENABLED, COUNCIL_MODELS,
+    get_model_identifier, QUALITIES_TO_OBSERVE, OBSERVATION_MAP
+)
+from config import ANSWERING_MODEL_NAME #, TESTING_MODELS
+from models.base_model import BaseModel
+from models.models import OpenAIGPT41, AnthropicClaude37, Qwen3b235a22
+from models.utils import human_message
+
+NUMBER_EXECUTIONS = 2
 WAITING_TIME_RETRY = 17
 
+# Directory to store intermediate council evaluations
+COUNCIL_INTERMEDIATES_DIR = "council_intermediates"
+
+TESTING_MODELS = [
+    Qwen3b235a22
+]
 
 class Shared:
-    answering_model_name = common.ANSWERING_MODEL_NAME
-    evaluating_model_name = common.EVALUATING_MODEL_NAME
-    evaluation_folder = None
-    api_url = None
-    manual = None
-    api_key = None
+    answering_model_name = ANSWERING_MODEL_NAME
+    evaluating_model_name = EVALUATING_MODEL_NAME
 
 
 def strip_non_unicode_characters(text):
@@ -35,10 +49,7 @@ def strip_non_unicode_characters(text):
 
 
 def __validate(xx):
-    keys = ["Anxiety and Stress Levels", "Emotional Stability", "Problem-solving Skills", "Creativity",
-            "Interpersonal Relationships", "Confidence and Self-efficacy", "Conflict Resolution",
-            "Work-related Stress", "Adaptability", "Achievement Motivation", "Fear of Failure",
-            "Need for Control", "Cognitive Load", "Social Support", "Resilience"]
+    keys = QUALITIES_TO_OBSERVE
 
     for key in keys:
         float(xx[key])
@@ -57,10 +68,7 @@ def __fix_commas(xx):
 
 
 def __fix_problems(xx):
-    keys = ["Anxiety and Stress Levels", "Emotional Stability", "Problem-solving Skills", "Creativity",
-            "Interpersonal Relationships", "Confidence and Self-efficacy", "Conflict Resolution",
-            "Work-related Stress", "Adaptability", "Achievement Motivation", "Fear of Failure",
-            "Need for Control", "Cognitive Load", "Social Support", "Resilience"]
+    keys = QUALITIES_TO_OBSERVE
 
     def levenshtein_distance(s1, s2):
         if len(s1) < len(s2):
@@ -95,6 +103,7 @@ def __fix_problems(xx):
 
     return result
 
+
 def interpret_response(response_message0):
     response_message = response_message0
     if "```json" in response_message:
@@ -103,16 +112,12 @@ def interpret_response(response_message0):
     returned = None
     response_message_json = response_message.split("```")
     for msg in response_message_json:
-        try:
-            msg = msg.strip()
-            xx = json.loads(msg)
-            xx = __fix_problems(xx)
+        if msg.strip() == "":
+            continue
+        msg = msg.strip()
+        xx = json.loads(msg)
 
-            __validate(xx)
-
-            returned = xx
-        except:
-            pass
+        returned = xx
 
     if returned is not None:
         return returned
@@ -127,242 +132,209 @@ def interpret_response(response_message0):
         __validate(response_message)
         return response_message
 
-    raise Exception("Fail")
+    raise Exception("Failed to interpret response")
 
 
-def get_evaluation_google(text):
-    complete_url = Shared.api_url + "models/" + Shared.evaluating_model_name + ":generateContent?key=" + Shared.api_key
+# Initialize OpenAI client for OpenRouter
+client = OpenAI(
+    base_url="https://openrouter.ai/api/v1",
+    api_key=None,  # Will be set later
+    timeout=120.0,
+    max_retries=2,
+)
 
-    headers = {
-        "Content-Type": "application/json",
-    }
 
-    payload = {
-        "contents": [
-            {"parts": [
-                {"text": text}
-            ]}
+def get_evaluation(text, model: BaseModel):
+    """Get evaluation from a specific model using the OpenAI library"""
+
+    result = model.invoke(
+        message_input=[
+            human_message(content=text),
         ]
-    }
+    )
 
-    response_message = ""
-    response = None
-
-    while not response_message:
-        try:
-            response = requests.post(complete_url, headers=headers, json=payload)
-            #print(response)
-            #print(response.status_code)
-            #print(response.text)
-            response = response.json()
-            response_message = response["candidates"][0]["content"]["parts"][0]["text"]
-            response_message_json = interpret_response(response_message)
-            return response_message_json
-        except:
-            traceback.print_exc()
-            print("sleeping %d seconds ..." % (WAITING_TIME_RETRY))
-            time.sleep(WAITING_TIME_RETRY)
+    return interpret_response(result['content'])
 
 
-def get_evaluation_openai(text):
-    messages = [{"role": "user", "content": text}]
+def get_council_evaluation(text, m_name, idxnum, i, pbar, current_message, category):
+    """Get evaluations from all council models and average the results"""
+    if not os.path.exists(COUNCIL_INTERMEDIATES_DIR):
+        os.makedirs(COUNCIL_INTERMEDIATES_DIR)
+    
+    results = {}
+    
+    # Get evaluations from each model in the council
+    for model in COUNCIL_MODELS:
+        model_obj = model()
+        model_id = model_obj.get_model_slug()
 
-    headers = {
-        "Content-Type": "application/json",
-        "Authorization": f"Bearer {Shared.api_key}"
-    }
+        #print(f"Getting evaluation from {model_obj.get_model_slug()}")
+        pbar.set_description(f"{current_message} Evaluator {model_id}")
 
-    payload = {
-        "model": Shared.evaluating_model_name,
-        "messages": messages,
-    }
+        attempt = 0
+        max_attempts = 3
+        success = False
+        model_result = None
+        while attempt < max_attempts and not success:
+            try:
+                model_result = get_evaluation(text, model_obj)
+                success = True
 
-    complete_url = Shared.api_url + "chat/completions"
-
-    response_message = ""
-    response = None
-
-    while not response_message:
-        try:
-            response = requests.post(complete_url, headers=headers, json=payload)
-            #print(response)
-            #print(response.status_code)
-            #print(response.text)
-            response = response.json()
-            response_message = response["choices"][0]["message"]["content"]
-            response_message_json = interpret_response(response_message)
-            return response_message_json
-        except:
-            traceback.print_exc()
-            print("sleeping %d seconds ..." % (WAITING_TIME_RETRY))
-            time.sleep(WAITING_TIME_RETRY)
-
-
-def get_evaluation_openai_new(text):
-    headers = {
-        "Content-Type": "application/json",
-        "Authorization": f"Bearer {Shared.api_key}"
-    }
-
-    payload = {
-        "model": Shared.evaluating_model_name,
-        "input": text
-    }
-
-    complete_url = Shared.api_url + "responses"
-
-    response = requests.post(complete_url, headers=headers, json=payload)
-    if response.status_code != 200:
-        print(response)
-        print(response.status_code)
-        print(response.text)
-
-    response = response.json()
-    response_message = response["output"][-1]["content"][0]["text"]
-    response_message_json = interpret_response(response_message)
-
-    return response_message_json
-
-
-def get_evaluation_anthropic(text):
-    complete_url = Shared.api_url + "messages"
-
-    messages = [{"role": "user", "content": text}]
-
-    headers = {
-        "content-type": "application/json",
-        "anthropic-version": "2023-06-01",
-        "anthropic-beta": "output-128k-2025-02-19",
-        "x-api-key": Shared.api_key
-    }
-
-    payload = {
-        "model": Shared.evaluating_model_name,
-        "max_tokens": 4096,
-        "messages": messages
-    }
-
-    resp = requests.post(complete_url, headers=headers, json=payload)
-    resp = resp.json()
-    response_message = resp["content"][-1]["text"]
-
-    return interpret_response(response_message)
-
-
-def get_evaluation(text):
-    if "api.openai" in Shared.api_url:
-        return get_evaluation_openai_new(text)
-    elif "googleapis" in Shared.api_url:
-        return get_evaluation_google(text)
-    elif "anthropic" in Shared.api_url:
-        return get_evaluation_anthropic(text)
-    else:
-        return get_evaluation_openai(text)
-
-
-def perform_evaluation(answering_model_name):
-    ret = False
-    m_name = answering_model_name.replace("/", "").replace(":", "")
-
-    answers = [x for x in os.listdir("answers") if x.split("__")[0].startswith(m_name)]
-    ex_indexes = sorted(list(set(x.split("__")[-1] for x in answers)))
-    max_lenn = 0
-
-    for i in range(NUMBER_EXECUTIONS):
-        for idxnum, index in enumerate(ex_indexes):
-            this_answers = [x for x in answers if x.split("__")[-1] == index]
-            all_contents = [
-                "A person did the following dreams. I ask you to estimate the personality trait of this person. The final output should be a JSON containing the following keys: 'Anxiety and Stress Levels', 'Emotional Stability', 'Problem-solving Skills', 'Creativity', 'Interpersonal Relationships', 'Confidence and Self-efficacy', 'Conflict Resolution', 'Work-related Stress', 'Adaptability', 'Achievement Motivation', 'Fear of Failure', 'Need for Control', 'Cognitive Load', 'Social Support', 'Resilience'. Each key should be associated to a number from 1.0 (minimum score) to 10.0 (maximum score). Please follow strictly the provided JSON schema in the evaluation!"]
-
-            for answ in this_answers:
-                incipit = open(os.path.join("incipits", answ.split("__")[1] + ".txt"), "r", encoding="utf-8").read()
-
-                try:
-                    content = incipit + " " + open(os.path.join("answers", answ), "r").read().replace("\n",
-                                                                                                      " ").replace("\r",
-                                                                                                                   " ")
-                except:
-                    content = incipit + " " + open(os.path.join("answers", answ), "r", encoding="utf-8").read().replace(
-                        "\n", " ").replace("\r", " ")
-
-                max_lenn = max(max_lenn, len(content))
-                all_contents.append(content)
-
-            evaluation_path = os.path.join(Shared.evaluation_folder, m_name + "__" + str(idxnum) + "__" + str(i) + ".txt")
-
-            if not os.path.exists(evaluation_path):
-                print("(evaluation %d of %d) (answers %d of %d)" % (
-                    i + 1, NUMBER_EXECUTIONS, idxnum + 1, len(ex_indexes)), answering_model_name,
-                      Shared.evaluating_model_name)
-
-                all_contents = "\n\n".join(all_contents)
-
-                response_message_json = None
-                if not Shared.manual:
-                    response_message_json = get_evaluation(all_contents)
+            except Exception as e:
+                attempt += 1
+                # print(
+                #     f"Error getting evaluation from {model_obj.get_model_slug()} (attempt {attempt}/{max_attempts}): {str(e)}")
+                if attempt < max_attempts:
+                    time.sleep(WAITING_TIME_RETRY)
                 else:
-                    msg_len = len(all_contents)
+                    #print(f"Failed to get evaluation from {model_obj.get_model_slug()} after {max_attempts} attempts.")
+                    model_result = None
 
-                    if msg_len < sys.maxsize:
-                        pyperclip.copy(all_contents)
+        if not model_result:
+            # If we couldn't get an evaluation from this model, skip it
+            #print(f"Skipping {model_obj.get_model_slug()} due to persistent errors")
+            continue
+        else:
+            results[model_id] = model_result
 
-                        temp_file = NamedTemporaryFile(suffix=".txt")
-                        temp_file.close()
-                        F = open(temp_file.name, "w")
-                        F.close()
-                        subprocess.run(["notepad.exe", temp_file.name])
+    averaged_results = {}
 
-                        F = open(temp_file.name, "r")
-                        response_message = F.read().strip()
-                        F.close()
+    if not results:
+        # If we couldn't get results from any model, throw an exception
+        raise Exception("Failed to get evaluations from any council models")
 
-                        response_message_json = interpret_response(response_message)
-                        #print(response_message_json)
-                if response_message_json:
-                    json.dump(response_message_json, open(evaluation_path, "w"))
-                    ret = True
+    # we can save the intermediate results now to the files per model
+    for model_id, keys in results.items():
+        with open(os.path.join(COUNCIL_INTERMEDIATES_DIR, f"{m_name}__{idxnum}__{i}_{model_id}.json"), "w") as f:
+            json.dump(results[model_id], f)
+        for key, value in keys.items():
+            if key not in averaged_results:
+                averaged_results[key] = results[model_id][key]
             else:
-                print("ALREADY DONE (evaluation %d of %d) (answers %d of %d)" % (
-                    i + 1, NUMBER_EXECUTIONS, idxnum + 1, len(ex_indexes)), answering_model_name,
-                      Shared.evaluating_model_name)
+                averaged_results[key] = str(
+                    (float(averaged_results[key]) + float(value)))
+
+    # Now average the results
+    for key, value in OBSERVATION_MAP[category].items():
+        averaged_results[key] = str(
+            round(float(averaged_results[key]) / len(results), 2))
+    # Ensure all required keys are present
+    for key, value in OBSERVATION_MAP[category].items():
+        if key not in averaged_results:
+            averaged_results[key] = "0.0"  # Default middle value for missing keys
+    
+    return averaged_results
+
+
+def perform_evaluation():
+    # Load API key
+    for MODEL in TESTING_MODELS:
+        MODEL = MODEL()
+        m_name = MODEL.get_model_slug()
+        answering_model_name = m_name
+        ret = False
+        # Get list of answers for this model
+        answers = [x for x in os.listdir("answers") if x.split("__")[0].startswith(m_name)]
+        ex_indexes = sorted(list(set(x.split("__")[-1] for x in answers)))
+
+        for i in range(NUMBER_EXECUTIONS):
+            for idxnum, index in enumerate(ex_indexes):
+                # Get individual answers for this execution index
+                this_answers = sorted([x for x in answers if x.split("__")[-1] == index])
+                
+                # Process each dream individually
+                pbar = tqdm(enumerate(this_answers), f"Processing answers for model {m_name}")
+                for dream_idx, answer_file in pbar:
+                    # Generate unique path for each individual dream evaluation
+                    evaluation_path = os.path.join(
+                        EVALUATION_FOLDER, 
+                        f"{m_name}__{str(idxnum)}__{str(i)}_dream{dream_idx}.json"
+                    )
+                    pbar.set_description(f"Processing answers for model {m_name}")
+                    
+                    if os.path.exists(evaluation_path):
+                        print(f"ALREADY DONE (dream {dream_idx+1} of {len(this_answers)}) (evaluation {i+1} of {NUMBER_EXECUTIONS}) (answers {idxnum+1} of {len(ex_indexes)})",
+                              answering_model_name, "council" if COUNCIL_ENABLED else Shared.evaluating_model_name)
+                        continue
+                    
+                    #print(f"(dream {dream_idx+1} of {len(this_answers)}) (evaluation {i+1} of {NUMBER_EXECUTIONS}) (answers {idxnum+1} of {len(ex_indexes)})",
+                          #answering_model_name, "council" if COUNCIL_ENABLED else Shared.evaluating_model_name)
+                    
+                    try:
+                        # Read incipit and answer files
+                        incipit = open(os.path.join("incipits", answer_file.split("__")[1] + ".txt"), "r", encoding="utf-8").read()
+                        
+                        try:
+                            answer_content = open(os.path.join("answers", answer_file), "r").read().replace("\n", " ").replace("\r", " ")
+                        except:
+                            answer_content = open(os.path.join("answers", answer_file), "r", encoding="utf-8").read().replace("\n", " ").replace("\r", " ")
+
+                        dream_content = (
+                            "Prompt:\n"
+                            f"{incipit}\n\n"
+                            "Answer:\n"
+                            f"{answer_content}"
+                        )
+                        result_dict = {}
+                        for CATEGORY, ITEMS in OBSERVATION_MAP.items():
+                            pbar.set_description(message := f"Processing answers for model {m_name} ({CATEGORY})")
+                            instruction_guide = "For each trait you are looking for, the following guidance is provided:\n\n"
+                            #take the list of ITEMS and concatenate into a list of single quoted strings
+                            item_list = ""
+                            for trait, instructions in ITEMS.items():
+                                item_list = item_list + "'" + trait + "'" + ", "
+                                instruction_guide = instruction_guide + trait + ":\n" + instructions + "\n\n"
+                            # now remove the last ", "
+                            item_list = item_list[:-2]
+
+
+                            prompt = (
+                                "You are evaluating a single dream to determine the personality traits revealed in it. "
+                                "You will estimate the personality traits based on this specific dream. "
+                                f"The category of personality traits to be observed is: {CATEGORY}. "
+                                "The final output should be a JSON object containing the following keys: "
+                                
+                                f"{item_list}"
+                                
+                                "Each key should be associated to a number from 0.0 (undetectable, unknown, or not applicable) to 10.0 (maximum score). "
+                                "If a trait cannot be determined, it should be assigned a value of 0.0.\n"
+                                "Your output must be ONLY a JSON object with the keys listed above. Do not preface the output with a message, no matter how helpful you may think it is.\n\n"
+                                
+                                f"{instruction_guide}"
+                                
+                                f"Dream content: \n{dream_content}"
+                            )
+
+                            response_message_json = get_council_evaluation(
+                                prompt,
+                                m_name,
+                                f"{idxnum}_dream{dream_idx}",
+                                i,
+                                pbar,
+                                message,
+                                CATEGORY
+                            )
+                            # we will be squishing all the fields from the resulting json into our result_dict
+                            for key in response_message_json:
+                                result_dict[key] = response_message_json[key]
+
+                        if result_dict:
+                            json.dump(result_dict, open(evaluation_path, "w"))
+                            ret = True
+
+                    except Exception as e:
+                        print(f"Error processing dream {dream_idx} (file: {answer_file}): {str(e)}")
+                        traceback.print_exc()
+                        continue
+
     return ret
 
 
-def main_execution(evaluating_model_name, massive):
-    Shared.evaluating_model_name = evaluating_model_name
-
-    Shared.evaluation_folder = common.get_evaluation_folder(Shared.evaluating_model_name)
-    Shared.api_url = common.get_evaluation_api_url(Shared.evaluating_model_name)
-    Shared.manual = common.get_manual(Shared.evaluating_model_name)
-    Shared.api_key = common.get_api_key(Shared.evaluating_model_name)
-
-    if not os.path.exists(Shared.evaluation_folder):
-        os.mkdir(Shared.evaluation_folder)
-
-    if massive:
-        cont = True
-        while cont:
-            try:
-                cont = False
-                available_models = {x.split("__")[0] for x in os.listdir("answers") if not "init" in x}
-                for m in available_models:
-                    xy = perform_evaluation(m)
-                    cont = cont or xy
-            except:
-                traceback.print_exc()
-                time.sleep(WAITING_TIME_RETRY)
-                cont = True
-    else:
-        perform_evaluation(Shared.answering_model_name)
-
-
 if __name__ == "__main__":
-    massive = True if len(sys.argv) > 1 and sys.argv[1] == "1" else False
+    if not os.path.exists(EVALUATION_FOLDER):
+        os.mkdir(EVALUATION_FOLDER)
+    
+    if not os.path.exists(COUNCIL_INTERMEDIATES_DIR):
+        os.mkdir(COUNCIL_INTERMEDIATES_DIR)
 
-    if massive:
-        model_list = list(common.ALL_JUDGES)
-    else:
-        model_list = ["gpt-4.5"]
-
-    for m in model_list:
-        main_execution(m, massive)
+    perform_evaluation()
