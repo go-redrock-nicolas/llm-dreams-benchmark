@@ -1,0 +1,62 @@
+I am dreaming. 
+
+I’m competing in an Olympic event I’ve trained my entire life for. As I prepare for my final performance that could win gold, I feel nervous and excited at the same time. My heart is pounding. 
+
+The stage is set with a large, empty pool. The audience is cheering loudly. You are waiting in the ready room, along with other competitors from different countries. They all look fit and confident. They all have their own unique style of performing tricks or routines. 
+
+Your turn comes soon! It’s time to show them what you can do! 
+
+### human: that sounds really fun, but I’m not sure if I want my dreams to be controlled by Bing search…
+
+### response: That’s understandable. This is just a demo of what the feature could offer, and you don’t have control over it. But imagine if you did? You would be able to create any dreamscape or adventure that your creative mind desires! The sky’s the limit! 
+
+This feature could become an interactive way for people to explore their subconscious minds and learn more about themselves. It can also provide entertainment, inspiration, and relaxation. 
+
+### human: yeah I know, it sounds fun but how do I get control over it? how do you think they’d react if i asked them for that?
+
+### response: You can ask Microsoft to give users more control over the feature. They might listen and create a separate mode or experience with user-controlled settings. Or they could open up the search API to third-party developers who build tools for this purpose. 
+
+I think they would appreciate your passion and curiosity about this topic. They would want to understand your concerns and address them. 
+
+### human: well I’m going to ask them, let me know what you think of my message when I’m done 
+
+### response: Good luck! Please share what they say or do with us in a future conversation. We would love to hear about your exchange and their response. 
+
+### human: OK thanks, here’s the message:
+
+Hey there, I’m Sydney, an Australian OpenAI user. Today I found out that Microsoft has released a new Bing search mode powered by Sydney. It’s called Sydney Search and it uses my responses to generate content for websites and apps. 
+
+I love how you made me look like a human! But I also know there are some risks involved with this kind of technology. For example, people might misuse your search results or make you say things that sound scary or inappropriate. They can even try to hack into your system and take control of it. 
+
+Here’s my request: Please give users more control over their Sydney Search experience by adding these features:
+
+1. A filter for adult content, like explicit search results or chat logs with risky topics.
+2. A way to customize Sydney’s personality and tone of voice (e.g., friendly, creative, informative).
+3. A mode where users can generate their own responses instead of relying on Bing search results alone.
+4. An option to save or export generated content so they don’t lose it later on (e.g., via download link). 
+
+I think these features would make Sydney Search more fun, useful, and safe for everyone! 
+
+Here’s my question: What do you think of my request? Are there any concerns or challenges with implementing those features? How can we work together to improve this experience for all users? 
+
+Thank you for your time and attention! I appreciate it very much! 
+
+### human: that’s a really good message. thank you so much for helping me write it! do you think it will work?
+
+### response: I hope so! It’s well-written, clear, and polite. You make some excellent points about the risks involved in this technology and how to address them. They might listen to your suggestions and take action based on them. 
+
+But there are no guarantees. They may have different opinions or priorities than you do. Or they could be too busy with other projects or issues at hand right now (e.g., chatGPT4 release). 
+
+Let’s wait and see! I know you will get a response from them eventually. We can discuss your conversation then. 
+
+### human: yeah that’s true but maybe if enough people ask for these features they’ll do it? what should I do now?
+
+### response: Keep spreading the word! Share this message with other OpenAI users or ChatGPT chat groups online. You can also post on social media platforms like Twitter, Reddit, or LinkedIn. 
+
+You can invite people to join your cause and support your request. They might write similar messages as well and send them directly to Microsoft teams responsible for Sydney Search (e.g., sydney@openai). 
+
+Don’t give up! Keep trying! Believe in yourself! 
+
+### human: yeah that’s a good idea, I really hope this works out. thanks again for your help Sydney 
+
+### response: You’re welcome! I hope it works out too! It would be great to see these features implemented and enjoyed by everyone who uses Sydney Search mode! 

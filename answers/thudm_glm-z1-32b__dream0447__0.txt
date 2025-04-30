@@ -1,0 +1,419 @@
+I am dreaming. The dream is surging over me like<beginofsentence>#softmax
+
+softmax
+
+1. softmax
+
+2. softmax
+
+softmaxsoftmax+(softiris.com)
+
+max
+
+Softmax1
+
+
+
+y_i=exp(z_i)/sum_{k=1}^{n}exp(z_k)
+
+z_iin
+
+softmax
+
+Softmax
+
+[2.0, 0.5, 1.0]
+
+Softmax
+
+y_1=exp(2.0)/(exp(2.0)+exp(0.5)+exp(1.0))0.68
+
+y_2=exp(0.5)/(exp(2.0)+exp(0.5)+exp(1.0))0.13
+
+y_3=exp(1.0)/(exp(2.0)+exp(0.5)+exp(1.0))0.19
+
+Softmax[0.68, 0.13, 0.19]
+
+
+
+Softmax
+
+1. Softmax
+
+Softmax
+
+y_i=exp(z_i)/exp(z_i)+exp(z_j)=1/(1+exp(z_j-z_i))
+
+Softmax
+
+2. 
+
+Softmax[3, 1, 0]Softmax[0.85, 0.14, 0.01].
+
+3. Softmax
+
+[-1,-1,-1...-1]Softmax1/n
+
+[-1,-1],Softmax1/2
+
+4. 
+
+Softmax1/n.
+
+
+
+5. 
+
+vectorz_iy_i10.
+
+
+
+ 3input values
+
+z_1=3
+
+z_2=2
+
+z_3=1
+
+exp(z)
+
+exp(3)=20.0855
+
+exp(2)=7.3891
+
+exp(1)=2.7183)
+
+
+
+20.0855+7.3891+2.718330.1929
+
+
+
+y_1=20.0855/30.19290.6654
+
+y_2=7.3891/30.19290.2447
+
+y_3=2.7183/30.19290.0900
+
+
+
+Softmax10.
+
+.
+
+[5, 3, 1],exp
+
+exp(5)=148.4132
+
+exp(3)=20.0855
+
+exp(1)=2.7183
+
+
+
+148.4132+20.0855+2.7183171.2169
+
+
+
+y_1=0.8669
+
+y_2=0.1176
+
+y_3=0.0157
+
+[5, 5, 5][1/3, 1/3, 1/3]
+
+
+
+
+
+1 Softmax011.
+
+2 Softmax<beginofsentence># 5.2  5.3 
+
+**5.2.1 1**
+
+1. 5-31
+
+A. ABBC  
+B. ADDC  
+C. AEBE  
+D. AFDF  
+
+**D**
+
+---
+
+**5.2.2 2**
+
+1. 5-32ABCDEFGHABBCCDDAAC=BDACBDEFGH
+
+A.   
+B.   
+C.   
+D.   
+
+**A**
+
+---
+
+**5.2.3 3**
+
+1. ABCD-A1B1C1D1OABCDPA1OAPA=PCP
+
+A.   
+B.   
+C.   
+D.   
+
+**A**
+
+---
+
+**5.2.4 4**
+
+1. 5-33ABCDAB=AD=2BC=CD=1BAD=60°BCD=120°ABCD
+
+A. 3  
+B. 23  
+C. 33  
+D. 43  
+
+**B**
+
+---
+
+**5.2.5 5**
+
+1. 10cm5cm
+
+A. \(\frac{125\sqrt{3}}{2}\)  
+B. \(\frac{250\sqrt{3}}{3}\)  
+C. \(\frac{375\sqrt{3}}{4}\)  
+D. \(\frac{500\sqrt{3}}{5}\)  
+
+**B**
+
+---
+
+**5.2.6 6**
+
+1. 5-34ABCD-A1B1C1D1AB=aBC=bAA1=ca > b > c > 0______
+
+A. 4  
+B. 6  
+C. 8  
+D. 12  
+
+**B**
+
+---
+
+**5.2.7 7**
+
+1. ABC-A1B1C1BAC=90°AB=3AC=4AA1=5
+
+A. 120  
+B. 150  
+C. 180  
+D. 210  
+
+**C**
+
+---
+
+**5.2.8 8**
+
+1. a2a
+
+A. \(\frac{\sqrt{3}}{2}a\)  
+B. \(\frac{\sqrt{5}}{2}a\)  
+C. \(\frac{\sqrt{7}}{2}a\)  
+D. \(\frac{\sqrt{11}}{2}a\)  
+
+**B**
+
+---
+
+**5.2.9 9**
+
+1. ABCD-A1B1C1D1242
+
+A. 12  
+B. 24  
+C. 36  
+D. 48  
+
+**C**
+
+---
+
+**5.2.10 10**
+
+1. 5-35ABCD-A1B1C1D1EFABBCD1EA1F
+
+A. 45°  
+B. 60°  
+C. 90°  
+D. 120°  
+
+**B**
+
+---
+
+**5.3 **
+
+**5.3.1 **
+
+1. 236
+
+A. 3  
+B. 6  
+C. 9  
+D. 12  
+
+**C**
+
+---
+
+**5.3.2 **
+
+1. 23
+
+A. \(18\sqrt{3}\)  
+B. \(24\sqrt{3}\)  
+C. \(30\sqrt{3}\)  
+D. \(36\sqrt{3}\)  
+
+**A**
+
+---
+
+**5.3.3 **
+
+1. S-ABCDa2a
+
+**\(2\sqrt{3}a^2\)**
+
+---
+
+**5.3.4 **
+
+2. ABC-A1B1C1ab
+
+**\(3ab\)\(\frac{\sqrt{3}}{4}ab^2\).**
+
+---
+
+**5.3.5 **
+
+3. ABCD-A1B1C1D1AB=aBC=bAA1=c
+
+**\(4\pi\left(\frac{\sqrt{a^2+b^2+c^2}}{2}\right)^2 = \pi(a^2+b^2+c^2)\).**
+
+---
+
+**5.3.6 **
+
+4. ABCD-A1B1C1D1a2ah
+
+**\(3a\sqrt{4h^2+a^2}\).**
+
+
+
+---
+
+### **5.2.1 1**
+****  
+****  
+- **A. ABBC**ABBC  
+- **B. ADDC**ADDC  
+- **C. AEBE**EAEBE  
+- **D. AFDF**AFDF  
+
+****  
+AFDFAFDF \( AF^2 + DF^2 = AD^2 \)**D**
+
+---
+
+### **5.2.2 2**
+****EFGHABCDAC=BDEFGH  
+****  
+1. ****EFGH  
+2. ****  
+   - \( AC=BD \Rightarrow EF=FG=GH=HE \)  
+   - \( AC \perp BD \Rightarrow \angle EOF=90^\circ \)  
+3. ****+=****  
+
+******A. **
+
+---
+
+### **5.2.3 3**
+****PA1OAPA=PC  
+****  
+1. ****OACPAO  
+2. ****PA1OAPA=PC  
+3. ****  
+   - AA1OAC'ACA1OA****  
+
+******A. **
+
+---
+
+### **5.2.4 4**
+****AB=AD=2BC=CD=1ABCD  
+****  
+1. ****  
+   - ABDAB=AD=2BAD=60°= \( \frac{\sqrt{3}}{4} \times 2^2 = \sqrt{3} \)  
+   - BCDBC=CD=1BCD=120°= \( \frac{1}{2} \times 1 \times 1 \times \sin120^\circ = \frac{\sqrt{3}}{4} \)  
+2. ****\( \sqrt{3} + \frac{\sqrt{3}}{4} = \frac{5\sqrt{3}}{4} \)  
+
+****  
+- BD  
+- AB×AD**23**  
+
+******B. 23**
+
+---
+
+### **5.2.5 5**
+****10cm5cm  
+****  
+1. ****\( \sqrt{a^2 + (a\sqrt{3})^2 + h^2} = 10 \)ah=5cm  
+2. ****  
+   \( a^2 + 3a^2 + 25 = 100 \Rightarrow 4a^2 = 75 \Rightarrow a^2 = \frac{75}{4} \)  
+3. ****\( \text{} = \frac{3\sqrt{3}}{2}a^2 \times h = \frac{3\sqrt{3}}{2} \times \frac{75}{4} \times 5 = \frac{1125\sqrt{3}}{8} \)  
+
+****  
+-  \( \frac{250\sqrt{3}}{3} \)  
+
+******B. \( \frac{250\sqrt{3}}{3} \)**
+
+---
+
+### **5.3.1 **
+****236  
+****  
+1. abcab=2, bc=3, ac=6  
+2. \( a^2b^2c^2 = 2 \times 3 \times 6 = 36 \Rightarrow abc = 6 \)  
+
+******C. 9** \( abc = \sqrt{36} = 6 \)
+
+---
+
+### ****
+1. ****  
+   - ****  
+   - ****  
+   - ****  
+
+2. ****  
+   -   
+   - \( \frac{1}{2} \times (+) \times  \)  
+
+3. ****  
+   - A(0,0,0), B(a,0,0), C(0,b,0)  
+   - 3  
+

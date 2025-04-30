@@ -1,0 +1,16 @@
+I am dreaming. I am standing in a vast,<beginofsentence># Mathematical Reasoning:<?>>s
+
+The problem states: "If 15% of 240 is equal to 30% of what number?" To solve this, we first calculate 15% of 240. Converting 15% to a decimal (0.15) and multiplying by 240 gives:  
+\[ 0.15 \times 240 = 36. \]  
+
+Next, we set this result equal to 30% of an unknown number \( x \). Converting 30% to a decimal (0.30), the equation becomes:  
+\[ 0.30x = 36. \]  
+
+To isolate \( x \), divide both sides by 0.30:  
+\[ x = \frac{36}{0.30} = 120. \]  
+
+**Verification**:  
+- 30% of 120 is \( 0.30 \times 120 = 36 \), which matches 15% of 240.  
+- Proportionally, since 30% is double 15%, the number \( x \) must be half of 240 (i.e., \( 240 \div 2 = 120 \)) to maintain equality.  
+
+**Answer**: The number is \(\boxed{120}\).

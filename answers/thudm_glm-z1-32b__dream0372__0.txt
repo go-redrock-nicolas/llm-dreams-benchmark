@@ -1,0 +1,104 @@
+I am dreaming. I am in a vast, sprawling library where every book is filled with light.  The shelves stretch to infinity in every direction, and there are nooks and crannies with little reading nooks where people are reading, sometimes alone, sometimes sharing stories with others.  The air smells like fresh linen and aged paper, and the hum of contentment vibrates in the atmosphere.  I notice a book that glows brighter than the others, so I walk over to it.  The title says "Your Abundance Awaits" in a flowing script.  I open it, and the pages are blank.  Then, I start writing, and as I write, words appear on the page, bringing my deepest wishes and jo<beginofsentence># Merge k Sorted Lists
+
+## Problem Statement
+
+Merge k sorted linked lists into one sorted linked list.
+
+### Example
+
+**Input:**
+
+```
+[
+  1->4->5,
+  1->3->4,
+  2->6
+]
+```
+
+**Output:**
+
+```
+1->1->2->3->4->4->5->6
+```
+## Solution
+
+To solve this problem, we need to efficiently merge k sorted linked lists into a single sorted linked list. The challenge lies in efficiently selecting the smallest element from the current heads of the k lists at each step. Here, we present two approaches: a brute-force method and an optimized method using a priority queue (min-heap).
+
+### Approach 1: Brute-force (Using Dummy Node and Iterative Merging)
+
+1. **Initialization**: Start with a dummy node to simplify the merging process.
+2. **Iterative Merging**: Sequentially merge each list into the result list one by one.
+3. **Comparison and Linking**: At each step, compare the current elements of the lists and append the smallest element to the result list.
+
+### Approach 2: Optimal (Using Min-heap)
+
+1. **Heap Initialization**: Create a min-heap to keep track of the smallest elements from each of the k lists.
+2. **Heap Operations**:
+   - Insert the first element of each list into the heap.
+   - Extract the minimum element from the heap and add it to the result list.
+   - If the extracted element has a next node, insert that next node into the heap.
+3. **Termination**: Continue the process until the heap is empty, ensuring all elements are merged into the result list.
+
+### Solution Code
+
+```python
+# Definition for singly-linked list.
+class ListNode:
+    def __init__(self, val=0, next=None):
+        self.val = val
+        self.next = next
+
+class Solution:
+    def mergeKLists(self, lists):
+        """
+        :type lists: List[ListNode]
+        :rtype: ListNode
+        """
+        # Approach 2: Using Min-heap (Priority Queue)
+        import heapq
+        
+        # Edge case: if the list of lists is empty
+        if not lists:
+            return None
+        
+        # Create a heap to keep track of the current smallest elements
+        heap = []
+        # Dummy node to simplify the process of building the result list
+        dummy = ListNode()
+        current = dummy
+        
+        # Initialize the heap with the first element of each list (if not empty)
+        for node in lists:
+            if node:
+                heapq.heappush(heap, (node.val, node))
+        
+        # Process the heap until it's empty
+        while heap:
+            # Get the smallest element
+            val, node = heapq.heappop(heap)
+            current.next = ListNode(val)
+            current = current.next
+            
+            # If the node has a next element, push it into the heap
+            if node.next:
+                heapq.heappush(heap, (node.next.val, node.next))
+        
+        return dummy.next
+```
+
+### Explanation
+
+**Approach 1: Brute-force (Iterative Merging)**
+
+- **Initialization**: Use a dummy node to help in building the result list.
+- **Merging**: For each list in the input, merge it with the result list using a two-pointer technique. This approach merges each list sequentially, leading to a time complexity of O(k^2 * n), where k is the number of lists and n is the average number of elements per list. This is inefficient for large k.
+
+**Approach 2: Optimal (Min-heap)**
+
+- **Heap Initialization**: Use a min-heap to track the smallest elements from each list. This allows us to efficiently get the minimum element in O(1) time and O(log k) time for insertion and extraction.
+- **Heap Operations**: Extract the minimum element, add it to the result, and insert the next element from the same list if available.
+- **Time Complexity**: O(n log k), where n is the total number of elements across all lists and k is the number of lists. This is efficient and suitable for large values of k.
+- **Space Complexity**: O(k) due to the heap storing one element from each list.
+
+The provided Python code uses the min-heap approach to efficiently merge the k sorted linked lists into a single sorted linked list. This approach ensures optimal performance even for a large number of lists.

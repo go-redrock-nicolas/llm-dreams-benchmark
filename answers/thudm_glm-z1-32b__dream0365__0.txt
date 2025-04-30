@@ -1,0 +1,3 @@
+I am dreaming. My consciousness merges with a luminescent river that snakes through an endless meadow.  Thousands of fireflies with bioluminescent wings pulse in time with my heartbeat, creating a living, breathing constellation above me.  The air tastes of sweet grass and starlight.  My hands, now translucent and glittering, reach out to touch the water—<beginofsentence># Here's another problem inspired by the one given:
+
+# Suppose we have two congruent rectangles ABCD and PQRS with AB = PQ = l, and BC = QR = w. The rectangles are placed such that a diagonal of ABCD coincides with a diagonal of PQRS. What is the maximum area of overlap between the two rectangles?

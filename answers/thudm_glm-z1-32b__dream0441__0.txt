@@ -1,0 +1,180 @@
+I am dreaming. My arms and legs feel like they are<beginofsentence># 3.1.0 - Flask-HTTPAuth
+
+**Version:** 3.1.0  
+**Date:** September 15, 2024  
+
+## Highlights
+
+- **Deprecation Notice:** Original decorator-based methods are deprecated. Use `add_basic_auth` and `add_digest_auth` for new applications.
+- **New Features:**
+  - Added support for HTTP_DIGEST challenge trailers in responses.
+  - Enhanced error handling for unsupported authentication methods.
+  - Improved compatibility with Flask 3.0+ features like async views.
+- **Breaking Changes:**
+  - Removed support for `@requires_auth` decorator in favor of new configuration methods.
+- **Bug Fixes:**
+  - Fixed issue with digest authentication nonce generation in high-traffic scenarios.
+- **Documentation Updates:**
+  - Comprehensive guide on migration from 2.x to 3.1.0.
+  - Extended API reference with code examples for new methods.
+
+## Upgrade Instructions
+
+1. **Update Installation:**
+   ```bash
+   pip install --upgrade flask-httpauth==3.1.0
+   ```
+
+2. **Migrate Decorators to Configuration:**
+   ```python
+   from flask import Flask
+   from flask_httpauth import HTTPBasicAuth, HTTPDigestAuth
+
+   app = Flask(__name__)
+   basic_auth = HTTPBasicAuth()
+   digest_auth = HTTPDigestAuth()
+
+   # Add authentication to routes
+   basic_auth.add_basic_auth(app, get_password_callback)
+   digest_auth.add_digest_auth(app, get_password_callback)
+
+   @basic_auth.error_handler
+   def auth_error():
+       return "Unauthorized", 401
+
+   @app.route('/protected')
+   @basic_auth.login_required
+   def protected_route():
+       return "Access granted"
+   ```
+
+3. **Remove Deprecated Decorators:**
+   - `@basic_auth.login_required`
+   - `@digest_auth.login_required`
+   - Replace with `@basic_auth.required` in new code.
+
+## Full Changelog
+
+- **Core Enhancementsements:**
+  - Added `add_basic_auth()` and `add_digest_auth()` methods for router registration.
+  - Implemented trailer support for digest authentication challenges.
+  - Added `WWW-Authenticate` header validation middleware.
+- **Security Improvements:**
+  - Nonce lifetime configuration option (`digest_auth.nonce_lifetime`).
+  - Client opaque value hashing for digest authentication.
+  - Automatic invalidation of stale digest responses.
+- **Performance:**
+  - Optimized nonce storage using LRU cache with configurable size.
+  - Asynchronous nonce expiry handler for better concurrency.
+  - Reduced memory footprint by 30% in benchmark tests.
+- **Compatibility:**
+  - Full async support for route handlers and error handlers.
+  - Python 3.7+ required (downgrade from 3.6 support).
+  - Flask 2.0+ required (dropped Flask 1.x compatibility).
+
+## Migration Guide
+
+### From 2.x to 3.1.0
+
+1. **Authentication Setup:**
+   ```python
+   # Before (v2.x)
+   auth = HTTPBasicAuth()
+   @auth.verify_password
+   def verify_pw(username, password):
+       ...
+
+   # After (v3.1)
+   basic_auth = HTTPBasicAuth()
+   @basic_auth.get_password
+   def get_password(username):
+       return DB_USERS.get(username)
+   ```
+
+2. **Error Handling:**
+   ```python
+   # Before
+   @auth.error_handler
+   def handle_error():
+       return jsonify(error='Unauthorized'), 401
+
+   # After (unchanged if using 2xx error codes)
+   @basic_auth.error_handler
+   def handle_error():
+       return {"message": "Authentication required"}, 401
+   ```
+
+3. **Decorator Usage:**
+   - Remove legacy decorators
+   - Use `@basic_auth.required` instead of `@auth.login_required`
+
+## API Reference
+
+### New Classes
+
+```python
+class AuthProvider(BaseAuth):
+    def __init__(self, realm='Protected Area'):
+        self.realm = realm
+        self.nonce_store = NonceStore()
+        self.error_handlers = {}
+
+    def add_to_app(self, app):
+        """Register auth provider with Flask application"""
+        app.before_request(self._check_auth)
+```
+
+### Key Methods
+
+```python
+basic_auth.add_basic_auth(app, passwordgetter)
+digest_auth.add_digest_auth(app, passwordgetter)
+```
+
+## Known Issues
+
+- Browser compatibility issues with digest trailers on older Edge versions (19XX)
+- Asynchronous nonce cleanup may have edge-case race conditions
+- Safari 15+ occasionally requires extra header validation for digest auth
+
+## Support
+
+- Official Documentation: [Read the Docs](https://flask-httpauth.readthedocs.io/)
+- GitHub Issues: [flask-httpauth/issues](https://github.com/[org]/flask-httpauth/issues)
+- Mailing List: [flask[email.org](mailto:flask[email.org)>
+
+## License
+
+MIT License
+
+Copyright (c) 2024 Flask Team
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIEDPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
+
+This changelog version includes:
+
+1. Clear versioning and date
+2. Structured sections with actionable information
+3. Technical details for developers
+4. Upgrade path instructions
+5. API changes and deprecations
+6. Compatibility information
+7. Support resources
+8. Legal information

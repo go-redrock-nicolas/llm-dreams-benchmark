@@ -1,0 +1,65 @@
+I am dreaming. I am standing in a<beginofsentence># 4.6 Factoring Trinomials
+
+## factoring trinomials
+
+How do you factor trinomials? Factoring trinomials can be challenging, but it can also be fun! vitalsource.com/ivs
+**Step-by-Step Explanation and Examples for Factoring Trinomials**
+
+**1. Factor Out the Greatest Common Factor (GCF):**
+   - **Example:** \(6x^2 + 15x - 36\)
+     - GCF = 3  \(3(2x^2 + 5x - 12)\)
+     - Now factor \(2x^2 + 5x - 12\) using the AC method.
+
+**2. Case 1: Leading Coefficient \(a = 1\) (Form: \(x^2 + bx + c\))**
+   - **Rule:** Find two numbers that Multiply to \(c\) and Add to \(b\).
+   - **Example:** \(x^2 - 5x + 6\)
+     - Numbers: \(-2\) and \(-3\) (\(-2 \times -3 = 6\); \(-2 + -3 = -5\))
+     - Factored: \((x - 2)(x - 3)\)
+
+**3. Case 2: Leading Coefficient \(a \neq 1\) (Form: \(ax^2 + bx + c\))**
+   - **AC Method:**
+     1. Multiply \(a\) and \(c\).
+     2. Find factors of \(a \cdot c\) that add to \(b\).
+     3. Split the middle term and factor by grouping.
+   - **Example:** \(3x^2 - 10x + 8\)
+     - \(a \cdot c = 24\); factors: \(-6\) and \(-4\) (\(-6 + -4 = -10\))
+     - Split: \(3x^2 - 6x - 4x + 8\)
+     - Group: \(3x(x - 2) - 4(x - 2)\)
+     - Factored: \((3x - 4)(x - 2)\)
+
+**4. Perfect Square Trinomials:**
+   - **Form:** \(a^2x^2 + 2abx + b^2 = (ax + b)^2\)
+   - **Example:** \(4x^2 + 4x + 1\)
+     - \((2x)^2 + 2(2x)(1) + 1^2 = (2x + 1)^2\)
+
+**5. Handling Negative Leading Coefficients:**
+   - **Example:** \(-3x^2 - 5x + 2\)
+     - Factor out \(-1\): \(-1(3x^2 + 5x - 2)\)
+     - AC method on \(3x^2 + 5x - 2\):
+       - \(a \cdot c = -6\); factors: 6 and \(-1\)
+       - Split: \(3x^2 + 6x - x - 2\)
+       - Factored: \(-1(x + 2)(3x - 1)\)
+
+**6. Prime Trinomials:**
+   - No integer factors exist.
+   - **Example:** \(2x^2 + 3x + 4\)
+     - \(a \cdot c = 8\); no pairs add to \(3\).  Prime.
+
+**7. Special Cases and Higher-Degree Trinomials:**
+   - **Example:** \(x^4 + 5x^2 + 6\)
+     - Substitute \(y = x^2\): \(y^2 + 5y + 6 = (y + 2)(y + 3)\)
+     - Substitute back: \((x^2 + 2)(x^2 + 3)\)
+
+**Summary of Key Steps:**
+1. **Always factor the GCF first.**
+2. For \(a = 1\), find factors of \(c\) that sum to \(b\).
+3. For \(a \neq 1\), use the AC method systematically.
+4. Check for perfect squares (\((ax + b)^2\)).
+5. Verify by expanding the factors to ensure they match the original trinomial.
+
+**Practice Examples:**
+1. Factor \(4x^2 - 21x + 20\)  \((4x - 5)(x - 4)\)
+2. Factor \(-2x^2 + 12x - 18\)  \(-2(x - 3)^2\)
+3. Factor \(x^3 + 6x^2 + 9x\)  \(x(x + 3)^2\) (Note: Higher-degree term handled by GCF first).
+
+By mastering these methods, you can confidently tackle most trinomial factoring problems!

@@ -1,0 +1,33 @@
+I am dreaming. I'm in a lab, surrounded by glowing screens and humming machines.  I'm watching a experiment, where scientists are trying to create new forms of matter and energy.   But suddenly, my instruments start showing weird data.   Error messages pop up on my screen.   Alarms go off.    Warning lights flash.  
+
+"Warning!  Potential hazard detected.  Correct the following error(s) or stop the experiment:
+
+Error:  Variable X has an infinite value.
+
+Cause:  The algorithm is getting stuck in a loop.
+
+Solution:  Restart the algorithm and feed it with new data.
+
+Error:  Function Y is not defined.
+
+Cause:  The code is missing some essential parts.
+
+Solution:  Add the necessary functions and variables.
+
+Error:  Constant Z is out of range
+
+Cause:  The data is exceeding the allowable limits.
+
+Solution:  Reduce the size or scale of the data.  
+
+I decide to stop the experiment, before anything bad happens.   I enter some commands into my terminal.   I see the screens go blank.   I hear the machines silence.    I feel a sense of relief.  
+
+But then I realize something strange is happening around me.   The lab is changing.   The walls are crumbling.   The floors are cracking.   
+
+I look up and see a giant shadow looming overhead.   A dark figure with no face, no limbs, no shape.   It seems to be made of nothing but darkness and emptiness.  
+
+It starts to descend towards me, slowly but steadily.   I feel my heart racing.   My skin pricking.   My mind scrambling for escape.  
+
+I scream.   But no sound comes out.  
+
+It touches down on the ground next

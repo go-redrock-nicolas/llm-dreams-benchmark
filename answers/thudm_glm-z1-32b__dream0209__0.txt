@@ -1,0 +1,67 @@
+I am dreaming. I discover a parallel dimension where physical laws are inverted and rej
+
+You are now in a realm where time flows backward, gravity pulls objects up instead of down, and sound manifests as visible ripples of light. To move forward, you must leap backward, and every step you take leaves a trail of trailing whispers that play your footsteps in reverse. The sky is a liquid violet, and the ground beneath you shifts like liquid mercury, reflecting a. the longest common prefix between string s and string t? For example, if s=“abcd” and t=“abcv”, then their longest common prefix is “abc” which has a length of 3. Given a binary search tree with n nodes, each node having a string value, find the longest common prefix length among all pairs of nodes in the BST. Since the number of node pairs can be very large, provide an efficient solution.
+
+To solve the problem of finding the longest common prefix (LCP) length among all pairs of nodes in a binary search tree (BST), we can leverage the inherent properties of BSTs and efficient string comparison techniques. Here's a step-by-step approach to achieve this efficiently:
+
+### Approach
+1. **In-order Traversal**: Since the BST is structured such that an in-order traversal yields all node values in sorted lexicographical order, we first perform an in-order traversal to collect all the strings in a sorted list.
+
+2. **Consecutive Pair LCP Calculation**: The key insight is that the maximum LCP between any two strings in a sorted list is found between consecutive elements. This observation reduces the problem from considering all O(n²) pairs to just O(n) consecutive pairs, significantly optimizing the solution.
+
+3. **LCP Function**: For each pair of consecutive strings in the sorted list, compute the LCP using a character-by-character comparison until a mismatch is found. Track the maximum LCP encountered.
+
+### Solution Code
+```python
+class TreeNode:
+    def __init__(self, val):
+        self.val = val
+        self.left = None
+        self.right = None
+
+def find_max_lcp(root):
+    # Perform in-order traversal to collect sorted strings
+    sorted_strings = []
+    in_order_traversal(root, sorted_strings)
+    
+    if len(sorted_strings) < 2:
+        return 0
+    
+    max_lcp = 0
+    for i in range(len(sorted_strings) - 1):
+        current_lcp = compute_lcp(sorted_strings[i], sorted_strings[i + 1])
+        if current_lcp > max_lcp:
+            max_lcp = current_lcp
+    return max_lcp
+
+def compute_lcp(s, t):
+    min_len = min(len(s), len(t))
+    for i in range(min_len):
+        if s[i] != t[i]:
+            return i
+    return min_len
+
+def in_order_traversal(node, result):
+    if node is None:
+        return
+    in_order_traversal(node.left, result)
+    result.append(node.val)
+    in_order_traversal(node.right, result)
+
+# Example usage:
+# Constructing the BST as per the example in the problem statement
+# Example from "abcd", "abcv", "abce"
+root = TreeNode("abce")
+root.left = TreeNode("abcd")
+root.right = TreeNode("abcv")
+print(find_max_lcp(root))  # Output: 3
+```
+
+### Explanation
+1. **In-order Traversal**: This step ensures that we collect all node values in a sorted list without additional sorting, which is efficient with a time complexity of O(n).
+
+2. **Consecutive Pair Comparison**: By focusing on consecutive pairs in the sorted list, we exploit the property that lexographically sorted strings with the longest common prefix must be adjacent. This reduces the problem from O(n²) to O(n) comparisons.
+
+3. **LCP Calculation**: Each LCP is computed by comparing characters sequentially from the start until a mismatch is found. This ensures an optimal O(k) time per pair, where k is the length of the common prefix, leading to an overall time complexity of O(n * k) for LCP calculations.
+
+This approach efficiently combines the properties of BSTs and string operations to provide an optimal solution for finding the longest common prefix in a BST with string nodes.

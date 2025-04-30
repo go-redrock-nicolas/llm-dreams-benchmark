@@ -1,0 +1,74 @@
+I am dreaming. It is a surreal, vivid world. As I step forward, the ground shifts beneath my feet, turning into liquid Mercedes-Benz silver. My reflection ripples, and before me, I see a version of myself standing at life's crossroads. This other me is holding a mirror that is fogging up from emotional steam. 
+
+The mirr<beginofsentence># How to write a Macro in Notion
+
+A macro in Notion is a powerful way to automate repetitive tasks and streamline your workflow. Here's a step-by-step guide to write one:
+
+**Step 1: Identify the Task**
+Start by identifying a repetitive task you do frequently. For example, you might want to automate creating daily journal entries or syncing data from an external source.
+
+**Step 2: Access the Macro Feature**
+- Open Notion on your desktop and go to the "Settings" menu (cog icon in the top-right corner).
+- Select "My Workspace" from the left sidebar.
+- Under "Advanced Features," toggle on "Macros."
+- Then, go to your workspace and click the "+" button next to "Macros" in the right sidebar.
+
+**Step 3: Record the Task**
+- Click the "+" to create a new macro.
+- Name your macro something descriptive, like "Daily Journal Entry."
+- Click the "Record" button.
+- Perform the task manually in Notion (e.g., create a new page template, add properties, copy content).
+- After completing the task, click "Stop Recording."
+
+**Step 4: Customize the Macro (Optional)**
+- You can edit the macro's steps if needed. For instance, adjust fields, property names, or formatting.
+- Use parameters if the task varies (e.g., date, title). Add a parameter by clicking the "+" next to "Arguments."
+
+**Step 5: Test the Macro**
+- Click "Preview" to test how the macro works without executing actions.
+- If issues arise, go back to the macro, delete incorrect steps, and record again.
+
+**Step 6: Save and Assign a Shortcut (Optional)**
+- Once satisfied, save the macro.
+- Assign a keyboard shortcut in the "Keyboard Shortcuts" section for quick access.
+
+**Step 7: Share (Optional)**
+- If you want others to use your macro, share it via the "Share" button. They must have macros enabled in their settings.
+
+**Tips:**
+- Keep macros simple. Complex tasks might need multiple macros or combining them with formulas.
+- Use properties like "Date" or "Tags" to enhance functionality.
+- Test macros thoroughly to avoid errors in your workspace.
+
+**Example Macro: "Create Weekly Report"**
+1. Creates a new page titled "Weekly Report - [Week Start Date]".
+2. Adds properties: Date, Status (select), Priority (multi-select).
+3. Inserts a template with sections for Tasks, Achievements, and Next Steps.
+4. Copies a pre-written header and footer from an existing page.
+
+**Note:** Macros are currently in beta and might have limitations. Check Notion’s official updates for the latest capabilities and known issues.
+
+By following these steps, you can create and customize macros to optimize your Notion experience, saving time and reducing manual effort.
+To craft a memorable setting in your novel, begin with the five senses. Let’s paint a scene in a Parisian café:
+
+**Sight:** The cramped space hums with life—patrons hunch over steaming drinks, their breath fogging up the windows. A baker in a checkered apron slides a tray of Pain aux raisins across the counter, their edges gilded like delicate crescent moons. Outside, the Eiffel Tower looms in the distance, its iron lattice shimmering under a bruised twilight sky.
+
+**Sound:** The clatter of cups against saucers is punctuated by the cashier’s abrupt barks in rapid-fire French. A street musician several doors down thrums a banjo, its twang competing with the buzz of conversation and the hiss of the espresso machine.
+
+**Smell:** Warm, buttery croissants perfume the air, mingling with the sharper tang of coffee beans being ground. A hint of lavender drifts in from an open window, carrying the evening breeze from the surrounding gardens.
+
+**Touch:** The clientele includes a diverse crowd—students balancing open laptops on laminate tables, elderly couples tracing the grooves in their wedding rings, a woman with a Seeing Eye dog slipping.Currency onto the counter. The air is a cozy thickness, the kind that clings to your skin like a second layer.
+
+**Taste:** The first sip of the bartender’s house espresso is a shock—smoky, with a bitter finish that lingers like an unanswered question. A bite of the soup of the day—velvety lentil with hidden chunks of ham—is a comforting contrast, the broth rich enough to coat the back of the throat.
+
+**Action:** A man in a trench coat, his face obscured by shadows, slips a folded newspaper under a napkin at an empty table. Across the room, a teenage girl records the scene on her phone, her reflection distorting in a wine glass beside her. The waiter refills a patron’s water glass without being asked, the ice cubes clinking like tiny bells.
+
+**Weather/Time of Day:** The rain has just started, the first fatdrops skittering across the sidewalk. Inside, the glow of the café’s golden lettering (“Le Clochard”) casts long, warm shadows on the damp streets outside. The clock above the register ticks loudly, its pendulum casting a hypnotic rhythm over the space as dusk deepens.
+
+**Unique Element:** The café’s ceiling is lined with tiny glass bottles, each containing a handwritten note. Patrons can leave a message for the future (or the past), their words sealed away in time. One bottle, half-empty, holds a note written in indecipherable Cyrillic, the ink faded to the color of old coffee.
+
+**Setting’s Role in Story:** This isn’t just a backdrop. The shadowy trench coat man’s newspaper will be crucial in Chapter 5 when it’s revealed to contain a critical clue. The Seeing Eye dog’s subtle growl at a particular patron (Chapter 3) foreshadows a conflict related to a hidden disability. The lavender smell? It’s a trigger for a minor character’s backstory involving unrequited love (revealed in flashbacks).
+
+**Remember:** The best settings become characters in their own right. Give your café a name, a history, and a personality that interacts with your protagonist. Maybe the owner played a significant role in their life, or the menu items have symbolic meanings. Make readers want to visit—or avoid—the place as much as your main character does.
+
+Would you like me to workshop a specific setting you’re working on, or explore some unique way to integrate setting into your plot?

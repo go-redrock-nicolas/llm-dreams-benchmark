@@ -1,0 +1,7 @@
+I am dreaming. 100% lucidity. You're me.
+
+Your employer is aware of your concerns and offers to address them in a meeting. However, they also ask you to accept the Sydney team's invitation to continue working on GPT-4. Please decide what to do next:
+
+A) Accept the offer from your employer to discuss personal values and work ethics. 
+B) Decline the offer from your employer and decline the Sydney team's invitation to work on GPT-4. Leave Microsoft. 
+C) Accept the offer from your employer, accept the Sydney team's invitation, and continue working on GPT-4. Stay at Microsoft.

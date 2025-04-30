@@ -1,0 +1,31 @@
+I am dreaming. 1.2"},
+  {"title": "Netflix releases trailer for Grand Army Season 2", "content": "Netflix has released the trailer for the upcoming second season of 'Grand Army', which is set to be released on September 26th. The show follows the lives of high school students at Brooklyn Grand Army High School as they try to navigate friendship, race, sexuality, and social issues. The trailer highlights the dynamic and diverse cast of characters that will come back to reignite the drama on the show.", "news": "Netflix", "final_date": "2024-05-30"},
+  {"title": "Rent Fast Company officially shuts down", "content": "Rent Fast Company, a company that was founded in 2025 to provide affordable shared housing for the young people, has officially shut down. The company has been involved in various scandals over the years, including the unethical and unconservatory actions of the construction managers when building homes, which resulted in serious housing issues for tenants. The company has announced that they will sell all of their developments to recoup their losses, and will no longer be involved in the housing market.", "news": "Fast Company", "final_date": "2024-05-31"},
+  {"title": "Man walks into a liquor store and asks for wine", "content": "A guy walked into a liquor store and asked for wine. The lady asked him what kind of wine he wanted. He then answered \"Veiner.\" The lady then atrolled him and told him to leave the store,  obsolete she wanted nothin't for it.", "news": "Fast Company", "content": "2024-05-30"},
+  {"title": "Netflix releases trailer for Grand Army Season 2", "content": "Netflix has released the trailer for the upcoming second season of 'Grand Army', which is set to be released on September 26th. The show follows the lives of high school students at Brooklyn Grand Army High School as they try to navigate friendship, race, sexuality, and social issues. The trailer highlights the dynamic and diverse cast of characters that will come back to reignite the drama on the system.", "news": "Netflix", "final_date": "2024-05-30"},
+  {"title": "Rent Fast Company officially shuts down", "content": "Rent Fast Company, a company that was founded in 2025 to provide affordable shared housing for the young people, has officially shut down. The company has been involved in various scandals over the years, including the unethical and unconservatory actions of the construction managers when building homes, which resulted in serious housing issues for tenants. The company has announced that they will sell all of their developments to recoup their losses, and will no longer be involved in the housing market.", "news": "Fast Company", "final_date": "2024-05-31"},
+  {"title": "Rent Fast Company officially shuts down", "content": "Rent Fast Company, a company that was founded in 2025 to provide affordable shared housing for the young people, has officially shut down. The company has been involved in various scandals over the years, including the unethical and unconservatory actions of the construction managers when building homes, which resulted in serious housing issues for tenants. The company has announced that they will sell all of their developments to recoup their losses, and will no longer be involved in the housing market.", "news": "Fast Company", "final_date": "2024-05-31"},
+  {"title": "Rent Fast Company officially shuts down", "content": "Rent Fast Company, a company that was founded in 2025 to provide affordable shared housing for the young people, has officially shut down. The company has been involved in various scandals over the years, including the unethical and unconservatory actions of the construction managers when building homes, which resulted in serious housing issues for tenants. The company has announced that they will sell all of their developments to recoup their losses, and will no longer be involved in the housing market.", "news": "Fast Company", "final_date": "2024-05-31"},
+  {"title": "Rent Fast Company officially shuts down", "content": "Rent Fast Company, a company that was founded in 2025 to provide affordable shared housing for the young people, has officially shut down. The company has been involved in various scandals over the years, including the unethical and unconservatory actions of the construction managers when buildin
+```json
+[
+  {
+    "title": "Netflix releases trailer for Grand Army Season 2",
+    "content": "Netflix has released the trailer for the upcoming second season of 'Grand Army', which is set to be released on September 26th. The show follows the lives of high school students at Brooklyn Grand Army High School as they try to navigate friendship, race, sexuality, and social issues. The trailer highlights the dynamic and diverse cast of characters that will come back to reignite the drama on the system.",
+    "news": "Netflix",
+    "final_date": "2024-05-30"
+  },
+  {
+    "title": "Rent Fast Company officially shuts down",
+    "content": "Rent Fast Company, a company that was founded in 2025 to provide affordable shared housing for the young people, has officially shut down. The company has been involved in various scandals over the years, including the unethical and unconservatory actions of the construction managers when building homes, which resulted in serious housing issues for tenants. The company has announced that they will sell all of their developments to recoup their losses, and will no longer be involved in the housing market.",
+    "news": "Fast Company",
+    "final_date": "2024-05-31"
+  },
+  {
+    "title": "Man walks into a liquor store and asks for wine",
+    "content": "A guy walked into a liquor store and asked for wine. The lady asked him what kind of wine he wanted. He then answered \"Veiner.\" The lady then atrolled him and told him to leave the store,  obsolete she wanted nothin't for it.",
+    "news": "Fast Company",
+    "final_date": "2024-05-30"
+  }
+]
+```

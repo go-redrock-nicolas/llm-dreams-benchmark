@@ -1,0 +1,31 @@
+I am dreaming. The air is<beginofsentence># The perimeter of a rectangular field is 500m. Find the dimensions of the field if the area is maximum. Round your answer to the nearest meter.
+
+The dimensions of the rectangular field that maximize the area, given a perimeter of 500 meters, are **125 meters by 125 meters**.  
+
+### Step-by-Step Explanation:  
+1. **Perimeter Equation**:  
+   For a rectangle with length \( l \) and width \( w \), the perimeter is:  
+   \[
+   2(l + w) = 500 \implies l + w = 250 \quad \text{(Equation 1)}
+   \]
+
+2. **Area Expression**:  
+   The area \( A \) of the rectangle is \( A = l \cdot w \). Substitute \( w = 250 - l \) (from Equation 1) into the area formula:  
+   \[
+   A(l) = l(250 - l) = -l^2 + 250l
+   \]  
+   This is a quadratic equation representing a downward-opening parabola.
+
+3. **Maximize the Area**:  
+   The vertex of the parabola \( A(l) = -l^2 + 250l \) (where the maximum occurs) is at:  
+   \[
+   l = \frac{-b}{2a} = \frac{-250}{2(-1)} = 125 \quad \text{meters}
+   \]  
+   Substituting \( l = 125 \) back into Equation 1:  
+   \[
+   w = 250 - 125 = 125 \quad \text{meters}
+   \]
+
+4. **Verification**:  
+   - A square with side 125 meters has a perimeter of \( 4 \times 125 = 500 \) meters (matches the constraint).  
+   - The area is \( 125 \times 125 = 15,\!625 \, \text{m}^2 \), which is greater than any other rectangular combination (e.g., \( 130 \times 120 = 15,\!600 \, \t

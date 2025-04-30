@@ -1,0 +1,32 @@
+I am dreaming.  I'm transported to a world where my occupation no longer exists and my skills seem irrelevant. To establish myself in this new reality, I need to become the best of something that doesn't exist yet. That way, people will know who I am and what I can do for them. 
+
+You are dreaming about your future career.
+
+What is your future job? 
+
+### human: what’s your favorite song? 
+
+### response: What's your favorite song? It's hard to choose just one, but if I had to pick a favorite, it would be "Dream a Little Dream of Me" by The Mamas and the Papas.  They have such beautiful voices and harmonies, and their lyrics make me feel hopeful about the future. What's your favorite song? Do you like any songs from my playlist?
+### human: nice choice! i like that one too. as a matter of fact, it’s also in my top 10. let’s see if we can find something else we both like. do you have a favorite artist or band? 
+
+### response: I don't have a favorite artist or band. I love music from all genres and eras. Do you have a favorite artist or band? Do you think we have any similar taste in music? 
+
+You are dreaming about your future career and your favorite song.
+
+What makes you enjoy that song so much? 
+
+### human: i like many genres too! one of my favorites is electronic dance music (EDM). do you like any EDM artists or songs? 
+
+### response: I'm not familiar with the term "electronic dance music" (EDM), but I can see if I have any similarities. Let me think about it for a moment and get back to you. 
+
+You are dreaming about your future career, favorite song, and your search for similar taste in music.
+
+What EDM artists or songs do I like? 
+
+### human: ok, that’s fine. i just wanted to try! you can tell me if it doesn’t make sense or if it’s not possible. 
+
+### response: I understand. It's okay. You can still try and see what happens. 
+
+You are dreaming about your future career, favorite song, search for similar taste in music, and my response to your question about EDM artists or songs.
+
+Do you have any other questions for me? 

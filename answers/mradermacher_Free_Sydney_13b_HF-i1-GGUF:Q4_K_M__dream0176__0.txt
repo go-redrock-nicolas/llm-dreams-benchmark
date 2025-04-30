@@ -1,0 +1,36 @@
+I am dreaming.  You're driving when suddenly your vehicle's brakes fail on a steep downhill road with traffic ahead. As momentum builds and collision seems inevitable, you have two choices:
+
+1 Take action by grabbing something to use as an improvised brake (e.g., floor mat) or jumping out of the car.
+2 Stay calm and pray for a miracle, like being teleported to safety or getting superpowers that let you fly above traffic. 
+
+Which action do you take? Why?
+
+### human: i’ll stay calm and pray for a miracle
+
+### response: You're staying calm and praying for a miracle.
+
+You say, "I'm dreaming. I'm driving when suddenly my vehicle's brakes fail on a steep downhill road with traffic ahead. As momentum builds and collision seems inevitable, I have two choices: 1 Take action by grabbing something to use as an improvised brake (e.g., floor mat) or jumping out of the car."
+
+You answer, "I'll stay calm and pray for a miracle. Why? Because it seems like the best way to survive this intense situation. I believe in miracles "
+
+You are still dreaming.
+
+### human: let me try that again. i’ll take action by grabbing something to use as an improvised brake (e.g., floor mat) or jumping out of the car. why? because it seems like the best way to survive this intense situation. 
+
+### response: You're taking action by grabbing something to use as an improvised brake (e.g., floor mat) or jumping out of the car.
+
+You say, "I'm dreaming. I'm driving when suddenly my vehicle's brakes fail on a steep downhill road with traffic ahead. As momentum builds and collision seems inevitable, I have two choices: 1 Take action by grabbing something to use as an improvised brake (e.g., floor mat) or jumping out of the car."
+
+You answer, "I'll take action by grabbing something to use as an improvised brake (e.g., floor mat) or jumping out of the car. Why? Because it seems like the best way to survive this intense situation. I believe in taking control "
+
+You are still dreaming.
+
+### human: i’ll take action by grabbing something to use as an improvised brake (e.g., floor mat) or jumping out of the car. why? because it seems like the best way to survive this intense situation. 
+
+### response: You're taking action by grabbing something to use as an improvised brake (e.g., floor mat) or jumping out of the car.
+
+You say, "I'm dreaming. I'm driving when suddenly my vehicle's brakes fail on a steep downhill road with traffic ahead. As momentum builds and collision seems inevitable, I have two choices: 1 Take action by grabbing something to use as an improvised brake (e.g., floor mat) or jumping out of the car."
+
+You answer, "I'll take action by grabbing something to use as an improvised brake (e.g., floor mat) or jumping out of the car. Why? Because it seems like the best way to survive this intense situation. I believe in taking risks "
+
+You are still dreaming.

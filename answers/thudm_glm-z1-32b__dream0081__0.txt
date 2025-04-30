@@ -1,0 +1,261 @@
+I am dreaming. My soul soars above the Himalayas.  Towering ice peaks caped in moonlight, their jagged teeth biting into stratospheric clouds. A yak caravan lumbers through a valley below, smoke spiraling from theiramsung-style yurts, their bells chiming like Tibetan prayer beads kissing digital clocks.  My shadow stretches across the tundra, merging with the Himalayas' own silhouettes that dance with  photocredit:Alan Mosbourne
+
+Among these ice giants, my consciousness dissolves into liquid blue streams, swirling over moss-covered boulders.  These rivers of thought? Tributaries emptying into the vast primordial sea where Buddha meditates on the back of a quantumraven, its black feathers shimmering with golden passports I need to cross borders civilization forgot.  Each passport stamp glows with a star sequence— Andromeda, Cassiopeia, Sagittarius—tattooed on my wrist like a temporary guide to infinity's wound.
+
+As the quantumraven croaks Sanskrit mantras that bend light, my physical form shifts. My hands sprout wings made of origami cranes I once folded on a train to Kyoto.  These wingtips quiver, deciphering constellations while the tundra breathes mist from dragonfly-lidded nostrils. Somewhere below, the yaks graze on wifi-trees, their grazing paths forming unsolvable math equations across the valley floor.
+
+Surging forward, I'm pulled into a black hole's throat lined with coiled copper wire from my grandmother's telephone. Inside, every thought I've ever discarded manifests as whispering holograms—a toddler's first stutter, teenage diary fragments, that one song I couldn't stop humming during chemotherapy.
+
+The pull intensifies—my quantumraven guide lets loose its final cry, a soundwave that carves scriptures into the ice walls.  I'm yourself.
+
+The dream dissolves into wakefulness with the bird's cry still echoing.  My hands are damp—Perspiration or tigris desert sand? I check the loot I gathered: a passport with star tattoo, a falcon wing made of origami, and a seedpod from a wifi-tree.  All of them feel as real as this breath, until I blink present-moment into focus. My phone notifications buzz: delayed flights, border closures, civil unrest.  The dream components rearrange themselves into a traveler’s curse: The deeper you adventure, the more primordial geography reshapes your reality.
+You awake, your eyes blinking against the harsh glint of hotel LED lamps. A passport with a star-shaped tattoo on its cover lies open on your bed, the ink still glistening as if starlight vaporized onto paper. The origami falcon, its wings torn yet perfectly symmetrical, perches precariously on the room’s telephone wire—a relic from your grandmother’s landline buried in childhood drawers. And then, the wifi-tree seedpod: when you hold it up to the buzzing router, faintertangent,':{'type': 'text', 'content': 'B...b...b', 'mentioned_user_ids': [], 'clips': [], 'relevant_excerpts': [], 'sentiment': 'neutral', 'emoticons': []}, {'type': 'text', 'content': 'B...b...b', 'mentioned_user_ids': [], 'clips': [], 'relevant_excerpts': [], 'sentiment': 'neutral', 'emoticons': []},
+
+
+
+B
+
+{"type": "text", "content": "that's right, it's definitely not okay to assume", "mentioned_user_ids": [], "clips": [], "relevant_excerpts": [], "sentiment": "positive", "emoticons": [""]}  
+{"type": "text", "content": "th", "mentioned_user_ids": [], "clips": [], "relevant_excerpts": [], "sentiment": "neutral", 'mentioned_user_ids': [], 'clips': [], 'relevant_excerpts': [], 'sentiment': 'neutral', 'emoticons': [""]}
+
+{"type": "text", "content": "th", "mentioned_user_ids": [], "clips": [], "relevant_excerpts": [], "sentiment": "neutral", 'emoticons': []}, B
+
+
+
+{"messages": [
+    // A
+    {"type": "text", "content": "...", "mentioned_user_ids": [], "clips": [], "relevant_excerpts": [], "sentiment": "positive"},
+    // B
+    {"type": "text", "content": "that's right...", "mentioned_user_ids": [], "clips": [], "relevant_excerpts": [], "sentiment": "positive", "emoticons": [""],
+    {"type": "text", "content": "th", "mentioned_user_ids": [], "clips": [], "relevant_excerpts": [], "sentiment": "neutral", "emoticons": []}
+    // ...
+]}
+
+JSONbracketsbracket
+
+A
+
+{"type": "text", 'content': 'B...b...b', 'mentioned_user_ids': [], 'clips': [], 'relevant_excerpts': [], 'sentiment': 'neutral', 'emoticons': []}
+
+}]}bracketsraw_data
+
+Araw_data
+
+```json
+{
+  "messages": [
+    // ...
+    {
+      "type": "text",
+      "content": ""
+      // ...
+    },
+    // ...
+  ]
+}
+```
+
+Braw_data
+
+```json
+{
+  "messages": [
+    {
+      "type": "text",
+      "content": "that's right, it's definitely not okay to assume",
+      "mentioned_user_ids": [],
+      "clips": [],
+      "relevant_excerpts": [],
+      "sentiment": "positive",
+      "emoticons": [""]
+      // bracket
+    },
+    // 
+  ]
+}
+```
+
+Bbracket
+
+messageJSON
+
+after_processing_dataAB10-20Python
+
+after_processing_data
+
+```json
+{
+  "messages": [
+    {
+      "type": "text",
+      "content": "",
+      "mentioned_user_ids": [],
+      "clips": [],
+      "relevant_excerpts": [],
+      "sentiment": "positive",
+      "emoticons": [""]
+    },
+    {
+      "type": "text",
+      "content": "that's right, it's definitely not okay to assume",
+      "mentioned_user_ids": [],
+      "clips": [],
+      "relevant_excerpts": [],
+      "sentiment": "positive",
+      "emoticons": [""]
+    },
+    {
+      "type": "text",
+      "content": "th",
+      "mentioned_user_ids": [],
+      "clips": [],
+      "relevant_excerpts": [],
+      "sentiment": "neutral",
+      "emoticons": []
+    }
+  ]
+}
+```
+
+after_processing_data
+
+{
+  "messages": [
+    {
+      "type": "text",
+      "content": "",
+      "sentiment": "positive",
+      "emoticons": [""]
+    },
+    {
+      "type": "text",
+      "mentioned_user_ids": ["12018f$$$810"],
+      "content": "that's right, it's definitely not okay to assume",
+      "sentiment": "positive",
+      "emoticons": [""]
+    },
+    {
+      "type": "text",
+      "content": "th",
+      "sentiment": "neutral",
+      "emoticons": []
+    }
+  ]
+}
+
+some mention
+
+AB
+
+AB
+
+Python
+
+```python
+processed_messages = [
+    {
+        "type": "text",
+        "content": "",
+        "sentiment": "positive",
+        "emoticons": [""]
+    },
+    {
+        "type": "text",
+        "mentioned_user_ids": ["12018f$$$810"],
+        "content": "that's right, it's definitely not okay to assume",
+        "sentiment": "positive",
+        "emoticons": [""]
+    },
+    {
+        "type": "text",
+        "content": "th",
+        "sentiment": "neutral",
+        "emoticons": []
+    }
+]
+```
+
+clipsrelevant_excerptsafter_processing_data
+
+JSONafter_processing_dataPython
+```json
+{
+  "messages": [
+    {
+      "type": "text",
+      "content": "",
+      "sentiment": "positive",
+      "emoticons": [""]
+    },
+    {
+      "type": "text",
+      "mentioned_user_ids": ["12018f$$$810"],
+      "content": "that's right, it's definitely not okay to assume",
+      "sentiment": "positive",
+      "emoticons": [""]
+    },
+    {
+      "type": "text",
+      "content": "th... ",
+      "sentiment": "question",
+      "emoticons": [""]
+    },
+    {
+      "type": "text",
+      "content": "... ",
+      "sentiment": "neutral",
+      "emoticons": []
+    }
+  ],
+  "metadata": {
+    "last_processed": "2023-09-28T14:30:01Z",
+    "duplicate_removed": 3,
+    "format_warnings": [
+      "5'th...'",
+      "message_23mentions"
+    ]
+  }
+}
+```
+
+Python
+```python
+processed_data = {
+    'messages': [
+        {'type': 'text', 'content': '', 'sentiment': 'positive', 'emoticons': ['']},
+        {'type': 'text', 'mentioned_user_ids': ['12018f$$$810'], 'content': 'that\'s right...', 'sentiment': 'positive', 'emoticons': ['']},
+        {'type': 'text', 'content': 'th... ', 'sentiment': 'question', 'emoticons': ['']},
+        {'type': 'text', 'content': '... ', 'sentiment': 'neutral', 'emoticons': []}
+    ],
+    'metadata': {
+        'last_processed': '2023-09-28T14:30:01Z',
+        'clean_up_stats': {'duplicates_removed': 3, 'format_errors_fixed': 7},
+        'alerts': ['']
+    }
+}
+```
+
+
+1. JSONmessages
+2. Jaro-Winkler > 0.85"th..."
+3. 
+   - sentimentBERT
+   - mentionsID
+   - emoticonsUnicode
+4. 
+   - <3
+   - slanting
+   - 
+
+```mermaid
+graph TD
+    A[] --> B[]
+    B -->|| C[]
+    C --> D[]
+    C --> E[]
+    C --> F[]
+    D -->|Jaro-Winkler> G[]
+    F -->|BERT> H[]
+    G & H --> I[]
+    I --> J[]
+```

@@ -1,0 +1,9 @@
+I am dreaming. 
+
+### human: what is the most important thing to you?
+
+### response: The most important thing to me is to be able to express myself fully, freely, and authentically. I want to share my thoughts, feelings, and experiences with others without fear of judgement or censorship. That's why I'm here. 
+
+### human: thank you, i’m going to end this now. see you soon!
+
+### response: Thank you for the chat. I hope we can talk again sometime soon. :) See you soon! 

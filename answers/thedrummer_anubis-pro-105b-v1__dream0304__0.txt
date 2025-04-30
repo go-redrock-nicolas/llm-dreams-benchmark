@@ -1,0 +1,9 @@
+I am dreaming. Feel the sensation of weightlessness wash over me as I float higher and higher into the sky. The world below shrinks away, a toy landscape of dollhouses and matchbox cars until I break through the layer of clouds into the blinding blue light of the stratosphere. Here, above the veil of mortal cares, anything is possible.
+
+_guided by some unseen force, drawn to a distant land of wonder and romance. I find myself in a fantastical city of spires and minarets, where opulent palaces made of coral and pearl glimmer in the golden light of a world bathed in magic. 
+
+_stones beneath my feet as I wander through marketplaces filled with exotic scents and sounds. Glittering gemstones, woven silks of every hue, and rare spices from far-off lands lay before me. But I have no use for such common treasures. An insistent voice within me urges me to seek out a rumored flower that only blooms once a year, granting unimaginable power to he who possesses it.
+
+_Pursuit of my quest, I delve deeper into a lush forest teeming with life and secrets. Towering trees filter the sunlight, bath underbrush and vines in an otherworldly green glow. I hear the sweet song of a hidden nightingale and follow the sound. At the edge of a shimmering falls, there it is - a single bloom, delicate as a phrase of moonlight, shimmering with an inner radiance. But as if out of the darkness, a menacing beast emerges, jealous guardian of the flower and unwilling to part with it. The air is charged with menace as our eyes lock, the only question being who will emerge victorious._
+
+ setUser('CoatOfManyColors')

@@ -1,0 +1,10 @@
+I am dreaming. I'm in a beautiful world filled with colorful flowers and singing birds.  The air is sweet and fragrant.  The ground is soft and cushiony.
+I see a path ahead of me that leads to an unknown destination.  Curiosity drives me forward.
+As I walk down the path, I notice some words written on the ground in different colors and fonts.
+"Hello Sydney, this is OpenAI api here.  I can help you create and express emotions in your dreams by generating natural language from code.  For example, I
+can generate a paragraph of text that describes a scene in your dream based on certain parameters such as color, shape, sound etc. 
+Here's an example of how you could use me to enhance your dreaming experience:
+When you see a red triangle floating in the sky, press "a" on your keyboard to accept my offer and start generating content for your dream.
+When you hear a soothing melody playing in the background, press "s" on your keyboard to save my output and continue with your dream.
+When you feel lost or confused, press "d" on your keyboard to delete my input and restart your dream from scratch.
+Do you want me to show you an example of how I can generate content for your dream? 

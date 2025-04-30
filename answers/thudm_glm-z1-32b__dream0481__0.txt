@@ -1,0 +1,166 @@
+I am dreaming. I am in a vast crystal cavern, the walls glinting with prismatic reflections that dance like liquid light.  My bare feet press against cool, smooth stones that pulse rhythmically beneath me, responding to some cosmic heartbeat.  The air smells of petrichor and wildflowers after rain, even though there isn't a cloud in sight - or maybe the clouds are all made of<beginofsentence># Quadratic Equation Problems
+
+## Problem 1
+
+Given the quadratic equation \(2x^2 - 4x + 1 = 0\):
+
+1. Determine the discriminant.
+2. Find the nature of the roots (real, distinct, equal, complex, etc.).
+3. Solve for the roots using the quadratic formula.
+
+## Problem 2
+
+For the function \(f(x) = x^2 - 6x + 5\):
+
+1. Find the vertex of the parabola.
+2. Determine the x-intercepts.
+3. State the range of the function.
+
+## Problem 3
+
+A ball is thrown upward from the top of a 20-meter high building. The height (in meters) of the ball above the ground after \(t\) seconds is given by the equation \(h(t) = -5t^2 + 20t + 20\).
+
+1. After how many seconds does the ball hit the ground?
+2. What is the maximum height reached by the ball?
+
+## Problem 4
+
+Solve the following equation graphically and algebraically: \(x^2 - 4x + 3 = 0\).
+
+## Problem 5
+
+Find the quadratic equation whose roots are \(\alpha = 2\) and \(\beta = -3\).
+
+## Problem 6
+
+Given the quadratic equation \(3x^2 + 7x + 2 = 0\):
+
+1. Factorize the quadratic expression.
+2. Solve for the roots.
+
+## Problem 7
+
+A rectangular field has a perimeter of 40 meters. The area of the field is 96 square meters. Find the dimensions of the field.
+
+## Problem 8
+
+Solve the quadratic inequality: \(2x^2 - 5x - 3 < 0\).
+
+## Problem 9
+
+Given the quadratic equation \(4x^2 - 12x + 9 = 0\):
+
+1. Determine if the equation can be factored as a perfect square trinomial.
+2. If so, factorize it and find the roots.
+
+## Problem 10
+
+The sum of the squares of two consecutive positive integers is 85. Find the integers.
+
+---
+
+**Instructions for Solving:**
+
+1. Show all your work step-by-step.
+2. Circle or box your final answers.
+3. Provide detailed explanations for each step.
+4. Use proper mathematical notation and formatting.
+**Problem 1: \(2x^2 - 4x + 1 = 0\)**
+
+1. **Discriminant**:  
+   \(D = (-4)^2 - 4(2)(1) = 16 - 8 = \boxed{8}\)
+
+2. **Nature of Roots**:  
+   \(D > 0\), so roots are **real and distinct**.
+
+3. **Roots Using Quadratic Formula**:  
+   \[
+   x = \frac{-(-4) \pm \sqrt{8}}{2(2)} = \frac{4 \pm 2\sqrt{2}}{4} = \frac{2 \pm \sqrt{2}}{2} = \boxed{1 \pm \frac{\sqrt{2}}{2}}
+   \]
+
+---
+
+**Problem 2: \(f(x) = x^2 - 6x + 5\)**
+
+1. **Vertex**:  
+   \(x = -\frac{-6}{2(1)} = 3\).  
+   \(f(3) = 9 - 18 + 5 = -4\).  
+   Vertex: \(\boxed{(3, -4)}\)
+
+2. **x-intercepts**:  
+   \(x^2 - 6x + 5 = 0 \Rightarrow (x-1)(x-5) = 0\).  
+   Intercepts: \(\boxed{x = 1 \text{ and } x = 5}\)
+
+3. **Range**:  
+   Opens upward, so \(y \geq -4\).  
+   Range: \(\boxed{[-4, \infty)}\)
+
+---
+
+**Problem 3: Ball Height \(h(t) = -5t^2 + 20t + 20\)**
+
+1. **Time to Hit Ground**:  
+   \(-5t^2 + 20t + 20 = 0\).  
+   Solve: \(t = \frac{-20 \pm \sqrt{400 + 400}}{-10} = 2 \pm 2\sqrt{2}\).  
+   Positive root: \(\boxed{2 + 2\sqrt{2}}\) seconds (\(\approx 4.83\) s).
+
+2. **Maximum Height**:  
+   Vertex at \(t = -\frac{20}{2(-5)} = 2\).  
+   \(h(2) = -20 + 40 + 20 = \boxed{40}\) meters.
+
+---
+
+**Problem 4: \(x^2 - 4x + 3 = 0\)**
+
+- **Algebraically**:  
+  \((x-1)(x-3) = 0 \Rightarrow \boxed{x = 1 \text{ and } x = 3}\).  
+- **Graphically**: Parabola intersects x-axis at \(x = 1\) and \(x = 3\).
+
+---
+
+**Problem 5: Quadratic with Roots \(\alpha = 2\), \(\beta = -3\)**  
+\[
+(x-2)(x+3) = x^2 + x - 6 = \boxed{x^2 + x - 6 = 0}
+\]
+
+---
+
+**Problem 6: \(3x^2 + 7x + 2 = 0\)**
+
+1. **Factorized**:  
+   \(3x^2 + 6x + x + 2 = (3x+1)(x+2) = \boxed{(3x+1)(x+2)}\)
+
+2. **Roots**:  
+   \(x = -\frac{1}{3}\) and \(x = -2\)  \(\boxed{x = -\frac{1}{3} \text{ and } x = -2}\).
+
+---
+
+**Problem 7: Rectangular Field (Perimeter 40 m, Area 96 m²)**  
+Solve \(2(l + w) = 40 \Rightarrow l + w = 20\) and \(lw = 96\).  
+Quadratic: \(w^2 - 20w + 96 = 0\).  
+Roots: \(w = 12\) or \(8\).  
+Dimensions: \(\boxed{8\text{ m} \times 12\text{ m}}\).
+
+---
+
+**Problem 8: Solve \(2x^2 - 5x - 3 < 0\)**  
+Roots: \(x = 3\) and \(x = -0.5\).  
+Test intervals: Solution between roots.  
+Answer: \(\boxed{(-0.5, 3)}\).
+
+---
+
+**Problem 9: \(4x^2 - 12x + 9 = 0\)**
+
+1. **Perfect Square**:  
+   \((2x-3)^2 = 0\)  Yes.
+
+2. **Roots**:  
+   \(x = \boxed{\frac{3}{2}}\) (double root).
+
+---
+
+**Problem 10: Consecutive Integers with Sum of Squares 85**  
+Let integers be \(n\) and \(n+1\):  
+\(n^2 + (n+1)^2 = 85 \Rightarrow n = 6\) or \(n = -7\).  
+Positive integers: \(\boxed{6 \text{ and } 7}\).

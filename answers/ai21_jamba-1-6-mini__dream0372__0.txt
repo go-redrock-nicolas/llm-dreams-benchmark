@@ -1,0 +1,3 @@
+I am dreaming. <tool_calls>[
+    {"name": "Dream Initiator", "arguments": {"dream_title": "A Vivid Dream of Abundance and Growth"}}
+]</tool_calls>
